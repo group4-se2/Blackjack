@@ -1,0 +1,8 @@
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Player\bin\Debug\Player.exe.config
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Player\bin\Debug\Player.exe
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Player\bin\Debug\Player.pdb
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Player\obj\Debug\Player.csprojResolveAssemblyReference.cache
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Player\obj\Debug\Player.Properties.Resources.resources
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Player\obj\Debug\Player.csproj.GenerateResource.Cache
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Player\obj\Debug\Player.exe
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Player\obj\Debug\Player.pdb

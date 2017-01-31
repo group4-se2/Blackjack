@@ -1,0 +1,7 @@
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\Debug\DealerTests.dll
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\Debug\DealerTests.pdb
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\obj\Debug\DealerTests.csprojResolveAssemblyReference.cache
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\obj\Debug\DealerTests.dll
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\obj\Debug\DealerTests.pdb
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\Debug\Dealer.exe
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\Debug\Dealer.pdb

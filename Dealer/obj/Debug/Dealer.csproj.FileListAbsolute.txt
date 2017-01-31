@@ -1,0 +1,6 @@
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\bin\Debug\Dealer.exe.config
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\bin\Debug\Dealer.exe
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\bin\Debug\Dealer.pdb
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\obj\Debug\Dealer.exe
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\obj\Debug\Dealer.pdb

@@ -1,0 +1,7 @@
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\PlayerTests\bin\Debug\PlayerTests.dll
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\PlayerTests\bin\Debug\PlayerTests.pdb
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\PlayerTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\PlayerTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\PlayerTests\obj\Debug\PlayerTests.dll
+c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\PlayerTests\obj\Debug\PlayerTests.pdb
