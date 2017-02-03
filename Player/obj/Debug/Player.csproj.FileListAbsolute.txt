@@ -6,3 +6,5 @@ c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Player\obj\Debug\
 c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Player\obj\Debug\Player.csproj.GenerateResource.Cache
 c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Player\obj\Debug\Player.exe
 c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Player\obj\Debug\Player.pdb
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Player\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Player\bin\Debug\Newtonsoft.Json.xml

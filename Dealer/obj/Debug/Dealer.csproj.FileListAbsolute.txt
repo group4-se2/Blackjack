@@ -4,3 +4,5 @@ c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\bin\Debug\
 c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
 c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\obj\Debug\Dealer.exe
 c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\obj\Debug\Dealer.pdb
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\bin\Debug\Newtonsoft.Json.xml

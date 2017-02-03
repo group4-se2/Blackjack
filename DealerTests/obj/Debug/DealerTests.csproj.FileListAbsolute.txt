@@ -5,3 +5,5 @@ c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\obj\D
 c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\obj\Debug\DealerTests.pdb
 c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\Debug\Dealer.exe
 c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\Debug\Dealer.pdb
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\Debug\Newtonsoft.Json.xml
