@@ -24,8 +24,6 @@ namespace Dealer.Models
     
     public class CommandObject
     {
-        [JsonIgnore]
-        public Socket Socket { get; set; }
         public Command Command { get; set; }
         public Response Response { get; set; }
         public string Message { get; set; }

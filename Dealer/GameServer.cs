@@ -20,11 +20,11 @@ namespace Dealer
     // Delegate for hooking up receive notification
     public delegate void DataReceivedEventHandler(object sender, DataReceivedEventArgs e);
 
-    class GameServer
+    public class GameServer
     {
         //The ClientConnection class holds the required information about every
         //client connected to the server
-        class ClientConnection
+        private class ClientConnection
         {
             public Socket Socket { get; set; }
             public string Name { get; set; }
@@ -120,12 +120,13 @@ namespace Dealer
                 serverSocket.BeginAccept(new AsyncCallback(OnAccept), null);
 
                 // Create ClientConnection object
-                ClientConnection cc = new ClientConnection();
-                cc.Socket = clientSocket;
-                cc.Data = new byte[1024];
+                ClientConnection clientConnection = new ClientConnection();
+                clientConnection.Socket = clientSocket;
+                clientConnection.Data = new byte[1024];
 
                 // Start receiving commands
-                clientSocket.BeginReceive(cc.Data, 0, cc.Data.Length, SocketFlags.None, new AsyncCallback(OnReceive), cc);
+                clientSocket.BeginReceive(clientConnection.Data, 0, clientConnection.Data.Length, 
+                                          SocketFlags.None, new AsyncCallback(OnReceive), clientConnection);
             }
             catch (Exception ex)
             {
@@ -222,7 +223,7 @@ namespace Dealer
         /// Async callback that completes a send operation
         /// </summary>
         /// <param name="ar"></param>
-        public void OnSend(IAsyncResult ar)
+        private void OnSend(IAsyncResult ar)
         {
             try
             {
