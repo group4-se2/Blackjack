@@ -61,7 +61,6 @@
     <Compile Include="Models\Dealer.cs" />
     <Compile Include="Models\Deck.cs" />
     <Compile Include="Models\Hand.cs" />
-    <Compile Include="Models\Interfaces\IPlayer.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,6 +92,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\Cards\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{a7e90054-daa4-421f-bf9e-04eb201dc83a}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

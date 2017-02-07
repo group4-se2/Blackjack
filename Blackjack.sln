@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerTests", "PlayerTests\
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BlackjackSetup", "BlackjackSetup\BlackjackSetup.vdproj", "{4CEA762D-3AEE-46CE-AD32-0B6235DA38AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{A7E90054-DAA4-421F-BF9E-04EB201DC83A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{770DB12D-D412-4A52-BA2D-DF7994EF72C8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4CEA762D-3AEE-46CE-AD32-0B6235DA38AB}.Debug|Any CPU.ActiveCfg = Debug
 		{4CEA762D-3AEE-46CE-AD32-0B6235DA38AB}.Release|Any CPU.ActiveCfg = Release
+		{A7E90054-DAA4-421F-BF9E-04EB201DC83A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E90054-DAA4-421F-BF9E-04EB201DC83A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E90054-DAA4-421F-BF9E-04EB201DC83A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E90054-DAA4-421F-BF9E-04EB201DC83A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

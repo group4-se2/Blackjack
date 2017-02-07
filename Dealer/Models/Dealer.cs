@@ -1,7 +1,6 @@
-﻿using System;
+﻿using Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Dealer.Models
 {
@@ -22,7 +21,7 @@ namespace Dealer.Models
                 name = value;
             }
         }
-        public Hand Hand
+        public Object Hand
         {
             get
             {
@@ -31,7 +30,7 @@ namespace Dealer.Models
 
             set
             {
-                hand = value;
+                hand = (Hand)value;
             }
         }
 
