@@ -1,9 +1,5 @@
 ﻿using Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Dealer.Models
 {
@@ -12,7 +8,7 @@ namespace Dealer.Models
         private string name;
         private int bank;
         private int wager;
-        private Hand hand;
+        private IHand hand;
 
         public string Name
         {
@@ -53,7 +49,7 @@ namespace Dealer.Models
             }
         }
 
-         public Object Hand  
+         public IHand Hand  
         {
             get
             {

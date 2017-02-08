@@ -1,25 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Interfaces;
 
 namespace Dealer.Models
 {
-    public enum Suit
-    {
-        Heart,
-        Diamond,
-        Spade,
-        Club
-    }
-    public enum CardType
-    {
-        Face,
-        Pip,
-        Ace
-    }
-    public class Card
+    public class Card : ICard
     {
         private Suit suit;
         private CardType cardType;

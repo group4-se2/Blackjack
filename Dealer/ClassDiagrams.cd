@@ -9,18 +9,20 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Dealer.Models.Hand">
-    <Position X="3.25" Y="3" Width="2.25" />
+    <Position X="3.25" Y="3.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAgAABgIAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Hand.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Dealer.Models.Deck">
     <Position X="3.25" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAQAAAAAgQAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AQAAAAAAAAAAQAAAAAgQAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Deck.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Dealer.Models.Card">
     <Position X="0.5" Y="0.5" Width="2.5" />
@@ -28,31 +30,32 @@
       <HashCode>AEAAAABAAAAAAAAAAAAACAAAAAgAACAAAAAgAAAAAAA=</HashCode>
       <FileName>Models\Card.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Dealer.Models.Dealer">
     <Position X="6" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAgAAAAAAQAAAEkAAAAIAAAAAAAAAA=</HashCode>
+      <HashCode>AQAAAAAAACAAAAAgAAAAAAQAAAEkAAAAIAAAAAAAAAA=</HashCode>
       <FileName>Models\Dealer.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Dealer.Models.CommandObject">
-    <Position X="0.5" Y="5.75" Width="1.5" />
+    <Position X="0.5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAABAAAAAAAAQBAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>Models\ComObject.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Dealer.DataReceivedEventArgs">
-    <Position X="5.75" Y="7" Width="1.5" />
+    <Position X="5.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameServer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Dealer.GameServer">
-    <Position X="4" Y="5.75" Width="1.5" />
+    <Position X="4" Y="6.25" Width="1.5" />
     <NestedTypes>
       <Class Name="Dealer.GameServer.ClientConnection" Collapsed="true">
         <TypeIdentifier>
@@ -65,38 +68,24 @@
       <FileName>GameServer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="Dealer.Models.Suit">
-    <Position X="0.5" Y="3.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAACAACA=</HashCode>
-      <FileName>Models\Card.cs</FileName>
-    </TypeIdentifier>
-  </Enum>
-  <Enum Name="Dealer.Models.CardType" Collapsed="true">
-    <Position X="0.5" Y="3" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
-      <FileName>Models\Card.cs</FileName>
-    </TypeIdentifier>
-  </Enum>
   <Enum Name="Dealer.Models.Command">
-    <Position X="2.25" Y="5.75" Width="1.5" />
+    <Position X="2.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAgCAAIAAAAAAAACAAAAIAAAIAAAAAI=</HashCode>
       <FileName>Models\ComObject.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="Dealer.Models.Response">
-    <Position X="2.25" Y="8" Width="1.5" />
+    <Position X="2.25" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAAAQAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>Models\ComObject.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Delegate Name="Dealer.DataReceivedEventHandler">
-    <Position X="5.75" Y="5.75" Width="1.5" />
+    <Position X="5.75" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameServer.cs</FileName>
     </TypeIdentifier>
   </Delegate>

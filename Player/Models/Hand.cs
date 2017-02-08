@@ -1,17 +1,14 @@
-﻿using System;
+﻿using Interfaces;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Dealer.Models
+namespace Player.Models
 {
-    public class Hand
+    public class Hand : IHand
     {
-        private List<Models.Card> cards;
+        private List<ICard> cards;
         private int score;
 
-        public List<Card> Cards
+        public List<ICard> Cards
         {
             get
             {

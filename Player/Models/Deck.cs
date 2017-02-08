@@ -1,19 +1,18 @@
-﻿using System;
+﻿using Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Dealer.Models
+namespace Player.Models
 {
-    public class Deck
+    public class Deck : IDeck
     {
         private static System.Security.Cryptography.RNGCryptoServiceProvider seed = 
             new System.Security.Cryptography.RNGCryptoServiceProvider();
 
-        private List<Card> cards = new List<Card>();
+        private List<ICard> cards = new List<ICard>();
 
-        public List<Card> Cards
+        public List<ICard> Cards
         {
             get
             {
@@ -27,19 +26,19 @@ namespace Dealer.Models
             {
                 for (int val = 1; val < 14; val++)
                 {
-                    Card card = new Card();
-                    card.Suit = (Models.Suit)suit;
+                    ICard card = new Card();
+                    card.Suit = (Suit)suit;
                     card.CardType = val > 9 ? CardType.Face : val > 1 ? CardType.Pip : CardType.Ace;
                     card.Value = val;
                     this.cards.Add(card);
                 }
             }
         }
-        public Card drawCard()
+        public ICard drawCard()
         {
             int minimum = 0;
             int maximum = cards.Count-1;
-            Card card;
+            ICard card;
 
             byte[] randomNumber = new byte[1];
 
@@ -55,7 +54,7 @@ namespace Dealer.Models
             // round to ensure within range
             double randomValue = Math.Floor(multiplier * range); 
 
-            card = cards.ElementAt<Card>((int)(randomValue));
+            card = cards.ElementAt<ICard>((int)(randomValue));
 
             cards.RemoveAt((int)(randomValue));
 

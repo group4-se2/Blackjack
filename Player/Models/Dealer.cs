@@ -2,13 +2,15 @@
 using System;
 using System.Collections.Generic;
 
-namespace Dealer.Models
+namespace Player.Models
 {
     public class Dealer : IPlayer
     {
         private String name;
-        private Hand hand;
-        private List<Player> players;
+        private IHand hand;
+        private List<IPlayer> players;
+        private int bank;
+        private int wager;
 
         public String Name
         {
@@ -21,7 +23,7 @@ namespace Dealer.Models
                 name = value;
             }
         }
-        public Object Hand
+        public IHand Hand
         {
             get
             {
@@ -30,11 +32,11 @@ namespace Dealer.Models
 
             set
             {
-                hand = (Hand)value;
+                hand = value;
             }
         }
 
-        public List<Player> Players
+        public List<IPlayer> Players
         {
             get
             {
@@ -47,7 +49,33 @@ namespace Dealer.Models
             }
         }
 
-        public void dealCards(Player player, int number)
+        public int Bank
+        {
+            get
+            {
+                return bank;
+            }
+
+            set
+            {
+                bank = value;
+            }
+        }
+
+        public int Wager
+        {
+            get
+            {
+                return wager;
+            }
+
+            set
+            {
+                wager = value;
+            }
+        }
+        
+        public void dealCards(IPlayer player, int number)
         {
             // Implement dealCards
         }

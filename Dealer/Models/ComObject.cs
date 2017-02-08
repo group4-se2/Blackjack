@@ -1,18 +1,16 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Net.Sockets;
+﻿using System;
 
 namespace Dealer.Models
 {
     public enum Command
     {
-        Join,       //Log into the server
-        Exit,       //Logout of the server
+        Join,       // Join a game
+        Exit,       // Leave a game
         Bet,        // Place bet
         Hit,        // Request a card
         Stand,      // No more cards
-        Message,    //Send a text message to all the players
-        List        //Get a list of players from the server
+        Message,    // Send a text message to all the players
+        List        // Get a list of players from the server
     }
 
     public enum Response

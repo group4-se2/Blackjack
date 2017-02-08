@@ -1,10 +1,10 @@
-﻿using System;
-
-namespace Interfaces
+﻿namespace Interfaces
 {
     public interface IPlayer
     {
-        Object Hand { get; set; }
+        int Bank { get; set; }
+        IHand Hand { get; set; }
         string Name { get; set; }
+        int Wager { get; set; }
     }
 }

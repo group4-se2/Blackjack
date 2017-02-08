@@ -8,7 +8,7 @@ namespace Dealer.Models
     {
         private String name;
         private Hand hand;
-        private List<Player> players;
+        private List<IPlayer> players;
 
         public String Name
         {
@@ -21,7 +21,7 @@ namespace Dealer.Models
                 name = value;
             }
         }
-        public Object Hand
+        public IHand Hand
         {
             get
             {
@@ -34,7 +34,7 @@ namespace Dealer.Models
             }
         }
 
-        public List<Player> Players
+        public List<IPlayer> Players
         {
             get
             {
@@ -44,6 +44,32 @@ namespace Dealer.Models
             set
             {
                 players = value;
+            }
+        }
+
+        public int Bank
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public int Wager
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
             }
         }
 

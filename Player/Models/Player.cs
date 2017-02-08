@@ -1,14 +1,13 @@
 ﻿using Interfaces;
-using System;
 
-namespace Dealer.Models
+namespace Player.Models
 {
     public class Player : IPlayer
     {
         private string name;
         private int bank;
         private int wager;
-        private Hand hand;
+        private IHand hand;
 
         public string Name
         {
@@ -49,7 +48,7 @@ namespace Dealer.Models
             }
         }
 
-         public Object Hand  
+         public IHand Hand  
         {
             get
             {
@@ -58,7 +57,7 @@ namespace Dealer.Models
 
             set
             {
-                hand = (Hand)value;
+                hand = value;
             }
         }
 
