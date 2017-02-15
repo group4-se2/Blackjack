@@ -8,3 +8,8 @@ C:\Users\jml87\Source\Repos\Blackjack-Main\Interfaces\bin\Debug\Interfaces.pdb
 C:\Users\jml87\Source\Repos\Blackjack-Main\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
 C:\Users\jml87\Source\Repos\Blackjack-Main\Interfaces\obj\Debug\Interfaces.dll
 C:\Users\jml87\Source\Repos\Blackjack-Main\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\jml87\Source\Repos\Final\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\jml87\Source\Repos\Final\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\jml87\Source\Repos\Final\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\jml87\Source\Repos\Final\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\jml87\Source\Repos\Final\Interfaces\obj\Debug\Interfaces.pdb

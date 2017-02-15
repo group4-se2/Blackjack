@@ -38,7 +38,6 @@
             this.Player3CardPanel = new System.Windows.Forms.Panel();
             this.Player2CardPanel = new System.Windows.Forms.Panel();
             this.Player1CardPanel = new System.Windows.Forms.Panel();
-            this.PokerChipsImage = new System.Windows.Forms.PictureBox();
             this.SidebarPanel = new System.Windows.Forms.Panel();
             this.GameStatusLabel = new System.Windows.Forms.Label();
             this.TotalMoneyAvailableLabel = new System.Windows.Forms.Label();
@@ -59,13 +58,12 @@
             this.Player2TotalMoneyLabel = new System.Windows.Forms.Label();
             this.Player3TotalMoneyLabel = new System.Windows.Forms.Label();
             this.Player4TotalMoneyLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.CardDeckImage = new System.Windows.Forms.PictureBox();
+            this.CardShoeImage = new System.Windows.Forms.PictureBox();
             this.PotContainerPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PokerChipsImage)).BeginInit();
             this.SidebarPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CardDeckImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CardShoeImage)).BeginInit();
             this.SuspendLayout();
             // 
             // DealerTitleLabel
@@ -152,16 +150,6 @@
             this.Player1CardPanel.Name = "Player1CardPanel";
             this.Player1CardPanel.Size = new System.Drawing.Size(120, 162);
             this.Player1CardPanel.TabIndex = 8;
-            // 
-            // PokerChipsImage
-            // 
-            this.PokerChipsImage.Image = ((System.Drawing.Image)(resources.GetObject("PokerChipsImage.Image")));
-            this.PokerChipsImage.Location = new System.Drawing.Point(580, 25);
-            this.PokerChipsImage.Name = "PokerChipsImage";
-            this.PokerChipsImage.Size = new System.Drawing.Size(125, 89);
-            this.PokerChipsImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PokerChipsImage.TabIndex = 1;
-            this.PokerChipsImage.TabStop = false;
             // 
             // SidebarPanel
             // 
@@ -384,25 +372,25 @@
             this.Player4TotalMoneyLabel.TabIndex = 26;
             this.Player4TotalMoneyLabel.Text = "$250";
             // 
-            // pictureBox1
+            // CardDeckImage
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(135, 150);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 153);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
+            this.CardDeckImage.Image = ((System.Drawing.Image)(resources.GetObject("CardDeckImage.Image")));
+            this.CardDeckImage.Location = new System.Drawing.Point(135, 150);
+            this.CardDeckImage.Name = "CardDeckImage";
+            this.CardDeckImage.Size = new System.Drawing.Size(88, 153);
+            this.CardDeckImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CardDeckImage.TabIndex = 27;
+            this.CardDeckImage.TabStop = false;
             // 
-            // pictureBox2
+            // CardShoeImage
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1060, 95);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(112, 208);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 28;
-            this.pictureBox2.TabStop = false;
+            this.CardShoeImage.Image = ((System.Drawing.Image)(resources.GetObject("CardShoeImage.Image")));
+            this.CardShoeImage.Location = new System.Drawing.Point(1060, 95);
+            this.CardShoeImage.Name = "CardShoeImage";
+            this.CardShoeImage.Size = new System.Drawing.Size(112, 208);
+            this.CardShoeImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CardShoeImage.TabIndex = 28;
+            this.CardShoeImage.TabStop = false;
             // 
             // InGame
             // 
@@ -410,8 +398,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(162)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(1734, 961);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.CardShoeImage);
+            this.Controls.Add(this.CardDeckImage);
             this.Controls.Add(this.Player4TotalMoneyLabel);
             this.Controls.Add(this.Player3TotalMoneyLabel);
             this.Controls.Add(this.Player2TotalMoneyLabel);
@@ -436,18 +424,16 @@
             this.Controls.Add(this.DealerInfoTitleLabel);
             this.Controls.Add(this.BlackjackTitleLabel);
             this.Controls.Add(this.DealerTitleLabel);
-            this.Controls.Add(this.PokerChipsImage);
             this.Controls.Add(this.SidebarPanel);
             this.Name = "InGame";
             this.Text = "Blackjack";
             this.Load += new System.EventHandler(this.InGame_Load);
             this.PotContainerPanel.ResumeLayout(false);
             this.PotContainerPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PokerChipsImage)).EndInit();
             this.SidebarPanel.ResumeLayout(false);
             this.SidebarPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CardDeckImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CardShoeImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -456,7 +442,6 @@
         #endregion
 
         private System.Windows.Forms.Panel SidebarPanel;
-        private System.Windows.Forms.PictureBox PokerChipsImage;
         private System.Windows.Forms.Label DealerTitleLabel;
         private System.Windows.Forms.Label BlackjackTitleLabel;
         private System.Windows.Forms.Label DealerInfoTitleLabel;
@@ -485,7 +470,7 @@
         private System.Windows.Forms.Label Player2TotalMoneyLabel;
         private System.Windows.Forms.Label Player3TotalMoneyLabel;
         private System.Windows.Forms.Label Player4TotalMoneyLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox CardDeckImage;
+        private System.Windows.Forms.PictureBox CardShoeImage;
     }
 }
