@@ -558,7 +558,7 @@
         jLADxAg7QIywA8QIO0CMsAPECDtAyjJ+DorWoJVcERYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="CardDeck.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGwAAACtCAYAAABV0prcAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
         DgAAjBIAAQFUAACCKwAAfT4AAO+vAAA66wAAFJcIHNPHAAAMJGlDQ1BQaG90b3Nob3AgSUNDIHByb2Zp
@@ -1211,7 +1211,7 @@
         1M//6n+mfL++hM5QPydBa7aqanFz+38APDWtbxieoTsAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="CardShoeImage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIQAAAD1CAYAAACROl3DAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
         DgAAjBIAAQFUAACCKwAAfT4AAO+vAAA66wAAFJcIHNPHAAAMJGlDQ1BQaG90b3Nob3AgSUNDIHByb2Zp
