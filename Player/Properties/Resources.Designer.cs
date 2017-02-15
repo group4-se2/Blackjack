@@ -61,26 +61,6 @@ namespace Player.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] DroidSerif_Bold {
-            get {
-                object obj = ResourceManager.GetObject("DroidSerif_Bold", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] DroidSerif_Regular {
-            get {
-                object obj = ResourceManager.GetObject("DroidSerif_Regular", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap player_panel_background {

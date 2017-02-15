@@ -121,14 +121,8 @@
   <data name="sidebar_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sidebar-background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DroidSerif_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DroidSerif-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="player_panel_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\player-panel-background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DroidSerif_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DroidSerif-Bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rounded-rectangle-pot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rounded-rectangle-pot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
