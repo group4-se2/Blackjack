@@ -96,8 +96,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Resources\DroidSerif-Bold.ttf" />
-    <None Include="Resources\DroidSerif-Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
