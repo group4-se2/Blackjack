@@ -15,6 +15,7 @@ namespace Player
         public Form1()
         {
             InitializeComponent();
+            this.CenterToScreen();
             pictureBox2.BackColor = Color.Transparent;
             button1.FlatAppearance.BorderSize = 0;
             joinGameBtn.Focus();
@@ -37,7 +38,8 @@ namespace Player
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            var ingame = new InGame();
+            ingame.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)

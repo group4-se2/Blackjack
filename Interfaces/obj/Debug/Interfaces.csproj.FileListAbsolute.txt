@@ -3,3 +3,18 @@ C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Interfaces\bin\De
 C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
 C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Interfaces\obj\Debug\Interfaces.dll
 C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\jml87\Source\Repos\Blackjack-Main\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\jml87\Source\Repos\Blackjack-Main\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\jml87\Source\Repos\Blackjack-Main\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\jml87\Source\Repos\Blackjack-Main\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\jml87\Source\Repos\Blackjack-Main\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\jml87\Source\Repos\Final\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\jml87\Source\Repos\Final\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\jml87\Source\Repos\Final\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\jml87\Source\Repos\Final\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\jml87\Source\Repos\Final\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\jml87\Source\Repos\Blackjack\Final\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\jml87\Source\Repos\Blackjack\Final\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\jml87\Source\Repos\Blackjack\Final\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\jml87\Source\Repos\Blackjack\Final\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\jml87\Source\Repos\Blackjack\Final\Interfaces\obj\Debug\Interfaces.pdb
