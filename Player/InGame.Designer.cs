@@ -34,6 +34,17 @@
             this.Player3TotalMoneyLabel = new System.Windows.Forms.Label();
             this.Player4TotalMoneyLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.submitBetBtn = new System.Windows.Forms.Button();
+            this.creditAllBet = new System.Windows.Forms.Button();
+            this.credit10Btn = new System.Windows.Forms.Button();
+            this.credit5Btn = new System.Windows.Forms.Button();
+            this.credit1Btn = new System.Windows.Forms.Button();
+            this.standBtn = new System.Windows.Forms.Button();
+            this.hitBtn = new System.Windows.Forms.Button();
+            this.betStatus = new System.Windows.Forms.Label();
+            this.hitStandStatus = new System.Windows.Forms.Label();
+            this.totalMoneyAvailable = new System.Windows.Forms.Label();
+            this.totalMoneyTitle = new System.Windows.Forms.Label();
             this.cardShoe = new System.Windows.Forms.PictureBox();
             this.cardDeck = new System.Windows.Forms.PictureBox();
             this.pokerChips = new System.Windows.Forms.PictureBox();
@@ -59,19 +70,8 @@
             this.p4BetAmount = new System.Windows.Forms.Label();
             this.p4CardValue = new System.Windows.Forms.Label();
             this.p4Name = new System.Windows.Forms.Label();
-            this.totalMoneyTitle = new System.Windows.Forms.Label();
-            this.totalMoneyAvailable = new System.Windows.Forms.Label();
-            this.hitStandStatus = new System.Windows.Forms.Label();
-            this.betStatus = new System.Windows.Forms.Label();
             this.blackjackText = new System.Windows.Forms.Label();
             this.blackjackRulesText = new System.Windows.Forms.Label();
-            this.hitBtn = new System.Windows.Forms.Button();
-            this.standBtn = new System.Windows.Forms.Button();
-            this.credit1Btn = new System.Windows.Forms.Button();
-            this.credit5Btn = new System.Windows.Forms.Button();
-            this.credit10Btn = new System.Windows.Forms.Button();
-            this.creditAllBet = new System.Windows.Forms.Button();
-            this.submitBetBtn = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cardShoe)).BeginInit();
@@ -142,6 +142,134 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(229, 610);
             this.panel1.TabIndex = 27;
+            // 
+            // submitBetBtn
+            // 
+            this.submitBetBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("submitBetBtn.BackgroundImage")));
+            this.submitBetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.submitBetBtn.FlatAppearance.BorderSize = 0;
+            this.submitBetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.submitBetBtn.Location = new System.Drawing.Point(21, 530);
+            this.submitBetBtn.Name = "submitBetBtn";
+            this.submitBetBtn.Size = new System.Drawing.Size(188, 40);
+            this.submitBetBtn.TabIndex = 10;
+            this.submitBetBtn.UseVisualStyleBackColor = true;
+            // 
+            // creditAllBet
+            // 
+            this.creditAllBet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("creditAllBet.BackgroundImage")));
+            this.creditAllBet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.creditAllBet.FlatAppearance.BorderSize = 0;
+            this.creditAllBet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.creditAllBet.Location = new System.Drawing.Point(21, 480);
+            this.creditAllBet.Name = "creditAllBet";
+            this.creditAllBet.Size = new System.Drawing.Size(188, 40);
+            this.creditAllBet.TabIndex = 9;
+            this.creditAllBet.UseVisualStyleBackColor = true;
+            // 
+            // credit10Btn
+            // 
+            this.credit10Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit10Btn.BackgroundImage")));
+            this.credit10Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.credit10Btn.FlatAppearance.BorderSize = 0;
+            this.credit10Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.credit10Btn.Location = new System.Drawing.Point(21, 430);
+            this.credit10Btn.Name = "credit10Btn";
+            this.credit10Btn.Size = new System.Drawing.Size(188, 40);
+            this.credit10Btn.TabIndex = 8;
+            this.credit10Btn.UseVisualStyleBackColor = true;
+            // 
+            // credit5Btn
+            // 
+            this.credit5Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit5Btn.BackgroundImage")));
+            this.credit5Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.credit5Btn.FlatAppearance.BorderSize = 0;
+            this.credit5Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.credit5Btn.Location = new System.Drawing.Point(21, 380);
+            this.credit5Btn.Name = "credit5Btn";
+            this.credit5Btn.Size = new System.Drawing.Size(188, 40);
+            this.credit5Btn.TabIndex = 7;
+            this.credit5Btn.UseVisualStyleBackColor = true;
+            // 
+            // credit1Btn
+            // 
+            this.credit1Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit1Btn.BackgroundImage")));
+            this.credit1Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.credit1Btn.FlatAppearance.BorderSize = 0;
+            this.credit1Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.credit1Btn.Location = new System.Drawing.Point(21, 330);
+            this.credit1Btn.Name = "credit1Btn";
+            this.credit1Btn.Size = new System.Drawing.Size(188, 40);
+            this.credit1Btn.TabIndex = 6;
+            this.credit1Btn.UseVisualStyleBackColor = true;
+            // 
+            // standBtn
+            // 
+            this.standBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("standBtn.BackgroundImage")));
+            this.standBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.standBtn.FlatAppearance.BorderSize = 0;
+            this.standBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.standBtn.Location = new System.Drawing.Point(21, 207);
+            this.standBtn.Name = "standBtn";
+            this.standBtn.Size = new System.Drawing.Size(188, 40);
+            this.standBtn.TabIndex = 5;
+            this.standBtn.UseVisualStyleBackColor = true;
+            // 
+            // hitBtn
+            // 
+            this.hitBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hitBtn.BackgroundImage")));
+            this.hitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hitBtn.FlatAppearance.BorderSize = 0;
+            this.hitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hitBtn.Location = new System.Drawing.Point(21, 157);
+            this.hitBtn.Name = "hitBtn";
+            this.hitBtn.Size = new System.Drawing.Size(188, 40);
+            this.hitBtn.TabIndex = 4;
+            this.hitBtn.UseVisualStyleBackColor = true;
+            // 
+            // betStatus
+            // 
+            this.betStatus.AutoSize = true;
+            this.betStatus.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.betStatus.ForeColor = System.Drawing.Color.White;
+            this.betStatus.Location = new System.Drawing.Point(100, 283);
+            this.betStatus.Name = "betStatus";
+            this.betStatus.Size = new System.Drawing.Size(32, 16);
+            this.betStatus.TabIndex = 3;
+            this.betStatus.Text = "Bet";
+            // 
+            // hitStandStatus
+            // 
+            this.hitStandStatus.AutoSize = true;
+            this.hitStandStatus.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hitStandStatus.ForeColor = System.Drawing.Color.White;
+            this.hitStandStatus.Location = new System.Drawing.Point(83, 108);
+            this.hitStandStatus.Name = "hitStandStatus";
+            this.hitStandStatus.Size = new System.Drawing.Size(71, 16);
+            this.hitStandStatus.TabIndex = 2;
+            this.hitStandStatus.Text = "Hit/Stand";
+            // 
+            // totalMoneyAvailable
+            // 
+            this.totalMoneyAvailable.AutoSize = true;
+            this.totalMoneyAvailable.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalMoneyAvailable.ForeColor = System.Drawing.Color.White;
+            this.totalMoneyAvailable.Location = new System.Drawing.Point(99, 51);
+            this.totalMoneyAvailable.Name = "totalMoneyAvailable";
+            this.totalMoneyAvailable.Size = new System.Drawing.Size(40, 16);
+            this.totalMoneyAvailable.TabIndex = 1;
+            this.totalMoneyAvailable.Text = "$250";
+            // 
+            // totalMoneyTitle
+            // 
+            this.totalMoneyTitle.AutoSize = true;
+            this.totalMoneyTitle.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalMoneyTitle.ForeColor = System.Drawing.Color.White;
+            this.totalMoneyTitle.Location = new System.Drawing.Point(38, 28);
+            this.totalMoneyTitle.Name = "totalMoneyTitle";
+            this.totalMoneyTitle.Size = new System.Drawing.Size(162, 16);
+            this.totalMoneyTitle.TabIndex = 0;
+            this.totalMoneyTitle.Text = "Total Money Available:";
             // 
             // cardShoe
             // 
@@ -420,50 +548,6 @@
             this.p4Name.TabIndex = 47;
             this.p4Name.Text = "Name";
             // 
-            // totalMoneyTitle
-            // 
-            this.totalMoneyTitle.AutoSize = true;
-            this.totalMoneyTitle.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalMoneyTitle.ForeColor = System.Drawing.Color.White;
-            this.totalMoneyTitle.Location = new System.Drawing.Point(38, 28);
-            this.totalMoneyTitle.Name = "totalMoneyTitle";
-            this.totalMoneyTitle.Size = new System.Drawing.Size(162, 16);
-            this.totalMoneyTitle.TabIndex = 0;
-            this.totalMoneyTitle.Text = "Total Money Available:";
-            // 
-            // totalMoneyAvailable
-            // 
-            this.totalMoneyAvailable.AutoSize = true;
-            this.totalMoneyAvailable.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalMoneyAvailable.ForeColor = System.Drawing.Color.White;
-            this.totalMoneyAvailable.Location = new System.Drawing.Point(99, 51);
-            this.totalMoneyAvailable.Name = "totalMoneyAvailable";
-            this.totalMoneyAvailable.Size = new System.Drawing.Size(40, 16);
-            this.totalMoneyAvailable.TabIndex = 1;
-            this.totalMoneyAvailable.Text = "$250";
-            // 
-            // hitStandStatus
-            // 
-            this.hitStandStatus.AutoSize = true;
-            this.hitStandStatus.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hitStandStatus.ForeColor = System.Drawing.Color.White;
-            this.hitStandStatus.Location = new System.Drawing.Point(83, 108);
-            this.hitStandStatus.Name = "hitStandStatus";
-            this.hitStandStatus.Size = new System.Drawing.Size(71, 16);
-            this.hitStandStatus.TabIndex = 2;
-            this.hitStandStatus.Text = "Hit/Stand";
-            // 
-            // betStatus
-            // 
-            this.betStatus.AutoSize = true;
-            this.betStatus.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.betStatus.ForeColor = System.Drawing.Color.White;
-            this.betStatus.Location = new System.Drawing.Point(100, 283);
-            this.betStatus.Name = "betStatus";
-            this.betStatus.Size = new System.Drawing.Size(32, 16);
-            this.betStatus.TabIndex = 3;
-            this.betStatus.Text = "Bet";
-            // 
             // blackjackText
             // 
             this.blackjackText.AutoSize = true;
@@ -485,84 +569,6 @@
             this.blackjackRulesText.Size = new System.Drawing.Size(312, 16);
             this.blackjackRulesText.TabIndex = 52;
             this.blackjackRulesText.Text = "DEALER MUST DRAW TO 16 AND ON ALL 17\'S";
-            // 
-            // hitBtn
-            // 
-            this.hitBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hitBtn.BackgroundImage")));
-            this.hitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hitBtn.FlatAppearance.BorderSize = 0;
-            this.hitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hitBtn.Location = new System.Drawing.Point(21, 157);
-            this.hitBtn.Name = "hitBtn";
-            this.hitBtn.Size = new System.Drawing.Size(188, 40);
-            this.hitBtn.TabIndex = 4;
-            this.hitBtn.UseVisualStyleBackColor = true;
-            // 
-            // standBtn
-            // 
-            this.standBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("standBtn.BackgroundImage")));
-            this.standBtn.FlatAppearance.BorderSize = 0;
-            this.standBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.standBtn.Location = new System.Drawing.Point(21, 207);
-            this.standBtn.Name = "standBtn";
-            this.standBtn.Size = new System.Drawing.Size(188, 40);
-            this.standBtn.TabIndex = 5;
-            this.standBtn.UseVisualStyleBackColor = true;
-            // 
-            // credit1Btn
-            // 
-            this.credit1Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit1Btn.BackgroundImage")));
-            this.credit1Btn.FlatAppearance.BorderSize = 0;
-            this.credit1Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.credit1Btn.Location = new System.Drawing.Point(21, 330);
-            this.credit1Btn.Name = "credit1Btn";
-            this.credit1Btn.Size = new System.Drawing.Size(188, 40);
-            this.credit1Btn.TabIndex = 6;
-            this.credit1Btn.UseVisualStyleBackColor = true;
-            // 
-            // credit5Btn
-            // 
-            this.credit5Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit5Btn.BackgroundImage")));
-            this.credit5Btn.FlatAppearance.BorderSize = 0;
-            this.credit5Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.credit5Btn.Location = new System.Drawing.Point(21, 380);
-            this.credit5Btn.Name = "credit5Btn";
-            this.credit5Btn.Size = new System.Drawing.Size(188, 40);
-            this.credit5Btn.TabIndex = 7;
-            this.credit5Btn.UseVisualStyleBackColor = true;
-            // 
-            // credit10Btn
-            // 
-            this.credit10Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit10Btn.BackgroundImage")));
-            this.credit10Btn.FlatAppearance.BorderSize = 0;
-            this.credit10Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.credit10Btn.Location = new System.Drawing.Point(21, 430);
-            this.credit10Btn.Name = "credit10Btn";
-            this.credit10Btn.Size = new System.Drawing.Size(188, 40);
-            this.credit10Btn.TabIndex = 8;
-            this.credit10Btn.UseVisualStyleBackColor = true;
-            // 
-            // creditAllBet
-            // 
-            this.creditAllBet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("creditAllBet.BackgroundImage")));
-            this.creditAllBet.FlatAppearance.BorderSize = 0;
-            this.creditAllBet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.creditAllBet.Location = new System.Drawing.Point(21, 480);
-            this.creditAllBet.Name = "creditAllBet";
-            this.creditAllBet.Size = new System.Drawing.Size(188, 40);
-            this.creditAllBet.TabIndex = 9;
-            this.creditAllBet.UseVisualStyleBackColor = true;
-            // 
-            // submitBetBtn
-            // 
-            this.submitBetBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("submitBetBtn.BackgroundImage")));
-            this.submitBetBtn.FlatAppearance.BorderSize = 0;
-            this.submitBetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.submitBetBtn.Location = new System.Drawing.Point(21, 530);
-            this.submitBetBtn.Name = "submitBetBtn";
-            this.submitBetBtn.Size = new System.Drawing.Size(188, 40);
-            this.submitBetBtn.TabIndex = 10;
-            this.submitBetBtn.UseVisualStyleBackColor = true;
             // 
             // timer
             // 
