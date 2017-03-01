@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InGame));
-            this.Player1TotalMoneyLabel = new System.Windows.Forms.Label();
-            this.Player2TotalMoneyLabel = new System.Windows.Forms.Label();
-            this.Player3TotalMoneyLabel = new System.Windows.Forms.Label();
-            this.Player4TotalMoneyLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.submitBetBtn = new System.Windows.Forms.Button();
             this.creditAllBet = new System.Windows.Forms.Button();
@@ -78,50 +74,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.cardDeck)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokerChips)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Player1TotalMoneyLabel
-            // 
-            this.Player1TotalMoneyLabel.AutoSize = true;
-            this.Player1TotalMoneyLabel.Font = new System.Drawing.Font("Baskerville Old Face", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player1TotalMoneyLabel.ForeColor = System.Drawing.Color.Silver;
-            this.Player1TotalMoneyLabel.Location = new System.Drawing.Point(200, 900);
-            this.Player1TotalMoneyLabel.Name = "Player1TotalMoneyLabel";
-            this.Player1TotalMoneyLabel.Size = new System.Drawing.Size(60, 25);
-            this.Player1TotalMoneyLabel.TabIndex = 23;
-            this.Player1TotalMoneyLabel.Text = "$250";
-            // 
-            // Player2TotalMoneyLabel
-            // 
-            this.Player2TotalMoneyLabel.AutoSize = true;
-            this.Player2TotalMoneyLabel.Font = new System.Drawing.Font("Baskerville Old Face", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player2TotalMoneyLabel.ForeColor = System.Drawing.Color.Silver;
-            this.Player2TotalMoneyLabel.Location = new System.Drawing.Point(475, 900);
-            this.Player2TotalMoneyLabel.Name = "Player2TotalMoneyLabel";
-            this.Player2TotalMoneyLabel.Size = new System.Drawing.Size(60, 25);
-            this.Player2TotalMoneyLabel.TabIndex = 24;
-            this.Player2TotalMoneyLabel.Text = "$250";
-            // 
-            // Player3TotalMoneyLabel
-            // 
-            this.Player3TotalMoneyLabel.AutoSize = true;
-            this.Player3TotalMoneyLabel.Font = new System.Drawing.Font("Baskerville Old Face", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player3TotalMoneyLabel.ForeColor = System.Drawing.Color.Silver;
-            this.Player3TotalMoneyLabel.Location = new System.Drawing.Point(740, 900);
-            this.Player3TotalMoneyLabel.Name = "Player3TotalMoneyLabel";
-            this.Player3TotalMoneyLabel.Size = new System.Drawing.Size(60, 25);
-            this.Player3TotalMoneyLabel.TabIndex = 25;
-            this.Player3TotalMoneyLabel.Text = "$250";
-            // 
-            // Player4TotalMoneyLabel
-            // 
-            this.Player4TotalMoneyLabel.AutoSize = true;
-            this.Player4TotalMoneyLabel.Font = new System.Drawing.Font("Baskerville Old Face", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player4TotalMoneyLabel.ForeColor = System.Drawing.Color.Silver;
-            this.Player4TotalMoneyLabel.Location = new System.Drawing.Point(1025, 895);
-            this.Player4TotalMoneyLabel.Name = "Player4TotalMoneyLabel";
-            this.Player4TotalMoneyLabel.Size = new System.Drawing.Size(60, 25);
-            this.Player4TotalMoneyLabel.TabIndex = 26;
-            this.Player4TotalMoneyLabel.Text = "$250";
             // 
             // panel1
             // 
@@ -618,10 +570,6 @@
             this.Controls.Add(this.cardDeck);
             this.Controls.Add(this.cardShoe);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.Player4TotalMoneyLabel);
-            this.Controls.Add(this.Player3TotalMoneyLabel);
-            this.Controls.Add(this.Player2TotalMoneyLabel);
-            this.Controls.Add(this.Player1TotalMoneyLabel);
             this.Name = "InGame";
             this.Text = "Blackjack";
             this.Load += new System.EventHandler(this.InGame_Load);
@@ -636,10 +584,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label Player1TotalMoneyLabel;
-        private System.Windows.Forms.Label Player2TotalMoneyLabel;
-        private System.Windows.Forms.Label Player3TotalMoneyLabel;
-        private System.Windows.Forms.Label Player4TotalMoneyLabel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox cardShoe;
         private System.Windows.Forms.PictureBox cardDeck;
