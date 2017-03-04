@@ -50,6 +50,8 @@
     <Compile Include="Interfaces\IPlayer.cs" />
     <Compile Include="Models\Card.cs" />
     <Compile Include="Models\CardType.cs" />
+    <Compile Include="Models\Command.cs" />
+    <Compile Include="Models\Response.cs" />
     <Compile Include="Models\Suit.cs" />
     <Compile Include="Models\CommandObject.cs" />
     <Compile Include="Models\Dealer.cs" />
