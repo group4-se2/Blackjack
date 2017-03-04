@@ -24,7 +24,7 @@ namespace Player
 
         private void InGame_Load(object sender, EventArgs e)
         {
-            SidebarPanel.BackgroundImage = Properties.Resources.sidebar_background;
+            
         }
 
     }
