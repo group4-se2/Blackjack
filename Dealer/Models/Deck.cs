@@ -36,7 +36,7 @@ namespace Dealer.Models
                 {
                     Card card = new Card();
                     card.Suit = (Suit)suit;
-                    card.CardType = val > 9 ? CardType.Face : val > 1 ? CardType.Pip : CardType.Ace;
+                    card.CardType = val > 10 ? CardType.Face : val > 1 ? CardType.Pip : CardType.Ace;
                     card.Value = val;
                     this.cards.Add(card);
                 }

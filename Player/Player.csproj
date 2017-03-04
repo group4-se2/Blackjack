@@ -100,9 +100,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\Cards\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Interfaces\Interfaces.csproj">
       <Project>{a7e90054-daa4-421f-bf9e-04eb201dc83a}</Project>
@@ -117,6 +115,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rounded-rectangle-pot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Cards\Clubs\10-clubs.png" />
+    <Content Include="Images\Cards\Clubs\2-clubs.png" />
+    <Content Include="Images\Cards\Clubs\3-clubs.png" />
+    <Content Include="Images\Cards\Clubs\4-clubs.png" />
+    <Content Include="Images\Cards\Clubs\5-clubs.png" />
+    <Content Include="Images\Cards\Clubs\6-clubs.png" />
+    <Content Include="Images\Cards\Clubs\7-clubs.png" />
+    <Content Include="Images\Cards\Clubs\8-clubs.png" />
+    <Content Include="Images\Cards\Clubs\9-clubs.png" />
+    <Content Include="Images\Cards\Clubs\a-clubs.png" />
+    <Content Include="Images\Cards\Clubs\j-clubs.png" />
+    <Content Include="Images\Cards\Clubs\k-clubs.png" />
+    <Content Include="Images\Cards\Clubs\q-clubs.png" />
+    <Content Include="Images\Cards\Diamonds\10-diamonds.png" />
+    <Content Include="Images\Cards\Diamonds\2-diamonds.png" />
+    <Content Include="Images\Cards\Diamonds\3-diamonds.png" />
+    <Content Include="Images\Cards\Diamonds\4-diamonds.png" />
+    <Content Include="Images\Cards\Diamonds\5-diamonds.png" />
+    <Content Include="Images\Cards\Diamonds\6-diamonds.png" />
+    <Content Include="Images\Cards\Diamonds\7-diamonds.png" />
+    <Content Include="Images\Cards\Diamonds\8-diamonds.png" />
+    <Content Include="Images\Cards\Diamonds\9-diamonds.png" />
+    <Content Include="Images\Cards\Diamonds\a-diamonds.png" />
+    <Content Include="Images\Cards\Diamonds\j-diamonds.png" />
+    <Content Include="Images\Cards\Diamonds\k-diamonds.png" />
+    <Content Include="Images\Cards\Diamonds\q-diamonds.png" />
+    <Content Include="Images\Cards\Hearts\10-hearts.png" />
+    <Content Include="Images\Cards\Hearts\2-hearts.png" />
+    <Content Include="Images\Cards\Hearts\3-hearts.png" />
+    <Content Include="Images\Cards\Hearts\4-hearts.png" />
+    <Content Include="Images\Cards\Hearts\5-hearts.png" />
+    <Content Include="Images\Cards\Hearts\6-hearts.png" />
+    <Content Include="Images\Cards\Hearts\7-hearts.png" />
+    <Content Include="Images\Cards\Hearts\8-hearts.png" />
+    <Content Include="Images\Cards\Hearts\9-hearts.png" />
+    <Content Include="Images\Cards\Hearts\a-hearts.png" />
+    <Content Include="Images\Cards\Hearts\j-hearts.png" />
+    <Content Include="Images\Cards\Hearts\k-hearts.png" />
+    <Content Include="Images\Cards\Hearts\q-hearts.png" />
+    <Content Include="Images\Cards\Spades\10-spades.png" />
+    <Content Include="Images\Cards\Spades\2-spades.png" />
+    <Content Include="Images\Cards\Spades\3-spades.png" />
+    <Content Include="Images\Cards\Spades\4-spades.png" />
+    <Content Include="Images\Cards\Spades\5-spades.png" />
+    <Content Include="Images\Cards\Spades\6-spades.png" />
+    <Content Include="Images\Cards\Spades\7-spades.png" />
+    <Content Include="Images\Cards\Spades\8-spades.png" />
+    <Content Include="Images\Cards\Spades\9-spades.png" />
+    <Content Include="Images\Cards\Spades\a-spades.png" />
+    <Content Include="Images\Cards\Spades\j-spades.png" />
+    <Content Include="Images\Cards\Spades\k-spades.png" />
+    <Content Include="Images\Cards\Spades\q-spades.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
