@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerTests", "PlayerTests\
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BlackjackSetup", "BlackjackSetup\BlackjackSetup.vdproj", "{4CEA762D-3AEE-46CE-AD32-0B6235DA38AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{A7E90054-DAA4-421F-BF9E-04EB201DC83A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Lib", "Interfaces\Common.Lib.csproj", "{A7E90054-DAA4-421F-BF9E-04EB201DC83A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

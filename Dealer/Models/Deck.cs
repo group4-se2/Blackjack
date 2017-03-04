@@ -24,7 +24,7 @@ namespace Dealer.Models
         {
             get
             {
-                throw new NotImplementedException();
+                return cards;
             }
         }
 

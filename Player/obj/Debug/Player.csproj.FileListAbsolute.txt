@@ -19,9 +19,6 @@ C:\Users\jml87\Source\Repos\Blackjack\Player\bin\Debug\Player.pdb
 C:\Users\jml87\Source\Repos\Blackjack\Player\bin\Debug\Newtonsoft.Json.dll
 C:\Users\jml87\Source\Repos\Blackjack\Player\bin\Debug\Newtonsoft.Json.xml
 C:\Users\jml87\Source\Repos\Blackjack\Player\obj\Debug\Player.Form1.resources
-C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Player\obj\Debug\Player.Form1.resources
-C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Player\bin\Debug\Interfaces.dll
-C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Player\bin\Debug\Interfaces.pdb
 C:\Users\jml87\Source\Repos\Blackjack-Main\Player\bin\Debug\Player.exe.config
 C:\Users\jml87\Source\Repos\Blackjack-Main\Player\obj\Debug\Player.exe
 C:\Users\jml87\Source\Repos\Blackjack-Main\Player\obj\Debug\Player.pdb
@@ -95,3 +92,7 @@ C:\Users\Fred\Source\Repos\Blackjack\Player\obj\Debug\Player.Form1.resources
 C:\Users\Fred\Source\Repos\Blackjack\Player\obj\Debug\Player.InGame.resources
 C:\Users\Fred\Source\Repos\Blackjack\Player\obj\Debug\Player.Properties.Resources.resources
 C:\Users\Fred\Source\Repos\Blackjack\Player\obj\Debug\Player.csproj.GenerateResource.Cache
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Player\obj\Debug\Player.StartGameView.resources
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Player\obj\Debug\Player.InGameView.resources
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Player\bin\Debug\Common.Lib.dll
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Player\bin\Debug\Common.Lib.pdb

@@ -1,0 +1,7 @@
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Interfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Interfaces\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Interfaces\bin\Debug\Common.Lib.dll
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Interfaces\bin\Debug\Common.Lib.pdb
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Interfaces\obj\Debug\Common.Lib.dll
+C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Interfaces\obj\Debug\Common.Lib.pdb

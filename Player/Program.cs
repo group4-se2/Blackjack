@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Player.Interfaces;
+using Player.Models;
+using Player.Presenters;
+using System;
 using System.Windows.Forms;
 
 namespace Player
@@ -16,7 +16,18 @@ namespace Player
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            // Model
+            StartGameModel model = new StartGameModel();
+
+            // View
+            StartGameView view = new StartGameView();
+
+            // Presenter
+            IStartGamePresenter presenter = new StartGamePresenter(model, view);
+
+            Application.Run(view);
+            //Application.Run(new Form1());
         }
     }
 }

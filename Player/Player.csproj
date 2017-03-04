@@ -50,31 +50,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InGame.cs">
+    <Compile Include="Client.cs" />
+    <Compile Include="Interfaces\IInGameView.cs" />
+    <Compile Include="Interfaces\IStartGameModel.cs" />
+    <Compile Include="Interfaces\IStartGameView.cs" />
+    <Compile Include="Interfaces\IStartGamePresenter.cs" />
+    <Compile Include="Views\InGameView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InGame.Designer.cs">
-      <DependentUpon>InGame.cs</DependentUpon>
+    <Compile Include="Views\InGameView.Designer.cs">
+      <DependentUpon>InGameView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Card.cs" />
     <Compile Include="DiscoveryClient.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Views\StartGameView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Views\StartGameView.Designer.cs">
+      <DependentUpon>StartGameView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Dealer.cs" />
-    <Compile Include="Models\Deck.cs" />
-    <Compile Include="Models\Hand.cs" />
-    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\StartGameModel.cs" />
+    <Compile Include="Presenters\StartGamePresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Views\StartGameView.resx">
+      <DependentUpon>StartGameView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InGame.resx">
-      <DependentUpon>InGame.cs</DependentUpon>
+    <EmbeddedResource Include="Views\InGameView.resx">
+      <DependentUpon>InGameView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,9 +104,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+    <ProjectReference Include="..\Interfaces\Common.Lib.csproj">
       <Project>{a7e90054-daa4-421f-bf9e-04eb201dc83a}</Project>
-      <Name>Interfaces</Name>
+      <Name>Common.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

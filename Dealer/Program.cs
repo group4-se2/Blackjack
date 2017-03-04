@@ -1,9 +1,6 @@
-﻿using Interfaces;
+﻿using Common.Lib.Models;
+using Common.Lib.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Dealer
 {
@@ -12,7 +9,7 @@ namespace Dealer
         static void Main(string[] args)
         {
             char[] face = new char[3] { 'J', 'Q', 'K' };
-            Models.Deck deck = new Models.Deck();
+            Deck deck = new Deck();
             for (int i = 0; i < 52; i++)
             {
                 ICard card = deck.drawCard();
