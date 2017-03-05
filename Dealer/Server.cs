@@ -6,7 +6,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
-namespace ServerTCP
+namespace Dealer
 {
     /// <summary>
     /// Custom data received event arguments, holds the data that was received
@@ -19,7 +19,7 @@ namespace ServerTCP
     // Delegate for hooking up receive notification
     public delegate void DataReceivedEventHandler(object sender, DataReceivedEventArgs e);
 
-    class Server
+    public class Server
     {
         //The ClientConnection class holds the required information about every
         //client connected to the server
@@ -35,10 +35,10 @@ namespace ServerTCP
         public event DataReceivedEventHandler OnDataReceived;
 
         // BACKLOG is the number of incoming connections that can be queued for acceptance.
+        private const int MAX_CLIENT_COUNT = 4;
         private const int BACKLOG = 6;
         private IPAddress SERVER_ADDRESS = IPAddress.Any;
-        private const int SERVER_PORT = 1000;
-        private const int MAX_CLIENT_COUNT = 4;
+        private const int SERVER_PORT = 7777;
 
         //The collection of all clients actively logged into the server
         List<ClientConnection> activeConnections = new List<ClientConnection>();
@@ -68,6 +68,11 @@ namespace ServerTCP
             {
                 Console.WriteLine(ex.Message);
             }
+        }
+
+        public int GetPort()
+        {
+            return SERVER_PORT;
         }
 
         public void Start()

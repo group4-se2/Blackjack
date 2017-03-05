@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace PlayerTests
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest2
     {
         [TestMethod]
         public void TestMethod1()

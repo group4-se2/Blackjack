@@ -6,12 +6,12 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
-namespace ClientTCP
+namespace Player
 {
     /// <summary>
     /// Custom data received event arguments, holds the data that was received
     /// </summary>
-    public class DataReceivedEventArgs : EventArgs
+    public class ClientDataReceivedEventArgs : EventArgs
     {
         public CommandObject CmdObject { get; set; }
     }
@@ -20,7 +20,7 @@ namespace ClientTCP
     public delegate void ClientConnectedEventHandler(object sender, EventArgs e);
 
     // Delegate for hooking up receive notification
-    public delegate void DataReceivedEventHandler(object sender, DataReceivedEventArgs e);
+    public delegate void ClientDataReceivedEventHandler(object sender, ClientDataReceivedEventArgs e);
 
     public class Client
     {
@@ -29,7 +29,7 @@ namespace ClientTCP
         private byte[] byteData = new byte[1024];
 
         public event ClientConnectedEventHandler OnConnected;
-        public event DataReceivedEventHandler OnDataReceived;
+        public event ClientDataReceivedEventHandler OnDataReceived;
 
         public Client() {}
 
@@ -119,7 +119,7 @@ namespace ClientTCP
                 // Invoke the OnDataReceived event if one exists
                 if (OnDataReceived != null)
                 {
-                    DataReceivedEventArgs e = new DataReceivedEventArgs();
+                    ClientDataReceivedEventArgs e = new ClientDataReceivedEventArgs();
                     e.CmdObject = commandObject;
                     OnDataReceived(this, e);
                 }
