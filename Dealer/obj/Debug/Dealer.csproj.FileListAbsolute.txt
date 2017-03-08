@@ -19,3 +19,13 @@ C:\Users\jml87\Source\Repos\Blackjack\Dealer\bin\Debug\Newtonsoft.Json.xml
 C:\Users\jml87\Source\Repos\Blackjack\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
 C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\bin\Debug\Common.Lib.dll
 C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Dealer\bin\Debug\Common.Lib.pdb
+E:\GitHub Repository\Blackjack\Dealer\bin\Debug\Dealer.exe.config
+E:\GitHub Repository\Blackjack\Dealer\obj\Debug\Dealer.exe
+E:\GitHub Repository\Blackjack\Dealer\obj\Debug\Dealer.pdb
+E:\GitHub Repository\Blackjack\Dealer\bin\Debug\Dealer.exe
+E:\GitHub Repository\Blackjack\Dealer\bin\Debug\Dealer.pdb
+E:\GitHub Repository\Blackjack\Dealer\bin\Debug\Common.Lib.dll
+E:\GitHub Repository\Blackjack\Dealer\bin\Debug\Newtonsoft.Json.dll
+E:\GitHub Repository\Blackjack\Dealer\bin\Debug\Common.Lib.pdb
+E:\GitHub Repository\Blackjack\Dealer\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub Repository\Blackjack\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache

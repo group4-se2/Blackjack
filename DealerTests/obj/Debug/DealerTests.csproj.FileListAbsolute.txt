@@ -7,3 +7,6 @@ c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\D
 c:\users\wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\Debug\Dealer.pdb
 C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub Repository\Blackjack\DealerTests\obj\Debug\DealerTests.csprojResolveAssemblyReference.cache
+E:\GitHub Repository\Blackjack\DealerTests\obj\Debug\DealerTests.dll
+E:\GitHub Repository\Blackjack\DealerTests\obj\Debug\DealerTests.pdb
