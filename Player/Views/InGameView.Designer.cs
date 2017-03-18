@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InGameView));
             this.panel1 = new System.Windows.Forms.Panel();
             this.submitBetBtn = new System.Windows.Forms.Button();
@@ -69,10 +70,15 @@
             this.blackjackText = new System.Windows.Forms.Label();
             this.blackjackRulesText = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cardShoe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardDeck)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokerChips)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -231,6 +237,7 @@
             this.cardShoe.Size = new System.Drawing.Size(93, 195);
             this.cardShoe.TabIndex = 28;
             this.cardShoe.TabStop = false;
+            this.cardShoe.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // cardDeck
             // 
@@ -535,12 +542,95 @@
             this.timer.Text = "30";
             this.timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // InGame
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(580, 112);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 105);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(580, 112);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(75, 105);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 54;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "a-clubs.png");
+            this.imageList1.Images.SetKeyName(1, "2-clubs.png");
+            this.imageList1.Images.SetKeyName(2, "3-clubs.png");
+            this.imageList1.Images.SetKeyName(3, "4-clubs.png");
+            this.imageList1.Images.SetKeyName(4, "5-clubs.png");
+            this.imageList1.Images.SetKeyName(5, "6-clubs.png");
+            this.imageList1.Images.SetKeyName(6, "7-clubs.png");
+            this.imageList1.Images.SetKeyName(7, "8-clubs.png");
+            this.imageList1.Images.SetKeyName(8, "9-clubs.png");
+            this.imageList1.Images.SetKeyName(9, "10-clubs.png");
+            this.imageList1.Images.SetKeyName(10, "j-clubs.png");
+            this.imageList1.Images.SetKeyName(11, "q-clubs.png");
+            this.imageList1.Images.SetKeyName(12, "k-clubs.png");
+            this.imageList1.Images.SetKeyName(13, "a-diamonds.png");
+            this.imageList1.Images.SetKeyName(14, "2-diamonds.png");
+            this.imageList1.Images.SetKeyName(15, "3-diamonds.png");
+            this.imageList1.Images.SetKeyName(16, "4-diamonds.png");
+            this.imageList1.Images.SetKeyName(17, "5-diamonds.png");
+            this.imageList1.Images.SetKeyName(18, "6-diamonds.png");
+            this.imageList1.Images.SetKeyName(19, "7-diamonds.png");
+            this.imageList1.Images.SetKeyName(20, "8-diamonds.png");
+            this.imageList1.Images.SetKeyName(21, "9-diamonds.png");
+            this.imageList1.Images.SetKeyName(22, "10-diamonds.png");
+            this.imageList1.Images.SetKeyName(23, "j-diamonds.png");
+            this.imageList1.Images.SetKeyName(24, "q-diamonds.png");
+            this.imageList1.Images.SetKeyName(25, "k-diamonds.png");
+            this.imageList1.Images.SetKeyName(26, "a-hearts.png");
+            this.imageList1.Images.SetKeyName(27, "2-hearts.png");
+            this.imageList1.Images.SetKeyName(28, "3-hearts.png");
+            this.imageList1.Images.SetKeyName(29, "4-hearts.png");
+            this.imageList1.Images.SetKeyName(30, "5-hearts.png");
+            this.imageList1.Images.SetKeyName(31, "6-hearts.png");
+            this.imageList1.Images.SetKeyName(32, "7-hearts.png");
+            this.imageList1.Images.SetKeyName(33, "8-hearts.png");
+            this.imageList1.Images.SetKeyName(34, "9-hearts.png");
+            this.imageList1.Images.SetKeyName(35, "10-hearts.png");
+            this.imageList1.Images.SetKeyName(36, "j-hearts.png");
+            this.imageList1.Images.SetKeyName(37, "q-hearts.png");
+            this.imageList1.Images.SetKeyName(38, "k-hearts.png");
+            this.imageList1.Images.SetKeyName(39, "a-spades.png");
+            this.imageList1.Images.SetKeyName(40, "2-spades.png");
+            this.imageList1.Images.SetKeyName(41, "3-spades.png");
+            this.imageList1.Images.SetKeyName(42, "4-spades.png");
+            this.imageList1.Images.SetKeyName(43, "5-spades.png");
+            this.imageList1.Images.SetKeyName(44, "6-spades.png");
+            this.imageList1.Images.SetKeyName(45, "7-spades.png");
+            this.imageList1.Images.SetKeyName(46, "8-spades.png");
+            this.imageList1.Images.SetKeyName(47, "9-spades.png");
+            this.imageList1.Images.SetKeyName(48, "10-spades.png");
+            this.imageList1.Images.SetKeyName(49, "j-spades.png");
+            this.imageList1.Images.SetKeyName(50, "q-spades.png");
+            this.imageList1.Images.SetKeyName(51, "k-spades.png");
+            // 
+            // InGameView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(162)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(1004, 611);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.timer);
             this.Controls.Add(this.blackjackRulesText);
             this.Controls.Add(this.blackjackText);
@@ -570,7 +660,7 @@
             this.Controls.Add(this.cardDeck);
             this.Controls.Add(this.cardShoe);
             this.Controls.Add(this.panel1);
-            this.Name = "InGame";
+            this.Name = "InGameView";
             this.Text = "Blackjack";
             this.Load += new System.EventHandler(this.InGame_Load);
             this.panel1.ResumeLayout(false);
@@ -578,6 +668,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.cardShoe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardDeck)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokerChips)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -624,5 +716,8 @@
         private System.Windows.Forms.Button standBtn;
         private System.Windows.Forms.Button hitBtn;
         private System.Windows.Forms.Label timer;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

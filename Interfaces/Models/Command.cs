@@ -14,6 +14,6 @@ namespace Common.Lib.Models
         Hit,        // Request a card
         Stand,      // No more cards
         Message,    // Send a text message to all the players
-        List        // Get a list of players from the server
+        Sync        // Syncs players with the server
     }
 }

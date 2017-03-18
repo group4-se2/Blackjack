@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Common.Lib.Models;
 using Player.Interfaces;
-using Common.Lib;
-using Common.Lib.Models;
+using Player.Models;
+using System;
 
 namespace Player.Presenters
 {
@@ -48,8 +48,11 @@ namespace Player.Presenters
         }
         public void OnButton1Click()
         {
+            IInGameModel inGameModel = new InGameModel();
             IInGameView inGameView = new InGameView();
-            inGameView.ShowDialog();
+
+            IInGamePresenter inGamePresenter = new InGamePresenter(inGameModel, inGameView);
+            inGamePresenter.ShowDialog();
         }
         public void UpdateView()
         {

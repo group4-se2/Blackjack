@@ -2,7 +2,7 @@
 
 namespace Player.Interfaces
 {
-    interface IInGameView
+    public interface IInGameView
     {
         DialogResult ShowDialog();
     }

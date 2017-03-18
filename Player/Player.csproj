@@ -51,10 +51,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs" />
+    <Compile Include="Interfaces\IInGameModel.cs" />
+    <Compile Include="Interfaces\IInGamePresenter.cs" />
     <Compile Include="Interfaces\IInGameView.cs" />
     <Compile Include="Interfaces\IStartGameModel.cs" />
     <Compile Include="Interfaces\IStartGameView.cs" />
     <Compile Include="Interfaces\IStartGamePresenter.cs" />
+    <Compile Include="Models\InGameModel.cs" />
+    <Compile Include="Presenters\InGamePresenter.cs" />
     <Compile Include="Views\InGameView.cs">
       <SubType>Form</SubType>
     </Compile>
