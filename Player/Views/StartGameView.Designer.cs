@@ -31,11 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartGameView));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.startGameBtn = new System.Windows.Forms.Button();
             this.joinGameBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.creditsLabel = new System.Windows.Forms.Label();
+            this.usernamePanel = new System.Windows.Forms.Panel();
+            this.usernameTextField = new System.Windows.Forms.TextBox();
+            this.goBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.usernamePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -50,7 +54,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -62,23 +65,23 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // button1
+            // startGameBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(131)))), ((int)(((byte)(51)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(183, 365);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 69);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Start Game";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.startGameBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(131)))), ((int)(((byte)(51)))));
+            this.startGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.startGameBtn.FlatAppearance.BorderSize = 0;
+            this.startGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.startGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startGameBtn.ForeColor = System.Drawing.Color.White;
+            this.startGameBtn.Location = new System.Drawing.Point(183, 365);
+            this.startGameBtn.Name = "startGameBtn";
+            this.startGameBtn.Size = new System.Drawing.Size(220, 69);
+            this.startGameBtn.TabIndex = 2;
+            this.startGameBtn.Text = "Start Game";
+            this.startGameBtn.UseVisualStyleBackColor = false;
+            this.startGameBtn.Visible = false;
+            this.startGameBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // joinGameBtn
             // 
@@ -94,37 +97,81 @@
             this.joinGameBtn.TabIndex = 3;
             this.joinGameBtn.Text = "Join Game";
             this.joinGameBtn.UseVisualStyleBackColor = false;
-            this.joinGameBtn.Click += new System.EventHandler(this.button2_Click);
+            this.joinGameBtn.Visible = false;
             // 
-            // label1
+            // creditsLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(197, 470);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(429, 16);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Created by: Julian Loftis, Tim Sullivan, Fred Lash, Chris Fails, David Kirk";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.creditsLabel.AutoSize = true;
+            this.creditsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creditsLabel.ForeColor = System.Drawing.Color.White;
+            this.creditsLabel.Location = new System.Drawing.Point(197, 470);
+            this.creditsLabel.Name = "creditsLabel";
+            this.creditsLabel.Size = new System.Drawing.Size(429, 16);
+            this.creditsLabel.TabIndex = 4;
+            this.creditsLabel.Text = "Created by: Julian Loftis, Tim Sullivan, Fred Lash, Chris Fails, David Kirk";
             // 
-            // Form1
+            // usernamePanel
+            // 
+            this.usernamePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(131)))), ((int)(((byte)(51)))));
+            this.usernamePanel.Controls.Add(this.usernameTextField);
+            this.usernamePanel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.usernamePanel.Location = new System.Drawing.Point(183, 365);
+            this.usernamePanel.Name = "usernamePanel";
+            this.usernamePanel.Size = new System.Drawing.Size(360, 68);
+            this.usernamePanel.TabIndex = 5;
+            this.usernamePanel.Click += new System.EventHandler(this.usernamePanel_Click);
+            // 
+            // usernameTextField
+            // 
+            this.usernameTextField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(131)))), ((int)(((byte)(51)))));
+            this.usernameTextField.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.usernameTextField.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTextField.ForeColor = System.Drawing.Color.White;
+            this.usernameTextField.Location = new System.Drawing.Point(20, 24);
+            this.usernameTextField.Name = "usernameTextField";
+            this.usernameTextField.Size = new System.Drawing.Size(319, 22);
+            this.usernameTextField.TabIndex = 0;
+            this.usernameTextField.TabStop = false;
+            this.usernameTextField.Text = "Enter username...";
+            this.usernameTextField.Click += new System.EventHandler(this.usernameTextField_Click);
+            // 
+            // goBtn
+            // 
+            this.goBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(102)))), ((int)(((byte)(33)))));
+            this.goBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.goBtn.FlatAppearance.BorderSize = 0;
+            this.goBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.goBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.goBtn.ForeColor = System.Drawing.Color.White;
+            this.goBtn.Location = new System.Drawing.Point(549, 364);
+            this.goBtn.Name = "goBtn";
+            this.goBtn.Size = new System.Drawing.Size(95, 69);
+            this.goBtn.TabIndex = 6;
+            this.goBtn.Text = "Next";
+            this.goBtn.UseVisualStyleBackColor = false;
+            this.goBtn.Click += new System.EventHandler(this.goBtn_Click);
+            // 
+            // StartGameView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(162)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(824, 521);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.goBtn);
+            this.Controls.Add(this.usernamePanel);
+            this.Controls.Add(this.creditsLabel);
             this.Controls.Add(this.joinGameBtn);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.startGameBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "Form1";
+            this.Name = "StartGameView";
             this.Text = "Blackjack";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.usernamePanel.ResumeLayout(false);
+            this.usernamePanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,9 +181,12 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button startGameBtn;
         private System.Windows.Forms.Button joinGameBtn;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label creditsLabel;
+        private System.Windows.Forms.Panel usernamePanel;
+        private System.Windows.Forms.TextBox usernameTextField;
+        private System.Windows.Forms.Button goBtn;
     }
 }
 
