@@ -20,3 +20,18 @@ E:\GitHub Repository\Blackjack\PlayerTests\bin\Debug\Newtonsoft.Json.xml
 E:\GitHub Repository\Blackjack\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
 E:\GitHub Repository\Blackjack\PlayerTests\obj\Debug\PlayerTests.dll
 E:\GitHub Repository\Blackjack\PlayerTests\obj\Debug\PlayerTests.pdb
+D:\GitRepository\Blackjack\PlayerTests\bin\Debug\PlayerTests.dll
+D:\GitRepository\Blackjack\PlayerTests\bin\Debug\PlayerTests.pdb
+D:\GitRepository\Blackjack\PlayerTests\bin\Debug\Castle.Core.dll
+D:\GitRepository\Blackjack\PlayerTests\bin\Debug\Common.Lib.dll
+D:\GitRepository\Blackjack\PlayerTests\bin\Debug\Moq.dll
+D:\GitRepository\Blackjack\PlayerTests\bin\Debug\Player.exe
+D:\GitRepository\Blackjack\PlayerTests\bin\Debug\Newtonsoft.Json.dll
+D:\GitRepository\Blackjack\PlayerTests\bin\Debug\Common.Lib.pdb
+D:\GitRepository\Blackjack\PlayerTests\bin\Debug\Player.pdb
+D:\GitRepository\Blackjack\PlayerTests\bin\Debug\Castle.Core.xml
+D:\GitRepository\Blackjack\PlayerTests\bin\Debug\Moq.xml
+D:\GitRepository\Blackjack\PlayerTests\bin\Debug\Newtonsoft.Json.xml
+D:\GitRepository\Blackjack\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
+D:\GitRepository\Blackjack\PlayerTests\obj\Debug\PlayerTests.dll
+D:\GitRepository\Blackjack\PlayerTests\obj\Debug\PlayerTests.pdb

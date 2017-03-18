@@ -10,3 +10,6 @@ C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\D
 E:\GitHub Repository\Blackjack\DealerTests\obj\Debug\DealerTests.csprojResolveAssemblyReference.cache
 E:\GitHub Repository\Blackjack\DealerTests\obj\Debug\DealerTests.dll
 E:\GitHub Repository\Blackjack\DealerTests\obj\Debug\DealerTests.pdb
+D:\GitRepository\Blackjack\DealerTests\obj\Debug\DealerTests.csprojResolveAssemblyReference.cache
+D:\GitRepository\Blackjack\DealerTests\obj\Debug\DealerTests.dll
+D:\GitRepository\Blackjack\DealerTests\obj\Debug\DealerTests.pdb

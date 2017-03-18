@@ -8,3 +8,6 @@ C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\Interfaces\obj\De
 E:\GitHub Repository\Blackjack\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
 E:\GitHub Repository\Blackjack\Interfaces\obj\Debug\Common.Lib.dll
 E:\GitHub Repository\Blackjack\Interfaces\obj\Debug\Common.Lib.pdb
+D:\GitRepository\Blackjack\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+D:\GitRepository\Blackjack\Interfaces\obj\Debug\Common.Lib.dll
+D:\GitRepository\Blackjack\Interfaces\obj\Debug\Common.Lib.pdb

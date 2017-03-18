@@ -51,7 +51,7 @@ namespace Common.Lib.Interfaces
         int getGameStatus();
         
         // used by server to set wager (then send to all GUIs)
-        setWager(int amount);
+        void setWager(int amount);
 
         // may be unneded at this end
         // used too get wager amount

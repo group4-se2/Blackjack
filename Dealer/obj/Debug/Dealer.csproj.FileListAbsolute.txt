@@ -29,3 +29,13 @@ E:\GitHub Repository\Blackjack\Dealer\bin\Debug\Newtonsoft.Json.dll
 E:\GitHub Repository\Blackjack\Dealer\bin\Debug\Common.Lib.pdb
 E:\GitHub Repository\Blackjack\Dealer\bin\Debug\Newtonsoft.Json.xml
 E:\GitHub Repository\Blackjack\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+D:\GitRepository\Blackjack\Dealer\bin\Debug\Dealer.exe.config
+D:\GitRepository\Blackjack\Dealer\obj\Debug\Dealer.exe
+D:\GitRepository\Blackjack\Dealer\obj\Debug\Dealer.pdb
+D:\GitRepository\Blackjack\Dealer\bin\Debug\Dealer.exe
+D:\GitRepository\Blackjack\Dealer\bin\Debug\Dealer.pdb
+D:\GitRepository\Blackjack\Dealer\bin\Debug\Common.Lib.dll
+D:\GitRepository\Blackjack\Dealer\bin\Debug\Newtonsoft.Json.dll
+D:\GitRepository\Blackjack\Dealer\bin\Debug\Common.Lib.pdb
+D:\GitRepository\Blackjack\Dealer\bin\Debug\Newtonsoft.Json.xml
+D:\GitRepository\Blackjack\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
