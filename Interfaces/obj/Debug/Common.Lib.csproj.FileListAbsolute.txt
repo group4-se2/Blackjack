@@ -18,3 +18,10 @@ C:\Users\JL\Source\Repos\Blackjack4\Interfaces\bin\Debug\Common.Lib.dll
 C:\Users\JL\Source\Repos\Blackjack4\Interfaces\bin\Debug\Common.Lib.pdb
 C:\Users\JL\Source\Repos\Blackjack4\Interfaces\bin\Debug\Newtonsoft.Json.dll
 C:\Users\JL\Source\Repos\Blackjack4\Interfaces\bin\Debug\Newtonsoft.Json.xml
+D:\GitRepository\BlackJack - 19 Mar\Interfaces\bin\Debug\Common.Lib.dll
+D:\GitRepository\BlackJack - 19 Mar\Interfaces\bin\Debug\Common.Lib.pdb
+D:\GitRepository\BlackJack - 19 Mar\Interfaces\bin\Debug\Newtonsoft.Json.dll
+D:\GitRepository\BlackJack - 19 Mar\Interfaces\bin\Debug\Newtonsoft.Json.xml
+D:\GitRepository\BlackJack - 19 Mar\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+D:\GitRepository\BlackJack - 19 Mar\Interfaces\obj\Debug\Common.Lib.dll
+D:\GitRepository\BlackJack - 19 Mar\Interfaces\obj\Debug\Common.Lib.pdb

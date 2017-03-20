@@ -1,64 +1,47 @@
-﻿using Common.Lib.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using Common.Lib.Interfaces;
 
 namespace Common.Lib.Models
 {
     public class Deck : IDeck
     {
-        private static System.Security.Cryptography.RNGCryptoServiceProvider seed = 
-            new System.Security.Cryptography.RNGCryptoServiceProvider();
-
-        private List<ICard> cards = new List<ICard>();
-
-        public List<ICard> Cards
-        {
-            get
-            {
-                return cards;
-            }
-        }
-
+        public List<ICard> cards { get; set; }
         public Deck()
         {
-            for (int suit = 0; suit < 4; suit++)
+            cards = new List<ICard>();
+         
+         // create unshuffled deck   
+            for (int i = 2; i < 15; i++)
             {
-                for (int val = 1; val < 14; val++)
+                for (int j = 0; j < 4; j++)
                 {
-                    ICard card = new Card();
-                    card.Suit = (Suit)suit;
-                    card.CardType = val > 10 ? CardType.Face : val > 1 ? CardType.Pip : CardType.Ace;
-                    card.Value = val;
-                    this.cards.Add(card);
+                    cards.Add(new Card((Suit)j,i));
                 }
             }
+            this.shuffleDeck();
         }
-        public ICard drawCard()
+        
+        private void shuffleDeck()
         {
-            int minimum = 0;
-            int maximum = cards.Count-1;
-            ICard card;
-
-            byte[] randomNumber = new byte[1];
-
-            seed.GetBytes(randomNumber);
-
-            double asciiValue = Convert.ToDouble(randomNumber[0]);
-
-            double multiplier = Math.Max(0, (asciiValue / 255d) - 0.00000000001d);
-
-            // adding one to the range, to allow for rounding 
-            int range = maximum - minimum + 1;
-
-            // round to ensure within range
-            double randomValue = Math.Floor(multiplier * range); 
-
-            card = cards.ElementAt<ICard>((int)(randomValue));
-
-            cards.RemoveAt((int)(randomValue));
-
-            return card; 
+            Random rand = new Random();
+            List<ICard> tempDeck = new List<ICard>();
+            int index;
+            while (cards.Count > 0)
+            {
+                index = rand.Next(0, cards.Count - 1);
+                tempDeck.Add(cards[index]);
+                cards.RemoveAt(index);
+            }
+            cards.AddRange(tempDeck);
         }
+        public ICard takeCard()
+        {
+            ICard tempCard;
+            tempCard = cards[0];
+            cards.RemoveAt(0);
+            return tempCard;
+        }
+
     }
 }

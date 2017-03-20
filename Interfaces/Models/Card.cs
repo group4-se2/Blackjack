@@ -1,51 +1,41 @@
 ﻿using System;
 using Common.Lib.Interfaces;
 
+
 namespace Common.Lib.Models
 {
     public class Card : ICard
     {
-        private Suit suit;
-        private CardType cardType;
-        private int value;
+        public Card(Suit suit, int numericValue)
+        {
+            Suit = suit;
+            NumericValue = numericValue;
+        }
+        public Suit Suit { get; set; }
 
-        public Suit Suit
+        public string Description
         {
             get
-            {
-                return suit;
-            }
-
-            set
-            {
-                suit = value;
-            }
+            { return this.FaceValue + " " + Suit; } 
         }
 
-        public CardType CardType
+        public int NumericValue { get; set; }
+
+        public FaceValue FaceValue
         {
             get
-            {
-                return cardType;
-            }
-
-            set
-            {
-                cardType = value;
-            }
+            { return (FaceValue) NumericValue; }
         }
 
-        public int Value
+        public bool IsFaceCard
         {
             get
-            {
-                return value;
-            }
-
-            set
-            {
-                this.value = value;
-            }
+            { return NumericValue > 10 && NumericValue < 14; }
+        }
+        public bool IsAce
+        {
+            get
+            { return NumericValue == 14; }
         }
     }
 }

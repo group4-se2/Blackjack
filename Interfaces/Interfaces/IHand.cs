@@ -1,12 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Common.Lib.Interfaces
 {
     public interface IHand
     {
-        List<ICard> Cards { get; set; }
-        int Score { get; set; }
+        void dealCard();
+        ICard getCard(int position);
 
-        void calculateScore();
+        int scoreHand();
     }
 }

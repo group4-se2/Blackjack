@@ -1,42 +1,84 @@
-﻿using Common.Lib.Interfaces;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Common.Lib.Interfaces;
 
 namespace Common.Lib.Models
 {
     public class Hand : IHand
     {
-        private List<ICard> cards;
-        private int score;
+        private List<ICard> hand { get; set; }
 
-        public List<ICard> Cards
+        private IDeck deck = new Deck(); 
+        public Hand()
         {
-            get
-            {
-                return cards;
-            }
+            hand = new List<ICard>();
+            // deal 2 initial cards
+            this.dealCard();
+            this.dealCard();
 
-            set
+        }
+
+        public void dealCard()
+        {
+            if (hand.Count() < 5)
             {
-                cards = value;
+                hand.Add(deck.takeCard());
+            }
+            else
+            {
+                throw new System.ArgumentOutOfRangeException("The maximum number of cards cannot exceed five  cards.");
             }
         }
 
-        public int Score
+        public ICard getCard(int position)
         {
-            get
-            {
-                return score;
-            }
-
-            set
-            {
-                score = value;
-            }
+            ICard tempCard = hand[position];
+            return tempCard;
         }
 
-        public void calculateScore()
+        public int scoreHand()
         {
-            // Implement calculateScore
+            int tally = 0;
+            int numAces = 0;
+            
+            for (int i = 0; i < hand.Count(); i++)
+            {
+                if (hand[i].NumericValue >= 10 && hand[i].NumericValue <= 13)
+                {
+                    tally += 10;
+                }
+                else if (hand[i].NumericValue == 14)
+                {
+                    tally += 11;
+                    numAces++;
+                }
+                else if (hand[i].NumericValue > 1 && hand[i].NumericValue <= 9)
+                {
+                    tally += hand[i].NumericValue;
+                }
+                else
+                {
+                    throw new System.ArgumentOutOfRangeException("Card value out of range");
+                }
+            }
+            
+            // Ace & facecard (or 10) = Blackjack
+            if ((tally == 21) && (hand.Count() == 2))
+            {
+                return 99;
+            }
+            
+            //change ace(s) from 11 to 1 if the hand is over  21
+            while (numAces > 0 && tally > 21) 
+            {
+                tally -= 10;
+                numAces--;
+            }
+
+            return tally;
         }
     }
 }

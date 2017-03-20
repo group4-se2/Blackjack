@@ -1,79 +1,100 @@
-﻿using Common.Lib.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Common.Lib.Interfaces;
 
 namespace Common.Lib.Models
 {
     public class Player : IPlayer
     {
-        private string name;
-        private int bank;
-        private int wager;
-        private IHand hand;
+        private const int STARTING_CREDIT_BALANCE = 100;  // facilitate changing game length later
 
-        public string Name
+        /* The following are values for THIS player that are sent out to ALL players 
+         * to facilitate the rendering of all players on the card table
+         */
+        private int creditBalance;
+        private int wagerAmount;
+        private int gameStatus;  // facilitates GUI buttons and display - includes bet, hit/pass, win-loss-draw
+        private bool hasFocus;  // enables interaction with GUI
+        private IHand myHand;
+        
+        public Player()
         {
-            get
-            {
-                return name;
-            }
-
-            set
-            {
-                name = value;
-            }
+            creditBalance = STARTING_CREDIT_BALANCE;
+            wagerAmount = 0;
+            gameStatus = 0;
+            hasFocus = false;
+            myHand = new Hand();
         }
 
-        public int Bank
+        public void dealCard()
         {
-            get
-            {
-                return bank;
-            }
-
-            set
-            {
-                bank = value;
-            }
+            myHand.dealCard();
         }
 
-        public int Wager
+        public ICard getCard(int position)
         {
-            get
+            return myHand.getCard(position);
+        }
+        public void setFocus(bool status)
+        {
+            hasFocus = status;
+        }
+        public bool getFocus()
+        {
+            return hasFocus;
+        }
+        public void switchFocus()
+        {
+            if(hasFocus)
             {
-                return wager;
+                hasFocus = false;
             }
-
-            set
+            else
             {
-                wager = value;
+                hasFocus = true;
             }
         }
-
-         public IHand Hand  
+        public int getCreditBalance()
         {
-            get
-            {
-                return hand;
-            }
-
-            set
-            {
-                hand = value;
-            }
+            return creditBalance;
+        }
+        public void debitCreditBalance(int amount)
+        {
+            creditBalance -= amount;
+        }
+        public void creditCreditBalance(int amount)
+        {
+            creditBalance += amount;
         }
 
-        public void joinGame()
-        { }
+        public void advanceGameStatus()
+        {
+            gameStatus++;
+        }
+        public void setGameStatus(int status)
+        {
+            gameStatus = status;
+        }
+        public int getGameStatus()
+        {
+            return gameStatus;
+        }
 
-        public void exitGame()
-        { }
+        public void setWagerAmount(int amount)
+        {
+            wagerAmount = amount;
+        }
+        public int getWagerAmount()
+        {
+            return wagerAmount;
+        }
 
-        public void placeBet(int amount)
-        { }
-
-        public void requestHit()
-        { }
-
-        public void requestStand()
-        { }
+        public int scoreHand()
+        {
+            return myHand.scoreHand();
+        }
     }
 }

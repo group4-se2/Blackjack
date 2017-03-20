@@ -138,3 +138,17 @@ C:\Users\JL\Source\Repos\Blackjack4\Player\obj\Debug\Player.StartGameView.resour
 C:\Users\JL\Source\Repos\Blackjack4\Player\obj\Debug\Player.InGameView.resources
 C:\Users\JL\Source\Repos\Blackjack4\Player\obj\Debug\Player.Properties.Resources.resources
 C:\Users\JL\Source\Repos\Blackjack4\Player\obj\Debug\Player.csproj.GenerateResource.Cache
+D:\GitRepository\BlackJack - 19 Mar\Player\bin\Debug\Player.exe.config
+D:\GitRepository\BlackJack - 19 Mar\Player\obj\Debug\Player.exe
+D:\GitRepository\BlackJack - 19 Mar\Player\obj\Debug\Player.pdb
+D:\GitRepository\BlackJack - 19 Mar\Player\bin\Debug\Player.exe
+D:\GitRepository\BlackJack - 19 Mar\Player\bin\Debug\Player.pdb
+D:\GitRepository\BlackJack - 19 Mar\Player\bin\Debug\Common.Lib.dll
+D:\GitRepository\BlackJack - 19 Mar\Player\bin\Debug\Newtonsoft.Json.dll
+D:\GitRepository\BlackJack - 19 Mar\Player\bin\Debug\Common.Lib.pdb
+D:\GitRepository\BlackJack - 19 Mar\Player\bin\Debug\Newtonsoft.Json.xml
+D:\GitRepository\BlackJack - 19 Mar\Player\obj\Debug\Player.csprojResolveAssemblyReference.cache
+D:\GitRepository\BlackJack - 19 Mar\Player\obj\Debug\Player.StartGameView.resources
+D:\GitRepository\BlackJack - 19 Mar\Player\obj\Debug\Player.InGameView.resources
+D:\GitRepository\BlackJack - 19 Mar\Player\obj\Debug\Player.Properties.Resources.resources
+D:\GitRepository\BlackJack - 19 Mar\Player\obj\Debug\Player.csproj.GenerateResource.Cache
