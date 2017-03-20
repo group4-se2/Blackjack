@@ -8,6 +8,8 @@ namespace Common.Lib.Interfaces
 {
     public interface IPlayer
     {
+        String Name { get; set; }
+
         //adds one  card to this player's hand
         void dealCard();
 

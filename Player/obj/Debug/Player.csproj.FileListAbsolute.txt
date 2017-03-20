@@ -152,3 +152,17 @@ D:\GitRepository\BlackJack - 19 Mar\Player\obj\Debug\Player.StartGameView.resour
 D:\GitRepository\BlackJack - 19 Mar\Player\obj\Debug\Player.InGameView.resources
 D:\GitRepository\BlackJack - 19 Mar\Player\obj\Debug\Player.Properties.Resources.resources
 D:\GitRepository\BlackJack - 19 Mar\Player\obj\Debug\Player.csproj.GenerateResource.Cache
+C:\Users\tws15\Source\Repos\Blackjack\Player\bin\Debug\Player.exe.config
+C:\Users\tws15\Source\Repos\Blackjack\Player\obj\Debug\Player.exe
+C:\Users\tws15\Source\Repos\Blackjack\Player\obj\Debug\Player.pdb
+C:\Users\tws15\Source\Repos\Blackjack\Player\obj\Debug\Player.csprojResolveAssemblyReference.cache
+C:\Users\tws15\Source\Repos\Blackjack\Player\obj\Debug\Player.StartGameView.resources
+C:\Users\tws15\Source\Repos\Blackjack\Player\obj\Debug\Player.InGameView.resources
+C:\Users\tws15\Source\Repos\Blackjack\Player\obj\Debug\Player.Properties.Resources.resources
+C:\Users\tws15\Source\Repos\Blackjack\Player\obj\Debug\Player.csproj.GenerateResource.Cache
+C:\Users\tws15\Source\Repos\Blackjack\Player\bin\Debug\Player.exe
+C:\Users\tws15\Source\Repos\Blackjack\Player\bin\Debug\Player.pdb
+C:\Users\tws15\Source\Repos\Blackjack\Player\bin\Debug\Common.Lib.dll
+C:\Users\tws15\Source\Repos\Blackjack\Player\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tws15\Source\Repos\Blackjack\Player\bin\Debug\Common.Lib.pdb
+C:\Users\tws15\Source\Repos\Blackjack\Player\bin\Debug\Newtonsoft.Json.xml

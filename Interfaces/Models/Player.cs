@@ -19,7 +19,9 @@ namespace Common.Lib.Models
         private int gameStatus;  // facilitates GUI buttons and display - includes bet, hit/pass, win-loss-draw
         private bool hasFocus;  // enables interaction with GUI
         private IHand myHand;
-        
+
+        public string Name { get; set; }
+
         public Player()
         {
             creditBalance = STARTING_CREDIT_BALANCE;
