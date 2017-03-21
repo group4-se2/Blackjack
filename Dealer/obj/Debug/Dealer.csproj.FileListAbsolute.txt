@@ -49,3 +49,23 @@ C:\Users\JL\Source\Repos\Blackjack4\Dealer\bin\Debug\Newtonsoft.Json.dll
 C:\Users\JL\Source\Repos\Blackjack4\Dealer\bin\Debug\Common.Lib.pdb
 C:\Users\JL\Source\Repos\Blackjack4\Dealer\bin\Debug\Newtonsoft.Json.xml
 C:\Users\JL\Source\Repos\Blackjack4\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+D:\GitRepository\BlackJack - 19 Mar\Dealer\bin\Debug\Dealer.exe.config
+D:\GitRepository\BlackJack - 19 Mar\Dealer\obj\Debug\Dealer.exe
+D:\GitRepository\BlackJack - 19 Mar\Dealer\obj\Debug\Dealer.pdb
+D:\GitRepository\BlackJack - 19 Mar\Dealer\bin\Debug\Dealer.exe
+D:\GitRepository\BlackJack - 19 Mar\Dealer\bin\Debug\Dealer.pdb
+D:\GitRepository\BlackJack - 19 Mar\Dealer\bin\Debug\Common.Lib.dll
+D:\GitRepository\BlackJack - 19 Mar\Dealer\bin\Debug\Newtonsoft.Json.dll
+D:\GitRepository\BlackJack - 19 Mar\Dealer\bin\Debug\Common.Lib.pdb
+D:\GitRepository\BlackJack - 19 Mar\Dealer\bin\Debug\Newtonsoft.Json.xml
+D:\GitRepository\BlackJack - 19 Mar\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+C:\Users\tws15\Source\Repos\Blackjack\Dealer\bin\Debug\Dealer.exe.config
+C:\Users\tws15\Source\Repos\Blackjack\Dealer\obj\Debug\Dealer.exe
+C:\Users\tws15\Source\Repos\Blackjack\Dealer\obj\Debug\Dealer.pdb
+C:\Users\tws15\Source\Repos\Blackjack\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+C:\Users\tws15\Source\Repos\Blackjack\Dealer\bin\Debug\Dealer.exe
+C:\Users\tws15\Source\Repos\Blackjack\Dealer\bin\Debug\Dealer.pdb
+C:\Users\tws15\Source\Repos\Blackjack\Dealer\bin\Debug\Common.Lib.dll
+C:\Users\tws15\Source\Repos\Blackjack\Dealer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tws15\Source\Repos\Blackjack\Dealer\bin\Debug\Common.Lib.pdb
+C:\Users\tws15\Source\Repos\Blackjack\Dealer\bin\Debug\Newtonsoft.Json.xml

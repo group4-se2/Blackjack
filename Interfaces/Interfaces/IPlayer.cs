@@ -1,70 +1,52 @@
-﻿// Added interface items from Player class
-// Fred Mar 8, 2017
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Common.Lib.Interfaces
 {
     public interface IPlayer
     {
-        // creates one additional card in this player hand
-        //void dealCard();
+        String Name { get; set; }
 
-        // unknown if this will be implemented from outside Player
-        // return card code (1 - 52) from hand by hand[] (position)
-        //int getCard(int position);
+        //adds one  card to this player's hand
+        void dealCard();
 
-        // unknown if this will be implemented from outside Player
-        // return card face value when given card code
+        ICard getCard(int position);
 
-        //string parseCard(int numericValue);
+        void setFocus(bool status);
 
-        // set focus for true for this player
-        //void enableFocus();
+        bool getFocus();
+       
+        //sets hasFocus opposite to current focus
+        void switchFocus();
 
-        // set focus to false for this player
-        //void disableFocus();
+        int getCreditBalance();
+        
+        //decreases this player's creditBalance by int
+        void debitCreditBalance(int amount);
+       
+        //increases this player's creditBalance by int
+        void creditCreditBalance(int amount);
 
-        // get current focus for this player
-        //bool getFocus();
-
-        // deduct wager from credit balance
-        //void deductWager(int amount);
-
-        // used by dealer to credit winnings to this player
-        //void depositWin(int amount);
-
-        // used by dealer to calculate winnings
-        //used by GUI to display this player's credit balance
-        //int getCreditBalance();
-
-        /* used exclusively be server to sync GUI to game phase
+        /* used by game server to sync GUI to game phase
          * 1 - Bet
          * 2 - Hit/Stand
-         * 3 - loss (hand complete - for GUI only)
+         * 3 - Loss (hand complete - for GUI only)
          * 4 - Bust (hand complete - for GUI only)
          * 5 - Tie (hand complete - for GUI only)
          * 6 - Win (hand complete - for GUI only)
          * 7 - Blackjack (hand complete - for GUI only)
          */
-        //void setGameStatus(int status);
 
-        // get this player status
-        //int getGameStatus();
-        
-        // used by server to set wager (then send to all GUIs)
-        //void setWager(int amount);
+        void advanceGameStatus();
+        void setGameStatus(int status);
+        int getGameStatus();
+        void setWagerAmount(int amount);
+        int getWagerAmount();
 
-        // may be unneded at this end
-        // used too get wager amount
-        //int getWager();
-
-        // used by dealer to compare and score this player
-        //int calculateHandValue();
-
-
-        // may delete - dont want to yet
-        int Bank { get; set; }
-        IHand Hand { get; set; }
-        string Name { get; set; }
-        int Wager { get; set; }
+        //returns this player's score  -- 99 for a blackjack 
+        int scoreHand();
     }
 }

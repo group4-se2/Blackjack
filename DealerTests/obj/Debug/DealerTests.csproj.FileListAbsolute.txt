@@ -13,3 +13,14 @@ E:\GitHub Repository\Blackjack\DealerTests\obj\Debug\DealerTests.pdb
 D:\GitRepository\Blackjack\DealerTests\obj\Debug\DealerTests.csprojResolveAssemblyReference.cache
 D:\GitRepository\Blackjack\DealerTests\obj\Debug\DealerTests.dll
 D:\GitRepository\Blackjack\DealerTests\obj\Debug\DealerTests.pdb
+D:\GitRepository\BlackJack - 19 Mar\DealerTests\obj\Debug\DealerTests.csprojResolveAssemblyReference.cache
+D:\GitRepository\BlackJack - 19 Mar\DealerTests\obj\Debug\DealerTests.dll
+D:\GitRepository\BlackJack - 19 Mar\DealerTests\obj\Debug\DealerTests.pdb
+D:\GitRepository\BlackJack - 19 Mar\DealerTests\bin\Debug\DealerTests.dll
+D:\GitRepository\BlackJack - 19 Mar\DealerTests\bin\Debug\DealerTests.pdb
+D:\GitRepository\BlackJack - 19 Mar\DealerTests\bin\Debug\Dealer.exe
+D:\GitRepository\BlackJack - 19 Mar\DealerTests\bin\Debug\Common.Lib.dll
+D:\GitRepository\BlackJack - 19 Mar\DealerTests\bin\Debug\Newtonsoft.Json.dll
+D:\GitRepository\BlackJack - 19 Mar\DealerTests\bin\Debug\Dealer.pdb
+D:\GitRepository\BlackJack - 19 Mar\DealerTests\bin\Debug\Common.Lib.pdb
+D:\GitRepository\BlackJack - 19 Mar\DealerTests\bin\Debug\Newtonsoft.Json.xml

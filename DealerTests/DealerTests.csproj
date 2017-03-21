@@ -52,14 +52,20 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ModelDeckUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ModelPlayerUnitTest.cs" />
+    <Compile Include="UnitTestCard.cs" />
+    <Compile Include="UnitTestDeck.cs" />
+    <Compile Include="UnitTestHand.cs" />
+    <Compile Include="UnitTestPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dealer\Dealer.csproj">
       <Project>{086f9fc2-58d9-4d80-a005-82db230ad2ea}</Project>
       <Name>Dealer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Common.Lib.csproj">
+      <Project>{a7e90054-daa4-421f-bf9e-04eb201dc83a}</Project>
+      <Name>Common.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
