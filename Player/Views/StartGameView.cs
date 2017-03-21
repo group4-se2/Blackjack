@@ -34,8 +34,6 @@ namespace Player
   
         private void button1_Click(object sender, EventArgs e)
         {
-            //var ingame = new InGame();
-            //ingame.Show();
             StartGamePresenter.OnButton1Click();
         }
 
