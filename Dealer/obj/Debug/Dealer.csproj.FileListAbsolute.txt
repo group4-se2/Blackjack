@@ -79,3 +79,7 @@ E:\GitHub Repository\Blackjack - Mar 22\Dealer\bin\Debug\Newtonsoft.Json.dll
 E:\GitHub Repository\Blackjack - Mar 22\Dealer\bin\Debug\Common.Lib.pdb
 E:\GitHub Repository\Blackjack - Mar 22\Dealer\bin\Debug\Newtonsoft.Json.xml
 E:\GitHub Repository\Blackjack - Mar 22\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+C:\Users\David\Source\Repos\Blackjack2\Dealer\bin\Debug\Dealer.exe.config
+C:\Users\David\Source\Repos\Blackjack2\Dealer\obj\Debug\Dealer.exe
+C:\Users\David\Source\Repos\Blackjack2\Dealer\obj\Debug\Dealer.pdb
+C:\Users\David\Source\Repos\Blackjack2\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
