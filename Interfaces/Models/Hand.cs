@@ -11,9 +11,10 @@ namespace Common.Lib.Models
     {
         private List<ICard> hand { get; set; }
 
-        private IDeck deck = new Deck(); 
+        private IDeck deck { get; set; } 
         public Hand()
         {
+            deck = new Deck();  //can we replace the deck with another new Deck() outside of the constructor?
             hand = new List<ICard>();
             // deal 2 initial cards
             this.dealCard();
