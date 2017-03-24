@@ -32,3 +32,17 @@ C:\Users\tws15\Source\Repos\Blackjack\Interfaces\bin\Debug\Newtonsoft.Json.xml
 C:\Users\tws15\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
 C:\Users\tws15\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.dll
 C:\Users\tws15\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.pdb
+E:\GitHub Repository\Blackjack - Mar 22\Interfaces\bin\Debug\Common.Lib.dll
+E:\GitHub Repository\Blackjack - Mar 22\Interfaces\bin\Debug\Common.Lib.pdb
+E:\GitHub Repository\Blackjack - Mar 22\Interfaces\bin\Debug\Newtonsoft.Json.dll
+E:\GitHub Repository\Blackjack - Mar 22\Interfaces\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub Repository\Blackjack - Mar 22\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+E:\GitHub Repository\Blackjack - Mar 22\Interfaces\obj\Debug\Common.Lib.dll
+E:\GitHub Repository\Blackjack - Mar 22\Interfaces\obj\Debug\Common.Lib.pdb
+C:\Users\David\Source\Repos\Blackjack2\Interfaces\bin\Debug\Common.Lib.dll
+C:\Users\David\Source\Repos\Blackjack2\Interfaces\bin\Debug\Common.Lib.pdb
+C:\Users\David\Source\Repos\Blackjack2\Interfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Users\David\Source\Repos\Blackjack2\Interfaces\bin\Debug\Newtonsoft.Json.xml
+C:\Users\David\Source\Repos\Blackjack2\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+C:\Users\David\Source\Repos\Blackjack2\Interfaces\obj\Debug\Common.Lib.dll
+C:\Users\David\Source\Repos\Blackjack2\Interfaces\obj\Debug\Common.Lib.pdb

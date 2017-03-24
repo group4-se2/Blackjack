@@ -14,11 +14,16 @@ namespace Common.Lib.Models
         /* The following are values for THIS player that are sent out to ALL players 
          * to facilitate the rendering of all players on the card table
          */
-        private int creditBalance;
-        private int wagerAmount;
-        private int gameStatus;  // facilitates GUI buttons and display - includes bet, hit/pass, win-loss-draw
-        private bool hasFocus;  // enables interaction with GUI
-        private IHand myHand;
+        private int creditBalance { get; set; }
+        private int wagerAmount { set; get; }
+
+        // facilitates GUI buttons and display - includes bet, hit/pass, win-loss-draw
+        private int gameStatus { set; get; }
+
+        // enables interaction with GUI
+        private bool hasFocus { set; get; }
+
+        private IHand myHand { set; get; }
 
         public string Name { get; set; }
 
