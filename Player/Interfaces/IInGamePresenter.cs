@@ -11,5 +11,6 @@ namespace Player.Interfaces
     {
         DialogResult ShowDialog();
         void UpdateView();
+        void client_OnDataReceived(object sender, ClientDataReceivedEventArgs e);
     }
 }

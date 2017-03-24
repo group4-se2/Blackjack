@@ -45,9 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\ICard.cs" />
+    <Compile Include="Interfaces\IDbPersistence.cs" />
     <Compile Include="Interfaces\IDeck.cs" />
     <Compile Include="Interfaces\IHand.cs" />
     <Compile Include="Interfaces\IPlayer.cs" />
+    <Compile Include="Models\XmlDbPersistence.cs" />
     <Compile Include="Models\Card.cs" />
     <Compile Include="Models\Command.cs" />
     <Compile Include="Models\Deck.cs" />

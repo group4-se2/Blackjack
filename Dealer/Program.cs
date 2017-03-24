@@ -50,6 +50,15 @@ namespace Dealer
 
             // Start executing the game logic
             GameLoop();
+
+            Console.ReadLine();
+
+            Player player = new Player();
+            player.Name = "Tim";
+            CommandObject cmdObj = new CommandObject();
+            cmdObj.Command = Command.Sync;
+            cmdObj.Payload = player;
+            server.Send("Tim",cmdObj);
         }
 
         /// <summary>

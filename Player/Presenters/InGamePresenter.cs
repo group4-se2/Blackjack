@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using Player.Interfaces;
 using Player.Models;
 using System.Drawing;
+using Common.Lib.Interfaces;
 
 namespace Player.Presenters
 {
@@ -30,6 +31,11 @@ namespace Player.Presenters
         public void OnCardShoeClick()
         {
 
+        }
+
+        public void client_OnDataReceived(object sender, ClientDataReceivedEventArgs e)
+        {
+            IPlayer player = (Common.Lib.Models.Player)e.CmdObject.Payload;
         }
     }
 }

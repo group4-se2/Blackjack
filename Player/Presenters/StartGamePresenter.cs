@@ -52,6 +52,7 @@ namespace Player.Presenters
             IInGameView inGameView = new InGameView();
 
             IInGamePresenter inGamePresenter = new InGamePresenter(inGameModel, inGameView);
+            client.OnDataReceived += inGamePresenter.client_OnDataReceived;
             inGamePresenter.ShowDialog();
         }
         public void UpdateView()
