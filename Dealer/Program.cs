@@ -102,6 +102,7 @@ namespace Dealer
         /// </summary>
         private void GameLoop()
         {
+            /*
             private int timeLeft;
             private string timeLabel;
             private void BetTimer;
@@ -202,6 +203,7 @@ namespace Dealer
         // End loop
 
         // Game Over
+        */
     }
 }
 }

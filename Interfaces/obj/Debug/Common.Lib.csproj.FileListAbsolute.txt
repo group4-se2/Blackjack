@@ -46,3 +46,10 @@ C:\Users\David\Source\Repos\Blackjack2\Interfaces\bin\Debug\Newtonsoft.Json.xml
 C:\Users\David\Source\Repos\Blackjack2\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
 C:\Users\David\Source\Repos\Blackjack2\Interfaces\obj\Debug\Common.Lib.dll
 C:\Users\David\Source\Repos\Blackjack2\Interfaces\obj\Debug\Common.Lib.pdb
+C:\Users\JL\Source\Repos\BlackjackMain\Interfaces\bin\Debug\Common.Lib.dll
+C:\Users\JL\Source\Repos\BlackjackMain\Interfaces\bin\Debug\Common.Lib.pdb
+C:\Users\JL\Source\Repos\BlackjackMain\Interfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Users\JL\Source\Repos\BlackjackMain\Interfaces\bin\Debug\Newtonsoft.Json.xml
+C:\Users\JL\Source\Repos\BlackjackMain\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+C:\Users\JL\Source\Repos\BlackjackMain\Interfaces\obj\Debug\Common.Lib.dll
+C:\Users\JL\Source\Repos\BlackjackMain\Interfaces\obj\Debug\Common.Lib.pdb
