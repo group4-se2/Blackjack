@@ -93,3 +93,6 @@ C:\Users\JL\Source\Repos\BlackjackMain\Dealer\bin\Debug\Newtonsoft.Json.dll
 C:\Users\JL\Source\Repos\BlackjackMain\Dealer\bin\Debug\Common.Lib.pdb
 C:\Users\JL\Source\Repos\BlackjackMain\Dealer\bin\Debug\Newtonsoft.Json.xml
 C:\Users\JL\Source\Repos\BlackjackMain\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+C:\Users\David\Source\Repos\Blackjack3\Dealer\bin\Debug\Dealer.exe.config
+C:\Users\David\Source\Repos\Blackjack3\Dealer\obj\Debug\Dealer.exe
+C:\Users\David\Source\Repos\Blackjack3\Dealer\obj\Debug\Dealer.pdb
