@@ -38,6 +38,12 @@ namespace Dealer
         {
             // Create players list
             players = new List<Player>();
+
+            // Create Dealer
+            Player dealer = new Common.Lib.Models.Player();
+            dealer.Name = "Dealer";
+            players.Add(dealer);
+
             // This code sets up and starts the game server.
             server = new Server();
             server.OnDataReceived += Server_OnDataReceived;
@@ -104,8 +110,7 @@ namespace Dealer
 
         private void GameLoop()
         {
-            do
-            {
+            }
         private void placeFirstBet()
         {
             do
@@ -190,7 +195,7 @@ namespace Dealer
         // End Check
             private void checkNaturalBJ();
                 {
-                    if(dealerSumHand === 21)
+                    if(dealerSumHand == 21)
                     {
                         return SumofBets; 
                         return UpdateDealerBank; 

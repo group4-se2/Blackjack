@@ -8,7 +8,7 @@ namespace Common.Lib.Interfaces
 {
     public interface IHand
     {
-        void dealCard();
+        void dealCard(IDeck deck, bool faceDown);
         ICard getCard(int position);
 
         int scoreHand();

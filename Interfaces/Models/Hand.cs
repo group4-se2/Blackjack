@@ -9,23 +9,24 @@ namespace Common.Lib.Models
 {
     public class Hand : IHand
     {
-        private List<ICard> hand { get; set; }
+        public List<ICard> hand { get; set; }
 
-        private IDeck deck { get; set; } 
+        //private IDeck deck; 
         public Hand()
         {
-            deck = new Deck();  //can we replace the deck with another new Deck() outside of the constructor?
+            //deck = new Deck();  //can we replace the deck with another new Deck() outside of the constructor?
             hand = new List<ICard>();
             // deal 2 initial cards
-            this.dealCard();
-            this.dealCard();
-
+            //this.dealCard();
+            //this.dealCard();
         }
 
-        public void dealCard()
+        public void dealCard(IDeck deck, bool faceDown)
         {
             if (hand.Count() < 5)
             {
+                ICard card = deck.takeCard();
+                card.IsFaceDown = faceDown;
                 hand.Add(deck.takeCard());
             }
             else
@@ -36,8 +37,7 @@ namespace Common.Lib.Models
 
         public ICard getCard(int position)
         {
-            ICard tempCard = hand[position];
-            return tempCard;
+            return hand[position];
         }
 
         public int scoreHand()

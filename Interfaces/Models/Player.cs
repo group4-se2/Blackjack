@@ -32,13 +32,13 @@ namespace Common.Lib.Models
             creditBalance = STARTING_CREDIT_BALANCE;
             wagerAmount = 0;
             gameStatus = 0;
-            hasFocus = false;
-            myHand = new Hand();
+            hasFocus = true;
+            //myHand = new Hand();
         }
 
-        public void dealCard()
+        public void dealCard(IDeck deck, bool faceDown)
         {
-            myHand.dealCard();
+            myHand.dealCard(deck, faceDown);
         }
 
         public ICard getCard(int position)
