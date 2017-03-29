@@ -103,5 +103,10 @@ namespace Common.Lib.Models
         {
             return myHand.scoreHand();
         }
+
+        public void dealCard()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

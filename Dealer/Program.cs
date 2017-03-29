@@ -64,7 +64,7 @@ namespace Dealer
             CommandObject cmdObj = new CommandObject();
             cmdObj.Command = Command.Sync;
             cmdObj.Payload = player;
-            server.Send("Tim",cmdObj);
+            server.Send("Tim", cmdObj);
         }
 
         /// <summary>
@@ -77,15 +77,15 @@ namespace Dealer
             CommandObject cmdObj = new CommandObject();
             //Player player = (Player)e.CmdObject.Payload;
             //Console.WriteLine(player.Name);
-            switch(e.CmdObject.Command)
+            switch (e.CmdObject.Command)
             {
                 case Command.Bet:
                     break;
                 case Command.Exit:
-                        players.Remove(players.Find(x => x.Name == ((Player)e.CmdObject.Payload).Name));
-                        cmdObj.Command = Command.Sync;
-                        cmdObj.Payload = players;
-                        server.SendAll(cmdObj);
+                    players.Remove(players.Find(x => x.Name == ((Player)e.CmdObject.Payload).Name));
+                    cmdObj.Command = Command.Sync;
+                    cmdObj.Payload = players;
+                    server.SendAll(cmdObj);
                     break;
                 case Command.Hit:
                     break;
@@ -110,295 +110,296 @@ namespace Dealer
 
         private void GameLoop()
         {
-            }
-        private void placeFirstBet()
-        {
-            do
-            {
-                if (player1 === hasFocus)
-                {
-                    placeBets(); //CREATE METHOD
-                    calcBank();
-                }
-                else if (player2 === hasFocus)
-                {
-                    placeBets();
-                    calcBank();
-                }
-                else if (player3 === hasFocus)
-                {
-                    placeBets();
-                    calcBank();
-                }
-                else (dealer === hasFocus)
-                    {
-                    placeBets();
-                    calcBank();
-                }
-                while (BetTimer != 0) ;
-            }
-            if (placeBets === 0 && BetTimer === 0)
-            {
-                disable Player();  //CREATE METHOD
-            }
-            else
-                return FirstDeal{);
-            }
-        // Wait for first player to bet 
-        //      start countdown timer, 30 seconds
-        //      Collect bets from player until timer hits 0
-        private void FirstDeal();
-         {
-         for (player = 0; player <= 4; player++)
-            {
-                for (dealCardUp = 0; dealCardUp <=8; dealCardUp++)
-            }
-                if (dealCardUp === ArrayElement8)
-                    {
-                        return dealCardDown;          //CREATE METHOD
-                    }
-                else 
-                    {
-                        return checkDealerHand();
-                    }  
-            }
-        // Loop through players and dealer twice
-        //      Deal cards starting with player one:
-        //      The dealer gives one card face up to each player in rotation, and then 
-        //      one card face up to himself. 
-        //      Another round of cards is then dealt
-        //      face up to each player, but the dealer takes his second card face down.
-        // End loop
-        private void checkDealerHand();
-            {
-                if (dealerUpCard === 10 || ‘Ace’) 
-                {
-                    return checkNaturalBJ;
-                    dealerSumHand = dealerUpCard + dealerDownCard;
-                    return dealerSumHand;
-                }  
-                else (dealerUpCard != 10 || ‘Ace’)
-                {
-                    return playerTurn;
-                }
-            }
-        // Check for natural blackjack
-        //      If the dealer has a natural, he immediately collects the bets of all players 
-        //      who do not have naturals, (but no additional amount). If the dealer and another 
-        //      player both have naturals, the bet of that player is a push (a tie), and 
-        //      the player takes back his chips.
-
-        //      If the dealer's face-up card is a ten-card or an ace, he looks at his face-down 
-        //      card to see if the two cards make a natural. If the face-up card is not a 
-        //      ten -card or an ace, he does not look at the face-down card until it is 
-        //      the dealer's turn to play.
-        // End Check
-            private void checkNaturalBJ();
-                {
-                    if(dealerSumHand == 21)
-                    {
-                        return SumofBets; 
-                        return UpdateDealerBank; 
-                    }
-                    else if (dealerSumHand && playerSumHand === 21)
-                    {
-                        return SumofBets2; 
-                        return UpdateDealerBank2; 
-                        return UpdatePlayerBank;
-                    }
-                    else
-                    {
-                        return playerTurn;
-                    }
-                }
-    
-        // Loop through each player
-        //      Loop until player stands
-        //          Deal card on hit
-        //          Check hand score to see if it is a blackjack or bust
-        //          If hand is a blackjack payout and exit loop
-        //          If hand is a bust then exit loop
-        //      End loop
-        // End loop
-       private void playerTurn();
-        {
-        do
-            {
-                for (player = 0; player <= 3; player++)
-                    {
-                        if (playerHand === 21)
-                            {
-                             return SumofBets;
-                             return ExitGame;                   //Create Method
-                            }
-                        else if (playerHand <= 21)
-                            {
-                             return HitOption;                    //Create Method
-                            }
-                        else if (playerHand > 21)
-                            {
-                             return BustOption;                   //Create Method
-                            }
-                        else if (playerHand <=21 && != HitOption)
-                            {
-                             return StandOption;                  //Create Method
-                            }
-                        else 
-                        {
-                        return dealerTurn();
-                        }                
-                    }
-            }
-        while (PlayerHand != BustOption);
         }
+        //        private void placeFirstBet()
+        //        {
+        //            do
+        //            {
+        //                if (player1 === hasFocus)
+        //                {
+        //                    placeBets(); //CREATE METHOD
+        //                    calcBank();
+        //                }
+        //                else if (player2 === hasFocus)
+        //                {
+        //                    placeBets();
+        //                    calcBank();
+        //                }
+        //                else if (player3 === hasFocus)
+        //                {
+        //                    placeBets();
+        //                    calcBank();
+        //                }
+        //                else (dealer === hasFocus)
+        //                    {
+        //                    placeBets();
+        //                    calcBank();
+        //                }
+        //                while (BetTimer != 0) ;
+        //            }
+        //            if (placeBets === 0 && BetTimer === 0)
+        //            {
+        //                disable Player();  //CREATE METHOD
+        //            }
+        //            else
+        //                return FirstDeal{);
+        //            }
+        //        // Wait for first player to bet 
+        //        //      start countdown timer, 30 seconds
+        //        //      Collect bets from player until timer hits 0
+        //        private void FirstDeal();
+        //         {
+        //         for (player = 0; player <= 4; player++)
+        //            {
+        //                for (dealCardUp = 0; dealCardUp <=8; dealCardUp++)
+        //            }
+        //                if (dealCardUp === ArrayElement8)
+        //                    {
+        //                        return dealCardDown;          //CREATE METHOD
+        //                    }
+        //                else 
+        //                    {
+        //                        return checkDealerHand();
+        //                    }  
+        //            }
+        //        // Loop through players and dealer twice
+        //        //      Deal cards starting with player one:
+        //        //      The dealer gives one card face up to each player in rotation, and then 
+        //        //      one card face up to himself. 
+        //        //      Another round of cards is then dealt
+        //        //      face up to each player, but the dealer takes his second card face down.
+        //        // End loop
+        //        private void checkDealerHand();
+        //            {
+        //                if (dealerUpCard === 10 || ‘Ace’) 
+        //                {
+        //                    return checkNaturalBJ;
+        //                    dealerSumHand = dealerUpCard + dealerDownCard;
+        //                    return dealerSumHand;
+        //                }  
+        //                else (dealerUpCard != 10 || ‘Ace’)
+        //                {
+        //                    return playerTurn;
+        //                }
+        //            }
+        //        // Check for natural blackjack
+        //        //      If the dealer has a natural, he immediately collects the bets of all players 
+        //        //      who do not have naturals, (but no additional amount). If the dealer and another 
+        //        //      player both have naturals, the bet of that player is a push (a tie), and 
+        //        //      the player takes back his chips.
 
-        // Dealer play
-        // Turn face down card face up
-        // While hand score is less than 17
-        //      Dealer must hit until 17 or more
-        // End While
-        private void dealerTurn();
-        {
-        do 
-          {
-            if (dealerHand <= 17)
-            {
-                dealerSumHand = dealerUpCard + dealerDownCard;
-                return dealerSumHand;
-                return HitOption;
-            }
-        while
-            {
-            (dealerSumHand< 17);
-            }
-        }
+        //        //      If the dealer's face-up card is a ten-card or an ace, he looks at his face-down 
+        //        //      card to see if the two cards make a natural. If the face-up card is not a 
+        //        //      ten -card or an ace, he does not look at the face-down card until it is 
+        //        //      the dealer's turn to play.
+        //        // End Check
+        //            private void checkNaturalBJ();
+        //                {
+        //                    if(dealerSumHand == 21)
+        //                    {
+        //                        return SumofBets; 
+        //                        return UpdateDealerBank; 
+        //                    }
+        //                    else if (dealerSumHand && playerSumHand === 21)
+        //                    {
+        //                        return SumofBets2; 
+        //                        return UpdateDealerBank2; 
+        //                        return UpdatePlayerBank;
+        //                    }
+        //                    else
+        //                    {
+        //                        return playerTurn;
+        //                    }
+        //                }
+
+        //        // Loop through each player
+        //        //      Loop until player stands
+        //        //          Deal card on hit
+        //        //          Check hand score to see if it is a blackjack or bust
+        //        //          If hand is a blackjack payout and exit loop
+        //        //          If hand is a bust then exit loop
+        //        //      End loop
+        //        // End loop
+        //       private void playerTurn();
+        //        {
+        //        do
+        //            {
+        //                for (player = 0; player <= 3; player++)
+        //                    {
+        //                        if (playerHand === 21)
+        //                            {
+        //                             return SumofBets;
+        //                             return ExitGame;                   //Create Method
+        //                            }
+        //                        else if (playerHand <= 21)
+        //                            {
+        //                             return HitOption;                    //Create Method
+        //                            }
+        //                        else if (playerHand > 21)
+        //                            {
+        //                             return BustOption;                   //Create Method
+        //                            }
+        //                        else if (playerHand <=21 && != HitOption)
+        //                            {
+        //                             return StandOption;                  //Create Method
+        //                            }
+        //                        else 
+        //                        {
+        //                        return dealerTurn();
+        //                        }                
+        //                    }
+        //            }
+        //        while (PlayerHand != BustOption);
+        //        }
+
+        //        // Dealer play
+        //        // Turn face down card face up
+        //        // While hand score is less than 17
+        //        //      Dealer must hit until 17 or more
+        //        // End While
+        //        private void dealerTurn();
+        //        {
+        //        do 
+        //          {
+        //            if (dealerHand <= 17)
+        //            {
+        //                dealerSumHand = dealerUpCard + dealerDownCard;
+        //                return dealerSumHand;
+        //                return HitOption;
+        //            }
+        //        while
+        //            {
+        //            (dealerSumHand< 17);
+        //            }
+        //        }
 
 
 
-        // Loop through players
-        //      If score is push then return bet to player
-        //      If score beats dealer payout
-        //      If score does not beat dealer then dealer collects bet
-        // End loop
+        //        // Loop through players
+        //        //      If score is push then return bet to player
+        //        //      If score beats dealer payout
+        //        //      If score does not beat dealer then dealer collects bet
+        //        // End loop
 
-        // Game Over
+        //        // Game Over
+        //    }
+        //    while
+        //    {
+        //        (Winner === false);
+        //    }
+        //}
+
+        //}
+
+
+        ////CREATED METHODS
+
+
+        //private int calcBank();
+        //{
+        //   newBalance = Bet – Balance;
+        //   return newBalance;
+        //}
+
+
+        // private void BetTimer(object sender, EventArgs e)
+        //{
+
+        //    Label timeLabel = new Label();
+
+        //    // Start the timer
+        //    timeLeft = 30;
+        //    timeLabel.Text = timeLeft + "s";
+        //    BetTimer.Start();
+
+
+        //    // Timer counts down from 30 and displays the time left.
+        //    if (timeLeft > 0)
+        //    {
+        //        timeLeft = timeLeft - 1;
+        //        timeLabel.Text = timeLeft + "s";
+        //    }
+        //    // Counter reaches zero, it will stop and display out of time message.
+        //    else
+        //    {
+        //        BetTimer.Stop();
+        //        timeLabel.Text = "Your time is up!";
+        //    }
+        //}
+
+        //private int SumofBets();
+        //{
+        //  collectAllBets = player1Bet + player2Bet + player3Bet + DealerBet;
+        //  return collectAllBets;
+        //}
+
+
+        //private int UpdateDealerBank();
+        //{
+        //  UpdateDealerCash = DealerBank + collectAllBets;
+        //  return UpdateDealerCash;  
+        //}
+
+        //private int SumofBets2();
+        //{
+        //  if (player1Hand === 21)
+        //    {
+        //    collectBets1 = player2Bet + player3Bet;
+        //    return collectBets1;
+        //    }
+        //  else if (player2Hand === 21)
+        //    {
+        //    collectBets2 = player1Bet + player3Bet;
+        //    return collectBets2;
+        //    }
+        //  else (player3Hand === 21)
+        //    {
+        //    collectBets1 = player1Bet + player2Bet;
+        //    return collectBets3;
+        //    }
+        //}
+
+        //collectAllBets = player1Bet + player2Bet + player3Bet;
+        //  return collectAllBets;
+        //}
+
+
+        //private int UpdateDealerBank2();
+        //{
+        //  if (SumofBets2 === collectBets1)
+        //     {
+        //     UpdateDealerCash = DealerBank + collectBets1;
+        //     return UpdateDealerCash2;  
+        //     }
+        //  else if(SumofBets2 === collectBets2)
+        //     {
+        //     UpdateDealerCash = DealerBank + collectBets2;
+        //     return UpdateDealerCash2;  
+        //     }
+        //  else (SumofBets2 === collectBets3)
+        //     {
+        //     UpdateDealerCash = DealerBank + collectBets3; 
+        //     return UpdateDealerCash2;  
+        //     }
+        //}
+
+
+        //private int UpdatePlayerBank();
+        //{
+        //  if (collectBets1)
+        //     {
+        //       UpdatePlayerCash1 = PlayerBank + collectBets1;
+        //       return UpdatePlayerCash1;
+        //     }
+        //  else if (collectBets2)
+        //     {
+        //       UpdatePlayerCash2 = PlayerBank + collectBets2;
+        //       return UpdatePlayerCash2;
+        //     }
+        //  else (collectBets1)
+        //     {
+        //       UpdatePlayerCash3 = PlayerBank + collectBets3;
+        //       return UpdatePlayerCash3;
+        //     }
     }
-    while
-    {
-        (Winner === false);
-    }
-}
-   
-}
-
-
-//CREATED METHODS
-
-
-private int calcBank();
-{
-   newBalance = Bet – Balance;
-   return newBalance;
-}
-
-
- private void BetTimer(object sender, EventArgs e)
-{
-
-    Label timeLabel = new Label();
-
-    // Start the timer
-    timeLeft = 30;
-    timeLabel.Text = timeLeft + "s";
-    BetTimer.Start();
-
-
-    // Timer counts down from 30 and displays the time left.
-    if (timeLeft > 0)
-    {
-        timeLeft = timeLeft - 1;
-        timeLabel.Text = timeLeft + "s";
-    }
-    // Counter reaches zero, it will stop and display out of time message.
-    else
-    {
-        BetTimer.Stop();
-        timeLabel.Text = "Your time is up!";
-    }
-}
-
-private int SumofBets();
-{
-  collectAllBets = player1Bet + player2Bet + player3Bet + DealerBet;
-  return collectAllBets;
-}
-
-
-private int UpdateDealerBank();
-{
-  UpdateDealerCash = DealerBank + collectAllBets;
-  return UpdateDealerCash;  
-}
-
-private int SumofBets2();
-{
-  if (player1Hand === 21)
-    {
-    collectBets1 = player2Bet + player3Bet;
-    return collectBets1;
-    }
-  else if (player2Hand === 21)
-    {
-    collectBets2 = player1Bet + player3Bet;
-    return collectBets2;
-    }
-  else (player3Hand === 21)
-    {
-    collectBets1 = player1Bet + player2Bet;
-    return collectBets3;
-    }
-}
-
-collectAllBets = player1Bet + player2Bet + player3Bet;
-  return collectAllBets;
-}
-
-
-private int UpdateDealerBank2();
-{
-  if (SumofBets2 === collectBets1)
-     {
-     UpdateDealerCash = DealerBank + collectBets1;
-     return UpdateDealerCash2;  
-     }
-  else if(SumofBets2 === collectBets2)
-     {
-     UpdateDealerCash = DealerBank + collectBets2;
-     return UpdateDealerCash2;  
-     }
-  else (SumofBets2 === collectBets3)
-     {
-     UpdateDealerCash = DealerBank + collectBets3; 
-     return UpdateDealerCash2;  
-     }
-}
-
-
-private int UpdatePlayerBank();
-{
-  if (collectBets1)
-     {
-       UpdatePlayerCash1 = PlayerBank + collectBets1;
-       return UpdatePlayerCash1;
-     }
-  else if (collectBets2)
-     {
-       UpdatePlayerCash2 = PlayerBank + collectBets2;
-       return UpdatePlayerCash2;
-     }
-  else (collectBets1)
-     {
-       UpdatePlayerCash3 = PlayerBank + collectBets3;
-       return UpdatePlayerCash3;
-     }
 }
