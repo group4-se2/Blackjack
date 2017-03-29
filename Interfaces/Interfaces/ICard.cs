@@ -15,6 +15,8 @@ namespace Common.Lib.Interfaces
         bool IsFaceCard { get; }
 
         bool IsAce { get; }
+
+        bool IsFaceDown { get; set; }
     }
     public enum Suit
     {

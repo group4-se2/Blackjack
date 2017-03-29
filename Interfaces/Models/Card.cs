@@ -16,7 +16,7 @@ namespace Common.Lib.Models
         public string Description
         {
             get
-            { return this.FaceValue + " " + Suit; } 
+            { return this.FaceValue + " " + Suit; }
         }
 
         public int NumericValue { get; set; }
@@ -24,7 +24,7 @@ namespace Common.Lib.Models
         public FaceValue FaceValue
         {
             get
-            { return (FaceValue) NumericValue; }
+            { return (FaceValue)NumericValue; }
         }
 
         public bool IsFaceCard
@@ -37,5 +37,7 @@ namespace Common.Lib.Models
             get
             { return NumericValue == 14; }
         }
+
+        public bool IsFaceDown { get; set; }
     }
 }
