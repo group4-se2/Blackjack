@@ -10,11 +10,16 @@ using System.Windows.Forms;
 using System.Drawing.Text;
 using System.IO;
 using Player.Interfaces;
+using Common.Lib.Interfaces;
 
 namespace Player
 {
     public partial class InGameView : Form, IInGameView
     {
+
+        IInGameModel model;
+        IPlayer p1, p2, p3, p4;
+
         public InGameView()
         {
             InitializeComponent();
@@ -22,6 +27,64 @@ namespace Player
         }
 
         private void InGame_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+
+        public void UpdateView()
+        {
+
+            // Update Players
+            this.p1 = model.getPlayer(1);
+            this.p2 = model.getPlayer(2);
+            this.p3 = model.getPlayer(3);
+            this.p4 = model.getPlayer(4);
+
+            this.Invoke((MethodInvoker) delegate
+            {
+                // P1
+                p1CardValue.Text = p1.scoreHand().ToString();
+                p1Name.Text = p1.Name;
+                p1BetAmount.Text = "Bet: $" + p1.getWagerAmount().ToString();
+                p1TotalMoney.Text = "$" + p1.getCreditBalance().ToString();
+
+                if (p1.getFocus() == true) { p1Name.BackColor = Color.DarkOliveGreen; }
+                else { p1Name.BackColor = Color.Transparent; }
+                
+                // P2
+                p2CardValue.Text = p2.scoreHand().ToString();
+                p2Name.Text = p2.Name;
+                p2BetAmount.Text = "Bet: $" + p2.getWagerAmount().ToString();
+                p2TotalMoney.Text = "$" + p2.getCreditBalance().ToString();
+
+                if (p2.getFocus() == true) { p2Name.BackColor = Color.DarkOliveGreen; }
+                else { p2Name.BackColor = Color.Transparent; }
+
+                // P3
+                p3CardValue.Text = p3.scoreHand().ToString();
+                p3Name.Text = p3.Name;
+                p3BetAmount.Text = "Bet: $" + p3.getWagerAmount().ToString();
+                p3TotalMoney.Text = "$" + p3.getCreditBalance().ToString();
+
+                if (p3.getFocus() == true) { p3Name.BackColor = Color.DarkOliveGreen; }
+                else { p3Name.BackColor = Color.Transparent; }
+
+                // P4
+                p4CardValue.Text = p4.scoreHand().ToString();
+                p4Name.Text = p4.Name;
+                p4BetAmount.Text = "Bet: $" + p4.getWagerAmount().ToString();
+                p4TotalMoney.Text = "$" + p4.getCreditBalance().ToString();
+
+                if (p4.getFocus() == true) { p4Name.BackColor = Color.DarkOliveGreen; }
+                else { p4Name.BackColor = Color.Transparent; }
+
+            });
+
+
+        }
+
+        public void UpdatePlayer(IPlayer player)
         {
             
         }

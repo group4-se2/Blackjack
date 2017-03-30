@@ -100,3 +100,5 @@ E:\GitHub Repository\Blackjack - Mar 30\Dealer\bin\Debug\Dealer.exe.config
 E:\GitHub Repository\Blackjack - Mar 30\Dealer\obj\Debug\Dealer.exe
 E:\GitHub Repository\Blackjack - Mar 30\Dealer\obj\Debug\Dealer.pdb
 E:\GitHub Repository\Blackjack - Mar 30\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+C:\Users\jml87\Source\Repos\Blackjack\Dealer\bin\Debug\Common.Lib.dll
+C:\Users\jml87\Source\Repos\Blackjack\Dealer\bin\Debug\Common.Lib.pdb

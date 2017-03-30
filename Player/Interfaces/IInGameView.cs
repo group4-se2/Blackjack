@@ -5,5 +5,6 @@ namespace Player.Interfaces
     public interface IInGameView
     {
         DialogResult ShowDialog();
+        void UpdateView();
     }
 }

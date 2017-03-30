@@ -25,6 +25,8 @@ namespace Player.Presenters
 
         public void UpdateView()
         {
+            // Update everything here
+
             throw new NotImplementedException();
         }
 
@@ -35,7 +37,13 @@ namespace Player.Presenters
 
         public void client_OnDataReceived(object sender, ClientDataReceivedEventArgs e)
         {
+
+            // Player object retrieved from server
             IPlayer player = (Common.Lib.Models.Player)e.CmdObject.Payload;
+
+            model.updatePlayer(1, player);
+
+            view.UpdateView();
         }
     }
 }
