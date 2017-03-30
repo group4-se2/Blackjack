@@ -35,3 +35,6 @@ E:\GitHub Repository\Blackjack - Mar 22\DealerTests\bin\Debug\Newtonsoft.Json.xm
 E:\GitHub Repository\Blackjack - Mar 22\DealerTests\obj\Debug\DealerTests.csprojResolveAssemblyReference.cache
 E:\GitHub Repository\Blackjack - Mar 22\DealerTests\obj\Debug\DealerTests.dll
 E:\GitHub Repository\Blackjack - Mar 22\DealerTests\obj\Debug\DealerTests.pdb
+E:\GitHub Repository\Blackjack - Mar 30\DealerTests\obj\Debug\DealerTests.csprojResolveAssemblyReference.cache
+E:\GitHub Repository\Blackjack - Mar 30\DealerTests\obj\Debug\DealerTests.dll
+E:\GitHub Repository\Blackjack - Mar 30\DealerTests\obj\Debug\DealerTests.pdb

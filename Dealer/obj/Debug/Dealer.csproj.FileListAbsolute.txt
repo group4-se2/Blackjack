@@ -96,3 +96,7 @@ C:\Users\JL\Source\Repos\BlackjackMain\Dealer\obj\Debug\Dealer.csprojResolveAsse
 C:\Users\David\Source\Repos\Blackjack3\Dealer\bin\Debug\Dealer.exe.config
 C:\Users\David\Source\Repos\Blackjack3\Dealer\obj\Debug\Dealer.exe
 C:\Users\David\Source\Repos\Blackjack3\Dealer\obj\Debug\Dealer.pdb
+E:\GitHub Repository\Blackjack - Mar 30\Dealer\bin\Debug\Dealer.exe.config
+E:\GitHub Repository\Blackjack - Mar 30\Dealer\obj\Debug\Dealer.exe
+E:\GitHub Repository\Blackjack - Mar 30\Dealer\obj\Debug\Dealer.pdb
+E:\GitHub Repository\Blackjack - Mar 30\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache

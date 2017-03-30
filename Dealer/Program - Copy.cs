@@ -6,6 +6,7 @@ using System.Timers;
 
 namespace Dealer
 {
+    //used by Program to advance gameplay
     enum GameState
     {
         WaitingForBet,
@@ -33,22 +34,7 @@ namespace Dealer
             Program2 program2 = new Program2();
             program2.run();
 
-            // Demonstration of drawing a card from the deck and displaying it
-
-            //char[] face = new char[3] { 'J', 'Q', 'K' };
-            //Deck deck = new Deck();
-            //for (int i = 0; i < 52; i++)
-            //{
-            //    ICard card = deck.drawCard();
-            //    if (card.CardType == CardType.Pip)
-            //        Console.WriteLine((i + 1) + " " + card.Value.ToString() + " " + card.Suit.ToString());
-            //    else if(card.CardType == CardType.Face)
-            //        Console.WriteLine((i + 1) + " " + face[card.Value - 11] + " " + card.Suit.ToString());
-            //    else if (card.CardType == CardType.Ace)
-            //        Console.WriteLine((i + 1) + " " + "A " + card.Suit.ToString());
-            //}
-            //Console.WriteLine(deck.Cards.Count);
-
+            //temporary for testing
             Console.ReadLine();
         }
 
@@ -72,24 +58,28 @@ namespace Dealer
             server.OnDataReceived += Server_OnDataReceived;
             server.Start();
 
-            // This code sets up and starts the discovery server.
-            // The discovery server allows the player application to find our server and connect to it.
+            /* This code sets up and starts the discovery server.
+             * The discovery server allows the player application to find our 
+             * server and connect to it.
+             */
             DiscoveryServer discoveryServer = new DiscoveryServer("Blackjack", server.GetPort());
             discoveryServer.Start();
 
             // Start executing the game logic
             GameLoop();
 
+            //temporary for testing
             Console.ReadLine();
-
             Player player = new Player();
             player.Name = "Tim";
             CommandObject cmdObj = new CommandObject();
             cmdObj.Command = Command.Sync;
             cmdObj.Payload = player;
             server.Send("Tim", cmdObj);
+
         }
 
+        //
         private void SyncPlayers()
         {
             CommandObject cmdObj = new CommandObject();
@@ -102,26 +92,26 @@ namespace Dealer
         /// When data is received from the clients this is where it will end up
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Server_OnDataReceived(object sender, DataReceivedEventArgs e)
+        /// <param name="recEvent"></param>
+        private void Server_OnDataReceived(object sender, DataReceivedEventArgs recEvent)
         {
-            switch (e.CmdObject.Command)
+            switch (recEvent.CmdObject.Command)
             {
                 case Command.Bet:
                     if (gameState == GameState.WaitingForBet) gameState = GameState.CollectingBets;
-                    players.Find(x => x.Name == ((Player)e.CmdObject.Payload).Name).setWagerAmount(((Player)e.CmdObject.Payload).getWagerAmount());
+                    players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).setWagerAmount(((Player)recEvent.CmdObject.Payload).getWagerAmount());
                     break;
                 case Command.Exit:
-                    players.Remove(players.Find(x => x.Name == ((Player)e.CmdObject.Payload).Name));
+                    players.Remove(players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name));
                     SyncPlayers();
                     break;
                 case Command.Hit:
                     gameState = GameState.PlayerHits;
                     break;
                 case Command.Join:
-                    if (e.CmdObject.Response == Response.Accepted)
+                    if (recEvent.CmdObject.Response == Response.Accepted)
                     {
-                        players.Add((Player)e.CmdObject.Payload);
+                        players.Add((Player)recEvent.CmdObject.Payload);
                         SyncPlayers();
                     }
                     break;

@@ -211,3 +211,17 @@ C:\Users\JL\Source\Repos\BlackjackMain\Player\obj\Debug\Player.csproj.GenerateRe
 C:\Users\David\Source\Repos\Blackjack3\Player\bin\Debug\Player.exe.config
 C:\Users\David\Source\Repos\Blackjack3\Player\obj\Debug\Player.exe
 C:\Users\David\Source\Repos\Blackjack3\Player\obj\Debug\Player.pdb
+E:\GitHub Repository\Blackjack - Mar 30\Player\bin\Debug\Player.exe.config
+E:\GitHub Repository\Blackjack - Mar 30\Player\obj\Debug\Player.exe
+E:\GitHub Repository\Blackjack - Mar 30\Player\obj\Debug\Player.pdb
+E:\GitHub Repository\Blackjack - Mar 30\Player\bin\Debug\Player.exe
+E:\GitHub Repository\Blackjack - Mar 30\Player\bin\Debug\Player.pdb
+E:\GitHub Repository\Blackjack - Mar 30\Player\bin\Debug\Common.Lib.dll
+E:\GitHub Repository\Blackjack - Mar 30\Player\bin\Debug\Newtonsoft.Json.dll
+E:\GitHub Repository\Blackjack - Mar 30\Player\bin\Debug\Common.Lib.pdb
+E:\GitHub Repository\Blackjack - Mar 30\Player\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub Repository\Blackjack - Mar 30\Player\obj\Debug\Player.csprojResolveAssemblyReference.cache
+E:\GitHub Repository\Blackjack - Mar 30\Player\obj\Debug\Player.StartGameView.resources
+E:\GitHub Repository\Blackjack - Mar 30\Player\obj\Debug\Player.InGameView.resources
+E:\GitHub Repository\Blackjack - Mar 30\Player\obj\Debug\Player.Properties.Resources.resources
+E:\GitHub Repository\Blackjack - Mar 30\Player\obj\Debug\Player.csproj.GenerateResource.Cache
