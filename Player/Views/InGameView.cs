@@ -20,8 +20,11 @@ namespace Player
         IInGameModel model;
         IPlayer p1, p2, p3, p4;
 
-        public InGameView()
+        public InGameView(IInGameModel model)
         {
+
+            this.model = model;
+
             InitializeComponent();
             this.CenterToScreen();
         }
@@ -35,8 +38,21 @@ namespace Player
         public void UpdateView()
         {
 
-            // Update Players
             this.p1 = model.getPlayer(1);
+
+            this.Invoke((MethodInvoker) delegate
+            {
+                //p1CardValue.Text = p1.scoreHand().ToString();
+                p1Name.Text = p1.Name;
+                p1BetAmount.Text = "Bet: $" + p1.getWagerAmount().ToString();
+                p1TotalMoney.Text = "$" + p1.getCreditBalance().ToString();
+
+                if (p1.getFocus() == true) { p1Name.BackColor = Color.DarkOliveGreen; }
+                else { p1Name.BackColor = Color.Transparent; }
+            });
+
+            // Update Players
+            /*this.p1 = model.getPlayer(1);
             this.p2 = model.getPlayer(2);
             this.p3 = model.getPlayer(3);
             this.p4 = model.getPlayer(4);
@@ -81,7 +97,7 @@ namespace Player
 
             });
 
-
+            */
         }
 
         public void UpdatePlayer(IPlayer player)

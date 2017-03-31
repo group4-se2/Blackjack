@@ -225,3 +225,17 @@ C:\Users\jml87\Source\Repos\Blackjack\Player\bin\Debug\Common.Lib.dll
 C:\Users\jml87\Source\Repos\Blackjack\Player\bin\Debug\Common.Lib.pdb
 C:\Users\jml87\Source\Repos\Blackjack\Player\obj\Debug\Player.StartGameView.resources
 C:\Users\jml87\Source\Repos\Blackjack\Player\obj\Debug\Player.InGameView.resources
+C:\Users\JL\Source\Repos\Blackjack3\Player\bin\Debug\Player.exe.config
+C:\Users\JL\Source\Repos\Blackjack3\Player\obj\Debug\Player.exe
+C:\Users\JL\Source\Repos\Blackjack3\Player\obj\Debug\Player.pdb
+C:\Users\JL\Source\Repos\Blackjack3\Player\bin\Debug\Player.exe
+C:\Users\JL\Source\Repos\Blackjack3\Player\bin\Debug\Player.pdb
+C:\Users\JL\Source\Repos\Blackjack3\Player\bin\Debug\Common.Lib.dll
+C:\Users\JL\Source\Repos\Blackjack3\Player\bin\Debug\Newtonsoft.Json.dll
+C:\Users\JL\Source\Repos\Blackjack3\Player\bin\Debug\Common.Lib.pdb
+C:\Users\JL\Source\Repos\Blackjack3\Player\bin\Debug\Newtonsoft.Json.xml
+C:\Users\JL\Source\Repos\Blackjack3\Player\obj\Debug\Player.csprojResolveAssemblyReference.cache
+C:\Users\JL\Source\Repos\Blackjack3\Player\obj\Debug\Player.StartGameView.resources
+C:\Users\JL\Source\Repos\Blackjack3\Player\obj\Debug\Player.InGameView.resources
+C:\Users\JL\Source\Repos\Blackjack3\Player\obj\Debug\Player.Properties.Resources.resources
+C:\Users\JL\Source\Repos\Blackjack3\Player\obj\Debug\Player.csproj.GenerateResource.Cache

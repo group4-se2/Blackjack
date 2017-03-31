@@ -41,6 +41,8 @@ namespace Player.Presenters
             // Player object retrieved from server
             IPlayer player = (Common.Lib.Models.Player)e.CmdObject.Payload;
 
+            Console.WriteLine("Name: " + player.getCreditBalance().ToString());
+
             model.updatePlayer(1, player);
 
             view.UpdateView();
