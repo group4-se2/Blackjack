@@ -80,3 +80,18 @@ E:\GitHub Repository\Blackjack - Mar 30\PlayerTests\bin\Debug\Newtonsoft.Json.xm
 E:\GitHub Repository\Blackjack - Mar 30\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
 E:\GitHub Repository\Blackjack - Mar 30\PlayerTests\obj\Debug\PlayerTests.dll
 E:\GitHub Repository\Blackjack - Mar 30\PlayerTests\obj\Debug\PlayerTests.pdb
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\bin\Debug\PlayerTests.dll
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\bin\Debug\PlayerTests.pdb
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\bin\Debug\Castle.Core.dll
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\bin\Debug\Common.Lib.dll
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\bin\Debug\Moq.dll
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\bin\Debug\Player.exe
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\bin\Debug\Common.Lib.pdb
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\bin\Debug\Player.pdb
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\bin\Debug\Castle.Core.xml
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\bin\Debug\Moq.xml
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\obj\Debug\PlayerTests.dll
+C:\Users\JL\Source\Repos\Blackjack3\PlayerTests\obj\Debug\PlayerTests.pdb

@@ -38,3 +38,14 @@ E:\GitHub Repository\Blackjack - Mar 22\DealerTests\obj\Debug\DealerTests.pdb
 E:\GitHub Repository\Blackjack - Mar 30\DealerTests\obj\Debug\DealerTests.csprojResolveAssemblyReference.cache
 E:\GitHub Repository\Blackjack - Mar 30\DealerTests\obj\Debug\DealerTests.dll
 E:\GitHub Repository\Blackjack - Mar 30\DealerTests\obj\Debug\DealerTests.pdb
+C:\Users\JL\Source\Repos\Blackjack3\DealerTests\bin\Debug\DealerTests.dll
+C:\Users\JL\Source\Repos\Blackjack3\DealerTests\bin\Debug\DealerTests.pdb
+C:\Users\JL\Source\Repos\Blackjack3\DealerTests\bin\Debug\Common.Lib.dll
+C:\Users\JL\Source\Repos\Blackjack3\DealerTests\bin\Debug\Dealer.exe
+C:\Users\JL\Source\Repos\Blackjack3\DealerTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\JL\Source\Repos\Blackjack3\DealerTests\bin\Debug\Dealer.pdb
+C:\Users\JL\Source\Repos\Blackjack3\DealerTests\bin\Debug\Common.Lib.pdb
+C:\Users\JL\Source\Repos\Blackjack3\DealerTests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\JL\Source\Repos\Blackjack3\DealerTests\obj\Debug\DealerTests.csprojResolveAssemblyReference.cache
+C:\Users\JL\Source\Repos\Blackjack3\DealerTests\obj\Debug\DealerTests.dll
+C:\Users\JL\Source\Repos\Blackjack3\DealerTests\obj\Debug\DealerTests.pdb

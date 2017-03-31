@@ -100,6 +100,7 @@ namespace Dealer
                 case Command.Bet:
                     if (gameState == GameState.WaitingForBet) gameState = GameState.CollectingBets;
                     players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).setWagerAmount(((Player)recEvent.CmdObject.Payload).getWagerAmount());
+                    Console.WriteLine("Bet Received");
                     break;
                 case Command.Exit:
                     players.Remove(players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name));
@@ -177,10 +178,11 @@ namespace Dealer
             // Wait for first player to bet 
             //      start countdown timer, 30 seconds
             //      Collect bets from player until timer hits 0
-
+            //Console.WriteLine("Waiting for bet...");
             while (gameState == GameState.WaitingForBet)
             {
                 // Wait for any player to place a bet
+                
             }
 
             gameState = GameState.CollectingBets;

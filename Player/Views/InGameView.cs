@@ -19,6 +19,9 @@ namespace Player
 
         IInGameModel model;
         IPlayer p1, p2, p3, p4;
+        Label[] names;
+
+        double betAmount = 0.00;
 
         public InGameView(IInGameModel model)
         {
@@ -31,9 +34,83 @@ namespace Player
 
         private void InGame_Load(object sender, EventArgs e)
         {
-            
+            Label player1name = new Label();
+            player1name.Text = "Julian Loftis";
+            player1name.SetBounds(50, 50, 200, 50);
+            this.Controls.Add(player1name);
+
+            /*
+            List<IPlayer> tempPlayers = new List<IPlayer>();
+
+            Common.Lib.Models.Player player1 = new Common.Lib.Models.Player();
+            player1.Name = "Dealer";
+
+            Common.Lib.Models.Player player2 = new Common.Lib.Models.Player();
+            player2.Name = "Tim";
+
+            Common.Lib.Models.Player player3 = new Common.Lib.Models.Player();
+            player3.Name = "Julian";
+
+            tempPlayers.Add(player1);
+            tempPlayers.Add(player2);
+            tempPlayers.Add(player3);
+
+            UpdatePlayers(tempPlayers);
+
+            */
         }
 
+        public void UpdatePlayers(List<IPlayer> players)
+        {
+            int count = 0;
+
+            foreach (IPlayer player in players)
+            {
+                // Parse out player data
+
+                if (player.Name == "Dealer" && count == 0)
+                {
+                    // Update Dealer Info
+                    count++;
+                }
+                else
+                {
+                    if (count == 1)
+                    {
+                        // Update Player 1
+                        p1Name.Text = player.Name;
+                        p1TotalMoney.Text = "$" + player.getCreditBalance().ToString();
+                        p1BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
+                        
+                    }
+                    else if (count == 2)
+                    {
+                        // Update Player 2
+                        p2Name.Text = player.Name;
+                        p2TotalMoney.Text = "$" + player.getCreditBalance().ToString();
+                        p2BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
+                    }
+                    else if (count == 3)
+                    {
+                        // Update Player 3
+                        p3Name.Text = player.Name;
+                        p3TotalMoney.Text = "$" + player.getCreditBalance().ToString();
+                        p3BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
+                    }
+                    else if (count == 4)
+                    {
+                        // Update Player 4
+                        p4Name.Text = player.Name;
+                        p4TotalMoney.Text = "$" + player.getCreditBalance().ToString();
+                        p4BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
+                    }
+
+                    count++;
+                }
+                
+            }
+
+        }
 
         public void UpdateView()
         {
@@ -51,56 +128,35 @@ namespace Player
                 else { p1Name.BackColor = Color.Transparent; }
             });
 
-            // Update Players
-            /*this.p1 = model.getPlayer(1);
-            this.p2 = model.getPlayer(2);
-            this.p3 = model.getPlayer(3);
-            this.p4 = model.getPlayer(4);
-
-            this.Invoke((MethodInvoker) delegate
-            {
-                // P1
-                p1CardValue.Text = p1.scoreHand().ToString();
-                p1Name.Text = p1.Name;
-                p1BetAmount.Text = "Bet: $" + p1.getWagerAmount().ToString();
-                p1TotalMoney.Text = "$" + p1.getCreditBalance().ToString();
-
-                if (p1.getFocus() == true) { p1Name.BackColor = Color.DarkOliveGreen; }
-                else { p1Name.BackColor = Color.Transparent; }
-                
-                // P2
-                p2CardValue.Text = p2.scoreHand().ToString();
-                p2Name.Text = p2.Name;
-                p2BetAmount.Text = "Bet: $" + p2.getWagerAmount().ToString();
-                p2TotalMoney.Text = "$" + p2.getCreditBalance().ToString();
-
-                if (p2.getFocus() == true) { p2Name.BackColor = Color.DarkOliveGreen; }
-                else { p2Name.BackColor = Color.Transparent; }
-
-                // P3
-                p3CardValue.Text = p3.scoreHand().ToString();
-                p3Name.Text = p3.Name;
-                p3BetAmount.Text = "Bet: $" + p3.getWagerAmount().ToString();
-                p3TotalMoney.Text = "$" + p3.getCreditBalance().ToString();
-
-                if (p3.getFocus() == true) { p3Name.BackColor = Color.DarkOliveGreen; }
-                else { p3Name.BackColor = Color.Transparent; }
-
-                // P4
-                p4CardValue.Text = p4.scoreHand().ToString();
-                p4Name.Text = p4.Name;
-                p4BetAmount.Text = "Bet: $" + p4.getWagerAmount().ToString();
-                p4TotalMoney.Text = "$" + p4.getCreditBalance().ToString();
-
-                if (p4.getFocus() == true) { p4Name.BackColor = Color.DarkOliveGreen; }
-                else { p4Name.BackColor = Color.Transparent; }
-
-            });
-
-            */
+           
         }
 
-        public void UpdatePlayer(IPlayer player)
+        private void credit1Btn_Click(object sender, EventArgs e)
+        {
+            // Increment bet amount by 1
+            this.betAmount += 1;
+        }
+
+        private void credit5Btn_Click(object sender, EventArgs e)
+        {
+            // Increment bet amount by 5
+            this.betAmount += 5;
+        }
+
+        private void credit10Btn_Click(object sender, EventArgs e)
+        {
+            // Increment bet amount by 10
+            this.betAmount += 10;
+        }
+
+        private void creditAllBet_Click(object sender, EventArgs e)
+        {
+            // Increment bet by adding all available money
+            this.betAmount = 0;
+            this.betAmount = p1.getCreditBalance();
+        }
+
+        private void submitBetBtn_Click(object sender, EventArgs e)
         {
             
         }

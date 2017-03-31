@@ -112,6 +112,7 @@
             this.submitBetBtn.Size = new System.Drawing.Size(188, 40);
             this.submitBetBtn.TabIndex = 10;
             this.submitBetBtn.UseVisualStyleBackColor = true;
+            this.submitBetBtn.Click += new System.EventHandler(this.submitBetBtn_Click);
             // 
             // creditAllBet
             // 
@@ -124,6 +125,7 @@
             this.creditAllBet.Size = new System.Drawing.Size(188, 40);
             this.creditAllBet.TabIndex = 9;
             this.creditAllBet.UseVisualStyleBackColor = true;
+            this.creditAllBet.Click += new System.EventHandler(this.creditAllBet_Click);
             // 
             // credit10Btn
             // 
@@ -136,6 +138,7 @@
             this.credit10Btn.Size = new System.Drawing.Size(188, 40);
             this.credit10Btn.TabIndex = 8;
             this.credit10Btn.UseVisualStyleBackColor = true;
+            this.credit10Btn.Click += new System.EventHandler(this.credit10Btn_Click);
             // 
             // credit5Btn
             // 
@@ -148,6 +151,7 @@
             this.credit5Btn.Size = new System.Drawing.Size(188, 40);
             this.credit5Btn.TabIndex = 7;
             this.credit5Btn.UseVisualStyleBackColor = true;
+            this.credit5Btn.Click += new System.EventHandler(this.credit5Btn_Click);
             // 
             // credit1Btn
             // 
@@ -160,6 +164,7 @@
             this.credit1Btn.Size = new System.Drawing.Size(188, 40);
             this.credit1Btn.TabIndex = 6;
             this.credit1Btn.UseVisualStyleBackColor = true;
+            this.credit1Btn.Click += new System.EventHandler(this.credit1Btn_Click);
             // 
             // standBtn
             // 

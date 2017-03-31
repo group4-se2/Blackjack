@@ -1,6 +1,7 @@
 ﻿using Common.Lib.Interfaces;
 using Player.Interfaces;
 using System;
+using System.Collections.Generic;
 
 namespace Player.Models
 {
@@ -9,6 +10,7 @@ namespace Player.Models
 
         // Players
         IPlayer p1, p2, p3, p4;
+        List<IPlayer> players;
 
         public InGameModel()
         {
