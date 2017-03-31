@@ -242,3 +242,17 @@ C:\Users\JL\Source\Repos\Blackjack3\Player\obj\Debug\Player.csproj.GenerateResou
 H:\GitHub\New folder\Player\bin\Debug\Player.exe.config
 H:\GitHub\New folder\Player\obj\Debug\Player.exe
 H:\GitHub\New folder\Player\obj\Debug\Player.pdb
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\bin\Debug\Player.exe.config
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\obj\Debug\Player.exe
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\obj\Debug\Player.pdb
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\bin\Debug\Player.exe
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\bin\Debug\Player.pdb
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\bin\Debug\Common.Lib.dll
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\bin\Debug\Newtonsoft.Json.dll
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\bin\Debug\Common.Lib.pdb
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\bin\Debug\Newtonsoft.Json.xml
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\obj\Debug\Player.csprojResolveAssemblyReference.cache
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\obj\Debug\Player.InGameView.resources
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\obj\Debug\Player.StartGameView.resources
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\obj\Debug\Player.Properties.Resources.resources
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Player\obj\Debug\Player.csproj.GenerateResource.Cache

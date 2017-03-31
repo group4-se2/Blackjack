@@ -11,6 +11,7 @@ using System.Drawing.Text;
 using System.IO;
 using Player.Interfaces;
 using Common.Lib.Interfaces;
+using Player.Presenters;
 
 namespace Player
 {
@@ -22,6 +23,8 @@ namespace Player
         Label[] names;
 
         double betAmount = 0.00;
+
+        public IInGamePresenter InGamePresenter { get; set; }
 
         public InGameView(IInGameModel model)
         {
@@ -39,7 +42,7 @@ namespace Player
             player1name.SetBounds(50, 50, 200, 50);
             this.Controls.Add(player1name);
 
-            /*
+            
             List<IPlayer> tempPlayers = new List<IPlayer>();
 
             Common.Lib.Models.Player player1 = new Common.Lib.Models.Player();
@@ -57,7 +60,7 @@ namespace Player
 
             UpdatePlayers(tempPlayers);
 
-            */
+            
         }
 
         public void UpdatePlayers(List<IPlayer> players)
@@ -115,19 +118,7 @@ namespace Player
         public void UpdateView()
         {
 
-            this.p1 = model.getPlayer(1);
-
-            this.Invoke((MethodInvoker) delegate
-            {
-                //p1CardValue.Text = p1.scoreHand().ToString();
-                p1Name.Text = p1.Name;
-                p1BetAmount.Text = "Bet: $" + p1.getWagerAmount().ToString();
-                p1TotalMoney.Text = "$" + p1.getCreditBalance().ToString();
-
-                if (p1.getFocus() == true) { p1Name.BackColor = Color.DarkOliveGreen; }
-                else { p1Name.BackColor = Color.Transparent; }
-            });
-
+            
            
         }
 
@@ -158,7 +149,7 @@ namespace Player
 
         private void submitBetBtn_Click(object sender, EventArgs e)
         {
-            
+            InGamePresenter.TestMethod();
         }
 
         public void pictureBox1_Click(object sender, EventArgs e)

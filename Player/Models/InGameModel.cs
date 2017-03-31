@@ -10,7 +10,10 @@ namespace Player.Models
 
         // Players
         IPlayer p1, p2, p3, p4;
-        List<IPlayer> players;
+        public IList<Common.Lib.Models.Player> players { get; set; }
+
+        public IPlayer mainPlayer { get; set; }
+       
 
         public InGameModel()
         {

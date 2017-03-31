@@ -72,10 +72,19 @@ namespace Dealer
             Console.ReadLine();
             Player player = new Player();
             player.Name = "Tim";
-            CommandObject cmdObj = new CommandObject();
+            
+            players.Add(player);
+
+            Player player2 = new Player();
+            player2.Name = "Julian";
+
+            players.Add(player2);
+
+            SyncPlayers();
+            /*CommandObject cmdObj = new CommandObject();
             cmdObj.Command = Command.Sync;
             cmdObj.Payload = player;
-            server.Send("Tim", cmdObj);
+            server.Send("Tim", cmdObj); */
 
         }
 
@@ -115,6 +124,8 @@ namespace Dealer
                         players.Add((Player)recEvent.CmdObject.Payload);
                         SyncPlayers();
                     }
+
+                    Console.WriteLine("Player joined");
                     break;
                 case Command.Stand:
                     break;

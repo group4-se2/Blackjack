@@ -115,3 +115,13 @@ C:\Users\JL\Source\Repos\Blackjack3\Dealer\obj\Debug\Dealer.csprojResolveAssembl
 H:\GitHub\New folder\Dealer\bin\Debug\Dealer.exe.config
 H:\GitHub\New folder\Dealer\obj\Debug\Dealer.exe
 H:\GitHub\New folder\Dealer\obj\Debug\Dealer.pdb
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Dealer\bin\Debug\Dealer.exe.config
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Dealer\obj\Debug\Dealer.exe
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Dealer\obj\Debug\Dealer.pdb
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Dealer\bin\Debug\Dealer.exe
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Dealer\bin\Debug\Dealer.pdb
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Dealer\bin\Debug\Common.Lib.dll
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Dealer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Dealer\bin\Debug\Common.Lib.pdb
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Dealer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
