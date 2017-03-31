@@ -239,3 +239,6 @@ C:\Users\JL\Source\Repos\Blackjack3\Player\obj\Debug\Player.StartGameView.resour
 C:\Users\JL\Source\Repos\Blackjack3\Player\obj\Debug\Player.InGameView.resources
 C:\Users\JL\Source\Repos\Blackjack3\Player\obj\Debug\Player.Properties.Resources.resources
 C:\Users\JL\Source\Repos\Blackjack3\Player\obj\Debug\Player.csproj.GenerateResource.Cache
+H:\GitHub\New folder\Player\bin\Debug\Player.exe.config
+H:\GitHub\New folder\Player\obj\Debug\Player.exe
+H:\GitHub\New folder\Player\obj\Debug\Player.pdb
