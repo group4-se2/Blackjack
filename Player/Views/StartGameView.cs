@@ -73,6 +73,8 @@ namespace Player
                 // Enable UI Elements for Starting or Joining Game
                 startGameBtn.Visible = true;
                 joinGameBtn.Visible = true;
+
+                StartGameModel.player.Name = usernameTextField.Text;
                 StartGamePresenter.goButtonClick(playerUsername);
             }
         }

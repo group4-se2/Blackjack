@@ -17,6 +17,9 @@ namespace Player.Presenters
             this.model = model;
             this.view = view;
 
+            model.player = new Common.Lib.Models.Player();
+
+            view.StartGameModel = model;
             view.StartGamePresenter = this;
 
             client = new Client();
@@ -61,8 +64,6 @@ namespace Player.Presenters
         }
         public void goButtonClick(String name)
         {
-            model.player = new Common.Lib.Models.Player();
-            model.player.Name = name;
             CommandObject cmdObj = new CommandObject();
             cmdObj.Command = Command.Join;
             cmdObj.Payload = model.player;
