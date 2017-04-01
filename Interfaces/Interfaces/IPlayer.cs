@@ -12,7 +12,7 @@ namespace Common.Lib.Interfaces
         String Name { get; set; }
 
         //adds one  card to this player's hand
-        void dealCard();
+        void dealCard(IDeck deck, bool faceDown);
 
         ICard getCard(int position);
 
