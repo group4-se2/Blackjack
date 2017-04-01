@@ -69,7 +69,7 @@ namespace Dealer
             GameLoop();
 
             //temporary for testing
-            Console.ReadLine();
+            /*Console.ReadLine();
             Player player = new Player();
             player.Name = "Tim";
             
@@ -81,6 +81,7 @@ namespace Dealer
             players.Add(player2);
 
             SyncPlayers();
+            */
             /*CommandObject cmdObj = new CommandObject();
             cmdObj.Command = Command.Sync;
             cmdObj.Payload = player;
@@ -108,8 +109,9 @@ namespace Dealer
             {
                 case Command.Bet:
                     if (gameState == GameState.WaitingForBet) gameState = GameState.CollectingBets;
-                    players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).setWagerAmount(((Player)recEvent.CmdObject.Payload).getWagerAmount());
-                    Console.WriteLine("Bet Received");
+                    players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).setWagerAmount(((Player)recEvent.CmdObject.Payload).WagerAmount);
+                    Console.WriteLine("Bet Received from " + ((Player)recEvent.CmdObject.Payload).Name + " for " + ((Player)recEvent.CmdObject.Payload).WagerAmount.ToString() + " credits");
+                    SyncPlayers();
                     break;
                 case Command.Exit:
                     players.Remove(players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name));
@@ -118,14 +120,18 @@ namespace Dealer
                 case Command.Hit:
                     gameState = GameState.PlayerHits;
                     break;
+                case Command.Sync:
+                    // Used for first load of UI for players to sync data
+                    //Console.WriteLine("Trying to sync...");
+                    SyncPlayers();
+                    break;
                 case Command.Join:
                     if (recEvent.CmdObject.Response == Response.Accepted)
                     {
                         players.Add((Player)recEvent.CmdObject.Payload);
                         SyncPlayers();
                     }
-
-                    Console.WriteLine("Player joined");
+                    Console.WriteLine("Player (" + ((Player)recEvent.CmdObject.Payload).Name + ") joined");
                     break;
                 case Command.Stand:
                     break;
@@ -142,6 +148,7 @@ namespace Dealer
         private void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
             elapsedTime++;
+            
             if (elapsedTime == timeout)
             {
                 gameTimer.Stop();

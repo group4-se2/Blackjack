@@ -11,8 +11,7 @@ namespace Player.Interfaces
     {
 
         IList<Common.Lib.Models.Player> players { get; set; }
-        IPlayer mainPlayer { get; set; }
-        void updatePlayer(int id, IPlayer player);
-        IPlayer getPlayer(int id);
+        IPlayer player { get; set; }
+  
     }
 }

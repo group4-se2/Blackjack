@@ -19,10 +19,9 @@ namespace Player
     {
 
         IInGameModel model;
-        IPlayer p1, p2, p3, p4;
-        Label[] names;
 
-        double betAmount = 0.00;
+        // Players total amount to bet
+        int betAmount = 0;
 
         public IInGamePresenter InGamePresenter { get; set; }
 
@@ -37,37 +36,18 @@ namespace Player
 
         private void InGame_Load(object sender, EventArgs e)
         {
-            Label player1name = new Label();
-            player1name.Text = "Julian Loftis";
-            player1name.SetBounds(50, 50, 200, 50);
-            this.Controls.Add(player1name);
-
-            
-            List<IPlayer> tempPlayers = new List<IPlayer>();
-
-            Common.Lib.Models.Player player1 = new Common.Lib.Models.Player();
-            player1.Name = "Dealer";
-
-            Common.Lib.Models.Player player2 = new Common.Lib.Models.Player();
-            player2.Name = "Tim";
-
-            Common.Lib.Models.Player player3 = new Common.Lib.Models.Player();
-            player3.Name = "Julian";
-
-            tempPlayers.Add(player1);
-            tempPlayers.Add(player2);
-            tempPlayers.Add(player3);
-
-            UpdatePlayers(tempPlayers);
-
-            
+            InGamePresenter.SyncClient(Common.Lib.Models.Command.Sync);
+            //UpdateView();
         }
 
-        public void UpdatePlayers(List<IPlayer> players)
+        public void UpdateView()
         {
             int count = 0;
 
-            foreach (IPlayer player in players)
+            this.Invoke((MethodInvoker)delegate
+           {
+               
+            foreach (IPlayer player in model.players)
             {
                 // Parse out player data
 
@@ -75,6 +55,7 @@ namespace Player
                 {
                     // Update Dealer Info
                     count++;
+
                 }
                 else
                 {
@@ -113,13 +94,7 @@ namespace Player
                 
             }
 
-        }
-
-        public void UpdateView()
-        {
-
-            
-           
+           });
         }
 
         private void credit1Btn_Click(object sender, EventArgs e)
@@ -144,12 +119,13 @@ namespace Player
         {
             // Increment bet by adding all available money
             this.betAmount = 0;
-            this.betAmount = p1.getCreditBalance();
+            this.betAmount = model.player.getCreditBalance();
         }
 
         private void submitBetBtn_Click(object sender, EventArgs e)
         {
-            InGamePresenter.TestMethod();
+            InGamePresenter.SubmitBet(betAmount);
+            betAmount = 0;
         }
 
         public void pictureBox1_Click(object sender, EventArgs e)

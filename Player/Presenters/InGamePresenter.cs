@@ -20,7 +20,7 @@ namespace Player.Presenters
             this.model = model;
             this.view = view;
             this.client = client;
-
+            
             view.InGamePresenter = this;
         }
         
@@ -42,25 +42,24 @@ namespace Player.Presenters
             
         }
 
-        public void TestMethod()
+        // Allows player to submit bet
+        public void SubmitBet(int credits)
         {
+            model.player.setWagerAmount(credits);
+            SyncClient(Command.Bet);
+        }
 
-            /*Common.Lib.Models.Player p = new Common.Lib.Models.Player();
-            p.Name = "Julian Loftis";
-
-            Console.WriteLine("Test Method works!");
+        public void SyncClient(Command c)
+        {
             CommandObject cmdObj = new CommandObject();
-            cmdObj.Command = Command.Join;
-            cmdObj.Payload = p;
-
-            //server.Send("Tim", cmdObj); 
+            cmdObj.Command = c;
+            cmdObj.Payload = model.player;
             client.Send(cmdObj);
-            */
         }
 
         public void client_OnDataReceived(object sender, ClientDataReceivedEventArgs e)
         {
-            /*
+            
             // Player object retrieved from server
             model.players = (List<Common.Lib.Models.Player>)e.CmdObject.Payload;
             
@@ -68,7 +67,7 @@ namespace Player.Presenters
             {
                 Console.WriteLine("Name: " + player.Name);
             }
-            */
+            
             //Console.WriteLine("Name: " + player.getCreditBalance().ToString());
 
             //model.updatePlayer(1, player);
