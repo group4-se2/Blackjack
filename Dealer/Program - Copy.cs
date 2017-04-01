@@ -190,9 +190,7 @@ namespace Dealer
             Player dealer = players[0];
             // Create card deck and shuffle
             IDeck deck = new Deck();
-
-            gameState = GameState.WaitingForBet;
-
+            
             // Wait for first player to bet 
             //      start countdown timer, 30 seconds
             //      Collect bets from player until timer hits 0

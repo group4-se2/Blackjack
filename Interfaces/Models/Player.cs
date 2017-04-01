@@ -33,7 +33,7 @@ namespace Common.Lib.Models
             WagerAmount = 0;
             gameStatus = 0;
             hasFocus = true;
-            //myHand = new Hand();
+            myHand = new Hand();
         }
 
         public void dealCard(IDeck deck, bool faceDown)
@@ -104,9 +104,9 @@ namespace Common.Lib.Models
             return myHand.scoreHand();
         }
 
-        public void dealCard()
-        {
-            throw new NotImplementedException();
-        }
+        //public void dealCard()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
