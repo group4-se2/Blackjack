@@ -49,9 +49,9 @@ namespace Player.Presenters
         public void OnButton1Click()
         {
             IInGameModel inGameModel = new InGameModel();
-            IInGameView inGameView = new InGameView();
+            IInGameView inGameView = new InGameView(inGameModel);
 
-            IInGamePresenter inGamePresenter = new InGamePresenter(inGameModel, inGameView);
+            IInGamePresenter inGamePresenter = new InGamePresenter(inGameModel, inGameView, client);
             client.OnDataReceived += inGamePresenter.client_OnDataReceived;
             inGamePresenter.ShowDialog();
         }

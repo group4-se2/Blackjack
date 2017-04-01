@@ -131,6 +131,9 @@ namespace Dealer
 
                 // Start receiving commands
                 clientSocket.BeginReceive(cc.Data, 0, cc.Data.Length, SocketFlags.None, new AsyncCallback(OnReceive), cc);
+
+                Console.WriteLine("Client connected");
+
             }
             catch (Exception ex)
             {

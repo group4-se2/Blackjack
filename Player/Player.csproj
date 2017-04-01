@@ -59,13 +59,13 @@
     <Compile Include="Interfaces\IStartGamePresenter.cs" />
     <Compile Include="Models\InGameModel.cs" />
     <Compile Include="Presenters\InGamePresenter.cs" />
+    <Compile Include="DiscoveryClient.cs" />
     <Compile Include="Views\InGameView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\InGameView.Designer.cs">
       <DependentUpon>InGameView.cs</DependentUpon>
     </Compile>
-    <Compile Include="DiscoveryClient.cs" />
     <Compile Include="Views\StartGameView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,11 +76,11 @@
     <Compile Include="Presenters\StartGamePresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Views\StartGameView.resx">
-      <DependentUpon>StartGameView.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\InGameView.resx">
       <DependentUpon>InGameView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StartGameView.resx">
+      <DependentUpon>StartGameView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -53,3 +53,31 @@ C:\Users\JL\Source\Repos\BlackjackMain\Interfaces\bin\Debug\Newtonsoft.Json.xml
 C:\Users\JL\Source\Repos\BlackjackMain\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
 C:\Users\JL\Source\Repos\BlackjackMain\Interfaces\obj\Debug\Common.Lib.dll
 C:\Users\JL\Source\Repos\BlackjackMain\Interfaces\obj\Debug\Common.Lib.pdb
+E:\GitHub Repository\Blackjack - Mar 30\Interfaces\bin\Debug\Common.Lib.dll
+E:\GitHub Repository\Blackjack - Mar 30\Interfaces\bin\Debug\Common.Lib.pdb
+E:\GitHub Repository\Blackjack - Mar 30\Interfaces\bin\Debug\Newtonsoft.Json.dll
+E:\GitHub Repository\Blackjack - Mar 30\Interfaces\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub Repository\Blackjack - Mar 30\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+E:\GitHub Repository\Blackjack - Mar 30\Interfaces\obj\Debug\Common.Lib.dll
+E:\GitHub Repository\Blackjack - Mar 30\Interfaces\obj\Debug\Common.Lib.pdb
+C:\Users\jml87\Source\Repos\Blackjack\Interfaces\bin\Debug\Common.Lib.dll
+C:\Users\jml87\Source\Repos\Blackjack\Interfaces\bin\Debug\Common.Lib.pdb
+C:\Users\jml87\Source\Repos\Blackjack\Interfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jml87\Source\Repos\Blackjack\Interfaces\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jml87\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+C:\Users\jml87\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.dll
+C:\Users\jml87\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.pdb
+C:\Users\JL\Source\Repos\Blackjack3\Interfaces\bin\Debug\Common.Lib.dll
+C:\Users\JL\Source\Repos\Blackjack3\Interfaces\bin\Debug\Common.Lib.pdb
+C:\Users\JL\Source\Repos\Blackjack3\Interfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Users\JL\Source\Repos\Blackjack3\Interfaces\bin\Debug\Newtonsoft.Json.xml
+C:\Users\JL\Source\Repos\Blackjack3\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+C:\Users\JL\Source\Repos\Blackjack3\Interfaces\obj\Debug\Common.Lib.dll
+C:\Users\JL\Source\Repos\Blackjack3\Interfaces\obj\Debug\Common.Lib.pdb
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Interfaces\bin\Debug\Common.Lib.dll
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Interfaces\bin\Debug\Common.Lib.pdb
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Interfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Interfaces\bin\Debug\Newtonsoft.Json.xml
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Interfaces\obj\Debug\Common.Lib.dll
+C:\Users\fel3\Source\Repos\Blackjack-Fix\Interfaces\obj\Debug\Common.Lib.pdb
