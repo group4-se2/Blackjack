@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Player.Interfaces
 {
-    interface IStartGameModel
+    public interface IStartGameModel
     {
+        Common.Lib.Interfaces.IPlayer player { get; set; }
     }
 }

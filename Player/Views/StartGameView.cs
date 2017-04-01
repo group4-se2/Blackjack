@@ -8,6 +8,7 @@ namespace Player
     public partial class StartGameView : Form, IStartGameView
     {
         public IStartGamePresenter StartGamePresenter { get; set; }
+        public IStartGameModel StartGameModel { get; set; }
         private String playerUsername;
 
         public StartGameView()
@@ -72,6 +73,7 @@ namespace Player
                 // Enable UI Elements for Starting or Joining Game
                 startGameBtn.Visible = true;
                 joinGameBtn.Visible = true;
+                StartGamePresenter.goButtonClick(playerUsername);
             }
         }
     }

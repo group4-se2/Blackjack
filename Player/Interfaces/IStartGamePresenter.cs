@@ -10,5 +10,6 @@ namespace Player.Interfaces
     {
         void OnButton1Click();
         void UpdateView();
+        void goButtonClick(String name);
     }
 }

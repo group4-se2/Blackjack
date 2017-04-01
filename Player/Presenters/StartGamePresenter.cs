@@ -40,7 +40,7 @@ namespace Player.Presenters
             int port = int.Parse(e.Data.Split(' ')[1].Split(':')[1]);
 
             client.Connect(ipaddress, port);
-            client.Send(new CommandObject() { Command = Command.Join, Payload = new Common.Lib.Models.Player() { Name = "Tim" } });
+            //client.Send(new CommandObject() { Command = Command.Join, Payload = new Common.Lib.Models.Player() { Name = "Tim" } });
         }
         private void client_OnDataReceived(object sender, ClientDataReceivedEventArgs e)
         {
@@ -58,6 +58,15 @@ namespace Player.Presenters
         public void UpdateView()
         {
             throw new NotImplementedException();
+        }
+        public void goButtonClick(String name)
+        {
+            model.player = new Common.Lib.Models.Player();
+            model.player.Name = name;
+            CommandObject cmdObj = new CommandObject();
+            cmdObj.Command = Command.Join;
+            cmdObj.Payload = model.player;
+            client.Send(cmdObj);
         }
     }
 }
