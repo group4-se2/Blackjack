@@ -19,7 +19,6 @@ namespace DealerTests
             testPlayer.dealCard(deck, false); // total - 1
             testPlayer.dealCard(deck, false); // total - 2
             testPlayer.dealCard(deck, false); // total - 3
-            Console.WriteLine(testPlayer.scoreHand());
             testPlayer.switchFocus(); //false
             testPlayer.debitCreditBalance(20); //80
             testPlayer.creditCreditBalance(10); //90
