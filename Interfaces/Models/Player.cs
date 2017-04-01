@@ -15,7 +15,7 @@ namespace Common.Lib.Models
          * to facilitate the rendering of all players on the card table
          */
         private int creditBalance { get; set; }
-        private int wagerAmount { set; get; }
+        public int WagerAmount { set; get; }
 
         // facilitates GUI buttons and display - includes bet, hit/pass, win-loss-draw
         private int gameStatus { set; get; }
@@ -30,7 +30,7 @@ namespace Common.Lib.Models
         public Player()
         {
             creditBalance = STARTING_CREDIT_BALANCE;
-            wagerAmount = 0;
+            WagerAmount = 0;
             gameStatus = 0;
             hasFocus = true;
             myHand = new Hand();
@@ -92,11 +92,11 @@ namespace Common.Lib.Models
 
         public void setWagerAmount(int amount)
         {
-            wagerAmount = amount;
+            WagerAmount = amount;
         }
         public int getWagerAmount()
         {
-            return wagerAmount;
+            return WagerAmount;
         }
 
         public int scoreHand()

@@ -53,6 +53,7 @@ namespace Player.Presenters
         public void OnButton1Click()
         {
             IInGameModel inGameModel = new InGameModel();
+            inGameModel.player = model.player;
             IInGameView inGameView = new InGameView(inGameModel);
 
             IInGamePresenter inGamePresenter = new InGamePresenter(inGameModel, inGameView, client);

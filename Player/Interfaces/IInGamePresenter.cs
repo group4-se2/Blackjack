@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Lib.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,9 @@ namespace Player.Interfaces
         DialogResult ShowDialog();
         void UpdateView();
 
-        void TestMethod();
+        void SyncClient(Command c);
+
+        void SubmitBet(int credits);
 
         Client client { get; set; }
 

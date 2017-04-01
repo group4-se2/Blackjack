@@ -11,6 +11,8 @@ namespace Common.Lib.Interfaces
     {
         String Name { get; set; }
 
+        int WagerAmount { get; set; }
+
         //adds one  card to this player's hand
         void dealCard(IDeck deck, bool faceDown);
 
