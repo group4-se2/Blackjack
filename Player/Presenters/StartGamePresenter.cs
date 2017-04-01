@@ -49,6 +49,7 @@ namespace Player.Presenters
         {
             Console.WriteLine(e.CmdObject.Response.ToString());
         }
+
         public void OnButton1Click()
         {
             IInGameModel inGameModel = new InGameModel();
@@ -58,11 +59,8 @@ namespace Player.Presenters
             client.OnDataReceived += inGamePresenter.client_OnDataReceived;
             inGamePresenter.ShowDialog();
         }
-        public void UpdateView()
-        {
-            throw new NotImplementedException();
-        }
-        public void goButtonClick(String name)
+
+        public void goButtonClick()
         {
             CommandObject cmdObj = new CommandObject();
             cmdObj.Command = Command.Join;

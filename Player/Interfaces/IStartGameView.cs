@@ -6,7 +6,6 @@ namespace Player.Interfaces
     {
         IStartGamePresenter StartGamePresenter { get; set; }
         IStartGameModel StartGameModel { get; set; }
-        void UpdateView();
         DialogResult ShowDialog();
     }
 }

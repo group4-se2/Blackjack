@@ -9,7 +9,6 @@ namespace Player.Interfaces
     public interface IStartGamePresenter
     {
         void OnButton1Click();
-        void UpdateView();
-        void goButtonClick(String name);
+        void goButtonClick();
     }
 }

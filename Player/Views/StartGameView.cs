@@ -9,7 +9,7 @@ namespace Player
     {
         public IStartGamePresenter StartGamePresenter { get; set; }
         public IStartGameModel StartGameModel { get; set; }
-        private String playerUsername;
+
 
         public StartGameView()
         {
@@ -31,12 +31,7 @@ namespace Player
         {
             StartGamePresenter.OnButton1Click();
         }
-
-        public void UpdateView()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         private void usernamePanel_Click(object sender, EventArgs e)
         {
             // Clears placeholder text on panel click
@@ -63,9 +58,6 @@ namespace Player
             }
             else
             {
-                // Store username
-                playerUsername = usernameTextField.Text;
-
                 // Hide UI Elements for Username
                 usernamePanel.Visible = false;
                 goBtn.Visible = false;
@@ -74,8 +66,11 @@ namespace Player
                 startGameBtn.Visible = true;
                 joinGameBtn.Visible = true;
 
+                // Add user name to model player object
                 StartGameModel.player.Name = usernameTextField.Text;
-                StartGamePresenter.goButtonClick(playerUsername);
+
+                // Call presenter to join this player to the game server
+                StartGamePresenter.goButtonClick();
             }
         }
     }
