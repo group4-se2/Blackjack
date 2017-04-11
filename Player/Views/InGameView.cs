@@ -125,7 +125,7 @@ namespace Player
         private void submitBetBtn_Click(object sender, EventArgs e)
         {
             InGamePresenter.SubmitBet(betAmount);
-            betAmount = 0;
+            betAmount = 0; // This is not the label, just keeping track of how much player bet is
         }
 
         public void pictureBox1_Click(object sender, EventArgs e)

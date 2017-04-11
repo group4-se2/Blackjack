@@ -95,7 +95,10 @@ namespace Dealer
             CommandObject cmdObj = new CommandObject();
             cmdObj.Command = Command.Sync;
             cmdObj.Payload = players;
+
+            Console.WriteLine(players[1].Name + " credits are " + players[1].getCreditBalance().ToString());
             server.SendAll(cmdObj);
+
         }
 
         /// <summary>
@@ -110,7 +113,9 @@ namespace Dealer
                 case Command.Bet:
                     if (gameState == GameState.WaitingForBet) gameState = GameState.CollectingBets;
                     players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).setWagerAmount(((Player)recEvent.CmdObject.Payload).WagerAmount);
+                    players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).debitCreditBalance(((Player)recEvent.CmdObject.Payload).WagerAmount);
                     Console.WriteLine("Bet Received from " + ((Player)recEvent.CmdObject.Payload).Name + " for " + ((Player)recEvent.CmdObject.Payload).WagerAmount.ToString() + " credits");
+                    Console.WriteLine("Credits are " + players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).getCreditBalance().ToString());
                     SyncPlayers();
                     break;
                 case Command.Exit:
@@ -190,11 +195,13 @@ namespace Dealer
             Player dealer = players[0];
             // Create card deck and shuffle
             IDeck deck = new Deck();
-            
+
             // Wait for first player to bet 
             //      start countdown timer, 30 seconds
             //      Collect bets from player until timer hits 0
-            //Console.WriteLine("Waiting for bet...");
+
+            Console.WriteLine("Waiting for bet...");
+
             while (gameState == GameState.WaitingForBet)
             {
                 // Wait for any player to place a bet
@@ -227,6 +234,7 @@ namespace Dealer
             foreach (Player player in players)
             {
                 player.dealCard(deck, false);
+                Console.WriteLine("Card delt to " + player.Name);
                 SyncPlayers();
             }
 
