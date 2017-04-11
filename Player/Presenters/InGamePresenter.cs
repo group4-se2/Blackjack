@@ -46,9 +46,18 @@ namespace Player.Presenters
         // Allows player to submit bet
         public void SubmitBet(int credits)
         {
-            model.player.setWagerAmount(credits);
-            SyncClient(Command.Bet);
+            if (model.player.getCreditBalance() >= credits)
+            {
+                model.player.setWagerAmount(credits);
+                SyncClient(Command.Bet);
+            }
+            else
+            {
+                // Update View with Error Dialog Later
+            }
+
         }
+        
 
         public void SyncClient(Command c)
         {

@@ -2,6 +2,7 @@
 using Player.Interfaces;
 using Player.Models;
 using System;
+using System.Net;
 
 namespace Player.Presenters
 {
@@ -42,7 +43,16 @@ namespace Player.Presenters
             string ipaddress = e.Data.Split(' ')[1].Split(':')[0];
             int port = int.Parse(e.Data.Split(' ')[1].Split(':')[1]);
 
+            foreach (IPAddress ipAddress in Dns.GetHostEntry(string.Empty).AddressList)
+            {
+                if (ipAddress.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                {
+                    Console.WriteLine("IP Address: " + ipAddress.ToString());
+                }
+            }
+
             client.Connect(ipaddress, port);
+            
             //client.Send(new CommandObject() { Command = Command.Join, Payload = new Common.Lib.Models.Player() { Name = "Tim" } });
         }
         private void client_OnDataReceived(object sender, ClientDataReceivedEventArgs e)
