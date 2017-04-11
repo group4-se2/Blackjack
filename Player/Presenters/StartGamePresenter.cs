@@ -39,17 +39,28 @@ namespace Player.Presenters
         {
             client.OnConnected += client_OnConnected;
             client.OnDataReceived += client_OnDataReceived;
-
+            //this ipaddress is from the server
             string ipaddress = e.Data.Split(' ')[1].Split(':')[0];
             int port = int.Parse(e.Data.Split(' ')[1].Split(':')[1]);
 
-            foreach (IPAddress ipAddress in Dns.GetHostEntry(string.Empty).AddressList)
+
+            string tempIP ="";
+            //this ipAddress is from this host
+            foreach (IPAddress thisIPAddress in Dns.GetHostEntry(string.Empty).AddressList)
             {
-                if (ipAddress.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                if (thisIPAddress.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
                 {
-                    Console.WriteLine("IP Address: " + ipAddress.ToString());
+                    Console.WriteLine("This host's IP Address: " + thisIPAddress.ToString());
+                    tempIP = thisIPAddress.ToString();
                 }
             }
+            Console.WriteLine("Dealer IP Address: " + ipaddress);
+            if (ipaddress.ToString() == tempIP)
+                Console.WriteLine("I am the dealer - Start Game");
+            else
+                Console.WriteLine("I am not the dealer - Join Game");
+
+
 
             client.Connect(ipaddress, port);
             
