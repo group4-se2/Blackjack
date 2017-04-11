@@ -37,10 +37,6 @@ namespace Player
             joinGameBtn.Enabled = true;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            StartGamePresenter.OnButton1Click();
-        }
         
         private void usernamePanel_Click(object sender, EventArgs e)
         {
@@ -82,6 +78,17 @@ namespace Player
                 // Call presenter to join this player to the game server
                 StartGamePresenter.goButtonClick();
             }
+        }
+
+        // Fix the name of this button, later
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StartGamePresenter.OnButton1Click();
+        }
+
+        private void joinGameBtn_Click(object sender, EventArgs e)
+        {
+            StartGamePresenter.OnButton1Click();
         }
     }
 }

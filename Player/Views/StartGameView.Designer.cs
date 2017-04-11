@@ -100,6 +100,7 @@
             this.joinGameBtn.Text = "Join Game";
             this.joinGameBtn.UseVisualStyleBackColor = false;
             this.joinGameBtn.Visible = false;
+            this.joinGameBtn.Click += new System.EventHandler(this.joinGameBtn_Click);
             // 
             // creditsLabel
             // 
