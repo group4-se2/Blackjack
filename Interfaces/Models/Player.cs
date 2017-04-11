@@ -14,7 +14,7 @@ namespace Common.Lib.Models
         /* The following are values for THIS player that are sent out to ALL players 
          * to facilitate the rendering of all players on the card table
          */
-        public int creditBalance { get; set; }
+        public int creditBalance { get; set; } //was incorrectly set to private
 
         public int WagerAmount { set; get; }
 

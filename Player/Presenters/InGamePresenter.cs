@@ -36,6 +36,7 @@ namespace Player.Presenters
             throw new NotImplementedException();
         }
 
+        //unneeded complexity
         public void OnCardShoeClick()
         {
 
@@ -65,27 +66,16 @@ namespace Player.Presenters
             // Player object retrieved from server
             model.players = (List<Common.Lib.Models.Player>)e.CmdObject.Payload;
             
-
             Console.WriteLine("Player info retrieved from Server:");
 
             
             foreach (Common.Lib.Interfaces.IPlayer player in model.players)
             {
                 Console.WriteLine("Name: " + player.Name);
-                Console.WriteLine("Bet Amount: " + player.getWagerAmount().ToString());
-                Console.WriteLine("Credit Balance: " + player.getCreditBalance().ToString());
-
+                //Console.WriteLine("Bet Amount: " + player.getWagerAmount().ToString());
+                //Console.WriteLine("Credit Balance: " + player.getCreditBalance().ToString());
             }
             
-
-            //Console.WriteLine(model.players[1].Name + " credits are " + model.players[1].getCreditBalance().ToString());
-
-            Console.WriteLine("------------------------------------");
-
-            //Console.WriteLine("Name: " + player.getCreditBalance().ToString());
-
-            //model.updatePlayer(1, player);
-
             view.UpdateView();
         }
     }

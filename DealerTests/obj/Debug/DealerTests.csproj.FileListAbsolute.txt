@@ -51,3 +51,14 @@ C:\Users\JL\Source\Repos\Blackjack3\DealerTests\obj\Debug\DealerTests.dll
 C:\Users\JL\Source\Repos\Blackjack3\DealerTests\obj\Debug\DealerTests.pdb
 C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\Debug\Common.Lib.dll
 C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\DealerTests\bin\Debug\Common.Lib.pdb
+E:\GitHub Repository\April 11 - 3\DealerTests\bin\Debug\DealerTests.dll
+E:\GitHub Repository\April 11 - 3\DealerTests\bin\Debug\DealerTests.pdb
+E:\GitHub Repository\April 11 - 3\DealerTests\bin\Debug\Common.Lib.dll
+E:\GitHub Repository\April 11 - 3\DealerTests\bin\Debug\Dealer.exe
+E:\GitHub Repository\April 11 - 3\DealerTests\bin\Debug\Newtonsoft.Json.dll
+E:\GitHub Repository\April 11 - 3\DealerTests\bin\Debug\Dealer.pdb
+E:\GitHub Repository\April 11 - 3\DealerTests\bin\Debug\Common.Lib.pdb
+E:\GitHub Repository\April 11 - 3\DealerTests\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub Repository\April 11 - 3\DealerTests\obj\Debug\DealerTests.csprojResolveAssemblyReference.cache
+E:\GitHub Repository\April 11 - 3\DealerTests\obj\Debug\DealerTests.dll
+E:\GitHub Repository\April 11 - 3\DealerTests\obj\Debug\DealerTests.pdb

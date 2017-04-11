@@ -67,36 +67,15 @@ namespace Dealer
 
             // Start executing the game logic
             GameLoop();
-
-            //temporary for testing
-            /*Console.ReadLine();
-            Player player = new Player();
-            player.Name = "Tim";
-            
-            players.Add(player);
-
-            Player player2 = new Player();
-            player2.Name = "Julian";
-
-            players.Add(player2);
-
-            SyncPlayers();
-            */
-            /*CommandObject cmdObj = new CommandObject();
-            cmdObj.Command = Command.Sync;
-            cmdObj.Payload = player;
-            server.Send("Tim", cmdObj); */
-
         }
 
-        //
+        
         private void SyncPlayers()
         {
             CommandObject cmdObj = new CommandObject();
             cmdObj.Command = Command.Sync;
             cmdObj.Payload = players;
-
-            Console.WriteLine(players[1].Name + " credits are " + players[1].getCreditBalance().ToString());
+                       
             server.SendAll(cmdObj);
 
         }
@@ -126,7 +105,7 @@ namespace Dealer
                     gameState = GameState.PlayerHits;
                     break;
                 case Command.Sync:
-                    // Used for first load of UI for players to sync data
+                    //Used for first load of UI for players to sync data
                     //Console.WriteLine("Trying to sync...");
                     SyncPlayers();
                     break;

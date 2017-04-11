@@ -103,3 +103,18 @@ C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\PlayerTests\bin\D
 C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\PlayerTests\bin\Debug\Castle.Core.xml
 C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\PlayerTests\bin\Debug\Moq.xml
 C:\Users\Wayne\documents\visual studio 2015\Projects\Blackjack\PlayerTests\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub Repository\April 11 - 3\PlayerTests\bin\Debug\PlayerTests.dll
+E:\GitHub Repository\April 11 - 3\PlayerTests\bin\Debug\PlayerTests.pdb
+E:\GitHub Repository\April 11 - 3\PlayerTests\bin\Debug\Castle.Core.dll
+E:\GitHub Repository\April 11 - 3\PlayerTests\bin\Debug\Common.Lib.dll
+E:\GitHub Repository\April 11 - 3\PlayerTests\bin\Debug\Moq.dll
+E:\GitHub Repository\April 11 - 3\PlayerTests\bin\Debug\Player.exe
+E:\GitHub Repository\April 11 - 3\PlayerTests\bin\Debug\Newtonsoft.Json.dll
+E:\GitHub Repository\April 11 - 3\PlayerTests\bin\Debug\Common.Lib.pdb
+E:\GitHub Repository\April 11 - 3\PlayerTests\bin\Debug\Player.pdb
+E:\GitHub Repository\April 11 - 3\PlayerTests\bin\Debug\Castle.Core.xml
+E:\GitHub Repository\April 11 - 3\PlayerTests\bin\Debug\Moq.xml
+E:\GitHub Repository\April 11 - 3\PlayerTests\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub Repository\April 11 - 3\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
+E:\GitHub Repository\April 11 - 3\PlayerTests\obj\Debug\PlayerTests.dll
+E:\GitHub Repository\April 11 - 3\PlayerTests\obj\Debug\PlayerTests.pdb

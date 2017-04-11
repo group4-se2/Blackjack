@@ -135,3 +135,13 @@ C:\Users\flash\Source\Repos\Blackjack\Dealer\bin\Debug\Newtonsoft.Json.dll
 C:\Users\flash\Source\Repos\Blackjack\Dealer\bin\Debug\Common.Lib.pdb
 C:\Users\flash\Source\Repos\Blackjack\Dealer\bin\Debug\Newtonsoft.Json.xml
 C:\Users\flash\Source\Repos\Blackjack\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+E:\GitHub Repository\April 11 - 3\Dealer\bin\Debug\Dealer.exe.config
+E:\GitHub Repository\April 11 - 3\Dealer\obj\Debug\Dealer.exe
+E:\GitHub Repository\April 11 - 3\Dealer\obj\Debug\Dealer.pdb
+E:\GitHub Repository\April 11 - 3\Dealer\bin\Debug\Dealer.exe
+E:\GitHub Repository\April 11 - 3\Dealer\bin\Debug\Dealer.pdb
+E:\GitHub Repository\April 11 - 3\Dealer\bin\Debug\Common.Lib.dll
+E:\GitHub Repository\April 11 - 3\Dealer\bin\Debug\Newtonsoft.Json.dll
+E:\GitHub Repository\April 11 - 3\Dealer\bin\Debug\Common.Lib.pdb
+E:\GitHub Repository\April 11 - 3\Dealer\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub Repository\April 11 - 3\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
