@@ -204,7 +204,7 @@ namespace Dealer
             gameState = GameState.CollectingBets;
 
             // Start game timer and wait for betting to complete
-            StartGameTimer(30);
+            StartGameTimer(10);
 
             while (!timeoutSignal)
             {

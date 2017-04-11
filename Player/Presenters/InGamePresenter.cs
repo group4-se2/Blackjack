@@ -65,7 +65,11 @@ namespace Player.Presenters
             
             foreach (Common.Lib.Interfaces.IPlayer player in model.players)
             {
+                Console.WriteLine("Player info retrieved from Server:");
                 Console.WriteLine("Name: " + player.Name);
+                Console.WriteLine("Bet Amount: " + player.getWagerAmount().ToString());
+                Console.WriteLine("Credit Balance: " + player.getCreditBalance().ToString());
+
             }
             
             //Console.WriteLine("Name: " + player.getCreditBalance().ToString());

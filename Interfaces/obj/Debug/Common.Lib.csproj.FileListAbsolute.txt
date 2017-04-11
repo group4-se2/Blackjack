@@ -81,3 +81,10 @@ C:\Users\fel3\Source\Repos\Blackjack-Fix\Interfaces\bin\Debug\Newtonsoft.Json.xm
 C:\Users\fel3\Source\Repos\Blackjack-Fix\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
 C:\Users\fel3\Source\Repos\Blackjack-Fix\Interfaces\obj\Debug\Common.Lib.dll
 C:\Users\fel3\Source\Repos\Blackjack-Fix\Interfaces\obj\Debug\Common.Lib.pdb
+C:\Users\flash\Source\Repos\Blackjack\Interfaces\bin\Debug\Common.Lib.dll
+C:\Users\flash\Source\Repos\Blackjack\Interfaces\bin\Debug\Common.Lib.pdb
+C:\Users\flash\Source\Repos\Blackjack\Interfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Users\flash\Source\Repos\Blackjack\Interfaces\bin\Debug\Newtonsoft.Json.xml
+C:\Users\flash\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+C:\Users\flash\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.dll
+C:\Users\flash\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.pdb
