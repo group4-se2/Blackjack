@@ -19,12 +19,12 @@ namespace Common.Lib.Models
         public int WagerAmount { set; get; }
 
         // facilitates GUI buttons and display - includes bet, hit/pass, win-loss-draw
-        private int gameStatus { set; get; }
+        public int gameStatus { set; get; }
 
         // enables interaction with GUI
-        private bool hasFocus { set; get; }
+        public bool hasFocus { set; get; }
 
-        private IHand myHand { set; get; }
+        public IHand myHand { set; get; }
 
         public string Name { get; set; }
 
