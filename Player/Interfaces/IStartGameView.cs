@@ -7,5 +7,9 @@ namespace Player.Interfaces
         IStartGamePresenter StartGamePresenter { get; set; }
         IStartGameModel StartGameModel { get; set; }
         DialogResult ShowDialog();
+
+        void EnableStartGame();
+        void EnableJoinGame();
+
     }
 }

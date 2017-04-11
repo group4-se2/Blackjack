@@ -27,6 +27,16 @@ namespace Player
         }
 
   
+        public void EnableStartGame()
+        {
+            startGameBtn.Enabled = true;
+        }
+
+        public void EnableJoinGame()
+        {
+            joinGameBtn.Enabled = true;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             StartGamePresenter.OnButton1Click();

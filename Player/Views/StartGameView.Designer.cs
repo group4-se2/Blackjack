@@ -70,6 +70,7 @@
             // 
             this.startGameBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(131)))), ((int)(((byte)(51)))));
             this.startGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.startGameBtn.Enabled = false;
             this.startGameBtn.FlatAppearance.BorderSize = 0;
             this.startGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -87,6 +88,7 @@
             // 
             this.joinGameBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(131)))), ((int)(((byte)(51)))));
             this.joinGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.joinGameBtn.Enabled = false;
             this.joinGameBtn.FlatAppearance.BorderSize = 0;
             this.joinGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.joinGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

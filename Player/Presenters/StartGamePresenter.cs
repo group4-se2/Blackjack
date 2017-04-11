@@ -55,11 +55,17 @@ namespace Player.Presenters
                 }
             }
             Console.WriteLine("Dealer IP Address: " + ipaddress);
-            if (ipaddress.ToString() == tempIP)
-                Console.WriteLine("I am the dealer - Start Game");
-            else
-                Console.WriteLine("I am not the dealer - Join Game");
 
+            if (ipaddress.ToString() == tempIP)
+            {
+                // Enable Start Game, Disable Join Game
+                view.EnableStartGame();
+            }
+            else
+            {
+                // Disable Start Game, Enable Join Game
+                view.EnableJoinGame();
+            }
 
 
             client.Connect(ipaddress, port);
