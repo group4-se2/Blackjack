@@ -106,7 +106,6 @@
             this.submitBetBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("submitBetBtn.BackgroundImage")));
             this.submitBetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.submitBetBtn.FlatAppearance.BorderSize = 0;
-            this.submitBetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.submitBetBtn.Location = new System.Drawing.Point(21, 530);
             this.submitBetBtn.Name = "submitBetBtn";
             this.submitBetBtn.Size = new System.Drawing.Size(188, 40);
@@ -119,7 +118,6 @@
             this.creditAllBet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("creditAllBet.BackgroundImage")));
             this.creditAllBet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.creditAllBet.FlatAppearance.BorderSize = 0;
-            this.creditAllBet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.creditAllBet.Location = new System.Drawing.Point(21, 480);
             this.creditAllBet.Name = "creditAllBet";
             this.creditAllBet.Size = new System.Drawing.Size(188, 40);
@@ -132,7 +130,6 @@
             this.credit10Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit10Btn.BackgroundImage")));
             this.credit10Btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.credit10Btn.FlatAppearance.BorderSize = 0;
-            this.credit10Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.credit10Btn.Location = new System.Drawing.Point(21, 430);
             this.credit10Btn.Name = "credit10Btn";
             this.credit10Btn.Size = new System.Drawing.Size(188, 40);
@@ -145,7 +142,6 @@
             this.credit5Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit5Btn.BackgroundImage")));
             this.credit5Btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.credit5Btn.FlatAppearance.BorderSize = 0;
-            this.credit5Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.credit5Btn.Location = new System.Drawing.Point(21, 380);
             this.credit5Btn.Name = "credit5Btn";
             this.credit5Btn.Size = new System.Drawing.Size(188, 40);
@@ -158,7 +154,6 @@
             this.credit1Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit1Btn.BackgroundImage")));
             this.credit1Btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.credit1Btn.FlatAppearance.BorderSize = 0;
-            this.credit1Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.credit1Btn.Location = new System.Drawing.Point(21, 330);
             this.credit1Btn.Name = "credit1Btn";
             this.credit1Btn.Size = new System.Drawing.Size(188, 40);

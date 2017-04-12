@@ -110,6 +110,7 @@ namespace Player
         {
             // Increment bet amount by 1
             this.betAmount += 1;
+            credit1Btn.Focus();
         }
 
         private void credit5Btn_Click(object sender, EventArgs e)
