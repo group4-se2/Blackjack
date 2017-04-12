@@ -12,6 +12,8 @@ namespace Player.Presenters
         private IStartGameView view;
         private DiscoveryClient discoveryClient;
         private Client client;
+        private String clientIpAddress;
+        private String serverIpAddress;
 
         public StartGamePresenter(IStartGameModel model, IStartGameView view)
         {
@@ -33,6 +35,7 @@ namespace Player.Presenters
         private void client_OnConnected(object sender, EventArgs e)
         {
             Console.WriteLine("Connected");
+        
         }
 
         private void discoveryClient_OnDataReceived(object sender, DataReceivedEventArgs e)
@@ -45,13 +48,18 @@ namespace Player.Presenters
 
 
             string tempIP ="";
+
             //this ipAddress is from this host
             foreach (IPAddress thisIPAddress in Dns.GetHostEntry(string.Empty).AddressList)
             {
                 if (thisIPAddress.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
                 {
-                    Console.WriteLine("This host's IP Address: " + thisIPAddress.ToString());
-                    tempIP = thisIPAddress.ToString();
+                    if (thisIPAddress.ToString() == ipaddress)
+                    {
+                        Console.WriteLine("This host's IP Address: " + thisIPAddress.ToString());
+                        tempIP = thisIPAddress.ToString();
+                        break;
+                    }
                 }
             }
             Console.WriteLine("Dealer IP Address: " + ipaddress);
