@@ -69,10 +69,10 @@
             this.p4Name = new System.Windows.Forms.Label();
             this.blackjackText = new System.Windows.Forms.Label();
             this.blackjackRulesText = new System.Windows.Forms.Label();
-            this.timer = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.sidebarBetAmount = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cardShoe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardDeck)).BeginInit();
@@ -85,6 +85,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.sidebarBetAmount);
             this.panel1.Controls.Add(this.submitBetBtn);
             this.panel1.Controls.Add(this.creditAllBet);
             this.panel1.Controls.Add(this.credit10Btn);
@@ -197,7 +198,7 @@
             this.betStatus.AutoSize = true;
             this.betStatus.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.betStatus.ForeColor = System.Drawing.Color.White;
-            this.betStatus.Location = new System.Drawing.Point(100, 283);
+            this.betStatus.Location = new System.Drawing.Point(99, 271);
             this.betStatus.Name = "betStatus";
             this.betStatus.Size = new System.Drawing.Size(32, 16);
             this.betStatus.TabIndex = 3;
@@ -536,19 +537,6 @@
             this.blackjackRulesText.TabIndex = 52;
             this.blackjackRulesText.Text = "DEALER MUST DRAW TO 16 AND ON ALL 17\'S";
             // 
-            // timer
-            // 
-            this.timer.BackColor = System.Drawing.Color.Transparent;
-            this.timer.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timer.ForeColor = System.Drawing.Color.White;
-            this.timer.Image = ((System.Drawing.Image)(resources.GetObject("timer.Image")));
-            this.timer.Location = new System.Drawing.Point(15, 15);
-            this.timer.Name = "timer";
-            this.timer.Size = new System.Drawing.Size(45, 45);
-            this.timer.TabIndex = 53;
-            this.timer.Text = "30";
-            this.timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -630,6 +618,17 @@
             this.imageList1.Images.SetKeyName(50, "q-spades.png");
             this.imageList1.Images.SetKeyName(51, "k-spades.png");
             // 
+            // sidebarBetAmount
+            // 
+            this.sidebarBetAmount.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebarBetAmount.ForeColor = System.Drawing.Color.White;
+            this.sidebarBetAmount.Location = new System.Drawing.Point(0, 291);
+            this.sidebarBetAmount.Name = "sidebarBetAmount";
+            this.sidebarBetAmount.Size = new System.Drawing.Size(229, 23);
+            this.sidebarBetAmount.TabIndex = 11;
+            this.sidebarBetAmount.Text = "$0";
+            this.sidebarBetAmount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // InGameView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -638,7 +637,6 @@
             this.ClientSize = new System.Drawing.Size(1004, 611);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.timer);
             this.Controls.Add(this.blackjackRulesText);
             this.Controls.Add(this.blackjackText);
             this.Controls.Add(this.p4TotalMoney);
@@ -722,9 +720,9 @@
         private System.Windows.Forms.Button credit1Btn;
         private System.Windows.Forms.Button standBtn;
         private System.Windows.Forms.Button hitBtn;
-        private System.Windows.Forms.Label timer;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Label sidebarBetAmount;
     }
 }

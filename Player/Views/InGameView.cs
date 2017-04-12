@@ -169,24 +169,33 @@ namespace Player
            });
         }
 
+        private void UpdateBetAmount()
+        {
+            this.Invoke((MethodInvoker)delegate
+            {
+                sidebarBetAmount.Text = "$" + credits.ToString();
+            });
+        }
 
         // Increment bet amount by 1
         private void credit1Btn_Click(object sender, EventArgs e)
         {
             this.credits += 1;
-            credit1Btn.Focus();
+            UpdateBetAmount();
         }
 
         // Increment bet amount by 5
         private void credit5Btn_Click(object sender, EventArgs e)
         {
             this.credits += 5;
+            UpdateBetAmount();
         }
 
         // Increment bet amount by 10
         private void credit10Btn_Click(object sender, EventArgs e)
         {
             this.credits += 10;
+            UpdateBetAmount();
         }
 
         // Increment bet by adding all available money
@@ -194,6 +203,7 @@ namespace Player
         {
             this.credits = 0;
             this.credits = model.player.getCreditBalance();
+            UpdateBetAmount();
         }
 
         // Submits the bet to Presenter
@@ -201,6 +211,7 @@ namespace Player
         {
             InGamePresenter.SubmitBet(credits);
             credits = 0; // Reset the amount of credits the user wants to bet, since it is submitted
+            UpdateBetAmount();
         }
 
         public void pictureBox1_Click(object sender, EventArgs e)
