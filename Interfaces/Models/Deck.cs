@@ -40,6 +40,8 @@ namespace Common.Lib.Models
             ICard tempCard;
             tempCard = cards[0];
             cards.RemoveAt(0);
+
+            //Console.WriteLine("Card Info: " + tempCard.Description);
             return tempCard;
         }
 

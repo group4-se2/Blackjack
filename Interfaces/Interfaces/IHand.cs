@@ -11,6 +11,8 @@ namespace Common.Lib.Interfaces
         void dealCard(IDeck deck, bool faceDown);
         ICard getCard(int position);
 
+        int length { get; set; }
+
         int scoreHand();
     }
 }

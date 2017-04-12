@@ -190,7 +190,7 @@ namespace Dealer
             gameState = GameState.CollectingBets;
 
             // Start game timer and wait for betting to complete
-            StartGameTimer(10);
+            StartGameTimer(5);
 
             while (!timeoutSignal)
             {
@@ -213,7 +213,7 @@ namespace Dealer
             foreach (Player player in players)
             {
                 player.dealCard(deck, false);
-                Console.WriteLine("Card delt to " + player.Name);
+                Console.WriteLine(player.myHand.getCard(0).Description + " card delt to " + player.Name);
                 SyncPlayers();
             }
 
@@ -225,10 +225,12 @@ namespace Dealer
                 if (player.Name.Equals("Dealer"))
                 {
                     player.dealCard(deck, true);
+                    Console.WriteLine(player.myHand.getCard(1).Description + " card delt to " + player.Name);
                 }
                 else
                 {
                     player.dealCard(deck, false);
+                    Console.WriteLine(player.myHand.getCard(1).Description + " card delt to " + player.Name);
                 }
                 SyncPlayers();
             }

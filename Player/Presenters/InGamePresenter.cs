@@ -69,8 +69,6 @@ namespace Player.Presenters
 
         public void client_OnDataReceived(object sender, ClientDataReceivedEventArgs e)
         {
-
-
             
             // Player object retrieved from server
             model.players = (List<Common.Lib.Models.Player>)e.CmdObject.Payload;

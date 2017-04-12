@@ -145,3 +145,13 @@ E:\GitHub Repository\April 11 - 3\Dealer\bin\Debug\Newtonsoft.Json.dll
 E:\GitHub Repository\April 11 - 3\Dealer\bin\Debug\Common.Lib.pdb
 E:\GitHub Repository\April 11 - 3\Dealer\bin\Debug\Newtonsoft.Json.xml
 E:\GitHub Repository\April 11 - 3\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+C:\Users\flash\Source\Repos\Blackjack2\Dealer\bin\Debug\Dealer.exe.config
+C:\Users\flash\Source\Repos\Blackjack2\Dealer\obj\Debug\Dealer.exe
+C:\Users\flash\Source\Repos\Blackjack2\Dealer\obj\Debug\Dealer.pdb
+C:\Users\flash\Source\Repos\Blackjack2\Dealer\bin\Debug\Dealer.exe
+C:\Users\flash\Source\Repos\Blackjack2\Dealer\bin\Debug\Dealer.pdb
+C:\Users\flash\Source\Repos\Blackjack2\Dealer\bin\Debug\Common.Lib.dll
+C:\Users\flash\Source\Repos\Blackjack2\Dealer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\flash\Source\Repos\Blackjack2\Dealer\bin\Debug\Common.Lib.pdb
+C:\Users\flash\Source\Repos\Blackjack2\Dealer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\flash\Source\Repos\Blackjack2\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache

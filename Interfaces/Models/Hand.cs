@@ -11,11 +11,14 @@ namespace Common.Lib.Models
     {
         public List<ICard> hand { get; set; }
 
+        public int length { get; set; }
+
         //private IDeck deck; 
         public Hand()
         {
             //deck = new Deck();  //can we replace the deck with another new Deck() outside of the constructor?
             hand = new List<ICard>();
+            length = 0;
             // deal 2 initial cards
             //this.dealCard();
             //this.dealCard();
@@ -27,7 +30,8 @@ namespace Common.Lib.Models
             {
                 ICard card = deck.takeCard();
                 card.IsFaceDown = faceDown;
-                hand.Add(deck.takeCard());
+                hand.Add(card);
+                length++;
             }
             else
             {

@@ -65,8 +65,17 @@ namespace Player
                         p1Name.Text = player.Name;
                         p1TotalMoney.Text = "$" + player.getCreditBalance().ToString();
                         p1BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
-                        
-                    }
+
+                           if (player.myHand.length > 0)
+                           {
+                               Console.WriteLine("Cards have been dealt");
+                           }
+                           else
+                           {
+                               Console.WriteLine("Cards have not been dealt");
+                           }
+
+                       }
                     else if (count == 2)
                     {
                         // Update Player 2
