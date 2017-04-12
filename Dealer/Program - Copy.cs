@@ -94,7 +94,7 @@ namespace Dealer
                     players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).setWagerAmount(((Player)recEvent.CmdObject.Payload).WagerAmount);
                     players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).debitCreditBalance(((Player)recEvent.CmdObject.Payload).WagerAmount);
                     Console.WriteLine("Bet Received from " + ((Player)recEvent.CmdObject.Payload).Name + " for " + ((Player)recEvent.CmdObject.Payload).WagerAmount.ToString() + " credits");
-                    Console.WriteLine("Credits are " + players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).getCreditBalance().ToString());
+                    //Console.WriteLine("Credits are " + players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).getCreditBalance().ToString());
                     SyncPlayers();
                     break;
                 case Command.Exit:

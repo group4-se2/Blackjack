@@ -19,6 +19,8 @@ namespace Common.Lib.Interfaces
         ICard getCard(int position);
         IHand myHand { get; set; }
 
+        bool hasFocus { get; set; }
+
         void setFocus(bool status);
 
         bool getFocus();

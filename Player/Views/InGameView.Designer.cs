@@ -105,6 +105,7 @@
             // 
             this.submitBetBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("submitBetBtn.BackgroundImage")));
             this.submitBetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.submitBetBtn.Enabled = false;
             this.submitBetBtn.FlatAppearance.BorderSize = 0;
             this.submitBetBtn.Location = new System.Drawing.Point(21, 530);
             this.submitBetBtn.Name = "submitBetBtn";
@@ -117,6 +118,7 @@
             // 
             this.creditAllBet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("creditAllBet.BackgroundImage")));
             this.creditAllBet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.creditAllBet.Enabled = false;
             this.creditAllBet.FlatAppearance.BorderSize = 0;
             this.creditAllBet.Location = new System.Drawing.Point(21, 480);
             this.creditAllBet.Name = "creditAllBet";
@@ -129,6 +131,7 @@
             // 
             this.credit10Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit10Btn.BackgroundImage")));
             this.credit10Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.credit10Btn.Enabled = false;
             this.credit10Btn.FlatAppearance.BorderSize = 0;
             this.credit10Btn.Location = new System.Drawing.Point(21, 430);
             this.credit10Btn.Name = "credit10Btn";
@@ -141,6 +144,7 @@
             // 
             this.credit5Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit5Btn.BackgroundImage")));
             this.credit5Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.credit5Btn.Enabled = false;
             this.credit5Btn.FlatAppearance.BorderSize = 0;
             this.credit5Btn.Location = new System.Drawing.Point(21, 380);
             this.credit5Btn.Name = "credit5Btn";
@@ -153,6 +157,7 @@
             // 
             this.credit1Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit1Btn.BackgroundImage")));
             this.credit1Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.credit1Btn.Enabled = false;
             this.credit1Btn.FlatAppearance.BorderSize = 0;
             this.credit1Btn.Location = new System.Drawing.Point(21, 330);
             this.credit1Btn.Name = "credit1Btn";
@@ -165,6 +170,7 @@
             // 
             this.standBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("standBtn.BackgroundImage")));
             this.standBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.standBtn.Enabled = false;
             this.standBtn.FlatAppearance.BorderSize = 0;
             this.standBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.standBtn.Location = new System.Drawing.Point(21, 207);
@@ -177,6 +183,7 @@
             // 
             this.hitBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hitBtn.BackgroundImage")));
             this.hitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hitBtn.Enabled = false;
             this.hitBtn.FlatAppearance.BorderSize = 0;
             this.hitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hitBtn.Location = new System.Drawing.Point(21, 157);
@@ -317,195 +324,195 @@
             // 
             // p1Name
             // 
-            this.p1Name.AutoSize = true;
             this.p1Name.BackColor = System.Drawing.Color.Transparent;
             this.p1Name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p1Name.ForeColor = System.Drawing.Color.White;
-            this.p1Name.Location = new System.Drawing.Point(135, 390);
+            this.p1Name.Location = new System.Drawing.Point(109, 390);
             this.p1Name.Name = "p1Name";
-            this.p1Name.Size = new System.Drawing.Size(40, 15);
+            this.p1Name.Size = new System.Drawing.Size(86, 15);
             this.p1Name.TabIndex = 35;
-            this.p1Name.Text = "Name";
+            this.p1Name.Text = "Empty";
+            this.p1Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p1CardValue
             // 
-            this.p1CardValue.AutoSize = true;
             this.p1CardValue.BackColor = System.Drawing.Color.Transparent;
             this.p1CardValue.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p1CardValue.ForeColor = System.Drawing.Color.Yellow;
-            this.p1CardValue.Location = new System.Drawing.Point(120, 365);
+            this.p1CardValue.Location = new System.Drawing.Point(109, 365);
             this.p1CardValue.Name = "p1CardValue";
-            this.p1CardValue.Size = new System.Drawing.Size(68, 15);
+            this.p1CardValue.Size = new System.Drawing.Size(86, 15);
             this.p1CardValue.TabIndex = 36;
             this.p1CardValue.Text = "Card Value";
+            this.p1CardValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p1BetAmount
             // 
-            this.p1BetAmount.AutoSize = true;
             this.p1BetAmount.BackColor = System.Drawing.Color.Transparent;
             this.p1BetAmount.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p1BetAmount.ForeColor = System.Drawing.Color.White;
-            this.p1BetAmount.Location = new System.Drawing.Point(130, 540);
+            this.p1BetAmount.Location = new System.Drawing.Point(109, 540);
             this.p1BetAmount.Name = "p1BetAmount";
-            this.p1BetAmount.Size = new System.Drawing.Size(46, 15);
+            this.p1BetAmount.Size = new System.Drawing.Size(86, 15);
             this.p1BetAmount.TabIndex = 37;
             this.p1BetAmount.Text = "Bet: $0";
+            this.p1BetAmount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p1TotalMoney
             // 
-            this.p1TotalMoney.AutoSize = true;
             this.p1TotalMoney.BackColor = System.Drawing.Color.Transparent;
             this.p1TotalMoney.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p1TotalMoney.ForeColor = System.Drawing.Color.White;
-            this.p1TotalMoney.Location = new System.Drawing.Point(115, 565);
+            this.p1TotalMoney.Location = new System.Drawing.Point(109, 565);
             this.p1TotalMoney.Name = "p1TotalMoney";
-            this.p1TotalMoney.Size = new System.Drawing.Size(74, 15);
+            this.p1TotalMoney.Size = new System.Drawing.Size(86, 15);
             this.p1TotalMoney.TabIndex = 38;
             this.p1TotalMoney.Text = "Total Money";
+            this.p1TotalMoney.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p2TotalMoney
             // 
-            this.p2TotalMoney.AutoSize = true;
             this.p2TotalMoney.BackColor = System.Drawing.Color.Transparent;
             this.p2TotalMoney.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p2TotalMoney.ForeColor = System.Drawing.Color.White;
-            this.p2TotalMoney.Location = new System.Drawing.Point(265, 565);
+            this.p2TotalMoney.Location = new System.Drawing.Point(258, 565);
             this.p2TotalMoney.Name = "p2TotalMoney";
-            this.p2TotalMoney.Size = new System.Drawing.Size(74, 15);
+            this.p2TotalMoney.Size = new System.Drawing.Size(86, 15);
             this.p2TotalMoney.TabIndex = 42;
             this.p2TotalMoney.Text = "Total Money";
+            this.p2TotalMoney.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p2BetAmount
             // 
-            this.p2BetAmount.AutoSize = true;
             this.p2BetAmount.BackColor = System.Drawing.Color.Transparent;
             this.p2BetAmount.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p2BetAmount.ForeColor = System.Drawing.Color.White;
-            this.p2BetAmount.Location = new System.Drawing.Point(280, 540);
+            this.p2BetAmount.Location = new System.Drawing.Point(258, 540);
             this.p2BetAmount.Name = "p2BetAmount";
-            this.p2BetAmount.Size = new System.Drawing.Size(46, 15);
+            this.p2BetAmount.Size = new System.Drawing.Size(86, 15);
             this.p2BetAmount.TabIndex = 41;
             this.p2BetAmount.Text = "Bet: $0";
+            this.p2BetAmount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p2CardValue
             // 
-            this.p2CardValue.AutoSize = true;
             this.p2CardValue.BackColor = System.Drawing.Color.Transparent;
             this.p2CardValue.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p2CardValue.ForeColor = System.Drawing.Color.Yellow;
-            this.p2CardValue.Location = new System.Drawing.Point(270, 365);
+            this.p2CardValue.Location = new System.Drawing.Point(258, 365);
             this.p2CardValue.Name = "p2CardValue";
-            this.p2CardValue.Size = new System.Drawing.Size(68, 15);
+            this.p2CardValue.Size = new System.Drawing.Size(86, 15);
             this.p2CardValue.TabIndex = 40;
             this.p2CardValue.Text = "Card Value";
+            this.p2CardValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p2Name
             // 
-            this.p2Name.AutoSize = true;
             this.p2Name.BackColor = System.Drawing.Color.Transparent;
             this.p2Name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p2Name.ForeColor = System.Drawing.Color.White;
-            this.p2Name.Location = new System.Drawing.Point(283, 390);
+            this.p2Name.Location = new System.Drawing.Point(258, 390);
             this.p2Name.Name = "p2Name";
-            this.p2Name.Size = new System.Drawing.Size(40, 15);
+            this.p2Name.Size = new System.Drawing.Size(86, 15);
             this.p2Name.TabIndex = 39;
-            this.p2Name.Text = "Name";
+            this.p2Name.Text = "Empty";
+            this.p2Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p3TotalMoney
             // 
-            this.p3TotalMoney.AutoSize = true;
             this.p3TotalMoney.BackColor = System.Drawing.Color.Transparent;
             this.p3TotalMoney.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p3TotalMoney.ForeColor = System.Drawing.Color.White;
-            this.p3TotalMoney.Location = new System.Drawing.Point(425, 565);
+            this.p3TotalMoney.Location = new System.Drawing.Point(416, 565);
             this.p3TotalMoney.Name = "p3TotalMoney";
-            this.p3TotalMoney.Size = new System.Drawing.Size(74, 15);
+            this.p3TotalMoney.Size = new System.Drawing.Size(86, 15);
             this.p3TotalMoney.TabIndex = 46;
             this.p3TotalMoney.Text = "Total Money";
+            this.p3TotalMoney.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p3BetAmount
             // 
-            this.p3BetAmount.AutoSize = true;
             this.p3BetAmount.BackColor = System.Drawing.Color.Transparent;
             this.p3BetAmount.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p3BetAmount.ForeColor = System.Drawing.Color.White;
-            this.p3BetAmount.Location = new System.Drawing.Point(438, 540);
+            this.p3BetAmount.Location = new System.Drawing.Point(416, 540);
             this.p3BetAmount.Name = "p3BetAmount";
-            this.p3BetAmount.Size = new System.Drawing.Size(46, 15);
+            this.p3BetAmount.Size = new System.Drawing.Size(86, 15);
             this.p3BetAmount.TabIndex = 45;
             this.p3BetAmount.Text = "Bet: $0";
+            this.p3BetAmount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p3CardValue
             // 
-            this.p3CardValue.AutoSize = true;
             this.p3CardValue.BackColor = System.Drawing.Color.Transparent;
             this.p3CardValue.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p3CardValue.ForeColor = System.Drawing.Color.Yellow;
-            this.p3CardValue.Location = new System.Drawing.Point(425, 365);
+            this.p3CardValue.Location = new System.Drawing.Point(416, 365);
             this.p3CardValue.Name = "p3CardValue";
-            this.p3CardValue.Size = new System.Drawing.Size(68, 15);
+            this.p3CardValue.Size = new System.Drawing.Size(86, 15);
             this.p3CardValue.TabIndex = 44;
             this.p3CardValue.Text = "Card Value";
+            this.p3CardValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p3Name
             // 
-            this.p3Name.AutoSize = true;
             this.p3Name.BackColor = System.Drawing.Color.Transparent;
             this.p3Name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p3Name.ForeColor = System.Drawing.Color.White;
-            this.p3Name.Location = new System.Drawing.Point(440, 390);
+            this.p3Name.Location = new System.Drawing.Point(416, 390);
             this.p3Name.Name = "p3Name";
-            this.p3Name.Size = new System.Drawing.Size(40, 15);
+            this.p3Name.Size = new System.Drawing.Size(86, 15);
             this.p3Name.TabIndex = 43;
-            this.p3Name.Text = "Name";
+            this.p3Name.Text = "Empty";
+            this.p3Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p4TotalMoney
             // 
-            this.p4TotalMoney.AutoSize = true;
             this.p4TotalMoney.BackColor = System.Drawing.Color.Transparent;
             this.p4TotalMoney.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p4TotalMoney.ForeColor = System.Drawing.Color.White;
-            this.p4TotalMoney.Location = new System.Drawing.Point(580, 565);
+            this.p4TotalMoney.Location = new System.Drawing.Point(571, 565);
             this.p4TotalMoney.Name = "p4TotalMoney";
-            this.p4TotalMoney.Size = new System.Drawing.Size(74, 15);
+            this.p4TotalMoney.Size = new System.Drawing.Size(86, 15);
             this.p4TotalMoney.TabIndex = 50;
             this.p4TotalMoney.Text = "Total Money";
+            this.p4TotalMoney.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p4BetAmount
             // 
-            this.p4BetAmount.AutoSize = true;
             this.p4BetAmount.BackColor = System.Drawing.Color.Transparent;
             this.p4BetAmount.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p4BetAmount.ForeColor = System.Drawing.Color.White;
-            this.p4BetAmount.Location = new System.Drawing.Point(592, 540);
+            this.p4BetAmount.Location = new System.Drawing.Point(571, 540);
             this.p4BetAmount.Name = "p4BetAmount";
-            this.p4BetAmount.Size = new System.Drawing.Size(46, 15);
+            this.p4BetAmount.Size = new System.Drawing.Size(86, 15);
             this.p4BetAmount.TabIndex = 49;
             this.p4BetAmount.Text = "Bet: $0";
+            this.p4BetAmount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p4CardValue
             // 
-            this.p4CardValue.AutoSize = true;
             this.p4CardValue.BackColor = System.Drawing.Color.Transparent;
             this.p4CardValue.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p4CardValue.ForeColor = System.Drawing.Color.Yellow;
-            this.p4CardValue.Location = new System.Drawing.Point(580, 365);
+            this.p4CardValue.Location = new System.Drawing.Point(571, 365);
             this.p4CardValue.Name = "p4CardValue";
-            this.p4CardValue.Size = new System.Drawing.Size(68, 15);
+            this.p4CardValue.Size = new System.Drawing.Size(86, 15);
             this.p4CardValue.TabIndex = 48;
             this.p4CardValue.Text = "Card Value";
+            this.p4CardValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p4Name
             // 
-            this.p4Name.AutoSize = true;
             this.p4Name.BackColor = System.Drawing.Color.Transparent;
             this.p4Name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p4Name.ForeColor = System.Drawing.Color.White;
-            this.p4Name.Location = new System.Drawing.Point(595, 390);
+            this.p4Name.Location = new System.Drawing.Point(571, 390);
             this.p4Name.Name = "p4Name";
-            this.p4Name.Size = new System.Drawing.Size(40, 15);
+            this.p4Name.Size = new System.Drawing.Size(86, 15);
             this.p4Name.TabIndex = 47;
-            this.p4Name.Text = "Name";
+            this.p4Name.Text = "Empty";
+            this.p4Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // blackjackText
             // 

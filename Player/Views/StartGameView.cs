@@ -57,10 +57,17 @@ namespace Player
             String placeholder1 = "Enter username...";
             String placeholder2 = "Try again. Enter username...";
 
-            if (usernameTextField.Text.Length == 0  || usernameTextField.Text == placeholder1 || usernameTextField.Text == placeholder2)
+            if (usernameTextField.Text.Length == 0  || usernameTextField.Text == placeholder1 || usernameTextField.Text == placeholder2 || usernameTextField.Text.Length >= 11)
             {
                 // Don't allow, username is empty
-                usernameTextField.Text = "Try again. Enter username...";
+                if (usernameTextField.Text.Length >= 11)
+                {
+                    usernameTextField.Text = "Username can't be that long...";
+                }
+                else
+                {
+                    usernameTextField.Text = "Try again. Enter username...";
+                }
             }
             else
             {

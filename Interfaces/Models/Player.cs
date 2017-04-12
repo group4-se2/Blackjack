@@ -11,6 +11,9 @@ namespace Common.Lib.Models
     {
         private const int STARTING_CREDIT_BALANCE = 100;  // facilitate changing game length later
 
+        // IDEA FOR FIXING CARD JSON ERROR
+        // Dont serialize interface, just give me card id's and I can identify on player end
+
         /* The following are values for THIS player that are sent out to ALL players 
          * to facilitate the rendering of all players on the card table
          */

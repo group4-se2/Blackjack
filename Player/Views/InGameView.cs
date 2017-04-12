@@ -21,13 +21,12 @@ namespace Player
         IInGameModel model;
 
         // Players total amount to bet
-        int betAmount = 0;
+        int credits = 0;
 
         public IInGamePresenter InGamePresenter { get; set; }
 
         public InGameView(IInGameModel model)
         {
-
             this.model = model;
 
             InitializeComponent();
@@ -37,7 +36,36 @@ namespace Player
         private void InGame_Load(object sender, EventArgs e)
         {
             InGamePresenter.SyncClient(Common.Lib.Models.Command.Sync);
-            //UpdateView();
+        }
+
+        // Enables the Hit/Stand Buttons
+        private void EnableHitStandButtons()
+        {
+            // Enable Hit-Stand Buttons
+            hitBtn.Enabled = true;
+            standBtn.Enabled = true;
+
+            // Disable Betting Buttons
+            credit1Btn.Enabled = false;
+            credit5Btn.Enabled = false;
+            credit10Btn.Enabled = false;
+            creditAllBet.Enabled = false;
+            submitBetBtn.Enabled = false;
+        }
+
+        // Enables the Bet Buttons
+        private void EnableBetButtons()
+        {
+            // Enable Betting Buttons
+            credit1Btn.Enabled = true;
+            credit5Btn.Enabled = true;
+            credit10Btn.Enabled = true;
+            creditAllBet.Enabled = true;
+            submitBetBtn.Enabled = true;
+
+            // Disable Hit-Stand Buttons
+            hitBtn.Enabled = false;
+            standBtn.Enabled = false;
         }
 
         public void UpdateView()
@@ -49,22 +77,44 @@ namespace Player
                
             foreach (IPlayer player in model.players)
             {
-                // Parse out player data
+                   // Parse out player data
 
-                if (player.Name == "Dealer" && count == 0)
-                {
-                    // Update Dealer Info
-                    count++;
+                   // Updates Sidebar for Current Player
+                   if (player.Name == model.player.Name)
+                   {
+                       totalMoneyAvailable.Text = "$" + player.getCreditBalance().ToString();
+                       
+                       // Enabling, Disabling buttons in sidebar
+                       if (player.getGameStatus().ToString() == "0")
+                       {
+                           EnableBetButtons();
+                       }
+                       else if (player.getGameStatus().ToString() == "1")
+                       {
+                           EnableHitStandButtons();
+                       }
 
-                }
-                else
-                {
-                    if (count == 1)
-                    {
-                        // Update Player 1
-                        p1Name.Text = player.Name;
-                        p1TotalMoney.Text = "$" + player.getCreditBalance().ToString();
-                        p1BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
+                   }
+
+                   if (player.Name == "Dealer" && count == 0)
+                   {
+                       // Update Dealer Info
+                       count++;
+
+                   }
+                   else
+                   {
+                       if (count == 1)
+                       {
+                           // Update Player 1
+                           p1Name.Text = player.Name;
+                           p1TotalMoney.Text = "$" + player.getCreditBalance().ToString();
+                           p1BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
+
+                           // Check for focus, change background color of name label if true, remove if false
+                           if (player.hasFocus == true) { p1Name.BackColor = Color.DarkGreen; }
+                           else { p1Name.BackColor = Color.Transparent; }
+
 
                            if (player.myHand.length > 0)
                            {
@@ -76,66 +126,81 @@ namespace Player
                            }
 
                        }
-                    else if (count == 2)
-                    {
-                        // Update Player 2
-                        p2Name.Text = player.Name;
-                        p2TotalMoney.Text = "$" + player.getCreditBalance().ToString();
-                        p2BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
-                    }
-                    else if (count == 3)
-                    {
-                        // Update Player 3
-                        p3Name.Text = player.Name;
-                        p3TotalMoney.Text = "$" + player.getCreditBalance().ToString();
-                        p3BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
-                    }
-                    else if (count == 4)
-                    {
-                        // Update Player 4
-                        p4Name.Text = player.Name;
-                        p4TotalMoney.Text = "$" + player.getCreditBalance().ToString();
-                        p4BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
-                    }
+                       else if (count == 2)
+                       {
+                           // Update Player 2
+                           p2Name.Text = player.Name;
+                           p2TotalMoney.Text = "$" + player.getCreditBalance().ToString();
+                           p2BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
 
-                    count++;
-                }
-                
-            }
+                           // Check for focus, change background color of name label if true, remove if false
+                           if (player.hasFocus == true) { p2Name.BackColor = Color.DarkGreen; }
+                           else { p2Name.BackColor = Color.Transparent; }
+
+                       }
+                       else if (count == 3)
+                       {
+                           // Update Player 3
+                           p3Name.Text = player.Name;
+                           p3TotalMoney.Text = "$" + player.getCreditBalance().ToString();
+                           p3BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
+
+                           // Check for focus, change background color of name label if true, remove if false
+                           if (player.hasFocus == true) { p3Name.BackColor = Color.DarkGreen; }
+                           else { p3Name.BackColor = Color.Transparent; }
+                       }
+                       else if (count == 4)
+                       {
+                           // Update Player 4
+                           p4Name.Text = player.Name;
+                           p4TotalMoney.Text = "$" + player.getCreditBalance().ToString();
+                           p4BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
+
+                           // Check for focus, change background color of name label if true, remove if false
+                           if (player.hasFocus == true) { p4Name.BackColor = Color.DarkGreen; }
+                           else { p4Name.BackColor = Color.Transparent; }
+                       }
+
+                       count++;
+                   }
+
+               }
 
            });
         }
 
+
+        // Increment bet amount by 1
         private void credit1Btn_Click(object sender, EventArgs e)
         {
-            // Increment bet amount by 1
-            this.betAmount += 1;
+            this.credits += 1;
             credit1Btn.Focus();
         }
 
+        // Increment bet amount by 5
         private void credit5Btn_Click(object sender, EventArgs e)
         {
-            // Increment bet amount by 5
-            this.betAmount += 5;
+            this.credits += 5;
         }
 
+        // Increment bet amount by 10
         private void credit10Btn_Click(object sender, EventArgs e)
         {
-            // Increment bet amount by 10
-            this.betAmount += 10;
+            this.credits += 10;
         }
 
+        // Increment bet by adding all available money
         private void creditAllBet_Click(object sender, EventArgs e)
         {
-            // Increment bet by adding all available money
-            this.betAmount = 0;
-            this.betAmount = model.player.getCreditBalance();
+            this.credits = 0;
+            this.credits = model.player.getCreditBalance();
         }
 
+        // Submits the bet to Presenter
         private void submitBetBtn_Click(object sender, EventArgs e)
         {
-            InGamePresenter.SubmitBet(betAmount);
-            betAmount = 0; // This is not the label, just keeping track of how much player bet is
+            InGamePresenter.SubmitBet(credits);
+            credits = 0; // Reset the amount of credits the user wants to bet, since it is submitted
         }
 
         public void pictureBox1_Click(object sender, EventArgs e)
