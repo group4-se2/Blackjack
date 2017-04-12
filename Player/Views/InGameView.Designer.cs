@@ -69,6 +69,7 @@
             this.p4Name = new System.Windows.Forms.Label();
             this.blackjackText = new System.Windows.Forms.Label();
             this.blackjackRulesText = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -95,10 +96,9 @@
             this.panel1.Controls.Add(this.hitStandStatus);
             this.panel1.Controls.Add(this.totalMoneyAvailable);
             this.panel1.Controls.Add(this.totalMoneyTitle);
-            this.panel1.Location = new System.Drawing.Point(1162, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(775, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(344, 938);
+            this.panel1.Size = new System.Drawing.Size(229, 610);
             this.panel1.TabIndex = 27;
             // 
             // submitBetBtn
@@ -106,10 +106,9 @@
             this.submitBetBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("submitBetBtn.BackgroundImage")));
             this.submitBetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.submitBetBtn.FlatAppearance.BorderSize = 0;
-            this.submitBetBtn.Location = new System.Drawing.Point(32, 815);
-            this.submitBetBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.submitBetBtn.Location = new System.Drawing.Point(21, 530);
             this.submitBetBtn.Name = "submitBetBtn";
-            this.submitBetBtn.Size = new System.Drawing.Size(282, 62);
+            this.submitBetBtn.Size = new System.Drawing.Size(188, 40);
             this.submitBetBtn.TabIndex = 10;
             this.submitBetBtn.UseVisualStyleBackColor = true;
             this.submitBetBtn.Click += new System.EventHandler(this.submitBetBtn_Click);
@@ -119,10 +118,9 @@
             this.creditAllBet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("creditAllBet.BackgroundImage")));
             this.creditAllBet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.creditAllBet.FlatAppearance.BorderSize = 0;
-            this.creditAllBet.Location = new System.Drawing.Point(32, 738);
-            this.creditAllBet.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.creditAllBet.Location = new System.Drawing.Point(21, 480);
             this.creditAllBet.Name = "creditAllBet";
-            this.creditAllBet.Size = new System.Drawing.Size(282, 62);
+            this.creditAllBet.Size = new System.Drawing.Size(188, 40);
             this.creditAllBet.TabIndex = 9;
             this.creditAllBet.UseVisualStyleBackColor = true;
             this.creditAllBet.Click += new System.EventHandler(this.creditAllBet_Click);
@@ -132,10 +130,9 @@
             this.credit10Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit10Btn.BackgroundImage")));
             this.credit10Btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.credit10Btn.FlatAppearance.BorderSize = 0;
-            this.credit10Btn.Location = new System.Drawing.Point(32, 662);
-            this.credit10Btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.credit10Btn.Location = new System.Drawing.Point(21, 430);
             this.credit10Btn.Name = "credit10Btn";
-            this.credit10Btn.Size = new System.Drawing.Size(282, 62);
+            this.credit10Btn.Size = new System.Drawing.Size(188, 40);
             this.credit10Btn.TabIndex = 8;
             this.credit10Btn.UseVisualStyleBackColor = true;
             this.credit10Btn.Click += new System.EventHandler(this.credit10Btn_Click);
@@ -145,10 +142,9 @@
             this.credit5Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit5Btn.BackgroundImage")));
             this.credit5Btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.credit5Btn.FlatAppearance.BorderSize = 0;
-            this.credit5Btn.Location = new System.Drawing.Point(32, 585);
-            this.credit5Btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.credit5Btn.Location = new System.Drawing.Point(21, 380);
             this.credit5Btn.Name = "credit5Btn";
-            this.credit5Btn.Size = new System.Drawing.Size(282, 62);
+            this.credit5Btn.Size = new System.Drawing.Size(188, 40);
             this.credit5Btn.TabIndex = 7;
             this.credit5Btn.UseVisualStyleBackColor = true;
             this.credit5Btn.Click += new System.EventHandler(this.credit5Btn_Click);
@@ -158,10 +154,9 @@
             this.credit1Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("credit1Btn.BackgroundImage")));
             this.credit1Btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.credit1Btn.FlatAppearance.BorderSize = 0;
-            this.credit1Btn.Location = new System.Drawing.Point(32, 508);
-            this.credit1Btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.credit1Btn.Location = new System.Drawing.Point(21, 330);
             this.credit1Btn.Name = "credit1Btn";
-            this.credit1Btn.Size = new System.Drawing.Size(282, 62);
+            this.credit1Btn.Size = new System.Drawing.Size(188, 40);
             this.credit1Btn.TabIndex = 6;
             this.credit1Btn.UseVisualStyleBackColor = true;
             this.credit1Btn.Click += new System.EventHandler(this.credit1Btn_Click);
@@ -172,10 +167,9 @@
             this.standBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.standBtn.FlatAppearance.BorderSize = 0;
             this.standBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.standBtn.Location = new System.Drawing.Point(32, 318);
-            this.standBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.standBtn.Location = new System.Drawing.Point(21, 207);
             this.standBtn.Name = "standBtn";
-            this.standBtn.Size = new System.Drawing.Size(282, 62);
+            this.standBtn.Size = new System.Drawing.Size(188, 40);
             this.standBtn.TabIndex = 5;
             this.standBtn.UseVisualStyleBackColor = true;
             // 
@@ -185,10 +179,9 @@
             this.hitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.hitBtn.FlatAppearance.BorderSize = 0;
             this.hitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hitBtn.Location = new System.Drawing.Point(32, 242);
-            this.hitBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.hitBtn.Location = new System.Drawing.Point(21, 157);
             this.hitBtn.Name = "hitBtn";
-            this.hitBtn.Size = new System.Drawing.Size(282, 62);
+            this.hitBtn.Size = new System.Drawing.Size(188, 40);
             this.hitBtn.TabIndex = 4;
             this.hitBtn.UseVisualStyleBackColor = true;
             // 
@@ -197,10 +190,9 @@
             this.betStatus.AutoSize = true;
             this.betStatus.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.betStatus.ForeColor = System.Drawing.Color.White;
-            this.betStatus.Location = new System.Drawing.Point(150, 435);
-            this.betStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.betStatus.Location = new System.Drawing.Point(100, 283);
             this.betStatus.Name = "betStatus";
-            this.betStatus.Size = new System.Drawing.Size(42, 24);
+            this.betStatus.Size = new System.Drawing.Size(32, 16);
             this.betStatus.TabIndex = 3;
             this.betStatus.Text = "Bet";
             // 
@@ -209,10 +201,9 @@
             this.hitStandStatus.AutoSize = true;
             this.hitStandStatus.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hitStandStatus.ForeColor = System.Drawing.Color.White;
-            this.hitStandStatus.Location = new System.Drawing.Point(124, 166);
-            this.hitStandStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.hitStandStatus.Location = new System.Drawing.Point(83, 108);
             this.hitStandStatus.Name = "hitStandStatus";
-            this.hitStandStatus.Size = new System.Drawing.Size(97, 24);
+            this.hitStandStatus.Size = new System.Drawing.Size(71, 16);
             this.hitStandStatus.TabIndex = 2;
             this.hitStandStatus.Text = "Hit/Stand";
             // 
@@ -221,10 +212,9 @@
             this.totalMoneyAvailable.AutoSize = true;
             this.totalMoneyAvailable.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalMoneyAvailable.ForeColor = System.Drawing.Color.White;
-            this.totalMoneyAvailable.Location = new System.Drawing.Point(148, 78);
-            this.totalMoneyAvailable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.totalMoneyAvailable.Location = new System.Drawing.Point(99, 51);
             this.totalMoneyAvailable.Name = "totalMoneyAvailable";
-            this.totalMoneyAvailable.Size = new System.Drawing.Size(54, 24);
+            this.totalMoneyAvailable.Size = new System.Drawing.Size(40, 16);
             this.totalMoneyAvailable.TabIndex = 1;
             this.totalMoneyAvailable.Text = "$250";
             // 
@@ -233,20 +223,18 @@
             this.totalMoneyTitle.AutoSize = true;
             this.totalMoneyTitle.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalMoneyTitle.ForeColor = System.Drawing.Color.White;
-            this.totalMoneyTitle.Location = new System.Drawing.Point(57, 43);
-            this.totalMoneyTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.totalMoneyTitle.Location = new System.Drawing.Point(38, 28);
             this.totalMoneyTitle.Name = "totalMoneyTitle";
-            this.totalMoneyTitle.Size = new System.Drawing.Size(221, 24);
+            this.totalMoneyTitle.Size = new System.Drawing.Size(162, 16);
             this.totalMoneyTitle.TabIndex = 0;
             this.totalMoneyTitle.Text = "Total Money Available:";
             // 
             // cardShoe
             // 
             this.cardShoe.Image = ((System.Drawing.Image)(resources.GetObject("cardShoe.Image")));
-            this.cardShoe.Location = new System.Drawing.Point(856, 57);
-            this.cardShoe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cardShoe.Location = new System.Drawing.Point(571, 37);
             this.cardShoe.Name = "cardShoe";
-            this.cardShoe.Size = new System.Drawing.Size(140, 300);
+            this.cardShoe.Size = new System.Drawing.Size(93, 195);
             this.cardShoe.TabIndex = 28;
             this.cardShoe.TabStop = false;
             this.cardShoe.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -254,10 +242,9 @@
             // cardDeck
             // 
             this.cardDeck.Image = ((System.Drawing.Image)(resources.GetObject("cardDeck.Image")));
-            this.cardDeck.Location = new System.Drawing.Point(164, 169);
-            this.cardDeck.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cardDeck.Location = new System.Drawing.Point(109, 110);
             this.cardDeck.Name = "cardDeck";
-            this.cardDeck.Size = new System.Drawing.Size(114, 188);
+            this.cardDeck.Size = new System.Drawing.Size(76, 122);
             this.cardDeck.TabIndex = 29;
             this.cardDeck.TabStop = false;
             // 
@@ -265,10 +252,9 @@
             // 
             this.pokerChips.BackColor = System.Drawing.Color.Transparent;
             this.pokerChips.Image = ((System.Drawing.Image)(resources.GetObject("pokerChips.Image")));
-            this.pokerChips.Location = new System.Drawing.Point(450, 23);
-            this.pokerChips.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pokerChips.Location = new System.Drawing.Point(300, 15);
             this.pokerChips.Name = "pokerChips";
-            this.pokerChips.Size = new System.Drawing.Size(237, 102);
+            this.pokerChips.Size = new System.Drawing.Size(158, 66);
             this.pokerChips.TabIndex = 30;
             this.pokerChips.TabStop = false;
             // 
@@ -276,50 +262,45 @@
             // 
             this.dealerCardPanel.BackColor = System.Drawing.Color.Transparent;
             this.dealerCardPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dealerCardPanel.BackgroundImage")));
-            this.dealerCardPanel.Location = new System.Drawing.Point(502, 172);
-            this.dealerCardPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dealerCardPanel.Location = new System.Drawing.Point(335, 112);
             this.dealerCardPanel.Name = "dealerCardPanel";
-            this.dealerCardPanel.Size = new System.Drawing.Size(129, 185);
+            this.dealerCardPanel.Size = new System.Drawing.Size(86, 120);
             this.dealerCardPanel.TabIndex = 31;
             // 
             // p1CardPanel
             // 
             this.p1CardPanel.BackColor = System.Drawing.Color.Transparent;
             this.p1CardPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p1CardPanel.BackgroundImage")));
-            this.p1CardPanel.Location = new System.Drawing.Point(164, 631);
-            this.p1CardPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.p1CardPanel.Location = new System.Drawing.Point(109, 410);
             this.p1CardPanel.Name = "p1CardPanel";
-            this.p1CardPanel.Size = new System.Drawing.Size(129, 185);
+            this.p1CardPanel.Size = new System.Drawing.Size(86, 120);
             this.p1CardPanel.TabIndex = 32;
             // 
             // p2CardPanel
             // 
             this.p2CardPanel.BackColor = System.Drawing.Color.Transparent;
             this.p2CardPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p2CardPanel.BackgroundImage")));
-            this.p2CardPanel.Location = new System.Drawing.Point(387, 631);
-            this.p2CardPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.p2CardPanel.Location = new System.Drawing.Point(258, 410);
             this.p2CardPanel.Name = "p2CardPanel";
-            this.p2CardPanel.Size = new System.Drawing.Size(129, 185);
+            this.p2CardPanel.Size = new System.Drawing.Size(86, 120);
             this.p2CardPanel.TabIndex = 33;
             // 
             // p3CardPanel
             // 
             this.p3CardPanel.BackColor = System.Drawing.Color.Transparent;
             this.p3CardPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p3CardPanel.BackgroundImage")));
-            this.p3CardPanel.Location = new System.Drawing.Point(624, 631);
-            this.p3CardPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.p3CardPanel.Location = new System.Drawing.Point(416, 410);
             this.p3CardPanel.Name = "p3CardPanel";
-            this.p3CardPanel.Size = new System.Drawing.Size(129, 185);
+            this.p3CardPanel.Size = new System.Drawing.Size(86, 120);
             this.p3CardPanel.TabIndex = 32;
             // 
             // p4CardPanel
             // 
             this.p4CardPanel.BackColor = System.Drawing.Color.Transparent;
             this.p4CardPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("p4CardPanel.BackgroundImage")));
-            this.p4CardPanel.Location = new System.Drawing.Point(856, 631);
-            this.p4CardPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.p4CardPanel.Location = new System.Drawing.Point(571, 410);
             this.p4CardPanel.Name = "p4CardPanel";
-            this.p4CardPanel.Size = new System.Drawing.Size(129, 185);
+            this.p4CardPanel.Size = new System.Drawing.Size(86, 120);
             this.p4CardPanel.TabIndex = 32;
             // 
             // dealerName
@@ -328,10 +309,9 @@
             this.dealerName.BackColor = System.Drawing.Color.Transparent;
             this.dealerName.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dealerName.ForeColor = System.Drawing.Color.White;
-            this.dealerName.Location = new System.Drawing.Point(536, 369);
-            this.dealerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dealerName.Location = new System.Drawing.Point(357, 240);
             this.dealerName.Name = "dealerName";
-            this.dealerName.Size = new System.Drawing.Size(67, 21);
+            this.dealerName.Size = new System.Drawing.Size(44, 15);
             this.dealerName.TabIndex = 34;
             this.dealerName.Text = "Dealer";
             // 
@@ -341,10 +321,9 @@
             this.p1Name.BackColor = System.Drawing.Color.Transparent;
             this.p1Name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p1Name.ForeColor = System.Drawing.Color.White;
-            this.p1Name.Location = new System.Drawing.Point(202, 600);
-            this.p1Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p1Name.Location = new System.Drawing.Point(135, 390);
             this.p1Name.Name = "p1Name";
-            this.p1Name.Size = new System.Drawing.Size(61, 21);
+            this.p1Name.Size = new System.Drawing.Size(40, 15);
             this.p1Name.TabIndex = 35;
             this.p1Name.Text = "Name";
             // 
@@ -354,10 +333,9 @@
             this.p1CardValue.BackColor = System.Drawing.Color.Transparent;
             this.p1CardValue.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p1CardValue.ForeColor = System.Drawing.Color.Yellow;
-            this.p1CardValue.Location = new System.Drawing.Point(180, 562);
-            this.p1CardValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p1CardValue.Location = new System.Drawing.Point(120, 365);
             this.p1CardValue.Name = "p1CardValue";
-            this.p1CardValue.Size = new System.Drawing.Size(105, 21);
+            this.p1CardValue.Size = new System.Drawing.Size(68, 15);
             this.p1CardValue.TabIndex = 36;
             this.p1CardValue.Text = "Card Value";
             // 
@@ -367,10 +345,9 @@
             this.p1BetAmount.BackColor = System.Drawing.Color.Transparent;
             this.p1BetAmount.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p1BetAmount.ForeColor = System.Drawing.Color.White;
-            this.p1BetAmount.Location = new System.Drawing.Point(195, 831);
-            this.p1BetAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p1BetAmount.Location = new System.Drawing.Point(130, 540);
             this.p1BetAmount.Name = "p1BetAmount";
-            this.p1BetAmount.Size = new System.Drawing.Size(72, 21);
+            this.p1BetAmount.Size = new System.Drawing.Size(46, 15);
             this.p1BetAmount.TabIndex = 37;
             this.p1BetAmount.Text = "Bet: $0";
             // 
@@ -380,10 +357,9 @@
             this.p1TotalMoney.BackColor = System.Drawing.Color.Transparent;
             this.p1TotalMoney.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p1TotalMoney.ForeColor = System.Drawing.Color.White;
-            this.p1TotalMoney.Location = new System.Drawing.Point(172, 869);
-            this.p1TotalMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p1TotalMoney.Location = new System.Drawing.Point(115, 565);
             this.p1TotalMoney.Name = "p1TotalMoney";
-            this.p1TotalMoney.Size = new System.Drawing.Size(116, 21);
+            this.p1TotalMoney.Size = new System.Drawing.Size(74, 15);
             this.p1TotalMoney.TabIndex = 38;
             this.p1TotalMoney.Text = "Total Money";
             // 
@@ -393,10 +369,9 @@
             this.p2TotalMoney.BackColor = System.Drawing.Color.Transparent;
             this.p2TotalMoney.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p2TotalMoney.ForeColor = System.Drawing.Color.White;
-            this.p2TotalMoney.Location = new System.Drawing.Point(398, 869);
-            this.p2TotalMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p2TotalMoney.Location = new System.Drawing.Point(265, 565);
             this.p2TotalMoney.Name = "p2TotalMoney";
-            this.p2TotalMoney.Size = new System.Drawing.Size(116, 21);
+            this.p2TotalMoney.Size = new System.Drawing.Size(74, 15);
             this.p2TotalMoney.TabIndex = 42;
             this.p2TotalMoney.Text = "Total Money";
             // 
@@ -406,10 +381,9 @@
             this.p2BetAmount.BackColor = System.Drawing.Color.Transparent;
             this.p2BetAmount.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p2BetAmount.ForeColor = System.Drawing.Color.White;
-            this.p2BetAmount.Location = new System.Drawing.Point(420, 831);
-            this.p2BetAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p2BetAmount.Location = new System.Drawing.Point(280, 540);
             this.p2BetAmount.Name = "p2BetAmount";
-            this.p2BetAmount.Size = new System.Drawing.Size(72, 21);
+            this.p2BetAmount.Size = new System.Drawing.Size(46, 15);
             this.p2BetAmount.TabIndex = 41;
             this.p2BetAmount.Text = "Bet: $0";
             // 
@@ -419,10 +393,9 @@
             this.p2CardValue.BackColor = System.Drawing.Color.Transparent;
             this.p2CardValue.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p2CardValue.ForeColor = System.Drawing.Color.Yellow;
-            this.p2CardValue.Location = new System.Drawing.Point(405, 562);
-            this.p2CardValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p2CardValue.Location = new System.Drawing.Point(270, 365);
             this.p2CardValue.Name = "p2CardValue";
-            this.p2CardValue.Size = new System.Drawing.Size(105, 21);
+            this.p2CardValue.Size = new System.Drawing.Size(68, 15);
             this.p2CardValue.TabIndex = 40;
             this.p2CardValue.Text = "Card Value";
             // 
@@ -432,10 +405,9 @@
             this.p2Name.BackColor = System.Drawing.Color.Transparent;
             this.p2Name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p2Name.ForeColor = System.Drawing.Color.White;
-            this.p2Name.Location = new System.Drawing.Point(424, 600);
-            this.p2Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p2Name.Location = new System.Drawing.Point(283, 390);
             this.p2Name.Name = "p2Name";
-            this.p2Name.Size = new System.Drawing.Size(61, 21);
+            this.p2Name.Size = new System.Drawing.Size(40, 15);
             this.p2Name.TabIndex = 39;
             this.p2Name.Text = "Name";
             // 
@@ -445,10 +417,9 @@
             this.p3TotalMoney.BackColor = System.Drawing.Color.Transparent;
             this.p3TotalMoney.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p3TotalMoney.ForeColor = System.Drawing.Color.White;
-            this.p3TotalMoney.Location = new System.Drawing.Point(638, 869);
-            this.p3TotalMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p3TotalMoney.Location = new System.Drawing.Point(425, 565);
             this.p3TotalMoney.Name = "p3TotalMoney";
-            this.p3TotalMoney.Size = new System.Drawing.Size(116, 21);
+            this.p3TotalMoney.Size = new System.Drawing.Size(74, 15);
             this.p3TotalMoney.TabIndex = 46;
             this.p3TotalMoney.Text = "Total Money";
             // 
@@ -458,10 +429,9 @@
             this.p3BetAmount.BackColor = System.Drawing.Color.Transparent;
             this.p3BetAmount.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p3BetAmount.ForeColor = System.Drawing.Color.White;
-            this.p3BetAmount.Location = new System.Drawing.Point(657, 831);
-            this.p3BetAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p3BetAmount.Location = new System.Drawing.Point(438, 540);
             this.p3BetAmount.Name = "p3BetAmount";
-            this.p3BetAmount.Size = new System.Drawing.Size(72, 21);
+            this.p3BetAmount.Size = new System.Drawing.Size(46, 15);
             this.p3BetAmount.TabIndex = 45;
             this.p3BetAmount.Text = "Bet: $0";
             // 
@@ -471,10 +441,9 @@
             this.p3CardValue.BackColor = System.Drawing.Color.Transparent;
             this.p3CardValue.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p3CardValue.ForeColor = System.Drawing.Color.Yellow;
-            this.p3CardValue.Location = new System.Drawing.Point(638, 562);
-            this.p3CardValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p3CardValue.Location = new System.Drawing.Point(425, 365);
             this.p3CardValue.Name = "p3CardValue";
-            this.p3CardValue.Size = new System.Drawing.Size(105, 21);
+            this.p3CardValue.Size = new System.Drawing.Size(68, 15);
             this.p3CardValue.TabIndex = 44;
             this.p3CardValue.Text = "Card Value";
             // 
@@ -484,10 +453,9 @@
             this.p3Name.BackColor = System.Drawing.Color.Transparent;
             this.p3Name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p3Name.ForeColor = System.Drawing.Color.White;
-            this.p3Name.Location = new System.Drawing.Point(660, 600);
-            this.p3Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p3Name.Location = new System.Drawing.Point(440, 390);
             this.p3Name.Name = "p3Name";
-            this.p3Name.Size = new System.Drawing.Size(61, 21);
+            this.p3Name.Size = new System.Drawing.Size(40, 15);
             this.p3Name.TabIndex = 43;
             this.p3Name.Text = "Name";
             // 
@@ -497,10 +465,9 @@
             this.p4TotalMoney.BackColor = System.Drawing.Color.Transparent;
             this.p4TotalMoney.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p4TotalMoney.ForeColor = System.Drawing.Color.White;
-            this.p4TotalMoney.Location = new System.Drawing.Point(870, 869);
-            this.p4TotalMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p4TotalMoney.Location = new System.Drawing.Point(580, 565);
             this.p4TotalMoney.Name = "p4TotalMoney";
-            this.p4TotalMoney.Size = new System.Drawing.Size(116, 21);
+            this.p4TotalMoney.Size = new System.Drawing.Size(74, 15);
             this.p4TotalMoney.TabIndex = 50;
             this.p4TotalMoney.Text = "Total Money";
             // 
@@ -510,10 +477,9 @@
             this.p4BetAmount.BackColor = System.Drawing.Color.Transparent;
             this.p4BetAmount.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p4BetAmount.ForeColor = System.Drawing.Color.White;
-            this.p4BetAmount.Location = new System.Drawing.Point(888, 831);
-            this.p4BetAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p4BetAmount.Location = new System.Drawing.Point(592, 540);
             this.p4BetAmount.Name = "p4BetAmount";
-            this.p4BetAmount.Size = new System.Drawing.Size(72, 21);
+            this.p4BetAmount.Size = new System.Drawing.Size(46, 15);
             this.p4BetAmount.TabIndex = 49;
             this.p4BetAmount.Text = "Bet: $0";
             // 
@@ -523,10 +489,9 @@
             this.p4CardValue.BackColor = System.Drawing.Color.Transparent;
             this.p4CardValue.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p4CardValue.ForeColor = System.Drawing.Color.Yellow;
-            this.p4CardValue.Location = new System.Drawing.Point(870, 562);
-            this.p4CardValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p4CardValue.Location = new System.Drawing.Point(580, 365);
             this.p4CardValue.Name = "p4CardValue";
-            this.p4CardValue.Size = new System.Drawing.Size(105, 21);
+            this.p4CardValue.Size = new System.Drawing.Size(68, 15);
             this.p4CardValue.TabIndex = 48;
             this.p4CardValue.Text = "Card Value";
             // 
@@ -536,10 +501,9 @@
             this.p4Name.BackColor = System.Drawing.Color.Transparent;
             this.p4Name.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p4Name.ForeColor = System.Drawing.Color.White;
-            this.p4Name.Location = new System.Drawing.Point(892, 600);
-            this.p4Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.p4Name.Location = new System.Drawing.Point(595, 390);
             this.p4Name.Name = "p4Name";
-            this.p4Name.Size = new System.Drawing.Size(61, 21);
+            this.p4Name.Size = new System.Drawing.Size(40, 15);
             this.p4Name.TabIndex = 47;
             this.p4Name.Text = "Name";
             // 
@@ -548,10 +512,9 @@
             this.blackjackText.AutoSize = true;
             this.blackjackText.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blackjackText.ForeColor = System.Drawing.Color.Yellow;
-            this.blackjackText.Location = new System.Drawing.Point(388, 435);
-            this.blackjackText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.blackjackText.Location = new System.Drawing.Point(259, 283);
             this.blackjackText.Name = "blackjackText";
-            this.blackjackText.Size = new System.Drawing.Size(355, 33);
+            this.blackjackText.Size = new System.Drawing.Size(248, 22);
             this.blackjackText.TabIndex = 51;
             this.blackjackText.Text = "BLACKJACK PAYS 2 TO 1";
             // 
@@ -560,21 +523,32 @@
             this.blackjackRulesText.AutoSize = true;
             this.blackjackRulesText.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blackjackRulesText.ForeColor = System.Drawing.Color.White;
-            this.blackjackRulesText.Location = new System.Drawing.Point(342, 475);
-            this.blackjackRulesText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.blackjackRulesText.Location = new System.Drawing.Point(228, 309);
             this.blackjackRulesText.Name = "blackjackRulesText";
-            this.blackjackRulesText.Size = new System.Drawing.Size(450, 24);
+            this.blackjackRulesText.Size = new System.Drawing.Size(312, 16);
             this.blackjackRulesText.TabIndex = 52;
             this.blackjackRulesText.Text = "DEALER MUST DRAW TO 16 AND ON ALL 17\'S";
+            // 
+            // timer
+            // 
+            this.timer.BackColor = System.Drawing.Color.Transparent;
+            this.timer.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timer.ForeColor = System.Drawing.Color.White;
+            this.timer.Image = ((System.Drawing.Image)(resources.GetObject("timer.Image")));
+            this.timer.Location = new System.Drawing.Point(15, 15);
+            this.timer.Name = "timer";
+            this.timer.Size = new System.Drawing.Size(45, 45);
+            this.timer.TabIndex = 53;
+            this.timer.Text = "30";
+            this.timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(870, 172);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(580, 112);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(112, 162);
+            this.pictureBox1.Size = new System.Drawing.Size(75, 105);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -584,10 +558,9 @@
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(870, 172);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(580, 112);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(112, 162);
+            this.pictureBox2.Size = new System.Drawing.Size(75, 105);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 54;
             this.pictureBox2.TabStop = false;
@@ -652,12 +625,13 @@
             // 
             // InGameView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(162)))), ((int)(((byte)(62)))));
-            this.ClientSize = new System.Drawing.Size(1506, 940);
+            this.ClientSize = new System.Drawing.Size(1004, 611);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.timer);
             this.Controls.Add(this.blackjackRulesText);
             this.Controls.Add(this.blackjackText);
             this.Controls.Add(this.p4TotalMoney);
@@ -686,7 +660,6 @@
             this.Controls.Add(this.cardDeck);
             this.Controls.Add(this.cardShoe);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "InGameView";
             this.Text = "Blackjack";
             this.Load += new System.EventHandler(this.InGame_Load);
@@ -742,6 +715,7 @@
         private System.Windows.Forms.Button credit1Btn;
         private System.Windows.Forms.Button standBtn;
         private System.Windows.Forms.Button hitBtn;
+        private System.Windows.Forms.Label timer;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ImageList imageList1;
