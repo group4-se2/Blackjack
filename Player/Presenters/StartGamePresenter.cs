@@ -2,6 +2,7 @@
 using Player.Interfaces;
 using Player.Models;
 using System;
+using System.Collections.Generic;
 using System.Net;
 
 namespace Player.Presenters
@@ -100,7 +101,8 @@ namespace Player.Presenters
         {
             CommandObject cmdObj = new CommandObject();
             cmdObj.Command = Command.Join;
-            cmdObj.Payload = model.player;
+            cmdObj.Players = new List<Common.Lib.Interfaces.IPlayer>();
+            cmdObj.Players.Add(model.player);
             client.Send(cmdObj);
         }
     }

@@ -22,7 +22,7 @@ namespace Dealer
     {
         private Server server;
         private Timer gameTimer;
-        private List<Player> players;
+        private List<IPlayer> players;
         private GameState gameState;
         private int elapsedTime = 0;
         private int timeout = 0;
@@ -46,7 +46,7 @@ namespace Dealer
             gameTimer.Elapsed += OnTimedEvent;
 
             // Create players list
-            players = new List<Player>();
+            players = new List<IPlayer>();
 
             // Create Dealer
             Player dealer = new Common.Lib.Models.Player();
@@ -74,7 +74,7 @@ namespace Dealer
         {
             CommandObject cmdObj = new CommandObject();
             cmdObj.Command = Command.Sync;
-            cmdObj.Payload = players;
+            cmdObj.Players = players;
                        
             server.SendAll(cmdObj);
 
@@ -91,14 +91,14 @@ namespace Dealer
             {
                 case Command.Bet:
                     if (gameState == GameState.WaitingForBet) gameState = GameState.CollectingBets;
-                    players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).setWagerAmount(((Player)recEvent.CmdObject.Payload).WagerAmount);
-                    players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).debitCreditBalance(((Player)recEvent.CmdObject.Payload).WagerAmount);
-                    Console.WriteLine("Bet Received from " + ((Player)recEvent.CmdObject.Payload).Name + " for " + ((Player)recEvent.CmdObject.Payload).WagerAmount.ToString() + " credits");
+                    players.Find(x => x.Name == ((Player)recEvent.CmdObject.Players[0]).Name).setWagerAmount(((Player)recEvent.CmdObject.Players[0]).WagerAmount);
+                    players.Find(x => x.Name == ((Player)recEvent.CmdObject.Players[0]).Name).debitCreditBalance(((Player)recEvent.CmdObject.Players[0]).WagerAmount);
+                    Console.WriteLine("Bet Received from " + ((Player)recEvent.CmdObject.Players[0]).Name + " for " + ((Player)recEvent.CmdObject.Players[0]).WagerAmount.ToString() + " credits");
                     //Console.WriteLine("Credits are " + players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).getCreditBalance().ToString());
                     SyncPlayers();
                     break;
                 case Command.Exit:
-                    players.Remove(players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name));
+                    players.Remove(players.Find(x => x.Name == ((Player)recEvent.CmdObject.Players[0]).Name));
                     SyncPlayers();
                     break;
                 case Command.Hit:
@@ -112,10 +112,10 @@ namespace Dealer
                 case Command.Join:
                     if (recEvent.CmdObject.Response == Response.Accepted)
                     {
-                        players.Add((Player)recEvent.CmdObject.Payload);
+                        players.Add((Player)recEvent.CmdObject.Players[0]);
                         SyncPlayers();
                     }
-                    Console.WriteLine("Player (" + ((Player)recEvent.CmdObject.Payload).Name + ") joined");
+                    Console.WriteLine("Player (" + ((Player)recEvent.CmdObject.Players[0]).Name + ") joined");
                     break;
                 case Command.Stand:
                     break;
@@ -171,7 +171,7 @@ namespace Dealer
 
         private void GameLoop()
         {
-            Player dealer = players[0];
+            IPlayer dealer = players[0];
             // Create card deck and shuffle
             IDeck deck = new Deck();
 

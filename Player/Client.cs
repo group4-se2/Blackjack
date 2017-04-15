@@ -1,5 +1,5 @@
 ﻿using Common.Lib.Models;
-using Newtonsoft.Json;
+using Common.Lib.Utility;
 using Player.Models;
 using System;
 using System.Net;
@@ -79,7 +79,7 @@ namespace Player
         {
             try
             {
-                byteData = Encoding.ASCII.GetBytes(JsonConvert.SerializeObject(commandObject));
+                byteData = Encoding.ASCII.GetBytes(Serializer.SerializeCommand(commandObject));
 
                 clientSocket.BeginSend(byteData, 0, byteData.Length, SocketFlags.None, new AsyncCallback(OnSend), null);
             }
@@ -110,7 +110,7 @@ namespace Player
                 
                 string strData = Encoding.UTF8.GetString(data);
                 
-               CommandObject commandObject = JsonConvert.DeserializeObject<CommandObject>(strData);
+               CommandObject commandObject = Deserializer.DeserializeCommand(strData);
 
                byteData = new byte[1024];
 

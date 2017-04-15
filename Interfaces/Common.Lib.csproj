@@ -30,10 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,7 +45,9 @@
     <Compile Include="Interfaces\IDeck.cs" />
     <Compile Include="Interfaces\IHand.cs" />
     <Compile Include="Interfaces\IPlayer.cs" />
-    <Compile Include="Models\XmlDbPersistence.cs" />
+    <Compile Include="Utility\Deserializer.cs" />
+    <Compile Include="Utility\Serializer.cs" />
+    <Compile Include="Utility\XmlDbPersistence.cs" />
     <Compile Include="Models\Card.cs" />
     <Compile Include="Models\Command.cs" />
     <Compile Include="Models\Deck.cs" />

@@ -10,7 +10,7 @@ namespace Player.Interfaces
     public interface IInGameModel
     {
 
-        IList<Common.Lib.Models.Player> players { get; set; }
+        IList<Common.Lib.Interfaces.IPlayer> players { get; set; }
         IPlayer player { get; set; }
   
     }

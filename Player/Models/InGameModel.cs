@@ -11,7 +11,9 @@ namespace Player.Models
         public IList<Common.Lib.Models.Player> players { get; set; }
 
         public IPlayer player { get; set; }
-       
+
+        IList<IPlayer> IInGameModel.players { get; set; }
+
         public InGameModel()
         {
             

@@ -1,5 +1,6 @@
-﻿using Common.Lib.Models;
-using Newtonsoft.Json;
+﻿using Common.Lib.Interfaces;
+using Common.Lib.Models;
+using Common.Lib.Utility;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -88,7 +89,7 @@ namespace Dealer
         /// <param name="commandObject"></param>
         public void Send(string name, CommandObject commandObject)
         {
-            byte[] data = Encoding.ASCII.GetBytes(JsonConvert.SerializeObject(commandObject));
+            byte[] data = Encoding.ASCII.GetBytes(Serializer.SerializeCommand(commandObject));
 
             // Find the client connection in activeConnections and return the object
             ClientConnection client = activeConnections.Find(x => x.Name == name);
@@ -102,7 +103,7 @@ namespace Dealer
         /// <param name="commandObject"></param>
         public void SendAll(CommandObject commandObject)
         {
-            byte[] data = Encoding.ASCII.GetBytes(JsonConvert.SerializeObject(commandObject));
+            byte[] data = Encoding.ASCII.GetBytes(Serializer.SerializeCommand(commandObject));
 
             // Iterate all clients in activeConnections and send to each
             foreach(ClientConnection client in activeConnections)
@@ -152,7 +153,8 @@ namespace Dealer
                 ClientConnection currentClient = (ClientConnection)ar.AsyncState;
                 currentClient.Socket.EndReceive(ar);
 
-                CommandObject commandObject = JsonConvert.DeserializeObject<CommandObject>(Encoding.UTF8.GetString(currentClient.Data));
+                //CommandObject commandObject = JsonConvert.DeserializeObject<CommandObject>(Encoding.UTF8.GetString(currentClient.Data));
+                CommandObject commandObject = Deserializer.DeserializeCommand(Encoding.UTF8.GetString(currentClient.Data));
 
                 byte[] data;
 
@@ -161,7 +163,7 @@ namespace Dealer
                     // Peek at commandObject to see if it is a join
                     case Command.Join:
 
-                        Player player = (Player)commandObject.Payload;
+                        IPlayer player = commandObject.Players[0];
 
                         currentClient.Name = player.Name;
 
@@ -192,7 +194,7 @@ namespace Dealer
                             commandObject.Response = Response.Rejected;
                             commandObject.Message = "Too many players.";
                         }
-                        data = Encoding.ASCII.GetBytes(JsonConvert.SerializeObject(commandObject));
+                        data = Encoding.ASCII.GetBytes(Serializer.SerializeCommand(commandObject));
 
                         // Send acknowledgement back to client
                         currentClient.Socket.BeginSend(data, 0, data.Length, SocketFlags.None, new AsyncCallback(OnSend), currentClient);
@@ -258,7 +260,8 @@ namespace Dealer
                     currentClient.Socket.Close();
                     CommandObject commandObject = new CommandObject();
                     commandObject.Command = Command.Exit;
-                    commandObject.Payload = new Player() { Name = currentClient.Name };
+                    commandObject.Players = new List<IPlayer>();
+                    commandObject.Players.Add(new Player() { Name = currentClient.Name });
 
                     // Invoke the OnDataReceived event if one exists
                     if (OnDataReceived != null)

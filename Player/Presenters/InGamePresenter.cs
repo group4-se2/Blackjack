@@ -63,7 +63,8 @@ namespace Player.Presenters
         {
             CommandObject cmdObj = new CommandObject();
             cmdObj.Command = c;
-            cmdObj.Payload = model.player;
+            cmdObj.Players = new List<Common.Lib.Interfaces.IPlayer>();
+            cmdObj.Players.Add(model.player);
             client.Send(cmdObj);
         }
 
@@ -71,7 +72,7 @@ namespace Player.Presenters
         {
             
             // Player object retrieved from server
-            model.players = (List<Common.Lib.Models.Player>)e.CmdObject.Payload;
+            model.players = e.CmdObject.Players;
             
             Console.WriteLine("Player info retrieved from Server:");
 
