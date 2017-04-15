@@ -63,7 +63,7 @@ namespace Player.Presenters
         {
             CommandObject cmdObj = new CommandObject();
             cmdObj.Command = c;
-            cmdObj.Players = new List<Common.Lib.Interfaces.IPlayer>();
+            cmdObj.Players = new List<IPlayer>();
             cmdObj.Players.Add(model.player);
             client.Send(cmdObj);
         }
@@ -77,7 +77,7 @@ namespace Player.Presenters
             Console.WriteLine("Player info retrieved from Server:");
 
             
-            foreach (Common.Lib.Interfaces.IPlayer player in model.players)
+            foreach (IPlayer player in model.players)
             {
                 Console.WriteLine("Name: " + player.Name);
                 //Console.WriteLine("Bet Amount: " + player.getWagerAmount().ToString());

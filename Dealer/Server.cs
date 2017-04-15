@@ -103,6 +103,7 @@ namespace Dealer
         /// <param name="commandObject"></param>
         public void SendAll(CommandObject commandObject)
         {
+            String s = Serializer.SerializeCommand(commandObject);
             byte[] data = Encoding.ASCII.GetBytes(Serializer.SerializeCommand(commandObject));
 
             // Iterate all clients in activeConnections and send to each

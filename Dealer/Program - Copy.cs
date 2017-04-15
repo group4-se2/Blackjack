@@ -77,7 +77,7 @@ namespace Dealer
             cmdObj.Players = players;
                        
             server.SendAll(cmdObj);
-
+            System.Threading.Thread.Sleep(100);
         }
 
         /// <summary>

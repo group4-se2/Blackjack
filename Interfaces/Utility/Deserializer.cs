@@ -23,11 +23,12 @@ namespace Common.Lib.Utility
         public static List<ICard> DeserializeHand(ref String s)
         {
             List<ICard> hand = new List<ICard>();
-            int start = s.IndexOf('{');
+            int start = s.IndexOf('[');
             int end = s.IndexOf(']');
 
-            if (start > -1)
+            if (s.Substring(start + 1, 1) == "{")
             {
+                start++;
                 String[] cards = s.Substring(start, end - start).Split('{', '}');
 
                 s = s.Remove(0, end + 2);

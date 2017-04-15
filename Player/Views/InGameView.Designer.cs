@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InGameView));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.sidebarBetAmount = new System.Windows.Forms.Label();
             this.submitBetBtn = new System.Windows.Forms.Button();
             this.creditAllBet = new System.Windows.Forms.Button();
             this.credit10Btn = new System.Windows.Forms.Button();
@@ -72,7 +73,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.sidebarBetAmount = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cardShoe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardDeck)).BeginInit();
@@ -102,11 +102,21 @@
             this.panel1.Size = new System.Drawing.Size(229, 610);
             this.panel1.TabIndex = 27;
             // 
+            // sidebarBetAmount
+            // 
+            this.sidebarBetAmount.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidebarBetAmount.ForeColor = System.Drawing.Color.White;
+            this.sidebarBetAmount.Location = new System.Drawing.Point(0, 291);
+            this.sidebarBetAmount.Name = "sidebarBetAmount";
+            this.sidebarBetAmount.Size = new System.Drawing.Size(229, 23);
+            this.sidebarBetAmount.TabIndex = 11;
+            this.sidebarBetAmount.Text = "$0";
+            this.sidebarBetAmount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // submitBetBtn
             // 
             this.submitBetBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("submitBetBtn.BackgroundImage")));
             this.submitBetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.submitBetBtn.Enabled = false;
             this.submitBetBtn.FlatAppearance.BorderSize = 0;
             this.submitBetBtn.Location = new System.Drawing.Point(21, 530);
             this.submitBetBtn.Name = "submitBetBtn";
@@ -119,7 +129,6 @@
             // 
             this.creditAllBet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("creditAllBet.BackgroundImage")));
             this.creditAllBet.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.creditAllBet.Enabled = false;
             this.creditAllBet.FlatAppearance.BorderSize = 0;
             this.creditAllBet.Location = new System.Drawing.Point(21, 480);
             this.creditAllBet.Name = "creditAllBet";
@@ -617,17 +626,6 @@
             this.imageList1.Images.SetKeyName(49, "j-spades.png");
             this.imageList1.Images.SetKeyName(50, "q-spades.png");
             this.imageList1.Images.SetKeyName(51, "k-spades.png");
-            // 
-            // sidebarBetAmount
-            // 
-            this.sidebarBetAmount.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sidebarBetAmount.ForeColor = System.Drawing.Color.White;
-            this.sidebarBetAmount.Location = new System.Drawing.Point(0, 291);
-            this.sidebarBetAmount.Name = "sidebarBetAmount";
-            this.sidebarBetAmount.Size = new System.Drawing.Size(229, 23);
-            this.sidebarBetAmount.TabIndex = 11;
-            this.sidebarBetAmount.Text = "$0";
-            this.sidebarBetAmount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // InGameView
             // 

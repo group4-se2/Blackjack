@@ -104,8 +104,8 @@ namespace Player
         private void OnReceive(IAsyncResult ar)
         {
             byte[] data = (byte[])ar.AsyncState;
-            try
-            {
+            //try
+            //{
                 clientSocket.EndReceive(ar);
                 
                 string strData = Encoding.UTF8.GetString(data);
@@ -124,11 +124,11 @@ namespace Player
                     OnDataReceived(this, e);
                 }
 
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("OnReceive: " + ex.Message);
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine("OnReceive: " + ex.Message);
+            //}
         }
 
     }
