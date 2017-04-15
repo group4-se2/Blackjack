@@ -75,7 +75,6 @@ namespace Player.Presenters
             model.players = e.CmdObject.Players;
             
             Console.WriteLine("Player info retrieved from Server:");
-
             
             foreach (IPlayer player in model.players)
             {

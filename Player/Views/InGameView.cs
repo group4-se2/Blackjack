@@ -116,7 +116,7 @@ namespace Player
                            else { p1Name.BackColor = Color.Transparent; }
 
 
-                           if (player.myHand.length > 0)
+                           if (player.myHand.hand.Count > 0)
                            {
                                Console.WriteLine("Cards have been dealt");
                            }
