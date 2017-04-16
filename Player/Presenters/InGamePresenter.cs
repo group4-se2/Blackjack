@@ -58,6 +58,17 @@ namespace Player.Presenters
 
         }
         
+        // Allows player to hit for another card
+        public void HitCard()
+        {
+            SyncClient(Command.Hit);
+        }
+
+        // Allows player to stand
+        public void Stand()
+        {
+            SyncClient(Command.Stand);
+        }
 
         public void SyncClient(Command c)
         {

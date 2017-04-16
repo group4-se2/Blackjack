@@ -15,5 +15,7 @@ namespace Common.Lib.Interfaces
         int length { get; set; }
 
         int scoreHand();
+
+        void resetHand();
     }
 }

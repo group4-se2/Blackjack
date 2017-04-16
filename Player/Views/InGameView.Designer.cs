@@ -41,8 +41,7 @@
             this.hitBtn = new System.Windows.Forms.Button();
             this.betStatus = new System.Windows.Forms.Label();
             this.hitStandStatus = new System.Windows.Forms.Label();
-            this.totalMoneyAvailable = new System.Windows.Forms.Label();
-            this.totalMoneyTitle = new System.Windows.Forms.Label();
+            this.gameStatusLabel = new System.Windows.Forms.Label();
             this.cardShoe = new System.Windows.Forms.PictureBox();
             this.cardDeck = new System.Windows.Forms.PictureBox();
             this.pokerChips = new System.Windows.Forms.PictureBox();
@@ -73,6 +72,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.dealerCardValue = new System.Windows.Forms.Label();
+            this.gameStatus = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cardShoe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardDeck)).BeginInit();
@@ -95,8 +96,8 @@
             this.panel1.Controls.Add(this.hitBtn);
             this.panel1.Controls.Add(this.betStatus);
             this.panel1.Controls.Add(this.hitStandStatus);
-            this.panel1.Controls.Add(this.totalMoneyAvailable);
-            this.panel1.Controls.Add(this.totalMoneyTitle);
+            this.panel1.Controls.Add(this.gameStatusLabel);
+            this.panel1.Controls.Add(this.gameStatus);
             this.panel1.Location = new System.Drawing.Point(775, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(229, 610);
@@ -188,6 +189,7 @@
             this.standBtn.Size = new System.Drawing.Size(188, 40);
             this.standBtn.TabIndex = 5;
             this.standBtn.UseVisualStyleBackColor = true;
+            this.standBtn.Click += new System.EventHandler(this.standBtn_Click);
             // 
             // hitBtn
             // 
@@ -201,6 +203,7 @@
             this.hitBtn.Size = new System.Drawing.Size(188, 40);
             this.hitBtn.TabIndex = 4;
             this.hitBtn.UseVisualStyleBackColor = true;
+            this.hitBtn.Click += new System.EventHandler(this.hitBtn_Click);
             // 
             // betStatus
             // 
@@ -224,27 +227,16 @@
             this.hitStandStatus.TabIndex = 2;
             this.hitStandStatus.Text = "Hit/Stand";
             // 
-            // totalMoneyAvailable
+            // gameStatusLabel
             // 
-            this.totalMoneyAvailable.AutoSize = true;
-            this.totalMoneyAvailable.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalMoneyAvailable.ForeColor = System.Drawing.Color.White;
-            this.totalMoneyAvailable.Location = new System.Drawing.Point(99, 51);
-            this.totalMoneyAvailable.Name = "totalMoneyAvailable";
-            this.totalMoneyAvailable.Size = new System.Drawing.Size(40, 16);
-            this.totalMoneyAvailable.TabIndex = 1;
-            this.totalMoneyAvailable.Text = "$250";
-            // 
-            // totalMoneyTitle
-            // 
-            this.totalMoneyTitle.AutoSize = true;
-            this.totalMoneyTitle.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalMoneyTitle.ForeColor = System.Drawing.Color.White;
-            this.totalMoneyTitle.Location = new System.Drawing.Point(38, 28);
-            this.totalMoneyTitle.Name = "totalMoneyTitle";
-            this.totalMoneyTitle.Size = new System.Drawing.Size(162, 16);
-            this.totalMoneyTitle.TabIndex = 0;
-            this.totalMoneyTitle.Text = "Total Money Available:";
+            this.gameStatusLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameStatusLabel.ForeColor = System.Drawing.Color.White;
+            this.gameStatusLabel.Location = new System.Drawing.Point(21, 51);
+            this.gameStatusLabel.Name = "gameStatusLabel";
+            this.gameStatusLabel.Size = new System.Drawing.Size(188, 16);
+            this.gameStatusLabel.TabIndex = 1;
+            this.gameStatusLabel.Text = "Waiting for bets...";
+            this.gameStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cardShoe
             // 
@@ -574,58 +566,81 @@
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "a-clubs.png");
-            this.imageList1.Images.SetKeyName(1, "2-clubs.png");
-            this.imageList1.Images.SetKeyName(2, "3-clubs.png");
-            this.imageList1.Images.SetKeyName(3, "4-clubs.png");
-            this.imageList1.Images.SetKeyName(4, "5-clubs.png");
-            this.imageList1.Images.SetKeyName(5, "6-clubs.png");
-            this.imageList1.Images.SetKeyName(6, "7-clubs.png");
-            this.imageList1.Images.SetKeyName(7, "8-clubs.png");
-            this.imageList1.Images.SetKeyName(8, "9-clubs.png");
-            this.imageList1.Images.SetKeyName(9, "10-clubs.png");
-            this.imageList1.Images.SetKeyName(10, "j-clubs.png");
-            this.imageList1.Images.SetKeyName(11, "q-clubs.png");
-            this.imageList1.Images.SetKeyName(12, "k-clubs.png");
-            this.imageList1.Images.SetKeyName(13, "a-diamonds.png");
-            this.imageList1.Images.SetKeyName(14, "2-diamonds.png");
-            this.imageList1.Images.SetKeyName(15, "3-diamonds.png");
-            this.imageList1.Images.SetKeyName(16, "4-diamonds.png");
-            this.imageList1.Images.SetKeyName(17, "5-diamonds.png");
-            this.imageList1.Images.SetKeyName(18, "6-diamonds.png");
-            this.imageList1.Images.SetKeyName(19, "7-diamonds.png");
-            this.imageList1.Images.SetKeyName(20, "8-diamonds.png");
-            this.imageList1.Images.SetKeyName(21, "9-diamonds.png");
-            this.imageList1.Images.SetKeyName(22, "10-diamonds.png");
-            this.imageList1.Images.SetKeyName(23, "j-diamonds.png");
-            this.imageList1.Images.SetKeyName(24, "q-diamonds.png");
-            this.imageList1.Images.SetKeyName(25, "k-diamonds.png");
-            this.imageList1.Images.SetKeyName(26, "a-hearts.png");
-            this.imageList1.Images.SetKeyName(27, "2-hearts.png");
-            this.imageList1.Images.SetKeyName(28, "3-hearts.png");
-            this.imageList1.Images.SetKeyName(29, "4-hearts.png");
-            this.imageList1.Images.SetKeyName(30, "5-hearts.png");
-            this.imageList1.Images.SetKeyName(31, "6-hearts.png");
-            this.imageList1.Images.SetKeyName(32, "7-hearts.png");
-            this.imageList1.Images.SetKeyName(33, "8-hearts.png");
-            this.imageList1.Images.SetKeyName(34, "9-hearts.png");
-            this.imageList1.Images.SetKeyName(35, "10-hearts.png");
-            this.imageList1.Images.SetKeyName(36, "j-hearts.png");
-            this.imageList1.Images.SetKeyName(37, "q-hearts.png");
-            this.imageList1.Images.SetKeyName(38, "k-hearts.png");
-            this.imageList1.Images.SetKeyName(39, "a-spades.png");
-            this.imageList1.Images.SetKeyName(40, "2-spades.png");
-            this.imageList1.Images.SetKeyName(41, "3-spades.png");
-            this.imageList1.Images.SetKeyName(42, "4-spades.png");
-            this.imageList1.Images.SetKeyName(43, "5-spades.png");
-            this.imageList1.Images.SetKeyName(44, "6-spades.png");
-            this.imageList1.Images.SetKeyName(45, "7-spades.png");
-            this.imageList1.Images.SetKeyName(46, "8-spades.png");
-            this.imageList1.Images.SetKeyName(47, "9-spades.png");
-            this.imageList1.Images.SetKeyName(48, "10-spades.png");
-            this.imageList1.Images.SetKeyName(49, "j-spades.png");
-            this.imageList1.Images.SetKeyName(50, "q-spades.png");
-            this.imageList1.Images.SetKeyName(51, "k-spades.png");
+            this.imageList1.Images.SetKeyName(0, "2-clubs.png");
+            this.imageList1.Images.SetKeyName(1, "3-clubs.png");
+            this.imageList1.Images.SetKeyName(2, "4-clubs.png");
+            this.imageList1.Images.SetKeyName(3, "5-clubs.png");
+            this.imageList1.Images.SetKeyName(4, "6-clubs.png");
+            this.imageList1.Images.SetKeyName(5, "7-clubs.png");
+            this.imageList1.Images.SetKeyName(6, "8-clubs.png");
+            this.imageList1.Images.SetKeyName(7, "9-clubs.png");
+            this.imageList1.Images.SetKeyName(8, "10-clubs.png");
+            this.imageList1.Images.SetKeyName(9, "j-clubs.png");
+            this.imageList1.Images.SetKeyName(10, "q-clubs.png");
+            this.imageList1.Images.SetKeyName(11, "k-clubs.png");
+            this.imageList1.Images.SetKeyName(12, "a-clubs.png");
+            this.imageList1.Images.SetKeyName(13, "2-diamonds.png");
+            this.imageList1.Images.SetKeyName(14, "3-diamonds.png");
+            this.imageList1.Images.SetKeyName(15, "4-diamonds.png");
+            this.imageList1.Images.SetKeyName(16, "5-diamonds.png");
+            this.imageList1.Images.SetKeyName(17, "6-diamonds.png");
+            this.imageList1.Images.SetKeyName(18, "7-diamonds.png");
+            this.imageList1.Images.SetKeyName(19, "8-diamonds.png");
+            this.imageList1.Images.SetKeyName(20, "9-diamonds.png");
+            this.imageList1.Images.SetKeyName(21, "10-diamonds.png");
+            this.imageList1.Images.SetKeyName(22, "j-diamonds.png");
+            this.imageList1.Images.SetKeyName(23, "q-diamonds.png");
+            this.imageList1.Images.SetKeyName(24, "k-diamonds.png");
+            this.imageList1.Images.SetKeyName(25, "a-diamonds.png");
+            this.imageList1.Images.SetKeyName(26, "2-hearts.png");
+            this.imageList1.Images.SetKeyName(27, "3-hearts.png");
+            this.imageList1.Images.SetKeyName(28, "4-hearts.png");
+            this.imageList1.Images.SetKeyName(29, "5-hearts.png");
+            this.imageList1.Images.SetKeyName(30, "6-hearts.png");
+            this.imageList1.Images.SetKeyName(31, "7-hearts.png");
+            this.imageList1.Images.SetKeyName(32, "8-hearts.png");
+            this.imageList1.Images.SetKeyName(33, "9-hearts.png");
+            this.imageList1.Images.SetKeyName(34, "10-hearts.png");
+            this.imageList1.Images.SetKeyName(35, "j-hearts.png");
+            this.imageList1.Images.SetKeyName(36, "q-hearts.png");
+            this.imageList1.Images.SetKeyName(37, "k-hearts.png");
+            this.imageList1.Images.SetKeyName(38, "a-hearts.png");
+            this.imageList1.Images.SetKeyName(39, "2-spades.png");
+            this.imageList1.Images.SetKeyName(40, "3-spades.png");
+            this.imageList1.Images.SetKeyName(41, "4-spades.png");
+            this.imageList1.Images.SetKeyName(42, "5-spades.png");
+            this.imageList1.Images.SetKeyName(43, "6-spades.png");
+            this.imageList1.Images.SetKeyName(44, "7-spades.png");
+            this.imageList1.Images.SetKeyName(45, "8-spades.png");
+            this.imageList1.Images.SetKeyName(46, "9-spades.png");
+            this.imageList1.Images.SetKeyName(47, "10-spades.png");
+            this.imageList1.Images.SetKeyName(48, "j-spades.png");
+            this.imageList1.Images.SetKeyName(49, "q-spades.png");
+            this.imageList1.Images.SetKeyName(50, "k-spades.png");
+            this.imageList1.Images.SetKeyName(51, "a-spades.png");
+            // 
+            // dealerCardValue
+            // 
+            this.dealerCardValue.BackColor = System.Drawing.Color.Transparent;
+            this.dealerCardValue.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dealerCardValue.ForeColor = System.Drawing.Color.Yellow;
+            this.dealerCardValue.Location = new System.Drawing.Point(335, 94);
+            this.dealerCardValue.Name = "dealerCardValue";
+            this.dealerCardValue.Size = new System.Drawing.Size(86, 15);
+            this.dealerCardValue.TabIndex = 55;
+            this.dealerCardValue.Text = "Card Value";
+            this.dealerCardValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gameStatus
+            // 
+            this.gameStatus.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameStatus.ForeColor = System.Drawing.Color.White;
+            this.gameStatus.Location = new System.Drawing.Point(21, 28);
+            this.gameStatus.Name = "gameStatus";
+            this.gameStatus.Size = new System.Drawing.Size(188, 16);
+            this.gameStatus.TabIndex = 0;
+            this.gameStatus.Text = "Game Status:";
+            this.gameStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // InGameView
             // 
@@ -633,6 +648,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(162)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(1004, 611);
+            this.Controls.Add(this.dealerCardValue);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.blackjackRulesText);
@@ -690,8 +706,7 @@
         private System.Windows.Forms.Panel p4CardPanel;
         private System.Windows.Forms.Label betStatus;
         private System.Windows.Forms.Label hitStandStatus;
-        private System.Windows.Forms.Label totalMoneyAvailable;
-        private System.Windows.Forms.Label totalMoneyTitle;
+        private System.Windows.Forms.Label gameStatusLabel;
         private System.Windows.Forms.Label dealerName;
         private System.Windows.Forms.Label p1Name;
         private System.Windows.Forms.Label p1CardValue;
@@ -722,5 +737,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label sidebarBetAmount;
+        private System.Windows.Forms.Label dealerCardValue;
+        private System.Windows.Forms.Label gameStatus;
     }
 }

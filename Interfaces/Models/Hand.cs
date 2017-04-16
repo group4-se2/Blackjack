@@ -44,6 +44,11 @@ namespace Common.Lib.Models
             return hand[position];
         }
 
+        public void resetHand()
+        {
+            hand = null;
+            hand = new List<ICard>();
+        }
         public int scoreHand()
         {
             int tally = 0;

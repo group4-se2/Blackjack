@@ -118,6 +118,7 @@ namespace Dealer
                     Console.WriteLine("Player (" + ((Player)recEvent.CmdObject.Players[0]).Name + ") joined");
                     break;
                 case Command.Stand:
+                    gameState = GameState.PlayerStands;
                     break;
             }
         }
@@ -213,7 +214,7 @@ namespace Dealer
             foreach (Player player in players)
             {
                 player.dealCard(deck, false);
-                Console.WriteLine(player.myHand.getCard(0).Description + " card delt to " + player.Name);
+                //Console.WriteLine(player.myHand.getCard(0).Description + " card delt to " + player.Name);
                 SyncPlayers();
             }
 
@@ -225,12 +226,12 @@ namespace Dealer
                 if (player.Name.Equals("Dealer"))
                 {
                     player.dealCard(deck, true);
-                    Console.WriteLine(player.myHand.getCard(1).Description + " card delt to " + player.Name);
+                    //Console.WriteLine(player.myHand.getCard(1).Description + " card delt to " + player.Name);
                 }
                 else
                 {
                     player.dealCard(deck, false);
-                    Console.WriteLine(player.myHand.getCard(1).Description + " card delt to " + player.Name);
+                    //Console.WriteLine(player.myHand.getCard(1).Description + " card delt to " + player.Name);
                 }
                 SyncPlayers();
             }
@@ -279,10 +280,11 @@ namespace Dealer
                 if (!player.Name.Equals("Dealer"))
                 {
                     SetPlayerFocus(player);
+                    player.advanceGameStatus();
                     SyncPlayers();
 
                     gameState = GameState.WaitingForPlayer;
-                    StartGameTimer(60);
+                    StartGameTimer(5);
 
                     // Loop while the player is hitting
                     // If player does not hit within one minute then they automatically stand
@@ -292,6 +294,14 @@ namespace Dealer
                         if(gameState == GameState.PlayerHits)
                         {
                             player.dealCard(deck, false);
+
+                            if (player.scoreHand() > 21)
+                            {
+                                player.setFocus(false);
+                                //gameTimer.Stop();
+                                Console.WriteLine("Bust!");
+                            }
+
                             SyncPlayers();
                             gameState = GameState.WaitingForPlayer;
                         }
@@ -342,6 +352,7 @@ namespace Dealer
 
             // Game Over
             gameState = GameState.GameOver;
+            
         }
     }
 }

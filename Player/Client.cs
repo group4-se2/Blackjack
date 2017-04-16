@@ -112,7 +112,7 @@ namespace Player
                 
                CommandObject commandObject = Deserializer.DeserializeCommand(strData);
 
-               byteData = new byte[1024];
+               byteData = new byte[8000];
 
                clientSocket.BeginReceive(byteData, 0, byteData.Length, SocketFlags.None, new AsyncCallback(OnReceive), byteData);
 

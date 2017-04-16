@@ -17,6 +17,10 @@ namespace Player.Interfaces
 
         void SubmitBet(int credits);
 
+        void HitCard();
+
+        void Stand();
+
         Client client { get; set; }
 
         void client_OnDataReceived(object sender, ClientDataReceivedEventArgs e);
