@@ -60,8 +60,6 @@ E:\GitHub Repository\Blackjack - Mar 30\Interfaces\obj\Debug\Common.Lib.dll
 E:\GitHub Repository\Blackjack - Mar 30\Interfaces\obj\Debug\Common.Lib.pdb
 C:\Users\jml87\Source\Repos\Blackjack\Interfaces\bin\Debug\Common.Lib.dll
 C:\Users\jml87\Source\Repos\Blackjack\Interfaces\bin\Debug\Common.Lib.pdb
-C:\Users\jml87\Source\Repos\Blackjack\Interfaces\bin\Debug\Newtonsoft.Json.dll
-C:\Users\jml87\Source\Repos\Blackjack\Interfaces\bin\Debug\Newtonsoft.Json.xml
 C:\Users\jml87\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
 C:\Users\jml87\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.dll
 C:\Users\jml87\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.pdb
