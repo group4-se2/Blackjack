@@ -346,6 +346,12 @@ namespace Dealer
                         player.debitCreditBalance(player.getWagerAmount());
                         player.setWagerAmount(0);
                     }
+                    if (dealer.scoreHand() == player.scoreHand())
+                    {
+                        // Push
+                        player.creditCreditBalance(player.getWagerAmount());
+                        player.setWagerAmount(0);
+                    }
                 }
             }
             SyncPlayers();
