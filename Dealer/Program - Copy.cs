@@ -119,6 +119,7 @@ namespace Dealer
                     break;
                 case Command.Stand:
                     gameState = GameState.PlayerStands;
+                    gameTimer.Stop();
                     break;
             }
         }
@@ -284,6 +285,7 @@ namespace Dealer
                     SyncPlayers();
 
                     gameState = GameState.WaitingForPlayer;
+
                     StartGameTimer(15);
 
                     // Loop while the player is hitting
@@ -306,7 +308,7 @@ namespace Dealer
                             gameState = GameState.WaitingForPlayer;
                         }
                     }
-                    gameTimer.Stop();
+                    
                 }
             }
 
