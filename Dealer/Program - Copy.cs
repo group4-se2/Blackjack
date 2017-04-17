@@ -191,7 +191,7 @@ namespace Dealer
             gameState = GameState.CollectingBets;
 
             // Start game timer and wait for betting to complete
-            StartGameTimer(20);
+            StartGameTimer(15);
 
             while (!timeoutSignal)
             {
@@ -284,7 +284,7 @@ namespace Dealer
                     SyncPlayers();
 
                     gameState = GameState.WaitingForPlayer;
-                    StartGameTimer(30);
+                    StartGameTimer(15);
 
                     // Loop while the player is hitting
                     // If player does not hit within one minute then they automatically stand
