@@ -334,6 +334,8 @@ namespace Dealer
 
             foreach(Player player in players)
             {
+                //Console.WriteLine("Player - " + player.Name + " - " + player.scoreHand());
+
                 if (player.scoreHand() < 22)
                 {
                     if (dealer.scoreHand() < player.scoreHand())
@@ -343,8 +345,16 @@ namespace Dealer
                     }
                     if (dealer.scoreHand() > player.scoreHand())
                     {
-                        player.debitCreditBalance(player.getWagerAmount());
-                        player.setWagerAmount(0);
+                        if (dealer.scoreHand() < 22)
+                        {
+                            player.debitCreditBalance(player.getWagerAmount());
+                            player.setWagerAmount(0);
+                        }
+                        else
+                        {
+                            player.creditCreditBalance(player.getWagerAmount() * 2);
+                            player.setWagerAmount(0);
+                        }
                     }
                     if (dealer.scoreHand() == player.scoreHand())
                     {
@@ -352,6 +362,17 @@ namespace Dealer
                         player.creditCreditBalance(player.getWagerAmount());
                         player.setWagerAmount(0);
                     }
+                }
+                else if (player.Name == "Dealer" && player.scoreHand() > 22)
+                {
+                    // Dealer Bust
+                    Console.WriteLine("Dealer bust!");
+                }
+                else if (player.Name != "Dealer" && player.scoreHand() > 22)
+                {
+                    // Player Bust
+                    player.debitCreditBalance(player.getWagerAmount());
+                    player.setWagerAmount(0);
                 }
             }
             SyncPlayers();
