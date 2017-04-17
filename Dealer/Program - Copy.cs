@@ -363,12 +363,12 @@ namespace Dealer
                         player.setWagerAmount(0);
                     }
                 }
-                else if (player.Name == "Dealer" && player.scoreHand() > 22)
+                else if (player.Name == "Dealer" && player.scoreHand() >= 22)
                 {
                     // Dealer Bust
                     Console.WriteLine("Dealer bust!");
                 }
-                else if (player.Name != "Dealer" && player.scoreHand() > 22)
+                else if (player.Name != "Dealer" && player.scoreHand() >= 22)
                 {
                     // Player Bust
                     player.debitCreditBalance(player.getWagerAmount());
