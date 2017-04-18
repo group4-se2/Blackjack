@@ -10,6 +10,6 @@ namespace Player.Interfaces
 
         void EnableStartGame();
         void EnableJoinGame();
-
+        void EnableUserNamePanel();
     }
 }

@@ -151,9 +151,7 @@ C:\Users\tws15\Source\Repos\Blackjack\Player\obj\Debug\Player.csproj.GenerateRes
 C:\Users\tws15\Source\Repos\Blackjack\Player\bin\Debug\Player.exe
 C:\Users\tws15\Source\Repos\Blackjack\Player\bin\Debug\Player.pdb
 C:\Users\tws15\Source\Repos\Blackjack\Player\bin\Debug\Common.Lib.dll
-C:\Users\tws15\Source\Repos\Blackjack\Player\bin\Debug\Newtonsoft.Json.dll
 C:\Users\tws15\Source\Repos\Blackjack\Player\bin\Debug\Common.Lib.pdb
-C:\Users\tws15\Source\Repos\Blackjack\Player\bin\Debug\Newtonsoft.Json.xml
 E:\GitHub Repository\Blackjack - Mar 22\Player\bin\Debug\Player.exe.config
 E:\GitHub Repository\Blackjack - Mar 22\Player\obj\Debug\Player.exe
 E:\GitHub Repository\Blackjack - Mar 22\Player\obj\Debug\Player.pdb

@@ -70,7 +70,6 @@
             // 
             this.startGameBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(131)))), ((int)(((byte)(51)))));
             this.startGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.startGameBtn.Enabled = false;
             this.startGameBtn.FlatAppearance.BorderSize = 0;
             this.startGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -81,7 +80,6 @@
             this.startGameBtn.TabIndex = 2;
             this.startGameBtn.Text = "Start Game";
             this.startGameBtn.UseVisualStyleBackColor = false;
-            this.startGameBtn.Visible = false;
             this.startGameBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // joinGameBtn
@@ -99,7 +97,6 @@
             this.joinGameBtn.TabIndex = 3;
             this.joinGameBtn.Text = "Join Game";
             this.joinGameBtn.UseVisualStyleBackColor = false;
-            this.joinGameBtn.Visible = false;
             this.joinGameBtn.Click += new System.EventHandler(this.joinGameBtn_Click);
             // 
             // creditsLabel
@@ -122,6 +119,7 @@
             this.usernamePanel.Name = "usernamePanel";
             this.usernamePanel.Size = new System.Drawing.Size(360, 68);
             this.usernamePanel.TabIndex = 5;
+            this.usernamePanel.Visible = false;
             this.usernamePanel.Click += new System.EventHandler(this.usernamePanel_Click);
             // 
             // usernameTextField
@@ -152,6 +150,7 @@
             this.goBtn.TabIndex = 6;
             this.goBtn.Text = "Next";
             this.goBtn.UseVisualStyleBackColor = false;
+            this.goBtn.Visible = false;
             this.goBtn.Click += new System.EventHandler(this.goBtn_Click);
             // 
             // StartGameView

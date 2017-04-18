@@ -32,11 +32,32 @@ namespace Player
             startGameBtn.Enabled = true;
         }
 
-        public void EnableJoinGame()
+        public void DisableStartGame()
         {
-            joinGameBtn.Enabled = true;
+            this.Invoke((MethodInvoker)delegate
+            {
+                startGameBtn.Enabled = false;
+            });
         }
 
+        public void EnableJoinGame()
+        {
+            this.Invoke((MethodInvoker)delegate
+            {
+                joinGameBtn.Enabled = true;
+            });
+        }
+
+        public void EnableUserNamePanel()
+        {
+            this.Invoke((MethodInvoker)delegate
+            {
+                usernamePanel.Visible = true;
+                goBtn.Visible = true;
+                startGameBtn.Visible = false;
+                joinGameBtn.Visible = false;
+            });
+        }
         
         private void usernamePanel_Click(object sender, EventArgs e)
         {

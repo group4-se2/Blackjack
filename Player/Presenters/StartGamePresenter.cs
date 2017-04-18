@@ -3,6 +3,7 @@ using Player.Interfaces;
 using Player.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net;
 
 namespace Player.Presenters
@@ -13,8 +14,8 @@ namespace Player.Presenters
         private IStartGameView view;
         private DiscoveryClient discoveryClient;
         private Client client;
-        private String clientIpAddress;
-        private String serverIpAddress;
+        //private String clientIpAddress;
+        //private String serverIpAddress;
 
         public StartGamePresenter(IStartGameModel model, IStartGameView view)
         {
@@ -36,7 +37,8 @@ namespace Player.Presenters
         private void client_OnConnected(object sender, EventArgs e)
         {
             Console.WriteLine("Connected");
-        
+
+            view.EnableUserNamePanel();
         }
 
         private void discoveryClient_OnDataReceived(object sender, DataReceivedEventArgs e)
@@ -48,37 +50,39 @@ namespace Player.Presenters
             int port = int.Parse(e.Data.Split(' ')[1].Split(':')[1]);
 
 
-            string tempIP ="";
+            //string tempIP ="";
 
-            //this ipAddress is from this host
-            foreach (IPAddress thisIPAddress in Dns.GetHostEntry(string.Empty).AddressList)
-            {
-                if (thisIPAddress.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
-                {
-                    if (thisIPAddress.ToString() == ipaddress)
-                    {
-                        Console.WriteLine("This host's IP Address: " + thisIPAddress.ToString());
-                        tempIP = thisIPAddress.ToString();
-                        break;
-                    }
-                }
-            }
-            Console.WriteLine("Dealer IP Address: " + ipaddress);
+            ////this ipAddress is from this host
+            //foreach (IPAddress thisIPAddress in Dns.GetHostEntry(string.Empty).AddressList)
+            //{
+            //    if (thisIPAddress.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+            //    {
+            //        if (thisIPAddress.ToString() == ipaddress)
+            //        {
+            //            Console.WriteLine("This host's IP Address: " + thisIPAddress.ToString());
+            //            tempIP = thisIPAddress.ToString();
+            //            break;
+            //        }
+            //    }
+            //}
+            //Console.WriteLine("Dealer IP Address: " + ipaddress);
 
-            if (ipaddress.ToString() == tempIP)
-            {
-                // Enable Start Game, Disable Join Game
-                view.EnableStartGame();
-            }
-            else
-            {
-                // Disable Start Game, Enable Join Game
-                view.EnableJoinGame();
-            }
+            //if (ipaddress.ToString() == tempIP)
+            //{
+            //    // Enable Start Game, Disable Join Game
+            //    view.EnableStartGame();
+            //}
+            //else
+            //{
+            //    // Disable Start Game, Enable Join Game
+            //    view.EnableJoinGame();
+            //}
 
 
             client.Connect(ipaddress, port);
             
+            view.EnableJoinGame();
+
             //client.Send(new CommandObject() { Command = Command.Join, Payload = new Common.Lib.Models.Player() { Name = "Tim" } });
         }
         private void client_OnDataReceived(object sender, ClientDataReceivedEventArgs e)
@@ -88,13 +92,7 @@ namespace Player.Presenters
 
         public void OnButton1Click()
         {
-            IInGameModel inGameModel = new InGameModel();
-            inGameModel.player = model.player;
-            IInGameView inGameView = new InGameView(inGameModel);
-
-            IInGamePresenter inGamePresenter = new InGamePresenter(inGameModel, inGameView, client);
-            client.OnDataReceived += inGamePresenter.client_OnDataReceived;
-            inGamePresenter.ShowDialog();
+            Process.Start("C:\\Users\\tws15\\Source\\Repos\\Blackjack\\Dealer\\bin\\Debug\\Dealer.exe");
         }
 
         public void goButtonClick()
@@ -104,6 +102,14 @@ namespace Player.Presenters
             cmdObj.Players = new List<Common.Lib.Interfaces.IPlayer>();
             cmdObj.Players.Add(model.player);
             client.Send(cmdObj);
+
+            IInGameModel inGameModel = new InGameModel();
+            inGameModel.player = model.player;
+            IInGameView inGameView = new InGameView(inGameModel);
+
+            IInGamePresenter inGamePresenter = new InGamePresenter(inGameModel, inGameView, client);
+            client.OnDataReceived += inGamePresenter.client_OnDataReceived;
+            inGamePresenter.ShowDialog();
         }
     }
 }
