@@ -20,6 +20,7 @@ namespace Player
 
         IInGameModel model;
 
+        List<PictureBox> boxes = new List<PictureBox>();
         // Players total amount to bet
         int credits = 0;
 
@@ -97,7 +98,7 @@ namespace Player
         public void UpdateView()
         {
             int count = 0;
-
+            
             this.Invoke((MethodInvoker)delegate
            {
 
@@ -236,21 +237,32 @@ namespace Player
             else if (count == 2) { CARD_LOCATION_X = 235; }
             else if (count == 3) { CARD_LOCATION_X = 385; }
             else if (count == 4) { CARD_LOCATION_X = 535; }
-            
+
             // Loops through the cards and creates pictureboxes
             if (player.myHand.hand.Count > 0)
             {
-                PictureBox[] boxes = new PictureBox[player.myHand.hand.Count];
-               
+                //boxes = new PictureBox[player.myHand.hand.Count];
+
                 for (int i = 0; i < player.myHand.hand.Count; i++)
                 {
-                    boxes[i] = new PictureBox();
+                    //boxes[i] = new PictureBox();
+                    //int cardID = GetCardGraphic(player.myHand.getCard(i));
+                    //boxes[i].Image = imageList1.Images[cardID];
+                    //boxes[i].Size = CARD_SIZE;
+                    //boxes[i].Location = new Point(CARD_LOCATION_X, CARD_LOCATION_Y);
+                    //this.Controls.Add(boxes[i]);
+                    //boxes[i].BringToFront();
+                    //CARD_LOCATION_X += 15;
+
+                    PictureBox box = new PictureBox();
                     int cardID = GetCardGraphic(player.myHand.getCard(i));
-                    boxes[i].Image = imageList1.Images[cardID];
-                    boxes[i].Size = CARD_SIZE;
-                    boxes[i].Location = new Point(CARD_LOCATION_X, CARD_LOCATION_Y);
-                    this.Controls.Add(boxes[i]);
-                    boxes[i].BringToFront();
+                    box.Image = imageList1.Images[cardID];
+                    box.Size = CARD_SIZE;
+                    box.Location = new Point(CARD_LOCATION_X, CARD_LOCATION_Y);
+                    this.Controls.Add(box);
+                    
+                    box.BringToFront();
+                    boxes.Add(box);
                     CARD_LOCATION_X += 15;
                 }
             }
@@ -367,6 +379,18 @@ namespace Player
         private void standBtn_Click(object sender, EventArgs e)
         {
             InGamePresenter.Stand();
+        }
+
+        public void GameOver()
+        {
+            this.Invoke((MethodInvoker)delegate
+            {
+                foreach (PictureBox box in boxes)
+                {
+                    this.Controls.Remove(box);
+                }
+                boxes.Clear();
+            });
         }
     }
 }

@@ -81,7 +81,14 @@ namespace Player.Presenters
 
         public void client_OnDataReceived(object sender, ClientDataReceivedEventArgs e)
         {
-            
+            if(e.CmdObject.Command == Command.Message)
+            {
+                if (e.CmdObject.Message.Trim() == "GameOver")
+                {
+                    GameOver();
+                    return;
+                }
+            }
             // Player object retrieved from server
             model.players = e.CmdObject.Players;
             
@@ -95,6 +102,11 @@ namespace Player.Presenters
             }
             
             view.UpdateView();
+        }
+
+        private void GameOver()
+        {
+            view.GameOver();
         }
     }
 }

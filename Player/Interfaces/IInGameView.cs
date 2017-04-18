@@ -8,5 +8,6 @@ namespace Player.Interfaces
 
         DialogResult ShowDialog();
         void UpdateView();
+        void GameOver();
     }
 }

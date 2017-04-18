@@ -187,3 +187,11 @@ C:\Users\JL\Source\Repos\Blackjack-April-17\Dealer\bin\Debug\Dealer.pdb
 C:\Users\JL\Source\Repos\Blackjack-April-17\Dealer\bin\Debug\Common.Lib.dll
 C:\Users\JL\Source\Repos\Blackjack-April-17\Dealer\bin\Debug\Common.Lib.pdb
 C:\Users\JL\Source\Repos\Blackjack-April-17\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+C:\Users\Wayne\Source\Repos\Blackjack\Dealer\bin\Debug\Dealer.exe.config
+C:\Users\Wayne\Source\Repos\Blackjack\Dealer\bin\Debug\Dealer.exe
+C:\Users\Wayne\Source\Repos\Blackjack\Dealer\bin\Debug\Dealer.pdb
+C:\Users\Wayne\Source\Repos\Blackjack\Dealer\bin\Debug\Common.Lib.dll
+C:\Users\Wayne\Source\Repos\Blackjack\Dealer\bin\Debug\Common.Lib.pdb
+C:\Users\Wayne\Source\Repos\Blackjack\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+C:\Users\Wayne\Source\Repos\Blackjack\Dealer\obj\Debug\Dealer.exe
+C:\Users\Wayne\Source\Repos\Blackjack\Dealer\obj\Debug\Dealer.pdb
