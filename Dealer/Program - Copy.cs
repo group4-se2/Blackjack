@@ -23,6 +23,8 @@ namespace Dealer
         private Server server;
         private Timer gameTimer;
         private List<IPlayer> players;
+        private List<IPlayer> addPlayers;
+        private List<IPlayer> removePlayers;
         private GameState gameState;
         private int elapsedTime = 0;
         private int timeout = 0;
@@ -35,7 +37,7 @@ namespace Dealer
             program2.run();
 
             //temporary for testing
-            Console.ReadLine();
+            //Console.ReadLine();
         }
 
         private void run()
@@ -102,8 +104,7 @@ namespace Dealer
                     SyncPlayers();
                     break;
                 case Command.Exit:
-                    players.Remove(players.Find(x => x.Name == ((Player)recEvent.CmdObject.Players[0]).Name));
-                    SyncPlayers();
+                    removePlayers.Add(recEvent.CmdObject.Players[0]);
                     break;
                 case Command.Hit:
                     gameState = GameState.PlayerHits;
@@ -116,8 +117,15 @@ namespace Dealer
                 case Command.Join:
                     if (recEvent.CmdObject.Response == Response.Accepted)
                     {
-                        players.Add((Player)recEvent.CmdObject.Players[0]);
-                        SyncPlayers();
+                        if (gameState != GameState.WaitingForBet && gameState != GameState.CollectingBets)
+                        {
+                            addPlayers.Add(recEvent.CmdObject.Players[0]);
+                        }
+                        else
+                        {
+                            players.Add((Player)recEvent.CmdObject.Players[0]);
+                            SyncPlayers();
+                        }
                     }
                     Console.WriteLine("Player (" + ((Player)recEvent.CmdObject.Players[0]).Name + ") joined");
                     break;
@@ -385,8 +393,18 @@ namespace Dealer
 
             // Game Over
             gameState = GameState.GameOver;
-            
-            foreach(Player player in players)
+
+            foreach (Player player in removePlayers)
+            {
+                players.Remove(players.Find(x => x.Name == player.Name));
+            }
+
+            foreach(Player player in addPlayers)
+            {
+                players.Add(player);
+            }
+
+            foreach (Player player in players)
             {
                 player.WagerAmount = 0;
                 player.gameStatus = 0;
