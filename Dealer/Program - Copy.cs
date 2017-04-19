@@ -23,8 +23,8 @@ namespace Dealer
         private Server server;
         private Timer gameTimer;
         private List<IPlayer> players;
-        private List<IPlayer> addPlayers;
-        private List<IPlayer> removePlayers;
+        private List<IPlayer> addPlayers = new List<IPlayer>();
+        private List<IPlayer> removePlayers = new List<IPlayer>();
         private GameState gameState;
         private int elapsedTime = 0;
         private int timeout = 0;
@@ -185,6 +185,8 @@ namespace Dealer
 
         private void GameLoop()
         {
+            Console.WriteLine("GameState: " + gameState);
+
             IPlayer dealer = players[0];
             // Create card deck and shuffle
             IDeck deck = new Deck();
@@ -391,6 +393,13 @@ namespace Dealer
             }
             SyncPlayers();
 
+            StartGameTimer(5);
+
+            while (!timeoutSignal)
+            {
+                // Show results of round
+            }
+
             // Game Over
             gameState = GameState.GameOver;
 
@@ -419,6 +428,8 @@ namespace Dealer
             cmdObj.Message = "GameOver";
             cmdObj.Players = players;
             server.SendAll(cmdObj);
+
+            gameState = GameState.WaitingForBet;
         }
     }
 }
