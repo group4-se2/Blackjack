@@ -97,6 +97,12 @@ namespace Player.Presenters
             foreach (IPlayer player in model.players)
             {
                 Console.WriteLine("Name: " + player.Name);
+
+                if (player.Name == model.player.Name)
+                {
+                    model.player = player;
+                }
+
                 //Console.WriteLine("Bet Amount: " + player.getWagerAmount().ToString());
                 //Console.WriteLine("Credit Balance: " + player.getCreditBalance().ToString());
             }

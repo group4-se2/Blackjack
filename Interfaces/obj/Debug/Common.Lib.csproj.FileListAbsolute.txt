@@ -137,3 +137,8 @@ C:\Users\jml87\Source\Repos\Blackjack4\Interfaces\bin\Debug\Common.Lib.pdb
 C:\Users\jml87\Source\Repos\Blackjack4\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
 C:\Users\jml87\Source\Repos\Blackjack4\Interfaces\obj\Debug\Common.Lib.dll
 C:\Users\jml87\Source\Repos\Blackjack4\Interfaces\obj\Debug\Common.Lib.pdb
+C:\Users\jml87\Source\Repos\Blackjack5\Interfaces\bin\Debug\Common.Lib.dll
+C:\Users\jml87\Source\Repos\Blackjack5\Interfaces\bin\Debug\Common.Lib.pdb
+C:\Users\jml87\Source\Repos\Blackjack5\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+C:\Users\jml87\Source\Repos\Blackjack5\Interfaces\obj\Debug\Common.Lib.dll
+C:\Users\jml87\Source\Repos\Blackjack5\Interfaces\obj\Debug\Common.Lib.pdb

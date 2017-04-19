@@ -324,7 +324,8 @@ namespace Player
         private void creditAllBet_Click(object sender, EventArgs e)
         {
             this.credits = 0;
-            this.credits = model.player.getCreditBalance();
+            // Workaround here, need to recode later
+            credits = model.player.getCreditBalance();
             UpdateBetAmount();
         }
 

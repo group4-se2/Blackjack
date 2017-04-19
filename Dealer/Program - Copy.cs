@@ -185,7 +185,6 @@ namespace Dealer
 
         private void GameLoop()
         {
-            Console.WriteLine("GameState: " + gameState);
 
             IPlayer dealer = players[0];
             // Create card deck and shuffle
