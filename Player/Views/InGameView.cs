@@ -216,7 +216,18 @@ namespace Player
             // Enabling, Disabling buttons in sidebar
             if (player.getGameStatus().ToString() == "0")
             {
-                EnableBetButtons();
+
+                Console.WriteLine("Game Status: " + player.getGameStatus().ToString() + " - Wager Amount: " + player.WagerAmount);
+
+                if (player.WagerAmount == 0)
+                {
+                    EnableBetButtons();
+                }
+                else
+                {
+                    DisableBetButtons();
+                }
+                
             }
             else if (player.getGameStatus().ToString() == "1")
             {

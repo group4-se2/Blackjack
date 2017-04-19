@@ -75,6 +75,8 @@ namespace Player
         private void goBtn_Click(object sender, EventArgs e)
         {
 
+            
+
             String placeholder1 = "Enter username...";
             String placeholder2 = "Try again. Enter username...";
 
@@ -101,6 +103,7 @@ namespace Player
                 //joinGameBtn.Visible = true;
 
                 // Add user name to model player object
+
                 StartGameModel.player.Name = usernameTextField.Text;
 
                 // Call presenter to join this player to the game server

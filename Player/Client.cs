@@ -104,17 +104,17 @@ namespace Player
         private void OnReceive(IAsyncResult ar)
         {
             byte[] data = (byte[])ar.AsyncState;
-            //try
-            //{
+            try
+            {
                 clientSocket.EndReceive(ar);
-                
+
                 string strData = Encoding.UTF8.GetString(data);
-                
-               CommandObject commandObject = Deserializer.DeserializeCommand(strData);
 
-               byteData = new byte[8000];
+                CommandObject commandObject = Deserializer.DeserializeCommand(strData);
 
-               clientSocket.BeginReceive(byteData, 0, byteData.Length, SocketFlags.None, new AsyncCallback(OnReceive), byteData);
+                byteData = new byte[8000];
+
+                clientSocket.BeginReceive(byteData, 0, byteData.Length, SocketFlags.None, new AsyncCallback(OnReceive), byteData);
 
                 // Invoke the OnDataReceived event if one exists
                 if (OnDataReceived != null)
@@ -124,11 +124,11 @@ namespace Player
                     OnDataReceived(this, e);
                 }
 
-            //}
-            //catch (Exception ex)
-            //{
-            //    Console.WriteLine("OnReceive: " + ex.Message);
-            //}
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("OnReceive: " + ex.Message);
+            }
         }
 
     }

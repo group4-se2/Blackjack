@@ -102,14 +102,14 @@
             // 
             // creditsLabel
             // 
-            this.creditsLabel.AutoSize = true;
             this.creditsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creditsLabel.ForeColor = System.Drawing.Color.White;
             this.creditsLabel.Location = new System.Drawing.Point(197, 470);
             this.creditsLabel.Name = "creditsLabel";
             this.creditsLabel.Size = new System.Drawing.Size(429, 16);
             this.creditsLabel.TabIndex = 4;
-            this.creditsLabel.Text = "Created by: Julian Loftis, Tim Sullivan, Fred Lash, Chris Fails, David Kirk";
+            this.creditsLabel.Text = "Created by: Julian Loftis, Tim Sullivan, Fred Lash, David Kirk";
+            this.creditsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // usernamePanel
             // 
@@ -176,7 +176,6 @@
             this.usernamePanel.ResumeLayout(false);
             this.usernamePanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
