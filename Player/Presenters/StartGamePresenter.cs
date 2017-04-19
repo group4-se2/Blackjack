@@ -92,7 +92,7 @@ namespace Player.Presenters
 
         public void OnButton1Click()
         {
-            Process.Start("C:\\Users\\tws15\\Source\\Repos\\Blackjack\\Dealer\\bin\\Debug\\Dealer.exe");
+            Process.Start("Dealer.exe");
         }
 
         public void goButtonClick()

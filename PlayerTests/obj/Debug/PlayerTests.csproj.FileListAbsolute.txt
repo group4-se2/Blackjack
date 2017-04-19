@@ -118,3 +118,16 @@ E:\GitHub Repository\April 11 - 3\PlayerTests\bin\Debug\Newtonsoft.Json.xml
 E:\GitHub Repository\April 11 - 3\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
 E:\GitHub Repository\April 11 - 3\PlayerTests\obj\Debug\PlayerTests.dll
 E:\GitHub Repository\April 11 - 3\PlayerTests\obj\Debug\PlayerTests.pdb
+C:\Users\Wayne\Source\Repos\Blackjack\PlayerTests\bin\Debug\PlayerTests.dll
+C:\Users\Wayne\Source\Repos\Blackjack\PlayerTests\bin\Debug\PlayerTests.pdb
+C:\Users\Wayne\Source\Repos\Blackjack\PlayerTests\bin\Debug\Castle.Core.dll
+C:\Users\Wayne\Source\Repos\Blackjack\PlayerTests\bin\Debug\Common.Lib.dll
+C:\Users\Wayne\Source\Repos\Blackjack\PlayerTests\bin\Debug\Moq.dll
+C:\Users\Wayne\Source\Repos\Blackjack\PlayerTests\bin\Debug\Player.exe
+C:\Users\Wayne\Source\Repos\Blackjack\PlayerTests\bin\Debug\Common.Lib.pdb
+C:\Users\Wayne\Source\Repos\Blackjack\PlayerTests\bin\Debug\Player.pdb
+C:\Users\Wayne\Source\Repos\Blackjack\PlayerTests\bin\Debug\Castle.Core.xml
+C:\Users\Wayne\Source\Repos\Blackjack\PlayerTests\bin\Debug\Moq.xml
+C:\Users\Wayne\Source\Repos\Blackjack\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
+C:\Users\Wayne\Source\Repos\Blackjack\PlayerTests\obj\Debug\PlayerTests.dll
+C:\Users\Wayne\Source\Repos\Blackjack\PlayerTests\obj\Debug\PlayerTests.pdb

@@ -195,3 +195,11 @@ C:\Users\Wayne\Source\Repos\Blackjack\Dealer\bin\Debug\Common.Lib.pdb
 C:\Users\Wayne\Source\Repos\Blackjack\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
 C:\Users\Wayne\Source\Repos\Blackjack\Dealer\obj\Debug\Dealer.exe
 C:\Users\Wayne\Source\Repos\Blackjack\Dealer\obj\Debug\Dealer.pdb
+C:\Users\Wayne\Source\Repos\Blackjack\Dealer\$(SOLUTION_DIR)\Output\Debug\Dealer.exe.config
+C:\Users\Wayne\Source\Repos\Blackjack\Dealer\$(SOLUTION_DIR)\Output\Debug\Dealer.exe
+C:\Users\Wayne\Source\Repos\Blackjack\Dealer\$(SOLUTION_DIR)\Output\Debug\Dealer.pdb
+C:\Users\Wayne\Source\Repos\Blackjack\Dealer\$(SOLUTION_DIR)\Output\Debug\Common.Lib.dll
+C:\Users\Wayne\Source\Repos\Blackjack\Dealer\$(SOLUTION_DIR)\Output\Debug\Common.Lib.pdb
+C:\Users\Wayne\Source\Repos\Blackjack\Output\Debug\Dealer.exe.config
+C:\Users\Wayne\Source\Repos\Blackjack\Output\Debug\Dealer.exe
+C:\Users\Wayne\Source\Repos\Blackjack\Output\Debug\Dealer.pdb
