@@ -42,10 +42,10 @@ namespace Player
 
         public void EnableJoinGame()
         {
-            this.Invoke((MethodInvoker)delegate
-            {
-                joinGameBtn.Enabled = true;
-            });
+            //this.Invoke((MethodInvoker)delegate
+            //{
+            //    joinGameBtn.Enabled = true;
+            //});
         }
 
         public void EnableUserNamePanel()
@@ -98,7 +98,7 @@ namespace Player
 
                 // Enable UI Elements for Starting or Joining Game
                 startGameBtn.Visible = true;
-                joinGameBtn.Visible = true;
+                //joinGameBtn.Visible = true;
 
                 // Add user name to model player object
                 StartGameModel.player.Name = usernameTextField.Text;

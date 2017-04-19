@@ -76,7 +76,7 @@
             this.startGameBtn.ForeColor = System.Drawing.Color.White;
             this.startGameBtn.Location = new System.Drawing.Point(183, 365);
             this.startGameBtn.Name = "startGameBtn";
-            this.startGameBtn.Size = new System.Drawing.Size(220, 69);
+            this.startGameBtn.Size = new System.Drawing.Size(461, 69);
             this.startGameBtn.TabIndex = 2;
             this.startGameBtn.Text = "Start Game";
             this.startGameBtn.UseVisualStyleBackColor = false;
@@ -97,6 +97,7 @@
             this.joinGameBtn.TabIndex = 3;
             this.joinGameBtn.Text = "Join Game";
             this.joinGameBtn.UseVisualStyleBackColor = false;
+            this.joinGameBtn.Visible = false;
             this.joinGameBtn.Click += new System.EventHandler(this.joinGameBtn_Click);
             // 
             // creditsLabel
