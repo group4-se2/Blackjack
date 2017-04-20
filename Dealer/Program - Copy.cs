@@ -210,6 +210,39 @@ namespace Dealer
             while (!timeoutSignal)
             {
                 // Wait for betting period to timeout
+
+                // Ends betting if everyone has placed a bet
+                if (players.Count == 2)
+                {
+                    // Continue on
+                    gameTimer.Stop();
+                    timeoutSignal = true;
+                }
+                else if (players.Count == 3)
+                {
+                    if (players[1].WagerAmount > 0 && players[2].WagerAmount > 0)
+                    {
+                        gameTimer.Stop();
+                        timeoutSignal = true;
+                    }
+                }
+                else if (players.Count == 4)
+                {
+                    if (players[1].WagerAmount > 0 && players[2].WagerAmount > 0 && players[3].WagerAmount > 0)
+                    {
+                        gameTimer.Stop();
+                        timeoutSignal = true;
+                    }
+                }
+                else if (players.Count == 5)
+                {
+                    if (players[1].WagerAmount > 0 && players[2].WagerAmount > 0 && players[3].WagerAmount > 0 && players[4].WagerAmount > 0)
+                    {
+                        gameTimer.Stop();
+                        timeoutSignal = true;
+                    }
+                }
+
             }
 
             // Betting is over so disable all players

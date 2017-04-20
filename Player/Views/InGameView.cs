@@ -332,10 +332,14 @@ namespace Player
         // Submits the bet to Presenter
         private void submitBetBtn_Click(object sender, EventArgs e)
         {
-            InGamePresenter.SubmitBet(credits);
-            DisableBetButtons();
-            credits = 0; // Reset the amount of credits the user wants to bet, since it is submitted
-            UpdateBetAmount();
+            if (credits != 0 && credits <= model.player.getCreditBalance())
+            {
+                Console.WriteLine("In here");
+                InGamePresenter.SubmitBet(credits);
+                DisableBetButtons();
+                credits = 0; // Reset the amount of credits the user wants to bet, since it is submitted
+                UpdateBetAmount();
+            }
         }
 
         public void pictureBox1_Click(object sender, EventArgs e)
