@@ -37,13 +37,15 @@ namespace Common.Lib.Interfaces
         void creditCreditBalance(int amount);
 
         /* used by game server to sync GUI to game phase
-         * 1 - Bet
+         * 0 - Bet
+         * 1 - Waiting on other bets...
          * 2 - Hit/Stand
          * 3 - Loss (hand complete - for GUI only)
          * 4 - Bust (hand complete - for GUI only)
-         * 5 - Tie (hand complete - for GUI only)
+         * 5 - Push (hand complete - for GUI only)
          * 6 - Win (hand complete - for GUI only)
          * 7 - Blackjack (hand complete - for GUI only)
+         * 8 - Inactive
          */
 
         void advanceGameStatus();

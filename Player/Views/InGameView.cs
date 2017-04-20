@@ -42,6 +42,9 @@ namespace Player
         // Enables the Hit/Stand Buttons
         private void EnableHitStandButtons()
         {
+
+            Console.WriteLine("In here...");
+
             // Enable Hit-Stand Buttons
             hitBtn.Enabled = true;
             standBtn.Enabled = true;
@@ -211,13 +214,14 @@ namespace Player
 
         private void UpdateSidebar(IPlayer player)
         {
-            gameStatusLabel.Text = "$" + player.getCreditBalance().ToString();
+            
 
             // Enabling, Disabling buttons in sidebar
             if (player.getGameStatus().ToString() == "0")
             {
 
-                Console.WriteLine("Game Status: " + player.getGameStatus().ToString() + " - Wager Amount: " + player.WagerAmount);
+                //Console.WriteLine("Game Status: " + player.getGameStatus().ToString() + " - Wager Amount: " + player.WagerAmount);
+                gameStatusLabel.Text = "Place Bet";
 
                 if (player.WagerAmount == 0)
                 {
@@ -229,9 +233,46 @@ namespace Player
                 }
                 
             }
-            else if (player.getGameStatus().ToString() == "1")
+            else if (player.getGameStatus() == 1)
             {
+                // Waiting for bets...
+                gameStatusLabel.Text = "Waiting on bets...";
+            }
+            else if (player.getGameStatus() == 2)
+            {
+                // Hit/Stand
+                gameStatusLabel.Text = "Hit/Stand";
                 EnableHitStandButtons();
+            }
+            else if (player.getGameStatus() == 3)
+            {
+                // Loss
+                gameStatusLabel.Text = "Loss";
+            }
+            else if (player.getGameStatus() == 4)
+            {
+                // Bust
+                gameStatusLabel.Text = "Bust";
+            }
+            else if (player.getGameStatus() == 5)
+            {
+                // Push
+                gameStatusLabel.Text = "Push";
+            }
+            else if (player.getGameStatus() == 6)
+            {
+                // Win
+                gameStatusLabel.Text = "Win";
+            }
+            else if (player.getGameStatus() == 7)
+            {
+                // Blackjack
+                gameStatusLabel.Text = "Blackjack";
+            }
+            else if (player.getGameStatus() == 8)
+            {
+                gameStatusLabel.Text = "Inactive";
+                DisableAllButtons();
             }
         }
 

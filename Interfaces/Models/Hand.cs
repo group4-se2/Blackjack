@@ -35,7 +35,7 @@ namespace Common.Lib.Models
             }
             else
             {
-                throw new System.ArgumentOutOfRangeException("The maximum number of cards cannot exceed five  cards.");
+                //throw new System.ArgumentOutOfRangeException("The maximum number of cards cannot exceed five  cards.");
             }
         }
 

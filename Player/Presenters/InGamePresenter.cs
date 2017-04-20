@@ -96,7 +96,7 @@ namespace Player.Presenters
             
             foreach (IPlayer player in model.players)
             {
-                Console.WriteLine("Name: " + player.Name);
+                Console.WriteLine("Name: " + player.Name + "Game Status: " + player.getGameStatus());
 
                 if (player.Name == model.player.Name)
                 {

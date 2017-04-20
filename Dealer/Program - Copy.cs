@@ -75,13 +75,13 @@ namespace Dealer
             } while (players.Count > 1);
         }
 
-        
+
         private void SyncPlayers()
         {
             CommandObject cmdObj = new CommandObject();
             cmdObj.Command = Command.Sync;
             cmdObj.Players = players;
-                       
+
             server.SendAll(cmdObj);
             System.Threading.Thread.Sleep(100);
         }
@@ -99,6 +99,7 @@ namespace Dealer
                     if (gameState == GameState.WaitingForBet) gameState = GameState.CollectingBets;
                     players.Find(x => x.Name == ((Player)recEvent.CmdObject.Players[0]).Name).setWagerAmount(((Player)recEvent.CmdObject.Players[0]).WagerAmount);
                     players.Find(x => x.Name == ((Player)recEvent.CmdObject.Players[0]).Name).debitCreditBalance(((Player)recEvent.CmdObject.Players[0]).WagerAmount);
+                    players.Find(x => x.Name == ((Player)recEvent.CmdObject.Players[0]).Name).advanceGameStatus();
                     Console.WriteLine("Bet Received from " + ((Player)recEvent.CmdObject.Players[0]).Name + " for " + ((Player)recEvent.CmdObject.Players[0]).WagerAmount.ToString() + " credits");
                     //Console.WriteLine("Credits are " + players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).getCreditBalance().ToString());
                     SyncPlayers();
@@ -131,6 +132,7 @@ namespace Dealer
                     break;
                 case Command.Stand:
                     gameState = GameState.PlayerStands;
+                    Console.WriteLine("Player " + ((Player)recEvent.CmdObject.Players[0]).Name + " stand");
                     gameTimer.Stop();
                     break;
             }
@@ -146,7 +148,7 @@ namespace Dealer
         private void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
             elapsedTime++;
-            
+
             if (elapsedTime == timeout)
             {
                 gameTimer.Stop();
@@ -183,6 +185,13 @@ namespace Dealer
             }
         }
 
+        private void AdvanceAllPlayers()
+        {
+            foreach (IPlayer player in players)
+            {
+                player.advanceGameStatus();
+            }
+        }
         private void GameLoop()
         {
 
@@ -194,13 +203,15 @@ namespace Dealer
             //      start countdown timer, 30 seconds
             //      Collect bets from player until timer hits 0
 
-            Console.WriteLine("Waiting for bet...");
+            Console.WriteLine("Waiting for first bet...    GS: " + gameState);
 
             while (gameState == GameState.WaitingForBet)
             {
                 // Wait for any player to place a bet
-                
+
             }
+
+            Console.WriteLine("Waiting for other bets...    GS: " + gameState);
 
             gameState = GameState.CollectingBets;
 
@@ -247,6 +258,19 @@ namespace Dealer
 
             // Betting is over so disable all players
             SetAllPlayersFocus(false);
+            //AdvanceAllPlayers();
+            SyncPlayers();
+
+            // Loop through players to see if active or not
+            foreach (Player player in players)
+            {
+                if (player.Name != "Dealer" && player.WagerAmount == 0)
+                {
+                    // Inactive
+                    player.setGameStatus(8);
+                    player.setFocus(false);
+                }
+            }
             SyncPlayers();
 
             // Loop through players and dealer twice
@@ -257,30 +281,38 @@ namespace Dealer
             //      face up to each player, but the dealer takes his second card face down.
             // End loop
 
+            Console.WriteLine("Dealing first round of cards");
             // Initial deal round 1
             foreach (Player player in players)
             {
-                player.dealCard(deck, false);
-                //Console.WriteLine(player.myHand.getCard(0).Description + " card delt to " + player.Name);
-                SyncPlayers();
+                if (player.getGameStatus() != 8)
+                {
+                    player.dealCard(deck, false);
+                    //Console.WriteLine(player.myHand.getCard(0).Description + " card delt to " + player.Name);
+                    SyncPlayers();
+                }
             }
 
+            Console.WriteLine("Dealing second round of cards");
             // Initial deal round 2
             foreach (Player player in players)
             {
-                // If the player is the dealer then deal this card face down
-                // Else deal the card face up
-                if (player.Name.Equals("Dealer"))
+                if (player.getGameStatus() != 8)
                 {
-                    player.dealCard(deck, true);
-                    //Console.WriteLine(player.myHand.getCard(1).Description + " card delt to " + player.Name);
+                    // If the player is the dealer then deal this card face down
+                    // Else deal the card face up
+                    if (player.Name.Equals("Dealer"))
+                    {
+                        player.dealCard(deck, true);
+                        //Console.WriteLine(player.myHand.getCard(1).Description + " card delt to " + player.Name);
+                    }
+                    else
+                    {
+                        player.dealCard(deck, false);
+                        //Console.WriteLine(player.myHand.getCard(1).Description + " card delt to " + player.Name);
+                    }
+                    SyncPlayers();
                 }
-                else
-                {
-                    player.dealCard(deck, false);
-                    //Console.WriteLine(player.myHand.getCard(1).Description + " card delt to " + player.Name);
-                }
-                SyncPlayers();
             }
 
             // Check for natural blackjack
@@ -295,6 +327,7 @@ namespace Dealer
             //      the dealer's turn to play.
             // End Check
 
+            Console.WriteLine("Checking to see if Dealer has Natural Blackjack");
             // Check to see if dealer has Natural Blackjack (Face card and Ace = 21)
             if (players[0].scoreHand() == 99)
             {
@@ -303,8 +336,10 @@ namespace Dealer
                     // If player does not also have a Natural Blackjack then player loses wager
                     if (players[i].scoreHand() != 99)
                     {
+                        Console.WriteLine("Player " + players[i].Name + " does not have natural blackjack to match dealer, player loses");
                         players[i].debitCreditBalance(players[i].getWagerAmount());
                         players[i].setWagerAmount(0);
+                        players[i].setGameStatus(3);
                     }
                 }
                 SyncPlayers();
@@ -322,10 +357,12 @@ namespace Dealer
             //      End loop
             // End loop
 
+            Console.WriteLine("Starting individual hit/stand");
             foreach (Player player in players)
             {
-                if (!player.Name.Equals("Dealer"))
+                if (!player.Name.Equals("Dealer") && player.WagerAmount > 0)
                 {
+                    Console.WriteLine(player.Name + "'s turn");
                     SetPlayerFocus(player);
                     player.advanceGameStatus();
                     SyncPlayers();
@@ -339,22 +376,25 @@ namespace Dealer
                     // and the game will continue.
                     while (gameState != GameState.PlayerStands && !timeoutSignal)
                     {
-                        if(gameState == GameState.PlayerHits)
+                        if (gameState == GameState.PlayerHits)
                         {
+                            Console.WriteLine(player.Name + " requested hit");
                             player.dealCard(deck, false);
 
                             if (player.scoreHand() > 21)
                             {
                                 player.setFocus(false);
-                                //gameTimer.Stop();
-                                Console.WriteLine("Bust!");
+                                gameTimer.Stop();
+                                timeoutSignal = true;
+                                Console.WriteLine(player.Name + " bust");
+                                player.setGameStatus(4);
                             }
 
                             SyncPlayers();
                             gameState = GameState.WaitingForPlayer;
                         }
                     }
-                    
+
                 }
             }
 
@@ -364,15 +404,25 @@ namespace Dealer
             //      Dealer must hit until 17 or more
             // End While
 
+            Console.WriteLine("Dealer turn to hit/stand");
             SetAllPlayersFocus(false);
             dealer.getCard(1).IsFaceDown = false;
             SyncPlayers();
-            while(dealer.scoreHand() < 17)
+
+            while (dealer.scoreHand() < 17 && dealer.myHand.hand.Count < 5)
             {
+                Console.WriteLine("Dealer requested hit");
                 dealer.dealCard(deck, false);
+
+                if (dealer.scoreHand() > 21)
+                {
+                    Console.WriteLine("Dealer bust");
+                }
             }
 
             gameState = GameState.Calculating;
+
+
 
             // Loop through players
             //      If score is push then return bet to player
@@ -380,71 +430,98 @@ namespace Dealer
             //      If score does not beat dealer then dealer collects bet
             // End loop
 
-            foreach(Player player in players)
+            Console.WriteLine("Determining scores...");
+            foreach (Player player in players)
             {
-                //Console.WriteLine("Player - " + player.Name + " - " + player.scoreHand());
 
-                if (player.scoreHand() < 22)
+                if (player.Name != dealer.Name && player.WagerAmount > 0)
                 {
-                    if (dealer.scoreHand() < player.scoreHand())
+                    // First, check for blackjack 99
+
+                    if (player.scoreHand() == 99)
                     {
-                        player.creditCreditBalance(player.getWagerAmount() * 2);
-                        player.setWagerAmount(0);
+                        // Player blackjack
+                        Console.WriteLine(player.Name + " got a blackjack");
+                        player.setGameStatus(7);
+                        player.creditCreditBalance(player.WagerAmount * 2);
                     }
-                    if (dealer.scoreHand() > player.scoreHand())
+                    else
                     {
-                        if (dealer.scoreHand() < 22)
+                        if (player.scoreHand() > 21)
                         {
-                            player.debitCreditBalance(player.getWagerAmount());
-                            player.setWagerAmount(0);
+                            // Loss or Bust
+                            Console.WriteLine(player.Name + " bust");
+                            player.setGameStatus(4);
+                            player.debitCreditBalance(player.WagerAmount);
                         }
                         else
                         {
-                            player.creditCreditBalance(player.getWagerAmount() * 2);
-                            player.setWagerAmount(0);
+                            if (dealer.scoreHand() > 21)
+                            {
+                                // Dealer loses, player wins
+                                Console.WriteLine(player.Name + " wins");
+                                player.setGameStatus(6);
+                                player.creditCreditBalance(player.WagerAmount * 2);
+                            }
+                            else
+                            {
+                                if (dealer.scoreHand() == 21 && player.scoreHand() == 21)
+                                {
+                                    // Push
+                                    Console.WriteLine(player.Name + " push");
+                                    player.setGameStatus(5);
+                                    player.creditCreditBalance(player.WagerAmount);
+                                }
+                                else if (player.scoreHand() > dealer.scoreHand())
+                                {
+                                    // Win
+                                    Console.WriteLine(player.Name + " wins");
+                                    player.setGameStatus(6);
+                                    player.creditCreditBalance(player.WagerAmount * 2);
+                                }
+                                else if (player.scoreHand() < dealer.scoreHand())
+                                {
+                                    // Loss
+                                    Console.WriteLine(player.Name + " loses");
+                                    player.setGameStatus(3);
+                                    player.debitCreditBalance(player.WagerAmount);
+                                }
+                            }
+
                         }
                     }
-                    if (dealer.scoreHand() == player.scoreHand())
-                    {
-                        // Push
-                        player.creditCreditBalance(player.getWagerAmount());
-                        player.setWagerAmount(0);
-                    }
+
                 }
-                else if (player.Name == "Dealer" && player.scoreHand() >= 22)
-                {
-                    // Dealer Bust
-                    Console.WriteLine("Dealer bust!");
-                }
-                else if (player.Name != "Dealer" && player.scoreHand() >= 22)
-                {
-                    // Player Bust
-                    player.debitCreditBalance(player.getWagerAmount());
-                    player.setWagerAmount(0);
-                }
+
             }
+
             SyncPlayers();
 
-            StartGameTimer(5);
+            //StartGameTimer(5);
 
-            while (!timeoutSignal)
-            {
-                // Show results of round
-            }
+            //Console.WriteLine("Showing results...");
+
+            //while (!timeoutSignal)
+            //{
+            //    Show results of round
+            //}
 
             // Game Over
             gameState = GameState.GameOver;
 
+            Console.WriteLine("Removing players...");
             foreach (Player player in removePlayers)
             {
                 players.Remove(players.Find(x => x.Name == player.Name));
             }
 
-            foreach(Player player in addPlayers)
+            Console.WriteLine("Adding players...");
+            foreach (Player player in addPlayers)
             {
                 players.Add(player);
             }
 
+            Console.WriteLine("Resetting players...");
             foreach (Player player in players)
             {
                 player.WagerAmount = 0;
@@ -455,6 +532,7 @@ namespace Dealer
 
             SyncPlayers();
 
+            Console.WriteLine("Game Over");
             CommandObject cmdObj = new CommandObject();
             cmdObj.Command = Command.Message;
             cmdObj.Message = "GameOver";
