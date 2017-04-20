@@ -46,6 +46,7 @@ namespace Common.Lib.Interfaces
          * 6 - Win (hand complete - for GUI only)
          * 7 - Blackjack (hand complete - for GUI only)
          * 8 - Inactive
+         * 9 - Dealer Reveal Hole Card
          */
 
         void advanceGameStatus();

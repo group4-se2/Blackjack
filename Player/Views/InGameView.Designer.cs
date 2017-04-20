@@ -42,6 +42,7 @@
             this.betStatus = new System.Windows.Forms.Label();
             this.hitStandStatus = new System.Windows.Forms.Label();
             this.gameStatusLabel = new System.Windows.Forms.Label();
+            this.gameStatus = new System.Windows.Forms.Label();
             this.cardShoe = new System.Windows.Forms.PictureBox();
             this.cardDeck = new System.Windows.Forms.PictureBox();
             this.pokerChips = new System.Windows.Forms.PictureBox();
@@ -73,7 +74,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.dealerCardValue = new System.Windows.Forms.Label();
-            this.gameStatus = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cardShoe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardDeck)).BeginInit();
@@ -237,6 +237,17 @@
             this.gameStatusLabel.TabIndex = 1;
             this.gameStatusLabel.Text = "Waiting for bets...";
             this.gameStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gameStatus
+            // 
+            this.gameStatus.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameStatus.ForeColor = System.Drawing.Color.White;
+            this.gameStatus.Location = new System.Drawing.Point(21, 28);
+            this.gameStatus.Name = "gameStatus";
+            this.gameStatus.Size = new System.Drawing.Size(188, 16);
+            this.gameStatus.TabIndex = 0;
+            this.gameStatus.Text = "Game Status:";
+            this.gameStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cardShoe
             // 
@@ -618,6 +629,7 @@
             this.imageList1.Images.SetKeyName(49, "q-spades.png");
             this.imageList1.Images.SetKeyName(50, "k-spades.png");
             this.imageList1.Images.SetKeyName(51, "a-spades.png");
+            this.imageList1.Images.SetKeyName(52, "playing-card.png");
             // 
             // dealerCardValue
             // 
@@ -630,17 +642,6 @@
             this.dealerCardValue.TabIndex = 55;
             this.dealerCardValue.Text = "Card Value";
             this.dealerCardValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // gameStatus
-            // 
-            this.gameStatus.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gameStatus.ForeColor = System.Drawing.Color.White;
-            this.gameStatus.Location = new System.Drawing.Point(21, 28);
-            this.gameStatus.Name = "gameStatus";
-            this.gameStatus.Size = new System.Drawing.Size(188, 16);
-            this.gameStatus.TabIndex = 0;
-            this.gameStatus.Text = "Game Status:";
-            this.gameStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // InGameView
             // 

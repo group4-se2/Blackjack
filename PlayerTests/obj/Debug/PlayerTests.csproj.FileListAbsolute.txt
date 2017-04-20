@@ -196,3 +196,16 @@ C:\Users\JL\Source\Repos\Blackjack\PlayerTests\bin\Debug\Moq.xml
 C:\Users\JL\Source\Repos\Blackjack\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
 C:\Users\JL\Source\Repos\Blackjack\PlayerTests\obj\Debug\PlayerTests.dll
 C:\Users\JL\Source\Repos\Blackjack\PlayerTests\obj\Debug\PlayerTests.pdb
+C:\Users\flash\Source\Repos\Blackjack-April-20-Latest\PlayerTests\bin\Debug\PlayerTests.dll
+C:\Users\flash\Source\Repos\Blackjack-April-20-Latest\PlayerTests\bin\Debug\PlayerTests.pdb
+C:\Users\flash\Source\Repos\Blackjack-April-20-Latest\PlayerTests\bin\Debug\Castle.Core.dll
+C:\Users\flash\Source\Repos\Blackjack-April-20-Latest\PlayerTests\bin\Debug\Common.Lib.dll
+C:\Users\flash\Source\Repos\Blackjack-April-20-Latest\PlayerTests\bin\Debug\Moq.dll
+C:\Users\flash\Source\Repos\Blackjack-April-20-Latest\PlayerTests\bin\Debug\Player.exe
+C:\Users\flash\Source\Repos\Blackjack-April-20-Latest\PlayerTests\bin\Debug\Common.Lib.pdb
+C:\Users\flash\Source\Repos\Blackjack-April-20-Latest\PlayerTests\bin\Debug\Player.pdb
+C:\Users\flash\Source\Repos\Blackjack-April-20-Latest\PlayerTests\bin\Debug\Castle.Core.xml
+C:\Users\flash\Source\Repos\Blackjack-April-20-Latest\PlayerTests\bin\Debug\Moq.xml
+C:\Users\flash\Source\Repos\Blackjack-April-20-Latest\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
+C:\Users\flash\Source\Repos\Blackjack-April-20-Latest\PlayerTests\obj\Debug\PlayerTests.dll
+C:\Users\flash\Source\Repos\Blackjack-April-20-Latest\PlayerTests\obj\Debug\PlayerTests.pdb

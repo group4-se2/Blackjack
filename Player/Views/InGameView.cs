@@ -121,7 +121,7 @@ namespace Player
                        CheckForDealerBlackjack(player);
 
                        // Deal Cards
-                       DealCards(player, count);
+                       DealDealerCards(player);
 
                        count++;
                    }
@@ -211,8 +211,6 @@ namespace Player
 
         private void UpdateSidebar(IPlayer player)
         {
-            
-
             // Enabling, Disabling buttons in sidebar
             if (player.getGameStatus().ToString() == "0")
             {
@@ -273,6 +271,43 @@ namespace Player
             }
         }
 
+        private void DealDealerCards(IPlayer player)
+        {
+            Size CARD_SIZE = new Size(73, 104);
+            int CARD_LOCATION_X = 310;
+            int CARD_LOCATION_Y = 120;
+
+            // Loops through the cards and creates pictureboxes
+            if (player.myHand.hand.Count > 0)
+            {
+                for (int i = 0; i < player.myHand.hand.Count; i++)
+                {
+                    PictureBox box = new PictureBox();
+                    int cardID = GetCardGraphic(player.myHand.getCard(i));
+
+                    if(i == 0 && player.getGameStatus() != 9)
+                    {
+                        box.Image = imageList1.Images[52];
+                    }
+                    else
+                    {
+                        box.Image = imageList1.Images[cardID];
+                    }
+                   
+
+                    box.Size = CARD_SIZE;
+                    box.Location = new Point(CARD_LOCATION_X, CARD_LOCATION_Y);
+                    this.Controls.Add(box);
+
+                    box.BringToFront();
+                    boxes.Add(box);
+                    CARD_LOCATION_X += 15;
+                }
+            }
+
+        }
+
+
         private void DealCards(IPlayer player, int count)
         {
             Size CARD_SIZE = new Size(73, 104);
@@ -290,19 +325,8 @@ namespace Player
             // Loops through the cards and creates pictureboxes
             if (player.myHand.hand.Count > 0)
             {
-                //boxes = new PictureBox[player.myHand.hand.Count];
-
                 for (int i = 0; i < player.myHand.hand.Count; i++)
                 {
-                    //boxes[i] = new PictureBox();
-                    //int cardID = GetCardGraphic(player.myHand.getCard(i));
-                    //boxes[i].Image = imageList1.Images[cardID];
-                    //boxes[i].Size = CARD_SIZE;
-                    //boxes[i].Location = new Point(CARD_LOCATION_X, CARD_LOCATION_Y);
-                    //this.Controls.Add(boxes[i]);
-                    //boxes[i].BringToFront();
-                    //CARD_LOCATION_X += 15;
-
                     PictureBox box = new PictureBox();
                     int cardID = GetCardGraphic(player.myHand.getCard(i));
                     box.Image = imageList1.Images[cardID];
@@ -374,6 +398,12 @@ namespace Player
             {
                 InGamePresenter.SubmitBet(credits);
                 DisableBetButtons();
+                credits = 0; // Reset the amount of credits the user wants to bet, since it is submitted
+                UpdateBetAmount();
+            }
+            else
+            {
+                gameStatusLabel.Text = "Bet cannot exceed balance";
                 credits = 0; // Reset the amount of credits the user wants to bet, since it is submitted
                 UpdateBetAmount();
             }
