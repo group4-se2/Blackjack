@@ -92,11 +92,11 @@ namespace Player.Presenters
             // Player object retrieved from server
             model.players = e.CmdObject.Players;
             
-            Console.WriteLine("Player info retrieved from Server:");
+            //Console.WriteLine("Player info retrieved from Server:");
             
             foreach (IPlayer player in model.players)
             {
-                Console.WriteLine("Name: " + player.Name + "Game Status: " + player.getGameStatus());
+                //Console.WriteLine("Name: " + player.Name + "Game Status: " + player.getGameStatus());
 
                 if (player.Name == model.player.Name)
                 {

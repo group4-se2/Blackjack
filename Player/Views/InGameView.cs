@@ -42,9 +42,6 @@ namespace Player
         // Enables the Hit/Stand Buttons
         private void EnableHitStandButtons()
         {
-
-            Console.WriteLine("In here...");
-
             // Enable Hit-Stand Buttons
             hitBtn.Enabled = true;
             standBtn.Enabled = true;
@@ -375,7 +372,6 @@ namespace Player
         {
             if (credits != 0 && credits <= model.player.getCreditBalance())
             {
-                Console.WriteLine("In here");
                 InGamePresenter.SubmitBet(credits);
                 DisableBetButtons();
                 credits = 0; // Reset the amount of credits the user wants to bet, since it is submitted
