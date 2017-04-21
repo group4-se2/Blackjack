@@ -356,7 +356,7 @@
             this.p1CardValue.Name = "p1CardValue";
             this.p1CardValue.Size = new System.Drawing.Size(86, 15);
             this.p1CardValue.TabIndex = 36;
-            this.p1CardValue.Text = "Card Value";
+            this.p1CardValue.Text = "Count";
             this.p1CardValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p1BetAmount
@@ -416,7 +416,7 @@
             this.p2CardValue.Name = "p2CardValue";
             this.p2CardValue.Size = new System.Drawing.Size(86, 15);
             this.p2CardValue.TabIndex = 40;
-            this.p2CardValue.Text = "Card Value";
+            this.p2CardValue.Text = "Count";
             this.p2CardValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p2Name
@@ -464,7 +464,7 @@
             this.p3CardValue.Name = "p3CardValue";
             this.p3CardValue.Size = new System.Drawing.Size(86, 15);
             this.p3CardValue.TabIndex = 44;
-            this.p3CardValue.Text = "Card Value";
+            this.p3CardValue.Text = "Count";
             this.p3CardValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p3Name
@@ -512,7 +512,7 @@
             this.p4CardValue.Name = "p4CardValue";
             this.p4CardValue.Size = new System.Drawing.Size(86, 15);
             this.p4CardValue.TabIndex = 48;
-            this.p4CardValue.Text = "Card Value";
+            this.p4CardValue.Text = "Count";
             this.p4CardValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // p4Name
@@ -640,7 +640,7 @@
             this.dealerCardValue.Name = "dealerCardValue";
             this.dealerCardValue.Size = new System.Drawing.Size(86, 15);
             this.dealerCardValue.TabIndex = 55;
-            this.dealerCardValue.Text = "Card Value";
+            this.dealerCardValue.Text = "Count";
             this.dealerCardValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // InGameView
@@ -680,6 +680,8 @@
             this.Controls.Add(this.cardDeck);
             this.Controls.Add(this.cardShoe);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "InGameView";
             this.Text = "Blackjack";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.InGameView_FormClosing);
