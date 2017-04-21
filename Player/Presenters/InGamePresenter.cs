@@ -89,6 +89,7 @@ namespace Player.Presenters
                     return;
                 }
             }
+
             // Player object retrieved from server
             model.players = e.CmdObject.Players;
             

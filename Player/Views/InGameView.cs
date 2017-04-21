@@ -472,6 +472,34 @@ namespace Player
             InGamePresenter.Stand();
         }
 
+        private void ResetPlayerBoxes()
+        {
+            p1Name.Text = "Empty";
+            p2Name.Text = "Empty";
+            p3Name.Text = "Empty";
+            p4Name.Text = "Empty";
+
+            p1Name.BackColor = Color.Transparent;
+            p2Name.BackColor = Color.Transparent;
+            p3Name.BackColor = Color.Transparent;
+            p4Name.BackColor = Color.Transparent;
+
+            p1BetAmount.Text = "Bet: $0";
+            p2BetAmount.Text = "Bet: $0";
+            p3BetAmount.Text = "Bet: $0";
+            p4BetAmount.Text = "Bet: $0";
+
+            p1CardValue.Text = "Count: ";
+            p2CardValue.Text = "Count: ";
+            p3CardValue.Text = "Count: ";
+            p4CardValue.Text = "Count: ";
+
+            p1TotalMoney.Text = "Total Money";
+            p2TotalMoney.Text = "Total Money";
+            p3TotalMoney.Text = "Total Money";
+            p4TotalMoney.Text = "Total Money";
+        }
+
         public void GameOver()
         {
             this.Invoke((MethodInvoker)delegate
@@ -481,6 +509,8 @@ namespace Player
                     this.Controls.Remove(box);
                 }
                 boxes.Clear();
+                ResetPlayerBoxes();
+                InGamePresenter.SyncClient(Common.Lib.Models.Command.Sync);
             });
         }
 
