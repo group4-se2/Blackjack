@@ -110,6 +110,15 @@ namespace Player.Presenters
             view.UpdateView();
         }
 
+        public void ExitGame()
+        {
+            CommandObject cmdObj = new CommandObject();
+            cmdObj.Command = Command.Exit;
+            cmdObj.Players = new List<IPlayer>();
+            cmdObj.Players.Add(model.player);
+            client.Send(cmdObj);
+        }
+
         private void GameOver()
         {
             view.GameOver();

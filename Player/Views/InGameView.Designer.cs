@@ -682,6 +682,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "InGameView";
             this.Text = "Blackjack";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.InGameView_FormClosing);
             this.Load += new System.EventHandler(this.InGame_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

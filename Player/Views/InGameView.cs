@@ -475,5 +475,10 @@ namespace Player
                 boxes.Clear();
             });
         }
+
+        private void InGameView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
     }
 }

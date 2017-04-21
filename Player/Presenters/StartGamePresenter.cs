@@ -14,8 +14,7 @@ namespace Player.Presenters
         private IStartGameView view;
         private DiscoveryClient discoveryClient;
         private Client client;
-        //private String clientIpAddress;
-        //private String serverIpAddress;
+        private bool ClientConnected = false;
 
         public StartGamePresenter(IStartGameModel model, IStartGameView view)
         {
@@ -37,7 +36,7 @@ namespace Player.Presenters
         private void client_OnConnected(object sender, EventArgs e)
         {
             Console.WriteLine("Connected");
-
+            ClientConnected = true;
             view.EnableUserNamePanel();
         }
 
@@ -92,7 +91,14 @@ namespace Player.Presenters
 
         public void OnButton1Click()
         {
-            Process.Start("Dealer.exe");
+            if (!ClientConnected)
+            {
+                Process.Start("Dealer.exe");
+            }
+            else
+            {
+                view.EnableUserNamePanel();
+            }
         }
 
         public void goButtonClick()
