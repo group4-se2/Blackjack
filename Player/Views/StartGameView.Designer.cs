@@ -168,6 +168,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "StartGameView";
             this.Text = "Blackjack";
             this.Load += new System.EventHandler(this.Form1_Load);

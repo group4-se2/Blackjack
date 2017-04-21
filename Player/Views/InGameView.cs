@@ -19,7 +19,7 @@ namespace Player
     {
 
         IInGameModel model;
-
+       
         List<PictureBox> boxes = new List<PictureBox>();
         // Players total amount to bet
         int credits = 0;
@@ -130,7 +130,8 @@ namespace Player
                        if (count == 1)
                        {
                            // Update Player 1
-                           p1CardValue.Text = player.scoreHand().ToString();
+
+                           p1CardValue.Text = "Count: " + player.scoreHand().ToString();
                            p1Name.Text = player.Name;
                            p1TotalMoney.Text = "$" + player.getCreditBalance().ToString();
                            p1BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
@@ -146,7 +147,7 @@ namespace Player
                        else if (count == 2)
                        {
                            // Update Player 2
-                           p2CardValue.Text = player.scoreHand().ToString();
+                           p2CardValue.Text = "Count: " + player.scoreHand().ToString();
                            p2Name.Text = player.Name;
                            p2TotalMoney.Text = "$" + player.getCreditBalance().ToString();
                            p2BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
@@ -162,7 +163,7 @@ namespace Player
                        else if (count == 3)
                        {
                            // Update Player 3
-                           p3CardValue.Text = player.scoreHand().ToString();
+                           p3CardValue.Text = "Count: " + player.scoreHand().ToString();
                            p3Name.Text = player.Name;
                            p3TotalMoney.Text = "$" + player.getCreditBalance().ToString();
                            p3BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
@@ -177,7 +178,7 @@ namespace Player
                        else if (count == 4)
                        {
                            // Update Player 4
-                           p4CardValue.Text = player.scoreHand().ToString();
+                           p4CardValue.Text = "Count: " + player.scoreHand().ToString();
                            p4Name.Text = player.Name;
                            p4TotalMoney.Text = "$" + player.getCreditBalance().ToString();
                            p4BetAmount.Text = "Bet: $" + player.getWagerAmount().ToString();
@@ -199,13 +200,20 @@ namespace Player
         }
         private void CheckForDealerBlackjack(IPlayer player)
         {
-            if (player.scoreHand() == 99)
+            if (player.getGameStatus() == 9)
             {
-                dealerCardValue.Text = "21";
+                if (player.scoreHand() == 99)
+                {
+                    dealerCardValue.Text = "Count: 21";
+                }
+                else
+                {
+                    dealerCardValue.Text = "Count: " + player.scoreHand().ToString();
+                }
             }
             else
             {
-                dealerCardValue.Text = player.scoreHand().ToString();
+                dealerCardValue.Text = "";
             }
         }
 
