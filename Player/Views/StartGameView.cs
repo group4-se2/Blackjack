@@ -2,6 +2,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Player
 {
@@ -103,6 +104,9 @@ namespace Player
                 //joinGameBtn.Visible = true;
 
                 // Add user name to model player object
+                Regex reg = new Regex("[^a-zA-Z0-9 -]");
+                String tempUsername = reg.Replace(usernameTextField.Text, "");
+                StartGameModel.player.Name = tempUsername.Trim();
 
                 StartGameModel.player.Name = usernameTextField.Text;
 
