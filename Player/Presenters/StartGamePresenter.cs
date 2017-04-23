@@ -89,7 +89,7 @@ namespace Player.Presenters
             Console.WriteLine(e.CmdObject.Response.ToString());
         }
 
-        public void OnButton1Click()
+        public void startGameBtnClick()
         {
             if (!ClientConnected)
             {

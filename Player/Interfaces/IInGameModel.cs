@@ -12,6 +12,8 @@ namespace Player.Interfaces
 
         IList<Common.Lib.Interfaces.IPlayer> players { get; set; }
         IPlayer player { get; set; }
+        String gameStatusLabel { get; set; } 
+        String dealerCardCount { get; set; }
   
     }
 }

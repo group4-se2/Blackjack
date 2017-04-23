@@ -11,14 +11,12 @@ namespace Player
         public IStartGamePresenter StartGamePresenter { get; set; }
         public IStartGameModel StartGameModel { get; set; }
 
-
         public StartGameView()
         {
             InitializeComponent();
             this.CenterToScreen();
             pictureBox2.BackColor = Color.Transparent;
             startGameBtn.FlatAppearance.BorderSize = 0;
-            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -27,12 +25,13 @@ namespace Player
             joinGameBtn.Focus();
         }
 
-  
+        // Enables the Start Game Button
         public void EnableStartGame()
         {
             startGameBtn.Enabled = true;
         }
 
+        // Disables the Start Game Button
         public void DisableStartGame()
         {
             this.Invoke((MethodInvoker)delegate
@@ -49,6 +48,7 @@ namespace Player
             //});
         }
 
+        // Enables the username panel
         public void EnableUserNamePanel()
         {
             this.Invoke((MethodInvoker)delegate
@@ -59,25 +59,25 @@ namespace Player
                 joinGameBtn.Visible = false;
             });
         }
-        
+
+        // Clears placeholder text on panel click
         private void usernamePanel_Click(object sender, EventArgs e)
         {
-            // Clears placeholder text on panel click
             usernameTextField.Text = "";
             usernameTextField.Focus();
         }
 
+
+        // Clears placeholder text on text field click
         private void usernameTextField_Click(object sender, EventArgs e)
         {
-            // Clears placeholder text on text field click
             usernameTextField.Text = "";
         }
 
+        // Checks to see if username is entered, sanitizes it, and checks length
         private void goBtn_Click(object sender, EventArgs e)
         {
-
             
-
             String placeholder1 = "Enter username...";
             String placeholder2 = "Try again. Enter username...";
 
@@ -115,15 +115,19 @@ namespace Player
             }
         }
 
-        // Fix the name of this button, later
-        private void button1_Click(object sender, EventArgs e)
+        // Calls presenter to start the dealer server in background
+        private void startGameBtn_Click(object sender, EventArgs e)
         {
-            StartGamePresenter.OnButton1Click();
+            StartGamePresenter.startGameBtnClick();
+            startGameBtn.Enabled = false;
         }
 
+        /* DISABLED IN DESIGNER.CS FILE
         private void joinGameBtn_Click(object sender, EventArgs e)
         {
             StartGamePresenter.OnButton1Click();
         }
+        */
+
     }
 }

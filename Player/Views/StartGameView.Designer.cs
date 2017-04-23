@@ -80,7 +80,7 @@
             this.startGameBtn.TabIndex = 2;
             this.startGameBtn.Text = "Start Game";
             this.startGameBtn.UseVisualStyleBackColor = false;
-            this.startGameBtn.Click += new System.EventHandler(this.button1_Click);
+            this.startGameBtn.Click += new System.EventHandler(this.startGameBtn_Click);
             // 
             // joinGameBtn
             // 
@@ -98,7 +98,8 @@
             this.joinGameBtn.Text = "Join Game";
             this.joinGameBtn.UseVisualStyleBackColor = false;
             this.joinGameBtn.Visible = false;
-            this.joinGameBtn.Click += new System.EventHandler(this.joinGameBtn_Click);
+            //this.joinGameBtn.Click += new System.EventHandler(this.joinGameBtn_Click);
+
             // 
             // creditsLabel
             // 

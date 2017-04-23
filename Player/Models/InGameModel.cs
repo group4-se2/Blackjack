@@ -12,6 +12,10 @@ namespace Player.Models
 
         public IPlayer player { get; set; }
 
+        public String gameStatusLabel { get; set; }
+
+        public String dealerCardCount { get; set; }
+
         IList<IPlayer> IInGameModel.players { get; set; }
 
         public InGameModel()

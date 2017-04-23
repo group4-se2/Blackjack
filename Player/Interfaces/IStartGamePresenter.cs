@@ -8,7 +8,7 @@ namespace Player.Interfaces
 {
     public interface IStartGamePresenter
     {
-        void OnButton1Click();
+        void startGameBtnClick();
         void goButtonClick();
     }
 }
