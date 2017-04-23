@@ -14,6 +14,8 @@ namespace Player.Interfaces
         IPlayer player { get; set; }
         String gameStatusLabel { get; set; } 
         String dealerCardCount { get; set; }
+        int cardDealPlayerID { get; set; }
+
   
     }
 }

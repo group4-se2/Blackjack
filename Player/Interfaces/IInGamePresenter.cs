@@ -21,6 +21,10 @@ namespace Player.Interfaces
 
         void Stand();
 
+        void UpdateSidebar(Common.Lib.Interfaces.IPlayer player);
+
+        void CheckForDealerBlackjack(Common.Lib.Interfaces.IPlayer player);
+
         Client client { get; set; }
 
         void client_OnDataReceived(object sender, ClientDataReceivedEventArgs e);

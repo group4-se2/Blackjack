@@ -45,6 +45,7 @@ namespace Player.Presenters
             else
             {
                 // Update View with Error Dialog Later
+                throw new ArgumentOutOfRangeException();
             }
         }
         
@@ -148,6 +149,10 @@ namespace Player.Presenters
                 model.gameStatusLabel = "Inactive";
                 view.DisableAllButtons();
             }
+            else
+            {
+                throw new Exception("Unsupported Game Status");
+            }
 
             view.UpdateGameStatusLabel();
         }
@@ -184,25 +189,29 @@ namespace Player.Presenters
                     {
                         // Update Player #1
                         view.UpdatePlayer1();
-                        view.DealCards(count);
+                        model.cardDealPlayerID = count;
+                        view.DealCards();
                     }
                     else if (count == 2)
                     {
                         // Update Player #2
                         view.UpdatePlayer2();
-                        view.DealCards(count);
+                        model.cardDealPlayerID = count;
+                        view.DealCards();
                     }
                     else if (count == 3)
                     {
                         // Update Player #3
                         view.UpdatePlayer3();
-                        view.DealCards(count);
+                        model.cardDealPlayerID = count;
+                        view.DealCards();
                     }
                     else if (count == 4)
                     {
                         // Update Player #4
                         view.UpdatePlayer4();
-                        view.DealCards(count);
+                        model.cardDealPlayerID = count;
+                        view.DealCards();
                     }
 
                     count++;
@@ -213,7 +222,7 @@ namespace Player.Presenters
         }
 
         // Checks to see if the dealer has a blackjack, updates view with result
-        private void CheckForDealerBlackjack(IPlayer player)
+        public void CheckForDealerBlackjack(IPlayer player)
         {
             if (player.getGameStatus() == 9)
             {

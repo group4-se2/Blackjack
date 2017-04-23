@@ -24,7 +24,7 @@ namespace Player.Interfaces
         void DealDealerCards();
 
         // Deals the player's cards depending on player id
-        void DealCards(int playerID);
+        void DealCards();
 
         // Button enabling
         void EnableBetButtons();

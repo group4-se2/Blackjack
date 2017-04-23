@@ -249,10 +249,11 @@ namespace Player
         }
 
         // Deals cards for player depending on player ID
-        public void DealCards(int playerID)
+        public void DealCards()
         {
             this.Invoke((MethodInvoker)delegate
             {
+                int playerID = model.cardDealPlayerID;
                 IPlayer player = model.players[playerID];
 
                 Size CARD_SIZE = new Size(73, 104);

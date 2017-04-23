@@ -249,3 +249,9 @@ C:\Users\JL\Source\Repos\Blackjack-April-22\Dealer\obj\Debug\Dealer.pdb
 C:\Users\JL\Source\Repos\Blackjack-April-22\Output\Debug\Dealer.exe
 C:\Users\JL\Source\Repos\Blackjack-April-22\Output\Debug\Dealer.pdb
 C:\Users\JL\Source\Repos\Blackjack-April-22\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+C:\Users\JL\Source\Repos\Blackjack-April-23\Output\Debug\Dealer.exe.config
+C:\Users\JL\Source\Repos\Blackjack-April-23\Output\Debug\Dealer.exe
+C:\Users\JL\Source\Repos\Blackjack-April-23\Output\Debug\Dealer.pdb
+C:\Users\JL\Source\Repos\Blackjack-April-23\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
+C:\Users\JL\Source\Repos\Blackjack-April-23\Dealer\obj\Debug\Dealer.exe
+C:\Users\JL\Source\Repos\Blackjack-April-23\Dealer\obj\Debug\Dealer.pdb
