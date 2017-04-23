@@ -19,7 +19,7 @@ namespace Player
         int credits = 0;
 
         // Card Constants
-        const int CARD_BACK_IMAGE_ID = 52;
+        const int CARD_BACK_IMAGE_ID = 53;
         const int CARD_X_OFFSET = 15;
 
         public IInGamePresenter InGamePresenter { get; set; }

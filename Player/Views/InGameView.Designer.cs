@@ -630,6 +630,7 @@
             this.imageList1.Images.SetKeyName(50, "k-spades.png");
             this.imageList1.Images.SetKeyName(51, "a-spades.png");
             this.imageList1.Images.SetKeyName(52, "playing-card.png");
+            this.imageList1.Images.SetKeyName(53, "playing-card-low-res.png");
             // 
             // dealerCardValue
             // 
