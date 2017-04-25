@@ -543,11 +543,11 @@
             this.blackjackRulesText.AutoSize = true;
             this.blackjackRulesText.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blackjackRulesText.ForeColor = System.Drawing.Color.White;
-            this.blackjackRulesText.Location = new System.Drawing.Point(228, 309);
+            this.blackjackRulesText.Location = new System.Drawing.Point(152, 316);
             this.blackjackRulesText.Name = "blackjackRulesText";
-            this.blackjackRulesText.Size = new System.Drawing.Size(312, 16);
+            this.blackjackRulesText.Size = new System.Drawing.Size(478, 16);
             this.blackjackRulesText.TabIndex = 52;
-            this.blackjackRulesText.Text = "DEALER MUST DRAW TO 16 AND ON ALL 17\'S";
+            this.blackjackRulesText.Text = "DEALER MUST DRAW ON 16 AND BELOW  -  STAND ON 17 AND ABOVE";
             // 
             // pictureBox1
             // 

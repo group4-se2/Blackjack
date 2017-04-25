@@ -181,3 +181,8 @@ C:\Users\JL\Source\Repos\Blackjack-April-23\Interfaces\bin\Debug\Common.Lib.pdb
 C:\Users\JL\Source\Repos\Blackjack-April-23\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
 C:\Users\JL\Source\Repos\Blackjack-April-23\Interfaces\obj\Debug\Common.Lib.dll
 C:\Users\JL\Source\Repos\Blackjack-April-23\Interfaces\obj\Debug\Common.Lib.pdb
+C:\GitRepository\April 25\Interfaces\bin\Debug\Common.Lib.dll
+C:\GitRepository\April 25\Interfaces\bin\Debug\Common.Lib.pdb
+C:\GitRepository\April 25\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+C:\GitRepository\April 25\Interfaces\obj\Debug\Common.Lib.dll
+C:\GitRepository\April 25\Interfaces\obj\Debug\Common.Lib.pdb
