@@ -121,6 +121,7 @@ namespace Dealer
             DataRow[] rows = db.query("Players", "Name = '" + player.Name + "'");
             if(rows.Length > 0)
             {
+                if((int)rows[0]["Balance"] < 1) return 100;
                 return (int)rows[0]["Balance"];
             }
             return 100;
