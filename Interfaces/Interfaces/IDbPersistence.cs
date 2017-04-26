@@ -11,12 +11,14 @@ namespace XMLDB
 
         void insert(String table, DataRow row);
 
-        void update(String table, int id, DataRow row);
+        void update(String table, String query, String columnValues);
 
         void delete(String table, int id);
         
         void save();
         
-        void load();
+        bool load();
+
+        void initialize();
     }
 }

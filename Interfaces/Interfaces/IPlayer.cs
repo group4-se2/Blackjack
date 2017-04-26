@@ -13,6 +13,8 @@ namespace Common.Lib.Interfaces
 
         int WagerAmount { get; set; }
         
+        int creditBalance { get; set; }
+
         //adds one  card to this player's hand
         void dealCard(IDeck deck, bool faceDown);
 

@@ -1,8 +1,11 @@
 ﻿using Common.Lib.Models;
 using Common.Lib.Interfaces;
+using Common.Lib.Utility;
 using System;
 using System.Collections.Generic;
 using System.Timers;
+using XMLDB;
+using System.Data;
 
 namespace Dealer
 {
@@ -29,6 +32,7 @@ namespace Dealer
         private int elapsedTime = 0;
         private int timeout = 0;
         private Boolean timeoutSignal = false;
+        private IDbPersistence db;
        
         // Use to show Console lines with GameLoop progress
         private Boolean showDebug = true;
@@ -46,6 +50,14 @@ namespace Dealer
             gameTimer = new System.Timers.Timer(1000);
             gameTimer.AutoReset = true;
             gameTimer.Elapsed += OnTimedEvent;
+
+            db = new XmlDbPersistence();
+
+            if (!db.load())
+            {
+                db.initialize();
+                db.save();
+            }
 
             // Create players list
             players = new List<IPlayer>();
@@ -86,7 +98,34 @@ namespace Dealer
             System.Threading.Thread.Sleep(100);
         }
 
-       
+       private void PersistPlayerBalance(IPlayer player)
+        {
+            DataRow[] rows = db.query("Players", "Name = '" + player.Name + "'");
+            if(rows.Length > 0)
+            {
+                db.update("Players", "Name ='" + player.Name + "'", "Balance=" + player.getCreditBalance());
+                db.save();
+            }
+            else
+            {
+                DataRow row = db.ds.Tables["Players"].NewRow();
+                row["Name"] = player.Name;
+                row["Balance"] = player.getCreditBalance();
+                db.insert("Players", row);
+                db.save();
+            }
+        }
+
+        private int GetPlayerBalance(IPlayer player)
+        {
+            DataRow[] rows = db.query("Players", "Name = '" + player.Name + "'");
+            if(rows.Length > 0)
+            {
+                return (int)rows[0]["Balance"];
+            }
+            return 100;
+        }
+
         // When data is received from the clients this is where it will end up
         private void Server_OnDataReceived(object sender, DataReceivedEventArgs recEvent)
         {
@@ -99,6 +138,7 @@ namespace Dealer
                     players.Find(x => x.Name == ((Player)recEvent.CmdObject.Players[0]).Name).advanceGameStatus();
                     if (showDebug) { Console.WriteLine("Bet Received from " + ((Player)recEvent.CmdObject.Players[0]).Name + " for " + ((Player)recEvent.CmdObject.Players[0]).WagerAmount.ToString() + " credits"); }
                     //Console.WriteLine("Credits are " + players.Find(x => x.Name == ((Player)recEvent.CmdObject.Payload).Name).getCreditBalance().ToString());
+                    PersistPlayerBalance(players.Find(x => x.Name == ((Player)recEvent.CmdObject.Players[0]).Name));
                     SyncPlayers();
                     break;
                 case Command.Exit:
@@ -115,6 +155,8 @@ namespace Dealer
                 case Command.Join:
                     if (recEvent.CmdObject.Response == Response.Accepted)
                     {
+                        recEvent.CmdObject.Players[0].creditBalance = GetPlayerBalance(recEvent.CmdObject.Players[0]);
+
                         if (gameState != GameState.WaitingForBet && gameState != GameState.CollectingBets)
                         {
                             addPlayers.Add(recEvent.CmdObject.Players[0]);
@@ -491,6 +533,12 @@ namespace Dealer
                         }
                     }
                 }
+            }
+
+            foreach(IPlayer player in players)
+            {
+                if(player.Name != "Dealer")
+                    PersistPlayerBalance(player);
             }
 
             SyncPlayers();
