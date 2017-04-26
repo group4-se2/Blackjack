@@ -8,13 +8,13 @@ using System.Net;
 
 namespace Player.Presenters
 {
-    class StartGamePresenter : IStartGamePresenter
+    public class StartGamePresenter : IStartGamePresenter
     {
         private IStartGameModel model;
         private IStartGameView view;
         private DiscoveryClient discoveryClient;
         private Client client;
-        private bool ClientConnected = false;
+        public bool ClientConnected = false;
 
         public StartGamePresenter(IStartGameModel model, IStartGameView view)
         {
@@ -89,14 +89,17 @@ namespace Player.Presenters
             Console.WriteLine(e.CmdObject.Response.ToString());
         }
 
+        // Starts or Joins Game based on ClientConnected * Tested
         public void startGameBtnClick()
         {
             if (!ClientConnected)
             {
+                model.testState = "Starting Game";
                 Process.Start("Dealer.exe");
             }
             else
             {
+                model.testState = "Joining Game";
                 view.EnableUserNamePanel();
             }
         }

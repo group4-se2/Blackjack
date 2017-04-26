@@ -9,5 +9,6 @@ namespace Player.Interfaces
     public interface IStartGameModel
     {
         Common.Lib.Interfaces.IPlayer player { get; set; }
+        String testState { get; set; }
     }
 }

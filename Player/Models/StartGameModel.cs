@@ -2,8 +2,9 @@
 
 namespace Player.Models
 {
-    class StartGameModel : IStartGameModel
+    public class StartGameModel : IStartGameModel
     {
         public Common.Lib.Interfaces.IPlayer player { get; set; }
+        public string testState { get; set; }
     }
 }
