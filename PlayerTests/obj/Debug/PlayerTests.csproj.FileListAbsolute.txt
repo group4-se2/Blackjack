@@ -261,3 +261,16 @@ C:\GitRepository\Two\PlayerTests\bin\Debug\Moq.xml
 C:\GitRepository\Two\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
 C:\GitRepository\Two\PlayerTests\obj\Debug\PlayerTests.dll
 C:\GitRepository\Two\PlayerTests\obj\Debug\PlayerTests.pdb
+C:\Users\jml87\Source\Repos\Blackjack\PlayerTests\bin\Debug\PlayerTests.dll
+C:\Users\jml87\Source\Repos\Blackjack\PlayerTests\bin\Debug\PlayerTests.pdb
+C:\Users\jml87\Source\Repos\Blackjack\PlayerTests\bin\Debug\Castle.Core.dll
+C:\Users\jml87\Source\Repos\Blackjack\PlayerTests\bin\Debug\Common.Lib.dll
+C:\Users\jml87\Source\Repos\Blackjack\PlayerTests\bin\Debug\Moq.dll
+C:\Users\jml87\Source\Repos\Blackjack\PlayerTests\bin\Debug\Player.exe
+C:\Users\jml87\Source\Repos\Blackjack\PlayerTests\bin\Debug\Common.Lib.pdb
+C:\Users\jml87\Source\Repos\Blackjack\PlayerTests\bin\Debug\Player.pdb
+C:\Users\jml87\Source\Repos\Blackjack\PlayerTests\bin\Debug\Castle.Core.xml
+C:\Users\jml87\Source\Repos\Blackjack\PlayerTests\bin\Debug\Moq.xml
+C:\Users\jml87\Source\Repos\Blackjack\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
+C:\Users\jml87\Source\Repos\Blackjack\PlayerTests\obj\Debug\PlayerTests.dll
+C:\Users\jml87\Source\Repos\Blackjack\PlayerTests\obj\Debug\PlayerTests.pdb

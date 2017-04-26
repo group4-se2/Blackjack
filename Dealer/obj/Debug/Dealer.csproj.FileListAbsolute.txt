@@ -273,3 +273,6 @@ C:\GitRepository\Two\Output\Debug\Dealer.pdb
 C:\GitRepository\Two\Dealer\obj\Debug\Dealer.csprojResolveAssemblyReference.cache
 C:\GitRepository\Two\Dealer\obj\Debug\Dealer.exe
 C:\GitRepository\Two\Dealer\obj\Debug\Dealer.pdb
+C:\Users\jml87\Source\Repos\Blackjack\Output\Debug\Dealer.exe.config
+C:\Users\jml87\Source\Repos\Blackjack\Output\Debug\Dealer.exe
+C:\Users\jml87\Source\Repos\Blackjack\Output\Debug\Dealer.pdb
