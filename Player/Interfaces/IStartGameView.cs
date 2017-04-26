@@ -2,7 +2,7 @@
 
 namespace Player.Interfaces
 {
-    interface IStartGameView
+    public interface IStartGameView
     {
         IStartGamePresenter StartGamePresenter { get; set; }
         IStartGameModel StartGameModel { get; set; }

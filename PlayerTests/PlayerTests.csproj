@@ -66,7 +66,7 @@
     <Compile Include="PresenterSidebarTests.cs" />
     <Compile Include="PresenterDealerBlackjackTests.cs" />
     <Compile Include="PresenterUpdateViewTests.cs" />
-    <Compile Include="UnitTest2.cs" />
+    <Compile Include="PresenterSubmitBetTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Interfaces\Common.Lib.csproj">

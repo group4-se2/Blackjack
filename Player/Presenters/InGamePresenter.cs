@@ -35,7 +35,7 @@ namespace Player.Presenters
             
         }
 
-        // Allows player to submit bet
+        // Allows player to submit bet * Tested, needs zero balance test
         public void SubmitBet(int credits)
         {
             if (model.player.getCreditBalance() >= credits)
@@ -98,6 +98,7 @@ namespace Player.Presenters
             UpdateView();
         }
 
+        // Updates the current player's sidebar * Tested
         public void UpdateSidebar(IPlayer player)
         {
             // Enabling, Disabling buttons in sidebar
@@ -158,6 +159,7 @@ namespace Player.Presenters
             view.UpdateGameStatusLabel();
         }
 
+        // Updates the whole game board * Tested using TestableUpdateView()
         public void UpdateView()
         {
             // Count is used to increment thru players, 0 - Dealer, 1 - Player #1, 2 - Player #2, 3 - Player #3, 4 - Player #4
@@ -299,7 +301,7 @@ namespace Player.Presenters
 
         }
 
-        // Checks to see if the dealer has a blackjack, updates view with result
+        // Checks to see if the dealer has a blackjack, updates view with result * Tested
         public void CheckForDealerBlackjack(IPlayer player)
         {
             if (player.getGameStatus() == 9)
