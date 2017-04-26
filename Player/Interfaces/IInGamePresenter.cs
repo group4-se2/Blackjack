@@ -12,6 +12,7 @@ namespace Player.Interfaces
     {
         DialogResult ShowDialog();
         void UpdateView();
+        void TestableUpdateView(IList<Common.Lib.Models.Player> players);
 
         void SyncClient(Command c);
 

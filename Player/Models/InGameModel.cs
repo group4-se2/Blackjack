@@ -24,6 +24,8 @@ namespace Player.Models
 
         IList<IPlayer> IInGameModel.players { get; set; }
 
+        public String testMessage { get; set; }
+
         public InGameModel()
         {
             

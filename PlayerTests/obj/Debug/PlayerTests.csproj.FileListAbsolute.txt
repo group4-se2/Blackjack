@@ -222,3 +222,16 @@ C:\Users\JL\Source\Repos\Blackjack-April-23\PlayerTests\bin\Debug\Moq.xml
 C:\Users\JL\Source\Repos\Blackjack-April-23\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
 C:\Users\JL\Source\Repos\Blackjack-April-23\PlayerTests\obj\Debug\PlayerTests.dll
 C:\Users\JL\Source\Repos\Blackjack-April-23\PlayerTests\obj\Debug\PlayerTests.pdb
+C:\Users\jml87\Source\Repos\BlackjackTests\PlayerTests\bin\Debug\PlayerTests.dll
+C:\Users\jml87\Source\Repos\BlackjackTests\PlayerTests\bin\Debug\PlayerTests.pdb
+C:\Users\jml87\Source\Repos\BlackjackTests\PlayerTests\bin\Debug\Castle.Core.dll
+C:\Users\jml87\Source\Repos\BlackjackTests\PlayerTests\bin\Debug\Common.Lib.dll
+C:\Users\jml87\Source\Repos\BlackjackTests\PlayerTests\bin\Debug\Moq.dll
+C:\Users\jml87\Source\Repos\BlackjackTests\PlayerTests\bin\Debug\Player.exe
+C:\Users\jml87\Source\Repos\BlackjackTests\PlayerTests\bin\Debug\Common.Lib.pdb
+C:\Users\jml87\Source\Repos\BlackjackTests\PlayerTests\bin\Debug\Player.pdb
+C:\Users\jml87\Source\Repos\BlackjackTests\PlayerTests\bin\Debug\Castle.Core.xml
+C:\Users\jml87\Source\Repos\BlackjackTests\PlayerTests\bin\Debug\Moq.xml
+C:\Users\jml87\Source\Repos\BlackjackTests\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
+C:\Users\jml87\Source\Repos\BlackjackTests\PlayerTests\obj\Debug\PlayerTests.dll
+C:\Users\jml87\Source\Repos\BlackjackTests\PlayerTests\obj\Debug\PlayerTests.pdb

@@ -4,6 +4,7 @@ using Player.Interfaces;
 using Common.Lib.Interfaces;
 using System.Collections.Generic;
 using Common.Lib.Models;
+using System.Diagnostics;
 
 namespace Player.Presenters
 {
@@ -162,8 +163,10 @@ namespace Player.Presenters
             // Count is used to increment thru players, 0 - Dealer, 1 - Player #1, 2 - Player #2, 3 - Player #3, 4 - Player #4
             int count = 0;
 
+            IList<Common.Lib.Interfaces.IPlayer> players = model.players;
+
             // Parse out player data
-            foreach (IPlayer player in model.players)
+            foreach (IPlayer player in players)
             {
 
                 // Updates Sidebar for Current Player
@@ -180,6 +183,8 @@ namespace Player.Presenters
 
                     // Get view to deal dealer's cards
                     view.DealDealerCards();
+
+                    model.cardDealPlayerID = 0;
 
                     count++;
                 }
@@ -212,6 +217,79 @@ namespace Player.Presenters
                         view.UpdatePlayer4();
                         model.cardDealPlayerID = count;
                         view.DealCards();
+                    }
+
+                    count++;
+                }
+
+            }
+
+        }
+
+        // This Testable version of UpdateView was created because the regular
+        // UpdateView() retrieves the player list from the Model. When you run
+        // the regular UpdateView() within the test you receive a NullReference
+        // Exception. If you pass the list of players from the model into the
+        // TestableUpdateView it will work for testing. This version of Update
+        // View is similar to the previous one, except no calls to view are made.
+        public void TestableUpdateView(IList<Common.Lib.Models.Player> players)
+        {
+            // Count is used to increment thru players, 0 - Dealer, 1 - Player #1, 2 - Player #2, 3 - Player #3, 4 - Player #4
+            int count = 0;
+            
+            // Parse out player data
+            foreach (IPlayer player in players)
+            {
+
+                // Updates Sidebar for Current Player
+                if (player.Name == model.player.Name)
+                {
+                    UpdateSidebar(player);
+                    model.testMessage += " Player (" + player.Name + ") is current player";
+                }
+
+                // Updates each player including dealer. Uses count variable to increment through players slots (0 - dealer, 1 - p1, 2 - p2 ...)
+                if (player.Name == "Dealer" && count == 0)
+                {
+                    // Check for Blackjack
+                    //CheckForDealerBlackjack(player);
+
+                    // Get view to deal dealer's cards
+                    //view.DealDealerCards();
+
+                    model.cardDealPlayerID = count;
+                    model.testMessage += "Dealer requested cards";
+                    count++;
+                }
+                else
+                {
+                    if (count == 1)
+                    {
+                        // Update Player #1
+                        //view.UpdatePlayer1();
+                        model.cardDealPlayerID = count;
+                        //view.DealCards();
+                    }
+                    else if (count == 2)
+                    {
+                        // Update Player #2
+                        //view.UpdatePlayer2();
+                        model.cardDealPlayerID = count;
+                        //view.DealCards();
+                    }
+                    else if (count == 3)
+                    {
+                        // Update Player #3
+                        //view.UpdatePlayer3();
+                        model.cardDealPlayerID = count;
+                        //view.DealCards();
+                    }
+                    else if (count == 4)
+                    {
+                        // Update Player #4
+                        //view.UpdatePlayer4();
+                        model.cardDealPlayerID = count;
+                        //view.DealCards();
                     }
 
                     count++;

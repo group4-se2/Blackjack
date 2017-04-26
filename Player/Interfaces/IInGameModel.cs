@@ -15,7 +15,7 @@ namespace Player.Interfaces
         String gameStatusLabel { get; set; } 
         String dealerCardCount { get; set; }
         int cardDealPlayerID { get; set; }
-
+        String testMessage { get; set; }
   
     }
 }
