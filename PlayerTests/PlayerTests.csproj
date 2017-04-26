@@ -65,7 +65,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PresenterSidebarTests.cs" />
     <Compile Include="PresenterDealerBlackjackTests.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="PresenterUpdateViewTests.cs" />
     <Compile Include="UnitTest2.cs" />
   </ItemGroup>
   <ItemGroup>
