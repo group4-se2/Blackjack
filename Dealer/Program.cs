@@ -95,7 +95,7 @@ namespace Dealer
             cmdObj.Players = players;
 
             server.SendAll(cmdObj);
-            System.Threading.Thread.Sleep(100);
+            System.Threading.Thread.Sleep(250);
         }
 
        private void PersistPlayerBalance(IPlayer player)

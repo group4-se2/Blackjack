@@ -152,3 +152,12 @@ C:\Users\jml87\Source\Repos\BlackjackTests\DealerTests\bin\Debug\Common.Lib.pdb
 C:\Users\jml87\Source\Repos\BlackjackTests\DealerTests\obj\Debug\DealerTests.csprojResolveAssemblyReference.cache
 C:\Users\jml87\Source\Repos\BlackjackTests\DealerTests\obj\Debug\DealerTests.dll
 C:\Users\jml87\Source\Repos\BlackjackTests\DealerTests\obj\Debug\DealerTests.pdb
+C:\Users\JL\Source\Repos\Blackjack2\DealerTests\bin\Debug\DealerTests.dll
+C:\Users\JL\Source\Repos\Blackjack2\DealerTests\bin\Debug\DealerTests.pdb
+C:\Users\JL\Source\Repos\Blackjack2\DealerTests\bin\Debug\Common.Lib.dll
+C:\Users\JL\Source\Repos\Blackjack2\DealerTests\bin\Debug\Dealer.exe
+C:\Users\JL\Source\Repos\Blackjack2\DealerTests\bin\Debug\Dealer.pdb
+C:\Users\JL\Source\Repos\Blackjack2\DealerTests\bin\Debug\Common.Lib.pdb
+C:\Users\JL\Source\Repos\Blackjack2\DealerTests\obj\Debug\DealerTests.csprojResolveAssemblyReference.cache
+C:\Users\JL\Source\Repos\Blackjack2\DealerTests\obj\Debug\DealerTests.dll
+C:\Users\JL\Source\Repos\Blackjack2\DealerTests\obj\Debug\DealerTests.pdb
