@@ -34,7 +34,7 @@
   <Players>
     <ID>3</ID>
     <Name>Julian</Name>
-    <Balance>65</Balance>
+    <Balance>105</Balance>
   </Players>
   <Players>
     <ID>4</ID>
@@ -44,6 +44,6 @@
   <Players>
     <ID>5</ID>
     <Name>Bob</Name>
-    <Balance>80</Balance>
+    <Balance>90</Balance>
   </Players>
 </NewDataSet>

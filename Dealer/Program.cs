@@ -234,6 +234,56 @@ namespace Dealer
                 player.advanceGameStatus();
             }
         }
+
+        private void TestGameOver()
+        {
+            foreach (IPlayer player in players)
+            {
+                if (player.Name != "Dealer")
+                    PersistPlayerBalance(player);
+            }
+
+            SyncPlayers();
+
+            Console.WriteLine("Before timer");
+            System.Threading.Thread.Sleep(5000);
+            Console.WriteLine("After timer");
+
+            // Game Over
+            gameState = GameState.GameOver;
+
+            if (showDebug) { Console.WriteLine("Removing players..."); }
+            foreach (Player player in removePlayers)
+            {
+                players.Remove(players.Find(x => x.Name == player.Name));
+            }
+
+            if (showDebug) { Console.WriteLine("Adding players..."); }
+            foreach (Player player in addPlayers)
+            {
+                players.Add(player);
+            }
+
+            if (showDebug) { Console.WriteLine("Resetting players..."); }
+            foreach (Player player in players)
+            {
+                player.WagerAmount = 0;
+                player.gameStatus = 0;
+                player.hasFocus = true;
+                player.myHand = new Hand();
+            }
+
+            SyncPlayers();
+
+            if (showDebug) { Console.WriteLine("Game Over"); }
+            CommandObject cmdObj = new CommandObject();
+            cmdObj.Command = Command.Message;
+            cmdObj.Message = "GameOver";
+            cmdObj.Players = players;
+            server.SendAll(cmdObj);
+
+            gameState = GameState.WaitingForBet;
+        }
         private void GameLoop()
         {
 
@@ -390,6 +440,8 @@ namespace Dealer
                 SyncPlayers();
 
                 // Game over so exit GameLoop
+                Console.WriteLine("In here...");
+                TestGameOver();
                 return;
             }
 
