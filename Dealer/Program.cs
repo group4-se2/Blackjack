@@ -530,7 +530,6 @@ namespace Dealer
                         {
                             if (showDebug) { Console.WriteLine(player.Name + " loses"); }
                             player.setGameStatus(3);
-                            player.debitCreditBalance(player.WagerAmount);
                         }
                     }
                 }

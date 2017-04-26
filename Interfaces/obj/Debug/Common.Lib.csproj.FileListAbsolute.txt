@@ -196,3 +196,8 @@ C:\Users\JL\Source\Repos\Blackjack2\Interfaces\bin\Debug\Common.Lib.pdb
 C:\Users\JL\Source\Repos\Blackjack2\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
 C:\Users\JL\Source\Repos\Blackjack2\Interfaces\obj\Debug\Common.Lib.dll
 C:\Users\JL\Source\Repos\Blackjack2\Interfaces\obj\Debug\Common.Lib.pdb
+C:\GitRepository\Two\Interfaces\bin\Debug\Common.Lib.dll
+C:\GitRepository\Two\Interfaces\bin\Debug\Common.Lib.pdb
+C:\GitRepository\Two\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
+C:\GitRepository\Two\Interfaces\obj\Debug\Common.Lib.dll
+C:\GitRepository\Two\Interfaces\obj\Debug\Common.Lib.pdb
