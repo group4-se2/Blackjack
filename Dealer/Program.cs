@@ -608,11 +608,15 @@ namespace Dealer
                 players.Remove(players.Find(x => x.Name == player.Name));
             }
 
+            removePlayers.Clear();
+
             if (showDebug) { Console.WriteLine("Adding players..."); }
             foreach (Player player in addPlayers)
             {
                 players.Add(player);
             }
+
+            addPlayers.Clear();
 
             if (showDebug) { Console.WriteLine("Resetting players..."); }
             foreach (Player player in players)
