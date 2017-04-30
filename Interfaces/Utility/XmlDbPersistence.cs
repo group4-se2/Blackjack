@@ -7,8 +7,11 @@ namespace XMLDB
 {
     public class XmlDbPersistence : IDbPersistence
     {
+#if (DEBUG)
+        string path = "Data.db"; 
+#else
         string path = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + "\\UWF\\Blackjack\\Data.db";
-
+#endif
         public DataSet ds { get; }
 
         public XmlDbPersistence()
