@@ -7,6 +7,8 @@ namespace XMLDB
 {
     public class XmlDbPersistence : IDbPersistence
     {
+        string path = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + "\\UWF\\Blackjack\\Data.db";
+
         public DataSet ds { get; }
 
         public XmlDbPersistence()
@@ -51,14 +53,14 @@ namespace XMLDB
         public void save()
         {
             ds.AcceptChanges();
-            ds.WriteXml("Data.db", XmlWriteMode.WriteSchema);
+            ds.WriteXml(path, XmlWriteMode.WriteSchema);
         }
 
         public bool load()
         {
             try
             {
-                ds.ReadXml("Data.db", XmlReadMode.ReadSchema);
+                ds.ReadXml(path, XmlReadMode.ReadSchema);
             }
             catch (Exception ex)
             {

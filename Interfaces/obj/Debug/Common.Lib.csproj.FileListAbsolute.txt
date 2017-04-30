@@ -131,7 +131,6 @@ C:\Users\Wayne\Source\Repos\Blackjack\Interfaces\bin\Debug\Common.Lib.dll
 C:\Users\Wayne\Source\Repos\Blackjack\Interfaces\bin\Debug\Common.Lib.pdb
 C:\Users\Wayne\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.dll
 C:\Users\Wayne\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.pdb
-C:\Users\Wayne\Source\Repos\Blackjack\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache
 C:\Users\jml87\Source\Repos\Blackjack4\Interfaces\bin\Debug\Common.Lib.dll
 C:\Users\jml87\Source\Repos\Blackjack4\Interfaces\bin\Debug\Common.Lib.pdb
 C:\Users\jml87\Source\Repos\Blackjack4\Interfaces\obj\Debug\Common.Lib.csprojResolveAssemblyReference.cache

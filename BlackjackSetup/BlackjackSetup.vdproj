@@ -15,6 +15,18 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_4A2566976B4B7C8B722939CDC2649CD7"
+        "OwnerKey" = "8:_B122E3ED272141469E39081FFC74F77F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4A2566976B4B7C8B722939CDC2649CD7"
+        "OwnerKey" = "8:_D6E187EED868459E93D2F536E32DED02"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_64663AEE336AF95D4DCD60DA0D03B4F7"
         "OwnerKey" = "8:_B122E3ED272141469E39081FFC74F77F"
         "MsmSig" = "8:_UNDEFINED"
@@ -22,7 +34,19 @@
         "Entry"
         {
         "MsmKey" = "8:_64663AEE336AF95D4DCD60DA0D03B4F7"
+        "OwnerKey" = "8:_A3405BD68A094610B0C6DA64BC91F5DE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_64663AEE336AF95D4DCD60DA0D03B4F7"
         "OwnerKey" = "8:_D6E187EED868459E93D2F536E32DED02"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A3405BD68A094610B0C6DA64BC91F5DE"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -40,7 +64,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_64663AEE336AF95D4DCD60DA0D03B4F7"
+        "OwnerKey" = "8:_B122E3ED272141469E39081FFC74F77F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A3405BD68A094610B0C6DA64BC91F5DE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -52,7 +82,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B122E3ED272141469E39081FFC74F77F"
+        "OwnerKey" = "8:_4A2566976B4B7C8B722939CDC2649CD7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_64663AEE336AF95D4DCD60DA0D03B4F7"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -73,6 +109,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -89,12 +141,34 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
     {
         "CustomAction"
         {
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_C45B7596D7874B189717A25A18B9E2F7"
+            {
+            "Name" = "8:Primary output from Installer (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_A3405BD68A094610B0C6DA64BC91F5DE"
+            "FileType" = "3:1"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_FC93A1CA_8501_4222_B8B0_5503C5325B34"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
         }
         "DefaultFeature"
         {
@@ -110,7 +184,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:.NETFramework,Version=v4.5"
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.5.1"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=395269"
                 }
@@ -118,6 +192,37 @@
         }
         "File"
         {
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4A2566976B4B7C8B722939CDC2649CD7"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Common.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_4A2566976B4B7C8B722939CDC2649CD7"
+                    {
+                    "Name" = "8:Common.Lib.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Common.Lib.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_C77D32924AC14F63AFEFE623AF1A2FE9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_64663AEE336AF95D4DCD60DA0D03B4F7"
             {
             "AssemblyRegister" = "3:1"
@@ -164,6 +269,17 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_35FF0DCB940742D6B4C234227B102CC4"
+                    {
+                    "Name" = "8:UWF"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_A0DD6DDBA6BD478E9E17514CF755246E"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_997730C212F94DCAA309B42A1DA26B22"
@@ -204,9 +320,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:BlackjackSetup"
+        "ProductName" = "8:Blackjack"
         "ProductCode" = "8:{3479C261-5C25-45FF-A10D-BFED4B354954}"
-        "PackageCode" = "8:{C04E4356-7BED-4499-9DAD-48E40AF5AD13}"
+        "PackageCode" = "8:{54A87903-A994-42DB-939B-EB855FD7E697}"
         "UpgradeCode" = "8:{0AC1D849-C68A-46E0-8E87-41C43C72485E}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -214,12 +330,12 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Default Company Name"
+        "Manufacturer" = "8:UWF"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:BlackjackSetup"
+        "Title" = "8:Blackjack Setup"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Default Company Name"
+        "ARPCONTACT" = "8:G4"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
@@ -326,6 +442,34 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_20891E1CFD5B4F0485B8925FB8DB7EEB"
+            {
+            "Name" = "8:Blackjack"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_D6E187EED868459E93D2F536E32DED02"
+            "Folder" = "8:_997730C212F94DCAA309B42A1DA26B22"
+            "WorkingFolder" = "8:_C77D32924AC14F63AFEFE623AF1A2FE9"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_67579180E1CA49FDB5C38B382546AA37"
+            {
+            "Name" = "8:Blackjack"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_D6E187EED868459E93D2F536E32DED02"
+            "Folder" = "8:_35FF0DCB940742D6B4C234227B102CC4"
+            "WorkingFolder" = "8:_C77D32924AC14F63AFEFE623AF1A2FE9"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -725,6 +869,34 @@
         }
         "ProjectOutput"
         {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_A3405BD68A094610B0C6DA64BC91F5DE"
+            {
+            "SourcePath" = "8:..\\Installer\\obj\\Debug\\Installer.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_C77D32924AC14F63AFEFE623AF1A2FE9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{18E2A40E-BC1D-4E43-ADDE-7865196E02CA}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B122E3ED272141469E39081FFC74F77F"
             {
             "SourcePath" = "8:..\\Dealer\\obj\\Debug\\Dealer.exe"

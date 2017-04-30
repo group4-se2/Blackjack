@@ -1,0 +1,4 @@
+C:\Users\Wayne\Source\Repos\Blackjack\Installer\bin\Debug\Installer.dll
+C:\Users\Wayne\Source\Repos\Blackjack\Installer\bin\Debug\Installer.pdb
+C:\Users\Wayne\Source\Repos\Blackjack\Installer\obj\Debug\Installer.dll
+C:\Users\Wayne\Source\Repos\Blackjack\Installer\obj\Debug\Installer.pdb
