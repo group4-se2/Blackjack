@@ -304,7 +304,7 @@ namespace Player.Presenters
         // Checks to see if the dealer has a blackjack, updates view with result * Tested
         public void CheckForDealerBlackjack(IPlayer player)
         {
-            if (player.getGameStatus() == 9)
+            if (player.getGameStatus() == 9) // Display score if it is time for dealer to reveal cards
             {
                 if (player.scoreHand() == 99)
                 {
@@ -317,7 +317,14 @@ namespace Player.Presenters
             }
             else
             {
-                model.dealerCardCount = "";
+                if (player.scoreHand() == 99) // If blackjack announce, else don't display score
+                {
+                    model.dealerCardCount = "Blackjack";
+                }
+                else
+                {
+                    model.dealerCardCount = "";
+                }
             }
 
             view.UpdateDealerCount();

@@ -300,3 +300,16 @@ C:\Users\jml87\Source\Repos\Blackjack2_Presentation\PlayerTests\bin\Debug\Moq.xm
 C:\Users\jml87\Source\Repos\Blackjack2_Presentation\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
 C:\Users\jml87\Source\Repos\Blackjack2_Presentation\PlayerTests\obj\Debug\PlayerTests.dll
 C:\Users\jml87\Source\Repos\Blackjack2_Presentation\PlayerTests\obj\Debug\PlayerTests.pdb
+C:\Users\JL\Source\Repos\BlackjackFinal\PlayerTests\bin\Debug\PlayerTests.dll
+C:\Users\JL\Source\Repos\BlackjackFinal\PlayerTests\bin\Debug\PlayerTests.pdb
+C:\Users\JL\Source\Repos\BlackjackFinal\PlayerTests\bin\Debug\Castle.Core.dll
+C:\Users\JL\Source\Repos\BlackjackFinal\PlayerTests\bin\Debug\Common.Lib.dll
+C:\Users\JL\Source\Repos\BlackjackFinal\PlayerTests\bin\Debug\Moq.dll
+C:\Users\JL\Source\Repos\BlackjackFinal\PlayerTests\bin\Debug\Player.exe
+C:\Users\JL\Source\Repos\BlackjackFinal\PlayerTests\bin\Debug\Common.Lib.pdb
+C:\Users\JL\Source\Repos\BlackjackFinal\PlayerTests\bin\Debug\Player.pdb
+C:\Users\JL\Source\Repos\BlackjackFinal\PlayerTests\bin\Debug\Castle.Core.xml
+C:\Users\JL\Source\Repos\BlackjackFinal\PlayerTests\bin\Debug\Moq.xml
+C:\Users\JL\Source\Repos\BlackjackFinal\PlayerTests\obj\Debug\PlayerTests.csprojResolveAssemblyReference.cache
+C:\Users\JL\Source\Repos\BlackjackFinal\PlayerTests\obj\Debug\PlayerTests.dll
+C:\Users\JL\Source\Repos\BlackjackFinal\PlayerTests\obj\Debug\PlayerTests.pdb

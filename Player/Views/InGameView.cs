@@ -227,7 +227,7 @@ namespace Player
                         PictureBox box = new PictureBox();
                         int cardID = GetCardGraphic(player.myHand.getCard(i));
 
-                        if (i == 0 && player.getGameStatus() != 9)
+                        if (i == 0 && player.getGameStatus() != 9 && player.scoreHand() != 99)
                         {
                             box.Image = imageList1.Images[CARD_BACK_IMAGE_ID];
                         }
@@ -370,6 +370,7 @@ namespace Player
             }
         }
 
+        // Used to animate cards, not implemented yet
         public void pictureBox1_Click(object sender, EventArgs e)
         {
             Point startPoint = pictureBox1.Location;
@@ -386,6 +387,7 @@ namespace Player
             Animate(pictureBox2, startPoint, endPoint);
         }
 
+        // Used to animate cards, not implemented yet
         public void Animate(PictureBox card, Point startPoint, Point endPoint)
         {
             int totalSteps = 200;
@@ -428,26 +430,31 @@ namespace Player
         // Resets each player box to empty
         private void ResetPlayerBoxes()
         {
+            // Resets the names of the players
             p1Name.Text = "Empty";
             p2Name.Text = "Empty";
             p3Name.Text = "Empty";
             p4Name.Text = "Empty";
 
+            // Removes the focus background color of players
             p1Name.BackColor = Color.Transparent;
             p2Name.BackColor = Color.Transparent;
             p3Name.BackColor = Color.Transparent;
             p4Name.BackColor = Color.Transparent;
 
+            // Resets player bet amounts
             p1BetAmount.Text = "Bet: $0";
             p2BetAmount.Text = "Bet: $0";
             p3BetAmount.Text = "Bet: $0";
             p4BetAmount.Text = "Bet: $0";
 
+            // Resets player card values
             p1CardValue.Text = "Count: ";
             p2CardValue.Text = "Count: ";
             p3CardValue.Text = "Count: ";
             p4CardValue.Text = "Count: ";
 
+            // Reset credit balance labels for all player
             p1TotalMoney.Text = "Total Money";
             p2TotalMoney.Text = "Total Money";
             p3TotalMoney.Text = "Total Money";
@@ -469,6 +476,7 @@ namespace Player
             });
         }
 
+        // Called on game close
         private void InGameView_FormClosing(object sender, FormClosingEventArgs e)
         {
 
