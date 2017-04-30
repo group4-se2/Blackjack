@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResetAddRemoveDealerTests.cs" />
+    <Compile Include="DealerMethodTests.cs" />
     <Compile Include="UnitTestCard.cs" />
     <Compile Include="UnitTestDeck.cs" />
     <Compile Include="UnitTestHand.cs" />

@@ -31,7 +31,7 @@ namespace Dealer
         private GameState gameState;
         private int elapsedTime = 0;
         private int timeout = 0;
-        private Boolean timeoutSignal = false;
+        public Boolean timeoutSignal = false;
         private IDbPersistence db;
 
         // Use to show Console lines with GameLoop progress
@@ -195,7 +195,7 @@ namespace Dealer
             }
         }
 
-        private void SetPlayerFocus(Player focusPlayer)
+        public void SetPlayerFocus(IPlayer focusPlayer)
         {
             foreach (Player player in players)
             {
@@ -210,7 +210,7 @@ namespace Dealer
             }
         }
 
-        private void SetAllPlayersFocus(bool focus)
+        public void SetAllPlayersFocus(bool focus)
         {
             foreach (Player player in players)
             {
@@ -218,7 +218,7 @@ namespace Dealer
             }
         }
 
-        private void AdvanceAllPlayers()
+        public void AdvanceAllPlayers()
         {
             foreach (IPlayer player in players)
             {
@@ -277,7 +277,7 @@ namespace Dealer
         }
 
         // Checks players to see if everyone has bet
-        private void CheckBets()
+        public void CheckBets()
         {
             if (players.Count == 2) // 1 player
             {
@@ -307,7 +307,7 @@ namespace Dealer
         }
 
         // Checks for inactive players and disables them for round if inactive
-        private void CheckForInactivePlayers()
+        public void CheckForInactivePlayers()
         {
             foreach (Player player in players)
             {
@@ -320,20 +320,28 @@ namespace Dealer
         }
     
         // Deals the first round of cards
-        private void DealFirstRoundCards(IDeck deck)
+        public void DealFirstRoundCards(IDeck deck)
         {
             foreach (Player player in players)
             {
                 if (player.getGameStatus() != 8)
                 {
                     player.dealCard(deck, false);
-                    SyncPlayers();
+                    try
+                    {
+                        SyncPlayers();
+                    }
+                    catch (NullReferenceException e)
+                    {
+                        // Catch for Testing
+                        Console.WriteLine("Testing catch for SyncPlayers");
+                    }
                 }
             }
         }
 
         // Deals the second round of cards
-        private void DealSecondRoundCards(IDeck deck)
+        public void DealSecondRoundCards(IDeck deck)
         {
             foreach (Player player in players)
             {
@@ -348,7 +356,15 @@ namespace Dealer
                     {
                         player.dealCard(deck, false);
                     }
-                    SyncPlayers();
+                    try
+                    {
+                        SyncPlayers();
+                    }
+                    catch (NullReferenceException e)
+                    {
+                        // Catch for Testing
+                        Console.WriteLine("Testing catch for SyncPlayers");
+                    }
                 }
             }
         }
@@ -546,14 +562,14 @@ namespace Dealer
             IDeck deck = new Deck();
 
             // Wait for first player to bet 
-            if (showDebug) { Console.WriteLine("Waiting for first bet...    GS: " + gameState); }
+            if (showDebug) { Console.WriteLine("Waiting for first bet..."); }
 
             while (gameState == GameState.WaitingForBet)
             {
                 // Wait for any player to place a bet
             }
 
-            if (showDebug) { Console.WriteLine("Waiting for other bets...    GS: " + gameState); }
+            if (showDebug) { Console.WriteLine("Waiting for other bets..."); }
 
             // Start game timer and wait for betting to complete
             gameState = GameState.CollectingBets;

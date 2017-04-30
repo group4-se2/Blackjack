@@ -2,3 +2,8 @@ C:\Users\Wayne\Source\Repos\Blackjack\Installer\bin\Debug\Installer.dll
 C:\Users\Wayne\Source\Repos\Blackjack\Installer\bin\Debug\Installer.pdb
 C:\Users\Wayne\Source\Repos\Blackjack\Installer\obj\Debug\Installer.dll
 C:\Users\Wayne\Source\Repos\Blackjack\Installer\obj\Debug\Installer.pdb
+C:\Users\JL\Source\Repos\Blackjack-Final-Submission\Installer\bin\Debug\Installer.dll
+C:\Users\JL\Source\Repos\Blackjack-Final-Submission\Installer\bin\Debug\Installer.pdb
+C:\Users\JL\Source\Repos\Blackjack-Final-Submission\Installer\obj\Debug\Installer.csprojResolveAssemblyReference.cache
+C:\Users\JL\Source\Repos\Blackjack-Final-Submission\Installer\obj\Debug\Installer.dll
+C:\Users\JL\Source\Repos\Blackjack-Final-Submission\Installer\obj\Debug\Installer.pdb
