@@ -21,13 +21,13 @@ namespace Dealer
         Calculating,
         GameOver
     }
-    class Program2
+    public class Program2
     {
         private Server server;
         private Timer gameTimer;
-        private List<IPlayer> players;
-        private List<IPlayer> addPlayers = new List<IPlayer>();
-        private List<IPlayer> removePlayers = new List<IPlayer>();
+        public List<IPlayer> players;
+        public List<IPlayer> addPlayers = new List<IPlayer>();
+        public List<IPlayer> removePlayers = new List<IPlayer>();
         private GameState gameState;
         private int elapsedTime = 0;
         private int timeout = 0;
@@ -473,7 +473,7 @@ namespace Dealer
         }
 
         // Remove players that have left
-        private void RemovePlayers()
+        public void RemovePlayers()
         {
             if (showDebug) { Console.WriteLine("Removing players..."); }
             foreach (Player player in removePlayers)
@@ -485,7 +485,7 @@ namespace Dealer
         }
 
         // Add players that have joined
-        private void AddPlayers()
+        public void AddPlayers()
         {
             if (showDebug) { Console.WriteLine("Adding players..."); }
             foreach (Player player in addPlayers)
@@ -497,7 +497,7 @@ namespace Dealer
         }
 
         // Reset players at the end of the round
-        private void ResetPlayers()
+        public void ResetPlayers()
         {
             if (showDebug) { Console.WriteLine("Resetting players..."); }
             foreach (Player player in players)
