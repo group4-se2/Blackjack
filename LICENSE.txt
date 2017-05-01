@@ -1,7 +1,7 @@
 Image/Font Credits :
 - "Back of Playing Card Image" acquired from "https://commons.wikimedia.org/wiki/File:Back04.svg" which is released in the public domain.
 - "Initial Startup Logo with 4 Ace Cards" acquired from "https://www.iconfinder.com/icons/667352/cards_gamble_game_play_poker_icon" and is licensed "Free for Commercial Use". 
-- "Droid Serif" font was temporarily used and then removed. I wanted to add this just in case there is any credit needed. It is licensed under the Apache License, Version 2.0 and was retrieved from Font Squirrel's website. Here is the licensing information:
+- "Droid Serif" font was used for logo on start screen. I wanted to add this just in case there is any credit needed. It is licensed under the Apache License, Version 2.0 and was retrieved from Font Squirrel's website. Here is the licensing information:
 
   // THE FOLLOWING LICENSE IS PERTAINING TO DROID SERIF FONT USAGE ONLY
 
